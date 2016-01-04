@@ -3,6 +3,9 @@ from wigab.parser import parse_sheet
 from wigab.parser import process_all
 import xlrd
 import unicodecsv as csv
+import pprint
+import requests
+import json
 
 def process_local(filename):
     results = []
@@ -16,12 +19,58 @@ def process_local(filename):
 
     return results
 
-def _2014_general_ward_results():
-  results = process_local("local_data_cache/11.4.2014 Election Results - all offices w x w report.xlsx")
-  #results = process_all("http://www.gab.wi.gov/sites/default/files/11.4.2014%20Election%20Results%20-%20all%20offices%20w%20x%20w%20report.xlsx", "11.4.2014%20Election%20Results%20-%20all%20offices%20w%20x%20w%20report.xlsx")
-  myfile = open('2014/20141104__wi__general.csv', 'wb')
-  wr = csv.writer(myfile)
-  for result in results:
-    wr.writerows(result)
+def skip_row(row, skip_str):
+  skip = 0
+  for item in row:
+    if (item == "Office Totals:"):
+      skip = 1
+  return skip
 
-_2014_general_ward_results()
+def get_election_result(election,local):
+  direct_links = election['direct_links'];
+  slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), election['race_type'])
+  year = election['start_date'][:4]
+  print "Processing %s" % slug
+  for direct_link in direct_links:
+    if local is None:
+      download_filename = "temp"
+      results = process_all(direct_link, download_filename)
+    else:
+      cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
+      results = process_local(cached_filename)
+    result_filename = "%s/%s" % (year, slug)
+    myfile = open(result_filename, 'wb')
+    wr = csv.writer(myfile)
+    for result in results:
+      for row in result:
+        skip = skip_row(row, "Office Totals:")
+        if (skip == 0):
+          wr.writerow(row)
+
+def get_all_results(ids,url,local=None):
+  r = requests.get(url)
+  if r.status_code == 200:
+    parsed = json.loads(r.content)['objects']
+    for id in ids:
+      for election in parsed:
+        if election['id'] == id:
+          get_election_result(election,local)
+          #pprint.pprint(election)
+#_20141104_general_ward_results()
+
+WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
+# All ids from available elections.
+available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
+407,408,409,410,411,1662,413,415,416,419,421,422,424,425,426,427,428,429,430,
+431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,664,
+674,685,689,1577,1578]
+# Elections with no files available.
+no_results_ids = [446, 674, 685, 689]
+# Not working ids. Need to troubleshoot.
+not_working_ids = [1659,1661,1573,1575,1539,404,405,407,408,409,410,411,1662,
+413,415,416,419,421,422,424,425,426,427,428,429,430,431,432,433,434,435,436,
+437,438,439,440,441,442,443,444,445,446,447,448,664,674,685,689,1577,1578]
+# List of ids for elections that have been successfully processed.
+working_ids = [1658,1660,1576,1574]
+
+get_all_results(working_ids,WIOpenElectionsAPI,True)
