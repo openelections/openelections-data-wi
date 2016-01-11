@@ -1,0 +1,3 @@
+[submodule "wigab"]
+	path = wigab
+	url = https://github.com/openelections/wigab.git
