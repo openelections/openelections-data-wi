@@ -14,7 +14,7 @@ A folder ``local_data_cache`` keeps a local version of files. To update it:
 ```bash
 cd local_data_cache
 python fetcher.py
-``
+```
 
 There are tests to validate the CSV output using <a href="https://github.com/dhcole/csv-test">csv-test</a>. To test:
 ```bash
