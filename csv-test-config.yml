@@ -1,10 +1,22 @@
 fields:
   county:
+    - matches: 
+      - ^[a-z\. ]+$ 
+      - i
   ward:
+    - matches: 
+      - ^[a-z0-9-\&,"\.\+ ]+$ 
+      - i
   office:
+    - matches: 
+      - ^[a-z\/ ]+$ 
+      - i
   district:
   totalvotes: isNumeric
   party:
-    hasOneOf: DEM,REP,IND,,CON
+    isOneOf: DEM,REP,IND,,CON
   candidate:
+    - matches: 
+      - ^[\r\na-z0-9-()\&,"\.\+ ]+$ 
+      - i
   votes: isFloat

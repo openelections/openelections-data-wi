@@ -1,8 +1,8 @@
 module.exports = {
-  hasOneOf: function(str, seed) {
+  isOneOf: function(str, seed) {
     options = seed.split(",");
     for (var key in options) {
-      if (str.indexOf(options[key]) === 0) {
+      if (str == options[key]) {
         return 1;
       }
     }
