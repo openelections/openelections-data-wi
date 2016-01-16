@@ -20,7 +20,6 @@ def process_local(filename,column):
     for office in offices:
         index = [x for x in offices].index(office)
         sheet = xlsfile.sheets()[index+1]
-        print "parsing %s" % office
         results.append(parse_sheet(sheet, office))
     return results
 
@@ -83,11 +82,11 @@ pdf_elections = [664]
 need_custom_function = [1662]
 
 # List of ids for elections that have been successfully processed.
-#working_ids = [1574,1661,1659,1658,1660,1576,1573,404,405,407,408,409,411,413,415,416,424,674,685]
-#working_ids_column_1 = [1575,1539,404,405,407,408,409,411,413,415,416,424,674,685]
+working_ids_no_test = [1659,1576,1573,404,405,407,408,409,411,413,415,416,424,674,685]
+working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,424,674,685]
 
 # For local testing
-working_ids_with_tests = [1574]
+working_ids_with_tests = [1574,1661,1658,1660]
 
 get_all_results(working_ids_with_tests,WIOpenElectionsAPI,True)
 #get_all_results(test_ids,WIOpenElectionsAPI,True,0)
