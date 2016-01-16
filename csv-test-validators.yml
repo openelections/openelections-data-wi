@@ -1,0 +1,11 @@
+module.exports = {
+  hasOneOf: function(str, seed) {
+    options = seed.split(",");
+    for (var key in options) {
+      if (str.indexOf(options[key]) === 0) {
+        return 1;
+      }
+    }
+    return 0;
+  }
+};

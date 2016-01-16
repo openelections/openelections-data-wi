@@ -1,0 +1,7 @@
+language: python
+
+before_script:
+  - npm install
+
+script:
+  node_modules/csv-test/bin/csv-test csv-test-config.yml test.csv csv-test-validators.yml

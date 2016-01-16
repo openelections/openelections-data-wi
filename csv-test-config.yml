@@ -1,0 +1,10 @@
+fields:
+  county:
+  ward:
+  office:
+  district:
+  totalvotes: isNumeric
+  party:
+    hasOneOf: DEM,REP,IND,,CON
+  candidate:
+  votes: isFloat
