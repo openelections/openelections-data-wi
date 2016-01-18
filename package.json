@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/acouch/openelections-data-wi#readme",
   "devDependencies": {
-    "csv-test": "*"
+    "csv-test": "git://github.com/acouch/csv-test.git"
   }
 }
