@@ -1,4 +1,4 @@
-county,ward,office,district,total votes,party,candidate,votes
+county,ward,office,district,totalvotes,party,candidate,votes
 WAUKESHA,"TOWN OF DELAFIELD WARDS 1, 2, 5, 6",STATE SENATE,33,249,REP,CHRIS KAPENGA,213.0
 WAUKESHA,"TOWN OF DELAFIELD WARDS 1, 2, 5, 6",STATE SENATE,33,249,DEM,SHERRYLL SHADDOCK,36.0
 WAUKESHA,"TOWN OF DELAFIELD WARDS 1, 2, 5, 6",STATE SENATE,33,249,,SCATTERING,0.0

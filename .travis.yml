@@ -9,7 +9,5 @@ before_script:
 
 script:
   - python parser.py
-  - node_modules/csv-test/bin/csv-test csv-test-config.yml 2014/20141104__wi__general_ward.csv csv-test-validators.yml
-  - node_modules/csv-test/bin/csv-test csv-test-config.yml 2015/20150721__wi__general_ward.csv csv-test-validators.yml
-  - node_modules/csv-test/bin/csv-test csv-test-config.yml 2015/20150929__wi__general_ward.csv csv-test-validators.yml
-  - node_modules/csv-test/bin/csv-test csv-test-config.yml 2015/20150623__wi__primary_ward.csv csv-test-validators.yml
+  - node_modules/csv-test/bin/csv-test csv-test-config.yml '2014/*' csv-test-validators.yml
+  - node_modules/csv-test/bin/csv-test csv-test-config.yml '2015/*' csv-test-validators.yml

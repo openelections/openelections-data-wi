@@ -18,7 +18,7 @@ fields:
     - matches: 
       # Number or empty
       - ^[\d]+|$ 
-  totalvotes: isNumeric
+  totalvotes: isFloat
   party:
     isOneOf: DEM,REP,IND,,CON
   candidate:
