@@ -19,5 +19,5 @@ python fetcher.py
 There are tests to validate the CSV output using <a href="https://github.com/dhcole/csv-test">csv-test</a>. To test:
 ```bash
 npm install
-node_modules/csv-test/bin/csv-test csv-test-config.yml 2014/20141104__wi__general_ward.csv csv-test-validators.yml
+node_modules/csv-test/bin/csv-test csv-test-config.yml '2014/*' csv-test-validators.yml
 ```
