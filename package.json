@@ -1,0 +1,22 @@
+{
+  "name": "openelections-data-wi",
+  "version": "0.0.1",
+  "description": "WI voting results",
+  "main": "index.js",
+  "scripts": {
+    "test": "csv-test csv-test-config.yml election.csv"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/acouch/openelections-data-wi.git"
+  },
+  "author": "acouch",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/acouch/openelections-data-wi/issues"
+  },
+  "homepage": "https://github.com/acouch/openelections-data-wi#readme",
+  "devDependencies": {
+    "csv-test": "git://github.com/acouch/csv-test.git"
+  }
+}

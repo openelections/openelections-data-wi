@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from wigab.parser import get_offices
 from wigab.parser import parse_sheet
 from wigab.parser import process_all
@@ -8,14 +9,17 @@ import requests
 import json
 import re
 
+def headers():
+  return [["county","ward","office","district","total votes","party","candidate","votes"]]
+
 def process_local(filename,column):
     results = []
     xlsfile = xlsfile = xlrd.open_workbook(filename)
     offices = get_offices(xlsfile,column)
+    results.append(headers())
     for office in offices:
         index = [x for x in offices].index(office)
         sheet = xlsfile.sheets()[index+1]
-        print "parsing %s" % office
         results.append(parse_sheet(sheet, office))
     return results
 
@@ -46,11 +50,6 @@ def get_election_result(election,local,column):
       for row in result:
         skip = skip_row(row, "Office Totals:")
         if (skip == 0):
-          # Remove empty column at beginning of the line.
-          if row[0] is None:
-            del row[0]
-          if row[0] == '':
-            del row[0]
           wr.writerow(row)
 
 def get_all_results(ids,url,local=None,column=1):
@@ -58,6 +57,7 @@ def get_all_results(ids,url,local=None,column=1):
   if r.status_code == 200:
     parsed = json.loads(r.content)['objects']
     for id in ids:
+      print "id %s" % id
       for election in parsed:
         if election['id'] == id:
           get_election_result(election,local,column)
@@ -82,12 +82,11 @@ pdf_elections = [664]
 need_custom_function = [1662]
 
 # List of ids for elections that have been successfully processed.
-working_ids = [1661,1659,1658,1660,1576,1574,1573,404,405,407,408,409,411,413,
-415,416,424,674,685]
-working_ids_column_1 = [1575,1539]
+working_ids_no_test = [1659,1576,1573,404,405,407,408,409,411,413,415,416,424,674,685]
+working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,424,674,685]
 
 # For local testing
-test_ids = []
+working_ids_with_tests = [1574,1661,1658,1660]
 
-get_all_results(working_ids,WIOpenElectionsAPI,True)
-get_all_results(working_ids_column_1,WIOpenElectionsAPI,True,0)
+get_all_results(working_ids_with_tests,WIOpenElectionsAPI,True)
+#get_all_results(test_ids,WIOpenElectionsAPI,True,0)
