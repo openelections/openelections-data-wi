@@ -5,6 +5,7 @@ import requests
 import json
 import re
 import xlrd
+import pprint
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -68,7 +69,7 @@ def clean_total(item):
   return to_int(item)
 
 def clean_party(item):
-  return clean_string(item)
+  return item
 
 def clean_votes(item):
   return to_int(item)
@@ -102,7 +103,9 @@ def clean_string(item):
 
 # Here is where things get messy.
 def clean_particular(election,row):
-  #if (election['id'] == '1573'):
+  # Removes disctrict.
+  if (election['id'] == 404):
+    row[3] = ''
   return row
 
 def open_file(url, filename):
@@ -129,7 +132,7 @@ def get_offices(xlsfile,column=1):
 def detect_headers(sheet):
     for i in range(3,12):
         if sheet.row_values(i)[2].strip() == 'Total Votes Cast':
-            if 'REP' in sheet.row_values(i) or 'DEM' in sheet.row_values(i) or 'NP' in sheet.row_values(i):
+            if 'IND' in sheet.row_values(i) or 'REP' in sheet.row_values(i) or 'DEM' in sheet.row_values(i) or 'NP' in sheet.row_values(i):
                 parties = [x for x in sheet.row_values(i)[3:] if x != None]
                 candidates = [x for x in sheet.row_values(i+1)[3:] if x!= None]
                 start_row = i+2
@@ -247,7 +250,8 @@ working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,42
 
 # For local testing
 working_ids_with_tests = [1574,1661,1658,1660,1659,1576,1573]
+working_ids_column_1_with_tests = [404]
 #test = [1575]
 
-get_all_results([1658],WIOpenElectionsAPI)
-#get_all_results(test,WIOpenElectionsAPI,0)
+get_all_results(working_ids_with_tests,WIOpenElectionsAPI)
+get_all_results(working_ids_column_1_with_tests,WIOpenElectionsAPI,0)
