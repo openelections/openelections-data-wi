@@ -20,9 +20,10 @@ def step_impl(context):
 @when('I search for candidate {candidate} running for {office} in the {ward}')
 def step_impl(context,candidate,office,ward):
     context.passes = False
-
+    
     election_data = csv.DictReader(open(context.path))
     for row in election_data:
+      print(row)
       if (row['candidate'] == candidate and row['ward'] == ward and row['office'] == office):
         context.passes = True
         context.votes = row['votes']
