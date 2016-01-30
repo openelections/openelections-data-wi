@@ -246,12 +246,12 @@ pdf_elections = [664]
 need_custom_function = [1662]
 
 # List of ids for elections that have been successfully processed.
-working_ids_no_test = [404,407,408,409,411,413,415,416,424,674,685]
+working_ids_no_test = [408,409,411,413,415,416,424,674,685]
 working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,424,674,685]
 
 # For local testing
 working_ids_with_tests = [1574,1661,1658,1660,1659,1576,1573]
-working_ids_column_1_with_tests = [405,404]
+working_ids_column_1_with_tests = [405,404,407]
 
 get_all_results(working_ids_with_tests,WIOpenElectionsAPI)
 get_all_results(working_ids_column_1_with_tests,WIOpenElectionsAPI,0)
