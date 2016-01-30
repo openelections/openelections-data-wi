@@ -6,6 +6,6 @@ Feature: WI Elections
     Then I should see <votes> out of <total>
 
   Examples: 20150929__wi__general_ward.csv
-    | candidate  | office    | ward                      | votes | total |
-    | CINDI DUCHOW | ASSEMBLY | VILLAGE OF HARTLAND WARDS 1-13 | 117    |  140   |
-    |THOMAS D. HIBBARD (WRITE-IN)| ASSEMBLY | VILLAGE OF WALES WARDS 1-4 | 10 | 106 |
+    | candidate                   | office   | ward                           | votes  | total |
+    | Cindi Duchow                | Assembly | Village of Hartland Wards 1-13 | 117    | 140   |
+    | Thomas D. Hibbard (Write-In)| ASSEMBLY | Village of Wales Wards 1-4     | 10     | 106   |

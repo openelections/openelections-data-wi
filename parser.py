@@ -11,7 +11,7 @@ sys.setdefaultencoding('utf8')
 
 
 def headers():
-  return [["county","ward","office","district","total votes","party","candidate","votes"]]
+  return ["county","ward","office","district","total votes","party","candidate","votes"]
 
 def process_local(filename,column,results):
     xlsfile = xlsfile = xlrd.open_workbook(filename)
@@ -38,49 +38,45 @@ def get_election_result(election,column):
   myfile = open(result_filename, 'wb')
   wr = csv.writer(myfile)
   results = []
-  results.append(headers())
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
     results = process_local(cached_filename,column,results)
+    wr.writerow(headers())
     for i,result in enumerate(results):
       for x,row in enumerate(result):
-        if (x != 0):
-          row = clean_particular(election,row)
-          row = clean_row(row)
+        row = clean_particular(election,row)
+        row = clean_row(row)
         skip = skip_row(row, "Office Totals:")
         if (skip == 0):
           wr.writerow(row)
     results = []
 
 def clean_county(item):
-  return item
+  return clean_string(item)
 
 def clean_ward(item):
-  return item
+  return clean_string(item)
 
 def clean_office(item):
-  return item
+  return clean_string(item)
 
 def clean_district(item):
-  return item
+  return clean_string(item)
 
 def clean_total(item):
   return to_int(item)
 
 def clean_party(item):
-  return item
+  return clean_string(item)
 
 def clean_votes(item):
   return to_int(item)
 
 def clean_candidate(item):
-  return item
+  return clean_string(item)
 
 def clean_row(row):
-  for i,item in row:
-    row[i] = clean_string(item)
-    
   row[0] = clean_county(row[0])
   row[1] = clean_ward(row[1])
   row[2] = clean_office(row[2])
@@ -98,7 +94,7 @@ def to_int(item):
     return int(item)
   else:
     return 0
-  
+
 def clean_string(item):
   item = item.strip()
   item = item.title()
@@ -253,5 +249,5 @@ working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,42
 working_ids_with_tests = [1574,1661,1658,1660,1659,1576,1573]
 #test = [1575]
 
-get_all_results(working_ids_with_tests,WIOpenElectionsAPI)
+get_all_results([1658],WIOpenElectionsAPI)
 #get_all_results(test,WIOpenElectionsAPI,0)
