@@ -78,6 +78,9 @@ def clean_candidate(item):
   return item
 
 def clean_row(row):
+  for i,item in row:
+    row[i] = clean_string(item)
+    
   row[0] = clean_county(row[0])
   row[1] = clean_ward(row[1])
   row[2] = clean_office(row[2])
@@ -95,6 +98,11 @@ def to_int(item):
     return int(item)
   else:
     return 0
+  
+def clean_string(item):
+  item = item.strip()
+  item = item.title()
+  return item
 
 # Here is where things get messy.
 def clean_particular(election,row):
