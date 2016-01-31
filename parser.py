@@ -10,7 +10,6 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-
 def headers():
   return ["county","ward","office","district","total votes","party","candidate","votes"]
 
@@ -39,11 +38,11 @@ def get_election_result(election,column):
   myfile = open(result_filename, 'wb')
   wr = csv.writer(myfile)
   results = []
+  wr.writerow(headers())
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
     results = process_local(cached_filename,column,results)
-    wr.writerow(headers())
     for i,result in enumerate(results):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
@@ -104,9 +103,11 @@ def clean_string(item):
 
 # Here is where things get messy.
 def clean_particular(election,row):
-  # Removes disctrict.
+  # Removes district.
   if (election['id'] == 404 or election['id'] == 405):
     row[3] = ''
+  elif (election['id'] == 411 or election['id'] == 413):
+    row[1] = row[1].replace("!","1")
   return row
 
 def open_file(url, filename):
@@ -236,22 +237,19 @@ available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
 # Elections with no files available.
 no_results_ids = [446, 674, 685, 689]
 # Not working ids. Need to troubleshoot.
-not_working_ids = [410,421,419,422,
-425,426,427,428,429,430,431,432,433,434,435,436,
+# 33
+not_working_xls = [419,1575,424,674,685,421,425,426,427,428,429,430,431,432,433,434,435,436,
 437,438,439,440,441,442,443,444,445,446,447,448,
 689,1577,1578]
 # Election with PDF files.
-pdf_elections = [664]
+pdf_elections = [664,410,422]
 # 1662 has a sheet with no cover sheet unlike others.
 need_custom_function = [1662]
 
 # List of ids for elections that have been successfully processed.
-working_ids_no_test = [408,409,411,413,415,416,424,674,685]
-working_ids_column_1_no_test = [1575,1539,404,405,407,408,409,411,413,415,416,424,674,685]
+# 17
+working = [1574,1661,1658,1660,1659,1576,1573]
+working_column_1 = [1539,405,404,407,408,409,411,413,415,416]
 
-# For local testing
-working_ids_with_tests = [1574,1661,1658,1660,1659,1576,1573]
-working_ids_column_1_with_tests = [405,404,407]
-
-get_all_results(working_ids_with_tests,WIOpenElectionsAPI)
-get_all_results(working_ids_column_1_with_tests,WIOpenElectionsAPI,0)
+get_all_results(working,WIOpenElectionsAPI)
+get_all_results(working_column_1,WIOpenElectionsAPI,0)

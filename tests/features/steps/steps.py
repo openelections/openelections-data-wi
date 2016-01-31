@@ -17,16 +17,16 @@ def step_impl(context):
     else:
       raise AssertionError("%s not found" % path)
 
-@when('I search for candidate {candidate} running for {office} in the {ward}')
-def step_impl(context,candidate,office,ward):
+@when('I search for candidate {candidate} running for {office} in the {ward} in {county}')
+def step_impl(context,candidate,office,ward,county):
     context.passes = False
 
-    print ("Expecting %s %s %s" % (candidate, office, ward))
+    print ("Expecting %s %s %s %s" % (candidate.title(), office.title(), ward.title(), county.title()))
 
     election_data = csv.DictReader(open(context.path))
     for row in election_data:
-      print ("Found %s %s %s" % (row['candidate'], row['office'], row['ward']))
-      if (row['candidate'] == candidate and row['ward'] == ward and row['office'] == office):
+      print ("Found %s %s %s %s %s %s" % (row['candidate'], row['office'], row['ward'], row['county'], row['votes'], row['total votes']))
+      if (row['candidate'] == candidate.title() and row['ward'] == ward.title() and row['office'] == office.title()  and row['county'] == county.title()):
         context.passes = True
         context.votes = row['votes']
         context.total = row['total votes']
@@ -34,7 +34,7 @@ def step_impl(context,candidate,office,ward):
     if (context.passes):
       pass
     else:
-      raise AssertionError("Record not found for {candidate}")
+      raise AssertionError("Record not found for %s" % candidate.title())
 
 @then('I should see {votes} out of {total}')
 def step_impl(context,votes,total):
