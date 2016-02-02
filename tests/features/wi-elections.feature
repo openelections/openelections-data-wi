@@ -5,6 +5,17 @@ Feature: WI Elections
     And I search for candidate <candidate> running for <office> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
+  Examples: 20140812__wi__primary_ward.csv
+    | candidate         | county  | office                            | ward                        | votes | total |
+    | MARY BURKE        | BROWN   | GOVERNOR - Democratic             | TOWN OF HOLLAND Wards 1 - 2 | 41	  | 49    |
+    | JERRY BROITZMAN   | DANE    | SECRETARY OF STATE - Constitution | CITY OF MADISON Ward 38     | 3     | 3     |
+    | REBECCA KLEEFISCH | DOUGLAS | LIEUTENANT GOVERNOR -Republican   | TOWN OF BRULE Wards 1 & 2   | 9     | 9     |
+
+  Examples: 20110503__wi__general_ward.csv
+    | candidate       | county     | office   | ward                           | votes | total |
+    | RICK AARON      | OZAUKEE    | ASSEMBLY | TOWN OF GRAFTON WARDS 1 2, & 6 | 69	   | 422   |
+    | DUEY STROEBEL   | WASHINGTON | ASSEMBLY | TOWN OF TRENTON WDS-1.2.5.6.7  | 316	 | 375   |
+
   Examples: 20120403__wi__primary_ward.csv
     | candidate               | county    | office                                            | ward                     | votes  | total  |
     | MICHELE BACHMANN        | ADAMS     | President of the United States - Republican Party | TOWN OF QUINCY Ward 1    | 4	    | 151    |
