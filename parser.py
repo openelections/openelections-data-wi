@@ -249,7 +249,7 @@ need_custom_function = [1662]
 # List of ids for elections that have been successfully processed.
 # 17
 working = [1574,1661,1658,1660,1659,1576,1573]
-working_column_1 = [1539,405,404,407,408,409,411,413,415,416]
+working_column_1 = [1539,405,404,407,408,409,411,413,415,416,419]
 
 get_all_results(working,WIOpenElectionsAPI)
 get_all_results(working_column_1,WIOpenElectionsAPI,0)
