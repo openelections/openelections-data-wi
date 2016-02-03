@@ -62,7 +62,11 @@ def clean_office(item):
   return clean_string(item)
 
 def clean_district(item):
-  return clean_string(item)
+  item = clean_string(item)
+  if (re.match(r"^[0-9,]*$",item)):
+    return to_int(item)
+  else:
+    return None
 
 def clean_total(item):
   return to_int(item)
@@ -91,9 +95,14 @@ def to_int(item):
   if (item == int(0.0)):
     return 0
   elif (item):
-    return int(item)
+    try:
+      int(item)
+      return item
+    except ValueError:
+      item = item.replace(",","")
+      return int(item)
   else:
-    return 0
+    return ""
 
 def clean_string(item):
   item = item.strip()
@@ -108,6 +117,10 @@ def clean_particular(election,row):
     row[3] = ''
   elif (election['id'] == 411 or election['id'] == 413):
     row[1] = row[1].replace("!","1")
+  elif (election['id'] == 424):
+    row[2] = row[2].replace(" - 2011-2017","")
+    row[3] = ''
+
   return row
 
 def open_file(url, filename):
@@ -134,7 +147,7 @@ def get_offices(xlsfile,column=1):
 def detect_headers(sheet):
     for i in range(3,12):
         if sheet.row_values(i)[2].strip() == 'Total Votes Cast':
-            if 'IND' in sheet.row_values(i) or 'REP' in sheet.row_values(i) or 'DEM' in sheet.row_values(i) or 'NP' in sheet.row_values(i):
+            if 'IND' in sheet.row_values(i) or 'REP' in sheet.row_values(i) or 'DEM' in sheet.row_values(i) or 'NA' in sheet.row_values(i) or 'NP' in sheet.row_values(i) or 'CON' in sheet.row_values(i) or 'WIG' in sheet.row_values(i) or 'LIB' in sheet.row_values(i):
                 parties = [x for x in sheet.row_values(i)[3:] if x != None]
                 candidates = [x for x in sheet.row_values(i+1)[3:] if x!= None]
                 start_row = i+2
@@ -186,6 +199,7 @@ def parse_sheet(sheet, office):
         else:
           county = county
         ward = results[1].strip()
+        results[2] = results[2].replace(",","")
         total_votes = int(results[2]) if results[2] else results[2]
         # Some columns are randomly empty.
         candidate_votes = results[3:]
@@ -235,21 +249,31 @@ available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
 674,685,689,1577,1578]
 
 # Elections with no files available.
-no_results_ids = [446, 674, 685, 689]
-# Not working ids. Need to troubleshoot.
-# 33
-not_working_xls = [419,1575,424,674,685,421,425,426,427,428,429,430,431,432,433,434,435,436,
-437,438,439,440,441,442,443,444,445,446,447,448,
-689,1577,1578]
+no_results_ids = [674, 685, 689,448]
+# Entered new data, waiting for endpoint to update.
+should_work_waiting_for_api_update = [
+426,427,428,429,433,
+440]
 # Election with PDF files.
-pdf_elections = [664,410,422]
-# 1662 has a sheet with no cover sheet unlike others.
-need_custom_function = [1662]
+pdf_elections = [
+446,664,410,422,443,
+445,447]
+# Has a sheet with no cover sheet unlike others.
+need_custom_function = [
+1662,421,1577,1578,430,
+431,432,434,435,436,
+438,439,441,442,444]
+zip_file = [437]
 
 # List of ids for elections that have been successfully processed.
-# 17
-working = [1574,1661,1658,1660,1659,1576,1573]
-working_column_1 = [1539,405,404,407,408,409,411,413,415,416,419]
+# 21
+working = [
+1574,1661,1658,1660,1659,
+1576,1573]
+working_column_1 = [
+1539,405,404,407,408,
+409,411,413,415,416,
+419,1575,424,425]
 
 get_all_results(working,WIOpenElectionsAPI)
 get_all_results(working_column_1,WIOpenElectionsAPI,0)
