@@ -199,7 +199,7 @@ def parse_sheet(sheet, office):
         else:
           county = county
         ward = results[1].strip()
-        if isinstance(value, six.string_types):
+        if isinstance(results[2], six.string_types):
           results[2] = results[2].replace(",","")
         total_votes = int(results[2]) if results[2] else results[2]
         # Some columns are randomly empty.
