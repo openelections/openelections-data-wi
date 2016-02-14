@@ -97,7 +97,7 @@ def to_int(item):
   elif (item):
     try:
       int(item)
-      return item
+      return int(item)
     except ValueError:
       item = item.replace(",","")
       return int(item)
