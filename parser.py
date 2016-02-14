@@ -5,7 +5,7 @@ import requests
 import json
 import re
 import xlrd
-import pprint
+import six
 import sys
 reload(sys)
 sys.setdefaultencoding('utf8')
@@ -199,7 +199,8 @@ def parse_sheet(sheet, office):
         else:
           county = county
         ward = results[1].strip()
-        results[2] = results[2].replace(",","")
+        if isinstance(value, six.string_types):
+          results[2] = results[2].replace(",","")
         total_votes = int(results[2]) if results[2] else results[2]
         # Some columns are randomly empty.
         candidate_votes = results[3:]
