@@ -102,7 +102,7 @@ def to_int(item):
       item = item.replace(",","")
       return int(item)
   else:
-    return ""
+    return 0
 
 def clean_string(item):
   item = item.strip()
