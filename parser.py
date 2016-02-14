@@ -120,6 +120,12 @@ def clean_particular(election,row):
   elif (election['id'] == 424):
     row[2] = row[2].replace(" - 2011-2017","")
     row[3] = ''
+  elif (election['id'] == 1662):
+    row[2] = row[2].replace("RECALL ","")
+    row[2] = row[2].replace("- 13","")
+    row[2] = row[2].replace("- 21","")
+    row[2] = row[2].replace("- 23","")
+    row[1] = row[1].replace("!","1")
 
   return row
 
@@ -251,10 +257,8 @@ available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
 
 # Elections with no files available.
 no_results_ids = [674, 685, 689,448]
-# Entered new data, waiting for endpoint to update.
-should_work_waiting_for_api_update = [
-426,427,428,429,433,
-440]
+# File won't open
+bad_file = [440]
 # Election with PDF files.
 pdf_elections = [
 446,664,410,422,443,
@@ -263,18 +267,19 @@ pdf_elections = [
 need_custom_function = [
 1662,421,1577,1578,430,
 431,432,434,435,436,
-438,439,441,442,444]
+438,439,441,442,444,
+426,427,428,429,433]
 zip_file = [437]
 
 # List of ids for elections that have been successfully processed.
-# 21
+# 22
 working = [
 1574,1661,1658,1660,1659,
 1576,1573]
 working_column_1 = [
 1539,405,404,407,408,
 409,411,413,415,416,
-419,1575,424,425]
+419,1575,424,425,1662]
 
 get_all_results(working,WIOpenElectionsAPI)
 get_all_results(working_column_1,WIOpenElectionsAPI,0)
