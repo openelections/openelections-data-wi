@@ -201,10 +201,8 @@ def parse_sheet(sheet, office):
             continue
         if results[0].strip() != '':
             county = results[0].strip()
-        elif(len(district.split(" COUNTY ")) > 1):
+        elif len(district.split(" COUNTY ")) > 1:
           county = office.split(" COUNTY ")[0]
-        else:
-          county = county
         ward = results[1].strip()
         if isinstance(results[2], six.string_types):
           results[2] = results[2].replace(",","")
