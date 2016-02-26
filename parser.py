@@ -217,13 +217,7 @@ def parse_sheet(sheet, office):
     return output
 
 def remove_empty_column(row):
-  cleaned = []
-  for i,item in enumerate(row):
-    if (item != ''):
-      cleaned.append(item)
-  return cleaned
-
-  return cleaned
+    return [item for item in row if item != '']
 
 def process_all(url, filename):
     results = []
