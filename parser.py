@@ -15,7 +15,7 @@ sys.setdefaultencoding('utf8')
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
 def process_local(filename,column,results):
-    xlsfile = xlsfile = xlrd.open_workbook(filename)
+    xlsfile = xlrd.open_workbook(filename)
     offices = get_offices(xlsfile,column)
     for office in offices:
         index = [x for x in offices].index(office)
