@@ -162,11 +162,12 @@ def detect_headers(sheet):
                 parties = sheet.row_values(i-1)[3:]
                 candidates = row[3:]
                 start_row = i+1
-            return [zip(candidates, parties), start_row]
+            return candidates, parties, start_row
+
 
 def parse_sheet(sheet, office):
     output = []
-    combo, start_row = detect_headers(sheet)
+    candidates, parties, start_row = detect_headers(sheet)
     if 'DISTRICT' in office.upper():
         # This '–' is a different character than this '-'
         office = office.replace('–','-')
@@ -207,11 +208,11 @@ def parse_sheet(sheet, office):
         total_votes = int(results[2]) if results[2] else results[2]
         # Some columns are randomly empty.
         candidate_votes = results[3:]
-        for candidate, party in combo:
-            index = [x[0] for x in combo].index(candidate)
+        for index, candidate in enumerate(candidates):
             if (candidate == None or candidate == ''):
                 continue
             else:
+                party = parties[index]
                 output.append([county, ward, office, district, total_votes, party, candidate, candidate_votes[index]])
     return output
 
