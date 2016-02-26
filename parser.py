@@ -163,8 +163,6 @@ def detect_headers(sheet):
                 candidates = row[3:]
                 start_row = i+1
             return [zip(candidates, parties), start_row]
-        else:
-            continue
 
 def parse_sheet(sheet, office):
     output = []
