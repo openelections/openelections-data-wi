@@ -25,12 +25,6 @@ def process_local(filename, column):
         results.append(parse_sheet(sheet, office))
     return results
 
-def skip_row(row, skip_str):
-  skip = 0
-  for item in row:
-    if (item == "Office Totals:"):
-      skip = 1
-  return skip
 
 def get_election_result(election,column):
   direct_links = election['direct_links'];
@@ -49,8 +43,7 @@ def get_election_result(election,column):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
         row = clean_row(row)
-        skip = skip_row(row, "Office Totals:")
-        if (skip == 0):
+        if "Office Totals:" not in row:
           wr.writerow(row)
     results = []
 
