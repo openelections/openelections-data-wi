@@ -134,16 +134,8 @@ def open_file(url, filename):
 
 # The title page has titles in varying columns.
 def get_offices(xlsfile,column=1):
-    offices = []
-    sheet = xlsfile.sheets()[0]
-    last = sheet.nrows-1
-    if last == 1:
-        rows = [1]
-    else:
-        rows = range(1,last)
-    for i in rows:
-        offices.append(sheet.row_values(i)[column])
-    return offices
+    sheet = xlsfile.sheet_by_index(0)
+    return sheet.col_values(column)
 
 def detect_headers(sheet):
     for i in range(3,12):
