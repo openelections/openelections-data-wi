@@ -135,7 +135,7 @@ def open_file(url, filename):
 # The title page has titles in varying columns.
 def get_offices(xlsfile,column=1):
     sheet = xlsfile.sheet_by_index(0)
-    return sheet.col_values(column)
+    return sheet.col_values(column)[1:]     # skip first row
 
 
 def any_party_in(sequence):
