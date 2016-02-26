@@ -46,7 +46,6 @@ def get_election_result(election,column):
         row = clean_row(row)
         if "Office Totals:" not in row:
           wr.writerow(row)
-    results = []
 
 def clean_county(item):
   return clean_string(item)
