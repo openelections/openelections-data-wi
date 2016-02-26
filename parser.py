@@ -12,6 +12,8 @@ import xlrd
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+party_list = ['IND', 'REP', 'DEM', 'NA', 'NP', 'CON', 'WIG', 'LIB']
+
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
 
@@ -137,16 +139,28 @@ def get_offices(xlsfile,column=1):
     sheet = xlsfile.sheet_by_index(0)
     return sheet.col_values(column)
 
+
+def any_party_in(sequence):
+    """ Return True if any party abbreviation is an element of sequence, else False.
+        Uses abbreviations in party_list.
+    """
+    for party in party_list:
+        if party in sequence:
+            return True
+    return False
+
+
 def detect_headers(sheet):
     for i in range(3,12):
-        if sheet.row_values(i)[2].strip() == 'Total Votes Cast':
-            if 'IND' in sheet.row_values(i) or 'REP' in sheet.row_values(i) or 'DEM' in sheet.row_values(i) or 'NA' in sheet.row_values(i) or 'NP' in sheet.row_values(i) or 'CON' in sheet.row_values(i) or 'WIG' in sheet.row_values(i) or 'LIB' in sheet.row_values(i):
-                parties = [x for x in sheet.row_values(i)[3:] if x != None]
+        row = sheet.row_values(i)
+        if row[2].strip() == 'Total Votes Cast':
+            if any_party_in(row):
+                parties = [x for x in row[3:] if x != None]
                 candidates = [x for x in sheet.row_values(i+1)[3:] if x!= None]
                 start_row = i+2
             else:
                 parties = sheet.row_values(i-1)[3:]
-                candidates = sheet.row_values(i)[3:]
+                candidates = row[3:]
                 start_row = i+1
             return [zip(candidates, parties), start_row]
         else:
