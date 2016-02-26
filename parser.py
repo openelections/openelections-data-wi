@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-import xlrd
-import unicodecsv as csv
-import requests
+
 import json
 import re
-import xlrd
-import six
 import sys
+
+import requests
+import six
+import unicodecsv as csv
+import xlrd
+
 reload(sys)
 sys.setdefaultencoding('utf8')
 
