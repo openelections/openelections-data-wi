@@ -12,8 +12,7 @@ import xlrd
 reload(sys)
 sys.setdefaultencoding('utf8')
 
-def headers():
-  return ["county","ward","office","district","total votes","party","candidate","votes"]
+headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
 def process_local(filename,column,results):
     xlsfile = xlsfile = xlrd.open_workbook(filename)
@@ -40,7 +39,7 @@ def get_election_result(election,column):
   myfile = open(result_filename, 'wb')
   wr = csv.writer(myfile)
   results = []
-  wr.writerow(headers())
+  wr.writerow(headers)
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
