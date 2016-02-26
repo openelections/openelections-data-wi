@@ -223,9 +223,8 @@ def process_all(url, filename):
     results = []
     xlsfile = open_file(url, filename)
     offices = get_offices(xlsfile)
-    for office in offices:
-        index = [x for x in offices].index(office)
-        sheet = xlsfile.sheets()[index+1]
+    for i, office in enumerate(offices):
+        sheet = xlsfile.sheet_by_index(i + 1)
         results.append(parse_sheet(sheet, office))
 
     return [r for result in results for r in result]
