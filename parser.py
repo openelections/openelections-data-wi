@@ -14,9 +14,11 @@ sys.setdefaultencoding('utf8')
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
-def process_local(filename,column,results):
+
+def process_local(filename, column):
     xlsfile = xlrd.open_workbook(filename)
     offices = get_offices(xlsfile,column)
+    results = []
     for office in offices:
         index = [x for x in offices].index(office)
         sheet = xlsfile.sheets()[index+1]
@@ -38,12 +40,11 @@ def get_election_result(election,column):
   print "Processing %s" % slug
   myfile = open(result_filename, 'wb')
   wr = csv.writer(myfile)
-  results = []
   wr.writerow(headers)
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
-    results = process_local(cached_filename,column,results)
+    results = process_local(cached_filename, column)
     for i,result in enumerate(results):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
