@@ -302,14 +302,19 @@ bad_file = [440]
 # Election with PDF files.
 pdf_elections = [
 446,664,410,422,443,
+444,                    # contains both xls and pdf files
 445,447]
 
 # Has a sheet with no cover sheet unlike others.
-need_custom_function = [
-1662,421,1577,1578,430,
-431,432,434,435,436,
-438,439,441,442,444,
-426,427,428,429,433]
+need_custom_function = [421]
+
+# No title sheet, older format, repeated headings
+xls_2002_to_2010 = [
+426,427,428,429,
+430,431,432,433,434,435,436,
+438,439,440,441,442,
+444,                    # contains both xls and pdf files
+1577,1578]
 
 zip_file = [437]
 
