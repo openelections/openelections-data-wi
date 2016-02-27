@@ -240,7 +240,9 @@ def get_all_results(ids,url,column=1):
         if election['id'] == id:
           get_election_result(election,column)
 
+
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
+
 # All ids from available elections.
 available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
 407,408,409,410,411,1662,413,415,416,419,421,422,424,425,426,427,428,429,430,
@@ -249,18 +251,22 @@ available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
 
 # Elections with no files available.
 no_results_ids = [674, 685, 689,448]
+
 # File won't open
 bad_file = [440]
+
 # Election with PDF files.
 pdf_elections = [
 446,664,410,422,443,
 445,447]
+
 # Has a sheet with no cover sheet unlike others.
 need_custom_function = [
 1662,421,1577,1578,430,
 431,432,434,435,436,
 438,439,441,442,444,
 426,427,428,429,433]
+
 zip_file = [437]
 
 # List of ids for elections that have been successfully processed.
