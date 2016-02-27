@@ -16,14 +16,25 @@ party_list = ['IND', 'REP', 'DEM', 'NA', 'NP', 'CON', 'WIG', 'LIB']
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
+offices_without_title_sheet = ['JUSTICE OF THE SUPREME COURT']
+
 
 def process_local(filename, column):
     xlsfile = xlrd.open_workbook(filename)
     offices = get_offices(xlsfile,column)
     results = []
-    for i, office in enumerate(offices):
-        sheet = xlsfile.sheet_by_index(i + 1)
-        results.append(parse_sheet(sheet, office))
+    if offices:
+        for i, office in enumerate(offices):
+            sheet = xlsfile.sheet_by_index(i + 1)
+            results.append(parse_sheet(sheet, office))
+    else:
+        # no offices found, assume first sheet is not a title sheet
+        sheet = xlsfile.sheet_by_index(0)
+        for office in offices_without_title_sheet:
+            # Look for an office in first column, search first 12 rows
+            if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
+                results.append(parse_without_title_sheet(sheet, office))
+                break
     return results
 
 
@@ -132,10 +143,13 @@ def open_file(url, filename):
     xlsfile = xlrd.open_workbook(filename)
     return xlsfile
 
+
 # The title page has titles in varying columns.
-def get_offices(xlsfile,column=1):
+def get_offices(xlsfile, column=1):
     sheet = xlsfile.sheet_by_index(0)
     offices = sheet.col_values(column)[1:]     # skip first row
+    if offices[0] == '':    # if first office empty,
+        offices = []            # assume not a title sheet, no offices
     # simulate bug in 2016-02-14 version that skips last row if > 1 rows
     offices = offices[:-1] if len(offices) > 1 else offices
     return offices
@@ -230,6 +244,36 @@ def process_all(url, filename):
 
     return [r for result in results for r in result]
 
+
+def parse_without_title_sheet(sheet, office):
+    """ Return list of records for (string) office, extracted from xlrd sheet. """
+    output = []
+    candidates, parties, start_row = detect_headers(sheet)
+    if '' in candidates:
+        del candidates[candidates.index(''):]   # truncate at first empty cell
+    district = ''
+    party = ''
+    county = ''
+    for rowx in range(start_row, sheet.nrows):
+        row = sheet.row_values(rowx)
+        a = row[0].strip()
+        if "Totals" in a or "Totals" in row[1]:
+            continue
+        if a != '':
+            county = a
+        ward = row[1].strip()
+        total_votes = row[2]
+        if isinstance(total_votes, six.string_types):
+            total_votes = total_votes.replace(",","").strip()
+            if total_votes.isdigit():
+                total_votes = int(total_votes)
+        candidate_votes = row[3:]
+        for index, candidate in enumerate(candidates):
+            output.append([county, ward, office, district, total_votes, party, candidate, 
+                            candidate_votes[index]])
+    return output
+
+
 def get_all_results(ids,url,column=1):
   r = requests.get(url)
   if r.status_code == 200:
@@ -279,5 +323,8 @@ working_column_1 = [
 409,411,413,415,416,
 419,1575,424,425,1662]
 
-get_all_results(working,WIOpenElectionsAPI)
-get_all_results(working_column_1,WIOpenElectionsAPI,0)
+# get_all_results(working,WIOpenElectionsAPI)
+# get_all_results(working_column_1,WIOpenElectionsAPI,0)
+
+no_title_sheet = [421]
+get_all_results(no_title_sheet, WIOpenElectionsAPI)
