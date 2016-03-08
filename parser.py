@@ -18,6 +18,41 @@ headers = ["county","ward","office","district","total votes","party","candidate"
 
 offices_without_title_sheet = ['JUSTICE OF THE SUPREME COURT']
 
+def process_local_xls_2002_to_2010(filename,column):
+    results = []
+    xlsfile = xlsfile = xlrd.open_workbook(filename)
+    sheet = xlsfile.sheets()[0]
+    last = sheet.nrows-1
+    candidates = range(17,sheet.ncols)
+    start_row = 2
+    candiate_row = 0
+    skip_rows = 0
+    for candidate in candidates:
+      for i in range(start_row, sheet.nrows-1):
+        # SOME of the sheets have multiple results separated by TOTAL
+        if (sheet.row_values(i)[16] == "TOTAL"):
+          candiate_row = i + 1
+          skip_rows = 3
+        # Need to skip to 2 rows after TOTAL
+        if (skip_rows):
+          skip_rows -= 1
+          continue
+        candidate_name =  sheet.row_values(candiate_row)[candidate]
+        if (candidate_name == ''):
+          continue
+        total_votes = 0
+        county = sheet.row_values(i)[10]
+        ward = "%s of %s %s" % (sheet.row_values(i)[11],sheet.row_values(i)[13],sheet.row_values(i)[16])
+        office = sheet.row_values(i)[4]
+        district = str(sheet.row_values(i)[5])
+        for vote in candidates:
+          if (sheet.row_values(i)[vote]):
+            total_votes += sheet.row_values(i)[vote]
+        party = sheet.row_values(candiate_row+1)[candidate]
+        votes = sheet.row_values(i)[candidate]
+        row = [county,ward,office,district,total_votes,party,candidate_name,votes]
+        results.append(row)
+    return [results]
 
 def process_local(filename, column):
     xlsfile = xlrd.open_workbook(filename)
@@ -37,20 +72,23 @@ def process_local(filename, column):
                 break
     return results
 
+def prep_election_results(election):
+    slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), election['race_type'])
+    year = election['start_date'][:4]
+    result_filename = "%s/%s" % (year, slug)
+    print "Processing %s" % slug
+    myfile = open(result_filename, 'wb')
+    return myfile
 
-def get_election_result(election,column):
-  direct_links = election['direct_links'];
-  slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), election['race_type'])
-  year = election['start_date'][:4]
-  result_filename = "%s/%s" % (year, slug)
-  print "Processing %s" % slug
-  myfile = open(result_filename, 'wb')
+def get_election_result(election,column,process_function=process_local):
+  myfile = prep_election_results(election)
+  direct_links = election['direct_links']
   wr = csv.writer(myfile)
   wr.writerow(headers)
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
-    results = process_local(cached_filename, column)
+    results = process_function(cached_filename, column)
     for i,result in enumerate(results):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
@@ -143,7 +181,6 @@ def open_file(url, filename):
     xlsfile = xlrd.open_workbook(filename)
     return xlsfile
 
-
 # The title page has titles in varying columns.
 def get_offices(xlsfile, column=1):
     sheet = xlsfile.sheet_by_index(0)
@@ -153,7 +190,6 @@ def get_offices(xlsfile, column=1):
     # simulate bug in 2016-02-14 version that skips last row if > 1 rows
     offices = offices[:-1] if len(offices) > 1 else offices
     return offices
-
 
 def any_party_in(sequence):
     """ Return True if any party abbreviation is an element of sequence, else False.
@@ -269,12 +305,12 @@ def parse_without_title_sheet(sheet, office):
                 total_votes = int(total_votes)
         candidate_votes = row[3:]
         for index, candidate in enumerate(candidates):
-            output.append([county, ward, office, district, total_votes, party, candidate, 
+            output.append([county, ward, office, district, total_votes, party, candidate,
                             candidate_votes[index]])
     return output
 
 
-def get_all_results(ids,url,column=1):
+def get_all_results(ids,url,column=1,process_function=process_local):
   r = requests.get(url)
   if r.status_code == 200:
     parsed = json.loads(r.content)['objects']
@@ -282,7 +318,7 @@ def get_all_results(ids,url,column=1):
       print "id %s" % id
       for election in parsed:
         if election['id'] == id:
-          get_election_result(election,column)
+          get_election_result(election,column,process_function)
 
 
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
@@ -305,21 +341,22 @@ pdf_elections = [
 444,                    # contains both xls and pdf files
 445,447]
 
-# Has a sheet with no cover sheet unlike others.
-need_custom_function = [421]
+zip_file = [437]
 
 # No title sheet, older format, repeated headings
-xls_2002_to_2010 = [
+xls_2002_to_2010_not_tested = [
 426,427,428,429,
 430,431,432,433,434,435,436,
 438,439,440,441,442,
-444,                    # contains both xls and pdf files
-1577,1578]
+444]                    # contains both xls and pdf files
 
-zip_file = [437]
+# Working Elections!
 
-# List of ids for elections that have been successfully processed.
-# 22
+# Has a sheet with no cover sheet unlike others.
+no_title_sheet = [421]
+
+xls_2002_to_2010_working = [1577,1578]
+
 working = [
 1574,1661,1658,1660,1659,
 1576,1573]
@@ -328,8 +365,9 @@ working_column_1 = [
 409,411,413,415,416,
 419,1575,424,425,1662]
 
-# get_all_results(working,WIOpenElectionsAPI)
-# get_all_results(working_column_1,WIOpenElectionsAPI,0)
+get_all_results(working,WIOpenElectionsAPI)
+get_all_results(working_column_1,WIOpenElectionsAPI,0)
 
-no_title_sheet = [421]
 get_all_results(no_title_sheet, WIOpenElectionsAPI)
+
+get_all_results(xls_2002_to_2010_working,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
