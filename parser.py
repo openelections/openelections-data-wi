@@ -381,4 +381,4 @@ get_all_results(working_column_1,WIOpenElectionsAPI,0)
 
 get_all_results(no_title_sheet, WIOpenElectionsAPI)
 
-get_all_results(xls_2002_to_2010_not_tested,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
+get_all_results(xls_2002_to_2010_working,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
