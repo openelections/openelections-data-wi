@@ -170,6 +170,19 @@ def clean_particular(election,row):
     row[2] = row[2].replace("- 21","")
     row[2] = row[2].replace("- 23","")
     row[1] = row[1].replace("!","1")
+  elif (election['id'] == 1577 or election['id'] == 1578):
+    office = None
+    # Fetches office name from: "State Assembly, District No. 89"
+    office = re.search("(^[A-Za-z ]+)", row[2])
+    if office:
+      row[2] = office.group(1)
+    row[5] = row[5].replace("Democratic", "DEM")
+    row[5] = row[5].replace("Republican", "REP")
+    row[5] = row[5].replace("Wisconsin Green", "WGR")
+    row[5] = row[5].replace("Libertarian", "LIB")
+    row[5] = row[5].replace("Independent", "IND")
+    row[5] = row[5].replace("Constitution", "CON")
+    row[6] = row[6].replace("/"," &")
 
   return row
 
@@ -200,7 +213,6 @@ def any_party_in(sequence):
             return True
     return False
 
-
 def detect_headers(sheet):
     for i in range(3,12):
         row = sheet.row_values(i)
@@ -214,7 +226,6 @@ def detect_headers(sheet):
                 candidates = row[3:]
                 start_row = i+1
             return candidates, parties, start_row
-
 
 def parse_sheet(sheet, office):
     output = []
@@ -280,7 +291,6 @@ def process_all(url, filename):
 
     return [r for result in results for r in result]
 
-
 def parse_without_title_sheet(sheet, office):
     """ Return list of records for (string) office, extracted from xlrd sheet. """
     output = []
@@ -308,7 +318,6 @@ def parse_without_title_sheet(sheet, office):
             output.append([county, ward, office, district, total_votes, party, candidate,
                             candidate_votes[index]])
     return output
-
 
 def get_all_results(ids,url,column=1,process_function=process_local):
   r = requests.get(url)
