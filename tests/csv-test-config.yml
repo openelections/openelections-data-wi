@@ -11,8 +11,8 @@ fields:
       - i
   office:
     - matches:
-      # Letter, \ or space
-      - ^[a-z\/\- ]+$
+      # Letter, comma, number, \ or space
+      - ^[a-z0-9,\/\- ]+$
       - i
   district:
     - matches:

@@ -170,6 +170,8 @@ def clean_particular(election,row):
     row[2] = row[2].replace("- 21","")
     row[2] = row[2].replace("- 23","")
     row[1] = row[1].replace("!","1")
+  elif (election['id'] == 442):
+    row[5] = row[5].replace("Non-Partisan", "NP")
   elif (election['id'] == 1577 or election['id'] == 1578):
     office = None
     # Fetches office name from: "State Assembly, District No. 89"
@@ -356,7 +358,7 @@ zip_file = [437]
 xls_2002_to_2010_not_tested = [
 426,427,428,429,
 430,431,432,433,434,435,436,
-438,439,440,441,442,
+438,439,440,441,
 444]                    # contains both xls and pdf files
 
 # Working Elections!
@@ -364,7 +366,7 @@ xls_2002_to_2010_not_tested = [
 # Has a sheet with no cover sheet unlike others.
 no_title_sheet = [421]
 
-xls_2002_to_2010_working = [1577,1578]
+xls_2002_to_2010_working = [1577,1578,442]
 
 working = [
 1574,1661,1658,1660,1659,
@@ -379,4 +381,4 @@ get_all_results(working_column_1,WIOpenElectionsAPI,0)
 
 get_all_results(no_title_sheet, WIOpenElectionsAPI)
 
-get_all_results(xls_2002_to_2010_working,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
+get_all_results(xls_2002_to_2010_not_tested,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
