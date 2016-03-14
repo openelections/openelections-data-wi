@@ -6,8 +6,8 @@ fields:
       - i
   ward:
     - matches:
-      # Empty,letter, number &,".+ or spaace
-      - ^$|^[a-z0-9-\&,"\.\+;# ]+$ 
+      # Empty,letter, number &,".+' or spaace
+      - ^$|^[a-z0-9-\&,"\.\+;#' ]+$ 
       - i
   office:
     - matches:
@@ -20,7 +20,7 @@ fields:
       - ^[\d]+|$
   totalvotes: isNumeric
   party:
-    isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA
+    isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA,GRE,WGR
   candidate:
     - matches:
       # Line break, letter, number ()&,".+ or spaace
