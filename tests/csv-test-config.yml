@@ -1,0 +1,29 @@
+fields:
+  county:
+    - matches:
+      # Letter, . or space
+      - ^[a-z\.\- ]+$
+      - i
+  ward:
+    - matches:
+      # Empty,letter, number &,".+' or spaace
+      - ^$|^[a-z0-9-\&,"\.\+;#' ]+$ 
+      - i
+  office:
+    - matches:
+      # Letter, comma, number, \ or space
+      - ^[a-z0-9,\/\- ]+$
+      - i
+  district:
+    - matches:
+      # Number or empty
+      - ^[\d]+|$
+  totalvotes: isNumeric
+  party:
+    isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA,GRE,WGR
+  candidate:
+    - matches:
+      # Line break, letter, number ()&,".+ or spaace
+      - ^[\r\na-z0-9-()\&,"\.\+' ]+$
+      - i
+  votes: isNumeric
