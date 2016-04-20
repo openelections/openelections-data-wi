@@ -348,7 +348,7 @@ bad_file = [440]
 
 # Election with PDF files.
 pdf_elections = [
-446,664,410,422,443,
+446,664,422,443,
 444,                    # contains both xls and pdf files
 445,447]
 
@@ -359,7 +359,7 @@ xls_2002_to_2010_not_tested = [
 426,427,428,429,
 430,431,432,433,434,435,436,
 438,439,440,441,
-444]                    # contains both xls and pdf files
+444,410]                    # contains both xls and pdf files
 
 # Working Elections!
 
