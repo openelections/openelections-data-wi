@@ -73,7 +73,10 @@ def process_local(filename, column):
     return results
 
 def prep_election_results(election):
-    slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), election['race_type'])
+    type = election['race_type']
+    if (election['special']):
+        type = "special_%s" % (type)
+    slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), type)
     year = election['start_date'][:4]
     result_filename = "%s/%s" % (year, slug)
     print "Processing %s" % slug
