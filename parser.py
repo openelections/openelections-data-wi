@@ -73,7 +73,10 @@ def process_local(filename, column):
     return results
 
 def prep_election_results(election):
-    slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), election['race_type'])
+    type = election['race_type']
+    if (election['special']):
+        type = "special_%s" % (type)
+    slug = "%s__wi__%s_ward.csv" % (election['start_date'].replace("-",""), type)
     year = election['start_date'][:4]
     result_filename = "%s/%s" % (year, slug)
     print "Processing %s" % slug
@@ -346,7 +349,7 @@ bad_file = [440]
 
 # Election with PDF files.
 pdf_elections = [
-446,664,410,422,443,
+446,664,422,443,
 444,                    # contains both xls and pdf files
 445,447]
 
@@ -357,7 +360,14 @@ xls_2002_to_2010_not_tested = [
 426,427,428,429,
 430,431,432,433,434,435,436,
 438,439,440,441,
-444]                    # contains both xls and pdf files
+444,410]                    # contains both xls and pdf files
+
+# Fails with:
+#  File "parser.py", line 253, in parse_sheet
+#  office, party, district = office.split(u'-')
+#  ValueError: need more than 1 value to unpack
+should_work = [1659]
+
 
 # Working Elections!
 
@@ -367,7 +377,7 @@ no_title_sheet = [421]
 xls_2002_to_2010_working = [1577,1578,442]
 
 working = [
-1574,1661,1658,1660,1659,
+1574,1661,1658,1660,
 1576,1573]
 working_column_1 = [
 1539,405,404,407,408,
