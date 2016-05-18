@@ -11,7 +11,7 @@ Feature: WI Elections
     | JERRY BROITZMAN   | DANE    | SECRETARY OF STATE - Constitution | CITY OF MADISON Ward 38     | 3     | 3     |
     | REBECCA KLEEFISCH | DOUGLAS | LIEUTENANT GOVERNOR -Republican   | TOWN OF BRULE Wards 1 & 2   | 9     | 9     |
 
-  Examples: 20110503__wi__general_ward.csv
+  Examples: 20110503__wi__special_general_ward.csv
     | candidate       | county     | office   | ward                           | votes | total |
     | RICK AARON      | OZAUKEE    | ASSEMBLY | TOWN OF GRAFTON WARDS 1 2, & 6 | 69	   | 422   |
     | DUEY STROEBEL   | WASHINGTON | ASSEMBLY | TOWN OF TRENTON WDS-1.2.5.6.7  | 316	 | 375   |
@@ -28,16 +28,16 @@ Feature: WI Elections
     | JOSEPH KEXEL            | WALWORTH  | US SENATOR                     | TOWN OF GENEVA Wards 1-8 | 77     | 2525   |
     | SHEILA HARSDORF         | POLK      | STATE SENATE                   | TOWN OF LAKETOWN Ward 1  | 316    | 542    |
 
-  Examples: 20121204__wi__general_ward.csv
+  Examples: 20121204__wi__special_general_ward.csv
     | candidate    | county   | office       | ward                         | votes  | total |
     | PAUL FARROW  | Waukesha | STATE SENATE | CITY OF PEWAUKEE WARDS 8-10  | 274	   | 281    |
 
-  Examples: 20130219__wi__primary_ward.csv
+  Examples: 20130219__wi__special_primary_ward.csv
     | candidate    | county   | office   | ward                         | votes  | total |
     | MATT MORZY   | Waukesha | ASSEMBLY | CITY OF WAUKESHA Ward 4      | 6	     | 70    |
     | ADAM NEYLON	 | Waukesha | ASSEMBLY | CITY OF PEWAUKEE WARDS 5-7   | 219    | 559   |
 
-  Examples: 20150929__wi__general_ward.csv
+  Examples: 20150929__wi__special_general_ward.csv
     | candidate                    | county   | office   | ward                           | votes  | total |
     | Cindi Duchow                 | Waukesha | Assembly | Village Of Hartland Wards 1-13 | 117    | 140   |
     | Thomas D. Hibbard (Write-In) | Waukesha | Assembly | Village Of Wales Wards 1-4     | 10     | 106   |
