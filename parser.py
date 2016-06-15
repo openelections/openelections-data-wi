@@ -282,18 +282,6 @@ def parse_sheet(sheet, office):
                 output.append([county, ward, office, district, total_votes, party, candidate, candidate_votes[index]])
     return output
 
-def remove_empty_column(row):
-    return [item for item in row if item != '']
-
-def process_all(url, filename):
-    results = []
-    xlsfile = open_file(url, filename)
-    offices = get_offices(xlsfile)
-    for i, office in enumerate(offices):
-        sheet = xlsfile.sheet_by_index(i + 1)
-        results.append(parse_sheet(sheet, office))
-
-    return [r for result in results for r in result]
 
 def parse_without_title_sheet(sheet, office):
     """ Return list of records for (string) office, extracted from xlrd sheet. """
