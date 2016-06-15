@@ -306,13 +306,11 @@ def parse_without_title_sheet(sheet, office):
     county = ''
     for rowx in range(start_row, sheet.nrows):
         row = sheet.row_values(rowx)
-        a = row[0].strip()
-        if "Totals" in a or "Totals" in row[1]:
+        col0, ward, total_votes = map(str.strip, row[:3])
+        if "Totals" in col0 or "Totals" in ward:
             continue
-        if a != '':
-            county = a
-        ward = row[1].strip()
-        total_votes = row[2]
+        if col0 != '':
+            county = col0
         if isinstance(total_votes, six.string_types):
             total_votes = total_votes.replace(",","").strip()
             if total_votes.isdigit():
