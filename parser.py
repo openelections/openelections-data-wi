@@ -18,7 +18,7 @@ headers = ["county","ward","office","district","total votes","party","candidate"
 
 offices_without_title_sheet = ['JUSTICE OF THE SUPREME COURT']
 
-def process_local_xls_2002_to_2010(filename,column):
+def process_local_xls_2002_to_2010(filename):
     results = []
     xlsfile = xlsfile = xlrd.open_workbook(filename)
     sheet = xlsfile.sheets()[0]
@@ -54,9 +54,9 @@ def process_local_xls_2002_to_2010(filename,column):
         results.append(row)
     return [results]
 
-def process_local(filename, column):
+def process_local(filename):
     xlsfile = xlrd.open_workbook(filename)
-    offices = get_offices(xlsfile,column)
+    offices = get_offices(xlsfile)
     results = []
     if offices:
         for i, office in enumerate(offices):
@@ -83,7 +83,7 @@ def prep_election_results(election):
     myfile = open(result_filename, 'wb')
     return myfile
 
-def get_election_result(election,column,process_function=process_local):
+def get_election_result(election, process_function=process_local):
   myfile = prep_election_results(election)
   direct_links = election['direct_links']
   wr = csv.writer(myfile)
@@ -91,7 +91,7 @@ def get_election_result(election,column,process_function=process_local):
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
-    results = process_function(cached_filename, column)
+    results = process_function(cached_filename)
     for i,result in enumerate(results):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
@@ -199,9 +199,9 @@ def open_file(url, filename):
     xlsfile = xlrd.open_workbook(filename)
     return xlsfile
 
-# The title page has titles in varying columns.
-def get_offices(xlsfile, column=1):
+def get_offices(xlsfile):
     sheet = xlsfile.sheet_by_index(0)
+    # Title page may have offices in column A or B (0 or 1), detect which column
     column = 0 if sheet.cell_value(1, 0) else 1
     offices = sheet.col_values(column)[1:]     # skip first row
     if offices[0] == '':    # if first office empty,
@@ -323,7 +323,7 @@ def parse_without_title_sheet(sheet, office):
                             candidate_votes[index]])
     return output
 
-def get_all_results(ids,url,column=1,process_function=process_local):
+def get_all_results(ids, url, process_function=process_local):
   r = requests.get(url)
   if r.status_code == 200:
     parsed = json.loads(r.content)['objects']
@@ -331,7 +331,7 @@ def get_all_results(ids,url,column=1,process_function=process_local):
       print "id %s" % id
       for election in parsed:
         if election['id'] == id:
-          get_election_result(election,column,process_function)
+          get_election_result(election, process_function)
 
 
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
@@ -378,16 +378,18 @@ no_title_sheet = [421]
 xls_2002_to_2010_working = [1577,1578,442]
 
 working = [
-1574,1661,1658,1660,
-1576,1573]
-working_column_1 = [
-1539,405,404,407,408,
+404,405,407,408,
 409,411,413,415,416,
-419,1575,424,425,1662]
+419,424,425,
+1539,1573,1574,1575,1576,
+1658,1660,1661,1662
+]
 
-get_all_results(working,WIOpenElectionsAPI)
-get_all_results(working_column_1,WIOpenElectionsAPI,0)
+# Files with offices in second column of title sheet:
+#   1573,1574,1576,1658,1659,1660,1661
+
+get_all_results(working, WIOpenElectionsAPI)
 
 get_all_results(no_title_sheet, WIOpenElectionsAPI)
 
-get_all_results(xls_2002_to_2010_working,WIOpenElectionsAPI,1,process_local_xls_2002_to_2010)
+get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI, process_local_xls_2002_to_2010)
