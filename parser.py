@@ -202,6 +202,7 @@ def open_file(url, filename):
 # The title page has titles in varying columns.
 def get_offices(xlsfile, column=1):
     sheet = xlsfile.sheet_by_index(0)
+    column = 0 if sheet.cell_value(1, 0) else 1
     offices = sheet.col_values(column)[1:]     # skip first row
     if offices[0] == '':    # if first office empty,
         offices = []            # assume not a title sheet, no offices
