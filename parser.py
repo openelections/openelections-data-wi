@@ -151,6 +151,18 @@ def to_int(item):
   else:
     return 0
 
+### revise to simplify?
+### will still raise ValueError if item contains non-digit non-comma chars
+# def to_int(item):
+#     if not item:    # 0 or ''
+#         return 0
+#     else:
+#         try:
+#             return int(item)
+#         except ValueError:
+#             item = item.replace(",","")
+#             return int(item)
+
 def clean_string(item):
   item = item.strip()
   item = item.replace("\n"," ")
