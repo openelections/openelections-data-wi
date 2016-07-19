@@ -298,9 +298,9 @@ def parse_office(office_string):
             office, sep, county = head.partition('-')
             county = county.strip()
 #         else :   # some county COUNTY some office (as for judges)
-#             county = head
-#             office = tail
-    
+#             county = head     # extract county from office
+#             office = tail     # remove county from office
+
 ### Use this if Circuit Court Branch is a district
 ## Next line enabled to remove Branch from office, to match current output files
     office, sep, tail = office.partition(',')
