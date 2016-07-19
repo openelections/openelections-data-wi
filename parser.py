@@ -72,6 +72,18 @@ def process_local(filename):
                 break
     return results
 
+
+def process_offices_test(filename):
+    xlsfile = xlrd.open_workbook(filename)
+    offices = get_offices(xlsfile)
+    for office in offices:
+        parse = parse_office(office)
+#         if len(parse[2]) not in (1, 2):
+        print '{:65} {}'.format(office, parse)
+    print
+    return []
+
+
 def prep_election_results(election):
     type = election['race_type']
     if (election['special']):
@@ -84,14 +96,17 @@ def prep_election_results(election):
     return myfile
 
 def get_election_result(election, process_function=process_local):
-  myfile = prep_election_results(election)
+  if process_function != process_offices_test:
+    myfile = prep_election_results(election)
+    wr = csv.writer(myfile)
+    wr.writerow(headers)
   direct_links = election['direct_links']
-  wr = csv.writer(myfile)
-  wr.writerow(headers)
   for direct_link in direct_links:
     cached_filename = "local_data_cache/data/%s" % direct_link.split('/')[-1]
     print "Opening %s" % cached_filename
     results = process_function(cached_filename)
+    if process_function == process_offices_test:
+        continue
     for i,result in enumerate(results):
       for x,row in enumerate(result):
         row = clean_particular(election,row)
@@ -245,47 +260,97 @@ def detect_headers(sheet):
                 start_row = i+1
             return candidates, parties, start_row
 
-def parse_sheet(sheet, office):
-    output = []
-    candidates, parties, start_row = detect_headers(sheet)
-    if 'DISTRICT' in office.upper():
-        # This '–' is a different character than this '-'
-        office = office.replace('–','-')
-        split = office.split('-')
-        # Office string comes in formats:
-        #  * STATE SENATE - DISTRICT 1 - REPUBLICAN
-        #  * STATE SENATE   DISTRICT 1 - REPUBLICAN
-        if (len(split) == 2):
-            try:
-                office, district = office.split('-')
-            except:
-                office, district = office.split(u'-')
-        # Assumes STATE SENATE - DISTRICT 1 - REPUBLICAN format
-        else:
-          try:
-              office, district, party  = office.split('-')
-          except:
-              office, party, district = office.split(u'-')
-        district = district.replace('DISTRICT ','')
+
+def parse_office(office_string):
+    """ Parse office string, returning (office, county, district, party)
+        
+        Office string comes in many formats:
+          LIEUTENANT GOVERNOR
+          US SENATOR - AMERICANS ELECT
+          PRESIDENT OF THE UNITED STATES - REPUBLICAN PARTY
+          ASSEMBLY - DISTRICT 99
+          STATE SENATE - DISTRICT 1 - REPUBLICAN
+          STATE SENATE   DISTRICT 1 - REPUBLICAN
+          REPRESENTATIVE TO THE ASSEMBLY,  DISTRICT 99 - REPUBLICAN
+          REPRESENTATIVE TO THE ASSEMBLY, DISTRICT 99 WISCONSIN GREEN
+          District Attorney - Fond Du Lac County
+          EAU CLAIRE COUNTY CIRCUIT COURT JUDGE, BRANCH 1
+          RECALL STATE SENATE-29
+    """
+    office = str(office_string).upper()
+    office = office.replace('―','-')    # change \u2015 HORIZONTAL BAR to hyphen
+    office = office.replace('–', '-')   # change \u2013 EN DASH to hyphen
+    
+    if ' DISTRICT ' in office:
+        head, sep, tail = office.partition(' DISTRICT ')
+        office = head.strip(',- ')
+        district, sep, party = tail.partition(' ')
+        party = party.strip('- ')
     else:
-        district = office
-    if len(office.split(",")) > 1:
-      party = district
-      district = office.split(",")[1]
-      office = office.split(",")[0]
+        district = 'clean to None'
+        party = ''
+    
+    # extract county if found
     county = ''
+    head, sep, tail = office.partition(' COUNTY')
+    if sep:             # county found
+        if tail == '':    # some office – some county COUNTY
+            office, sep, county = head.partition('-')
+            county = county.strip()
+#         else :   # some county COUNTY some office (as for judges)
+#             county = head
+#             office = tail
+    
+### Use this if Circuit Court Branch is a district
+## Next line enabled to remove Branch from office, to match current output files
+    office, sep, tail = office.partition(',')
+#     if tail:
+#         district = tail.strip()
+#         district = tail.split()[-1].strip()       # branch number
+    
+    # Separate party from office, handle district after '-'
+### postpone this improvement to pass tests
+#     office, sep, tail = office.partition('-')
+#     tail = tail.strip()
+### postpone this improvement to pass tests
+#     if tail:
+#         if tail.isdigit():
+#             district = tail
+#         else:
+#             party = tail
+    
+    office = office.strip()
+    party = party.replace(' PARTY', '')
+    return office, county, district, party
+
+
+def parse_sheet(sheet, office):
+#     office, office_county, district, party = parse_office(office)
+    parse = parse_office(office)
+#     print '{:65} {}'.format(office, parse)
+    office, office_county, district, party = parse
+    candidates, parties, start_row = detect_headers(sheet)
+    output = []
     for i in range(start_row, sheet.nrows):
         results = sheet.row_values(i)
         if "Totals" in results[1]:
             continue
-        if results[0].strip() != '':
-            county = results[0].strip()
-        elif len(district.split(" COUNTY ")) > 1:
-          county = office.split(" COUNTY ")[0]
+        
+        col0 = results[0].strip()
+        if col0 != '':
+            county = col0
+        elif office_county != '':
+            county = office_county
+        
         ward = results[1].strip()
-        if isinstance(results[2], six.string_types):
-          results[2] = results[2].replace(",","")
-        total_votes = int(results[2]) if results[2] else results[2]
+        
+        total_votes = results[2]
+        ### Doesn't clean_row() do this? (needs unicode check?)
+        if isinstance(total_votes, six.string_types):
+            total_votes = total_votes.replace(",","").strip()
+            if total_votes.isdigit():
+                total_votes = int(total_votes)
+        
         # Some columns are randomly empty.
         candidate_votes = results[3:]
         for index, candidate in enumerate(candidates):
@@ -293,7 +358,8 @@ def parse_sheet(sheet, office):
                 continue
             else:
                 party = parties[index]
-                output.append([county, ward, office, district, total_votes, party, candidate, candidate_votes[index]])
+                output.append([county, ward, office, district, total_votes, 
+                                party, candidate, candidate_votes[index]])
     return output
 
 
@@ -365,12 +431,6 @@ xls_2002_to_2010_not_tested = [
 438,439,440,441,
 444,410]                    # contains both xls and pdf files
 
-# Fails with:
-#  File "parser.py", line 253, in parse_sheet
-#  office, party, district = office.split(u'-')
-#  ValueError: need more than 1 value to unpack
-should_work = [1659]
-
 
 # Working Elections!
 
@@ -382,16 +442,22 @@ xls_2002_to_2010_working = [1577,1578,442]
 working = [
 404,405,407,408,
 409,411,413,415,416,
-419,424,425,
+419,
+421,            # no title sheet
+424,425,
 1539,1573,1574,1575,1576,
-1658,1660,1661,1662
+1658,1659,1660,1661,1662
 ]
 
 # Files with offices in second column of title sheet:
 #   1573,1574,1576,1658,1659,1660,1661
 
-get_all_results(working, WIOpenElectionsAPI)
+small_test_set = [404, 407, 408, 419, 1659, 1573, 1574, 1575, 1576, 1661, 1662]
 
-get_all_results(no_title_sheet, WIOpenElectionsAPI)
+### use process_offices_test to view office string formats
+# get_all_results(small_test_set, WIOpenElectionsAPI, process_offices_test)
+# get_all_results(small_test_set, WIOpenElectionsAPI)
+
+get_all_results(working, WIOpenElectionsAPI)
 
 get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI, process_local_xls_2002_to_2010)
