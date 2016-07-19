@@ -311,12 +311,11 @@ def parse_office(office_string):
     # Separate party from office, handle district after '-'
     office, sep, tail = office.partition('-')
     tail = tail.strip()
-### postpone this improvement to pass tests
-#     if tail:
-#         if tail.isdigit():
-#             district = tail
-#         else:
-#             party = tail
+    if tail:
+        if tail.isdigit():
+            district = tail
+        else:
+            party = tail
     
     office = office.strip()
     party = party.replace(' PARTY', '')
