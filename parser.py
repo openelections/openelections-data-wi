@@ -206,6 +206,8 @@ def get_offices(xlsfile):
     offices = sheet.col_values(column)[1:]     # skip first row
     if offices[0] == '':    # if first office empty,
         offices = []            # assume not a title sheet, no offices
+### Next line will simulate bug in 2016-02-14 version that skips last row if > 1 rows
+###    offices = offices[:-1] if len(offices) > 1 else offices
     return offices
 
 def any_party_in(sequence):
