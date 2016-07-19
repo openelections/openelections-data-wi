@@ -323,7 +323,6 @@ def parse_office(office_string):
 
 
 def parse_sheet(sheet, office):
-#     office, office_county, district, party = parse_office(office)
     parse = parse_office(office)
 #     print '{:65} {}'.format(office, parse)
     office, office_county, district, party = parse
