@@ -309,9 +309,8 @@ def parse_office(office_string):
 #         district = tail.split()[-1].strip()       # branch number
     
     # Separate party from office, handle district after '-'
-### postpone this improvement to pass tests
-#     office, sep, tail = office.partition('-')
-#     tail = tail.strip()
+    office, sep, tail = office.partition('-')
+    tail = tail.strip()
 ### postpone this improvement to pass tests
 #     if tail:
 #         if tail.isdigit():
