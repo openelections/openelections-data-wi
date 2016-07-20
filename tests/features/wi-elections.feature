@@ -7,9 +7,9 @@ Feature: WI Elections
 
   Examples: 20140812__wi__primary_ward.csv
     | candidate         | county  | office                            | ward                        | votes | total |
-    | MARY BURKE        | BROWN   | GOVERNOR - Democratic             | TOWN OF HOLLAND Wards 1 - 2 | 41	  | 49    |
-    | JERRY BROITZMAN   | DANE    | SECRETARY OF STATE - Constitution | CITY OF MADISON Ward 38     | 3     | 3     |
-    | REBECCA KLEEFISCH | DOUGLAS | LIEUTENANT GOVERNOR -Republican   | TOWN OF BRULE Wards 1 & 2   | 9     | 9     |
+    | MARY BURKE        | BROWN   | GOVERNOR                          | TOWN OF HOLLAND Wards 1 - 2 | 41	  | 49    |
+    | JERRY BROITZMAN   | DANE    | SECRETARY OF STATE                | CITY OF MADISON Ward 38     | 3     | 3     |
+    | REBECCA KLEEFISCH | DOUGLAS | LIEUTENANT GOVERNOR               | TOWN OF BRULE Wards 1 & 2   | 9     | 9     |
 
   Examples: 20110503__wi__special_general_ward.csv
     | candidate       | county     | office   | ward                           | votes | total |
@@ -18,7 +18,7 @@ Feature: WI Elections
 
   Examples: 20120403__wi__primary_ward.csv
     | candidate               | county    | office                                            | ward                     | votes  | total  |
-    | MICHELE BACHMANN        | ADAMS     | President of the United States - Republican Party | TOWN OF QUINCY Ward 1    | 4	    | 151    |
+    | MICHELE BACHMANN        | ADAMS     | President of the United States                    | TOWN OF QUINCY Ward 1    | 4	    | 151    |
     | JOHN C. ALBERT          | DANE      | DANE COUNTY CIRCUIT COURT JUDGE                   | TOWN OF OREGON WARDS 1-4 | 583    | 584    |
     | THOMAS J. GRITTON       | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE              | CITY OF OSHKOSH D8 W15   | 359    | 361    |
 
