@@ -289,12 +289,12 @@ def parse_office(office_string):
     
     # extract county if found
     county = ''
-    head, sep, tail = office.partition(' COUNTY')
-    if sep:             # county found
-        if tail == '':    # some office – some county COUNTY
-            office, sep, county = head.partition('-')
-            county = county.strip()
 ### If county belongs in office name, don't extract or remove it
+#     head, sep, tail = office.partition(' COUNTY')
+#     if sep:             # county found
+#         if tail == '':    # some office – some county COUNTY
+#             office, sep, county = head.partition('-')
+#             county = county.strip()
 #         else :   # some county COUNTY some office (as for judges)
 #             county = head     # extract county from office
 #             office = tail     # remove county from office
