@@ -196,9 +196,6 @@ def clean_particular(election,row):
     row[3] = ''
   elif (election['id'] == 1662):
     row[2] = row[2].replace("RECALL ","")
-    row[2] = row[2].replace("- 13","")
-    row[2] = row[2].replace("- 21","")
-    row[2] = row[2].replace("- 23","")
     row[1] = row[1].replace("!","1")
   elif (election['id'] == 442):
     row[5] = row[5].replace("Non-Partisan", "NP")
@@ -310,12 +307,14 @@ def parse_office(office_string):
 #         district = tail.split()[-1].strip()       # branch number
     
     # Separate party from office, handle district after '-'
-    office, sep, tail = office.partition(' -')
+    head, sep, tail = office.partition('-')
     tail = tail.strip()
     if tail:
         if tail.isdigit():
+            office = head
             district = tail
-        else:
+        elif head.endswith(' '):    # not a hyphenated name
+            office = head
             party = tail
     
     office = office.strip()
