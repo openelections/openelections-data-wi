@@ -287,7 +287,7 @@ def parse_office(office_string):
         district, sep, party = tail.partition(' ')
         party = party.strip('- ')
     else:
-        district = 'clean to None'
+        district = 'clean to None'      # will get cleaned and left empty
         party = ''
     
     # extract county if found
@@ -297,6 +297,7 @@ def parse_office(office_string):
         if tail == '':    # some office – some county COUNTY
             office, sep, county = head.partition('-')
             county = county.strip()
+### If county belongs in office name, don't extract or remove it
 #         else :   # some county COUNTY some office (as for judges)
 #             county = head     # extract county from office
 #             office = tail     # remove county from office
