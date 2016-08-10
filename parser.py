@@ -259,7 +259,7 @@ def detect_headers(sheet):
 
 
 def parse_office(office_string):
-    """ Parse office string, returning (office, county, district, party)
+    """ Parse office string, returning (office, district, party)
         
         Office string comes in many formats:
           LIEUTENANT GOVERNOR
@@ -286,18 +286,6 @@ def parse_office(office_string):
     else:
         district = 'clean to None'      # will get cleaned and left empty
         party = ''
-    
-    # extract county if found
-    county = ''
-### If county belongs in office name, don't extract or remove it
-#     head, sep, tail = office.partition(' COUNTY')
-#     if sep:             # county found
-#         if tail == '':    # some office – some county COUNTY
-#             office, sep, county = head.partition('-')
-#             county = county.strip()
-#         else :   # some county COUNTY some office (as for judges)
-#             county = head     # extract county from office
-#             office = tail     # remove county from office
 
 ### Use this if Circuit Court Branch is a district
 ## Next line enabled to remove Branch from office, to match current output files
@@ -319,13 +307,13 @@ def parse_office(office_string):
     
     office = office.strip()
     party = party.replace(' PARTY', '')
-    return office, county, district, party
+    return office, district, party
 
 
 def parse_sheet(sheet, office):
     parse = parse_office(office)
 #     print '{:65} {}'.format(office, parse)
-    office, office_county, district, party = parse
+    office, district, party = parse
     candidates, parties, start_row = detect_headers(sheet)
     output = []
     for i in range(start_row, sheet.nrows):
@@ -336,9 +324,6 @@ def parse_sheet(sheet, office):
         col0 = results[0].strip()
         if col0 != '':
             county = col0
-        elif office_county != '':
-            county = office_county
-        
         ward = results[1].strip()
         
         total_votes = results[2]
