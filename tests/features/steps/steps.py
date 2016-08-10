@@ -25,7 +25,8 @@ def step_impl(context,candidate,office,ward,county):
 
     election_data = csv.DictReader(open(context.path))
     for row in election_data:
-      print ("Found %s %s %s %s %s %s" % (row['candidate'], row['office'], row['ward'], row['county'], row['votes'], row['total votes']))
+###   Generates too many lines in log
+###      print ("Found %s %s %s %s %s %s" % (row['candidate'], row['office'], row['ward'], row['county'], row['votes'], row['total votes']))
       if (row['candidate'] == candidate.title() and row['ward'] == ward.title() and row['office'] == office.title()  and row['county'] == county.title()):
         context.passes = True
         context.votes = row['votes']
