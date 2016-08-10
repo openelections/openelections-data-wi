@@ -315,6 +315,7 @@ def parse_sheet(sheet, office):
 #     print '{:65} {}'.format(office, parse)
     office, district, party = parse
     candidates, parties, start_row = detect_headers(sheet)
+    county = ''
     output = []
     for i in range(start_row, sheet.nrows):
         results = sheet.row_values(i)
