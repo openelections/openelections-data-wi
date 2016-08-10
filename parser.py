@@ -286,13 +286,6 @@ def parse_office(office_string):
     else:
         district = 'clean to None'      # will get cleaned and left empty
         party = ''
-
-### Use this if Circuit Court Branch is a district
-## Next line enabled to remove Branch from office, to match current output files
-    office, sep, tail = office.partition(',')
-#     if tail:
-#         district = tail.strip()
-#         district = tail.split()[-1].strip()       # branch number
     
     # Separate party from office, handle district after '-'
     head, sep, tail = office.partition('-')
