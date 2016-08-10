@@ -19,8 +19,8 @@ Feature: WI Elections
   Examples: 20120403__wi__primary_ward.csv
     | candidate               | county    | office                                            | ward                     | votes  | total  |
     | MICHELE BACHMANN        | ADAMS     | President of the United States                    | TOWN OF QUINCY Ward 1    | 4	    | 151    |
-    | JOHN C. ALBERT          | DANE      | DANE COUNTY CIRCUIT COURT JUDGE                   | TOWN OF OREGON WARDS 1-4 | 583    | 584    |
-    | THOMAS J. GRITTON       | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE              | CITY OF OSHKOSH D8 W15   | 359    | 361    |
+    | JOHN C. ALBERT          | DANE      | DANE COUNTY CIRCUIT COURT JUDGE, BRANCH 3         | TOWN OF OREGON WARDS 1-4 | 583    | 584    |
+    | THOMAS J. GRITTON       | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE, BRANCH 1    | CITY OF OSHKOSH D8 W15   | 359    | 361    |
 
   Examples: 20121106__wi__general_ward.csv
     | candidate               | county    | office                         | ward                     | votes  | total  |
