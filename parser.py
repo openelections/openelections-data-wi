@@ -426,7 +426,7 @@ pdf_elections = [
 zip_file = [437]
 
 
-Working Elections:
+# Working Elections:
 
 # Single sheet spreadsheets, older format, repeated headings
 xls_2002_to_2010_working = [
