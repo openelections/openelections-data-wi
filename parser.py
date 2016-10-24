@@ -13,7 +13,19 @@ import xlrd
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+party_recode = {
+    "Democratic": "DEM",
+    "Republican": "REP",
+    "Wisconsin Green": "WGR",
+    "Libertarian": "LIB",
+    "Independent": "IND",
+    "Constitution": "CON",
+    "Non-Partisan": "NP"
+}
+
+### use party_recode.values() instead when all parties are listed there
 party_list = ['IND', 'REP', 'DEM', 'NA', 'NP', 'CON', 'WIG', 'LIB']
+
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
@@ -179,7 +191,8 @@ def clean_total(item):
   return to_int(item)
 
 def clean_party(item):
-  return item
+    code = party_recode.get(item)
+    return code if code else item
 
 def clean_votes(item):
   return to_int(item)
@@ -231,20 +244,12 @@ def clean_particular(election,row):
   elif (election['id'] == 1662):
     row[2] = row[2].replace("RECALL ","")
     row[1] = row[1].replace("!","1")
-  elif (election['id'] == 442):
-    row[5] = row[5].replace("Non-Partisan", "NP")
   elif (election['id'] == 1577 or election['id'] == 1578):
     office = None
     # Fetches office name from: "State Assembly, District No. 89"
     office = re.search("(^[A-Za-z ]+)", row[2])
     if office:
       row[2] = office.group(1)
-    row[5] = row[5].replace("Democratic", "DEM")
-    row[5] = row[5].replace("Republican", "REP")
-    row[5] = row[5].replace("Wisconsin Green", "WGR")
-    row[5] = row[5].replace("Libertarian", "LIB")
-    row[5] = row[5].replace("Independent", "IND")
-    row[5] = row[5].replace("Constitution", "CON")
     row[6] = row[6].replace("/"," &")
   return row
 
