@@ -17,6 +17,7 @@ party_recode = {
     "Democratic": "DEM",
     "Republican": "REP",
     "Wisconsin Green": "WGR",
+    "Wisconsin Greens": "WGR",
     "Libertarian": "LIB",
     "Independent": "IND",
     "Constitution": "CON",
@@ -181,8 +182,8 @@ def clean_office(item):
   return clean_string(item)
 
 def clean_district(item):
-  item = clean_string(item)
-  if (re.match(r"^[0-9,]*$",item)):
+  item = item.strip()
+  if re.match(r"[0-9,]+", item):
     return to_int(item)
   else:
     return None
@@ -198,7 +199,9 @@ def clean_votes(item):
   return to_int(item)
 
 def clean_candidate(item):
-  return clean_string(item)
+  item = clean_string(item)
+  item = item.replace("/"," &")
+  return item
 
 def clean_row(row):
   row[0] = clean_county(row[0])
@@ -212,18 +215,15 @@ def clean_row(row):
   return row
 
 def to_int(item):
-  if (item == int(0.0)):
-    return 0
-  elif (item):
-    try:
-      int(item)
-      return int(item)
-    except ValueError:
-      item = item.replace(",","")
-      return int(item)
-  else:
-    return 0
-
+    if isinstance(item, basestring):
+        item = item.replace(',','').strip()
+        if item.isdigit():
+            item = int(item)
+        elif item == '':
+            item = 0
+    else:   # assume int or float
+        item = int(item)
+    return item
 
 def clean_string(item):
   item = item.strip()
@@ -233,24 +233,13 @@ def clean_string(item):
 
 # Here is where things get messy.
 def clean_particular(election,row):
-  # Removes district.
-  if (election['id'] == 404 or election['id'] == 405):
-    row[3] = ''
-  elif (election['id'] == 411 or election['id'] == 413):
+  if election['id'] == 411 or election['id'] == 413:
     row[1] = row[1].replace("!","1")
   elif (election['id'] == 424):
     row[2] = row[2].replace(" - 2011-2017","")
-    row[3] = ''
   elif (election['id'] == 1662):
     row[2] = row[2].replace("RECALL ","")
     row[1] = row[1].replace("!","1")
-  elif (election['id'] == 1577 or election['id'] == 1578):
-    office = None
-    # Fetches office name from: "State Assembly, District No. 89"
-    office = re.search("(^[A-Za-z ]+)", row[2])
-    if office:
-      row[2] = office.group(1)
-    row[6] = row[6].replace("/"," &")
   return row
 
 def open_file(url, filename):
@@ -312,7 +301,7 @@ def parse_office(office_string):
         district, sep, party = tail.partition(' ')
         party = party.strip('- ')
     else:
-        district = 'clean to None'      # will get cleaned and left empty
+        district = ''
         party = ''
     
     # Separate party from office, handle district after '-'
@@ -347,13 +336,7 @@ def parse_sheet(sheet, office):
         if col0 != '':
             county = col0
         ward = results[1].strip()
-        
         total_votes = results[2]
-        ### Doesn't clean_row() do this? (needs unicode check?)
-        if isinstance(total_votes, six.string_types):
-            total_votes = total_votes.replace(",","").strip()
-            if total_votes.isdigit():
-                total_votes = int(total_votes)
         
         # Some columns are randomly empty.
         candidate_votes = results[3:]
@@ -385,10 +368,6 @@ def parse_without_title_sheet(sheet, office):
             county = col0
         ward = row[1].strip()
         total_votes = row[2]
-        if isinstance(total_votes, six.string_types):
-            total_votes = total_votes.replace(",","").strip()
-            if total_votes.isdigit():
-                total_votes = int(total_votes)
         candidate_votes = row[3:]
         for index, candidate in enumerate(candidates):
             output.append([county, ward, office, district, total_votes, party, candidate,
