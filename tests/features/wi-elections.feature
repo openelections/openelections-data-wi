@@ -12,8 +12,8 @@ Feature: WI Elections
   Examples: 20110503__wi__special_general_ward.csv
     | candidate       | county     | office   | ward                           | votes | total |
     | RICK AARON      | OZAUKEE    | ASSEMBLY | TOWN OF GRAFTON WARDS 1 2, & 6 | 69	   | 422   |
-    | DUEY STROEBEL   | WASHINGTON | ASSEMBLY | TOWN OF TRENTON WDS-1.2.5.6.7  | 316	 | 375   |
-    | ANDREW ALLEN BERG | RACINE   | ASSEMBLY | VILLAGE OF WATERFORD Wards 1 - 7 | 9   | 900   |
+    | DUEY STROEBEL   | WASHINGTON | ASSEMBLY | TOWN OF TRENTON WDS-1.2.5.6.7  | 316  | 375   |
+    | ANDREW ALLEN BERG (WRITE IN) | RACINE   | ASSEMBLY | VILLAGE OF WATERFORD Wards 1 - 7 | 9   | 900   |
 
   Examples: 20111011__wi__special_primary_ward.csv
     | candidate       | county     | office   | ward                           | votes | total |
@@ -21,7 +21,7 @@ Feature: WI Elections
 
   Examples: 20111108__wi__special_general_ward.csv
     | candidate       | county     | office   | ward                           | votes | total |
-    | David A. Drewes | La Crosse  | ASSEMBLY | CITY OF LA CROSSE Ward 15      | 161   | 273   |
+    | David A. Drewes | La Crosse  | ASSEMBLY | CITY OF LA CROSSE Ward 15      | 161   | 573   |
 
   Examples: 20120403__wi__primary_ward.csv
     | candidate               | county    | office                                            | ward                     | votes  | total  |
@@ -29,7 +29,7 @@ Feature: WI Elections
     | UNINSTRUCTED DELEGATION | WASHBURN  | President of the United States                    | Town of Gull Lake Ward 1          | 6      | 20     |
     | JOHN C. ALBERT          | DANE      | DANE COUNTY CIRCUIT COURT JUDGE, BRANCH 3         | TOWN OF OREGON WARDS 1-4 | 583    | 584    |
     | THOMAS J. GRITTON       | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE, BRANCH 1    | CITY OF OSHKOSH D8 W15   | 359    | 361    |
-    | SCATTERING              | WINNEBAGO | COURT OF APPEALS - DISTRICT 2                     | TOWN OF ALGOMA Wards 1-2, 7-10    | 4      | 791     |
+    | SCATTERING              | WINNEBAGO | COURT OF APPEALS                                  | TOWN OF ALGOMA Wards 1-2, 7-10    | 4      | 791     |
     | ROBERT E. EATON         | ASHLAND   | ASHLAND COUNTY CIRCUIT COURT JUDGE                | VILLAGE OF BUTTERNUT Wards 1 & 2     | 69     | 69      |
     | JAMES JUDGE DUVALL      | PEPIN     | BUFFALO-PEPIN COUNTY CIRCUIT COURT JUDGE          | CITY OF DURAND Wards 1 - 3        | 434    | 434    |   
     | NELSON WESLEY PHILLIPS, III | MILWAUKEE | MILWAUKEE COUNTY CIRCUIT COURT JUDGE, BRANCH 17 | VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6 | 6   | 16   | 
@@ -40,8 +40,8 @@ Feature: WI Elections
     | Hari Trivedi            | Adams     | Governor            | Town of Adams Wards 1-3                  | 6      | 525  |
     | Scattering              | Wood      | Governor            | City Of Wisconsin Rapids Wards 16 -23 & 25 | 3    | 2221  |
     | Rebecca Kleefisch       | St. Croix | Lieutenant Governor | CITY OF HUDSON Wards 1 & 2             | 324   | 579       | 
-    | Van H. Wangaard         | Racine    | State Senate        | Village of Mount Pleasant Wards 19,21,22,23 | 1321    | 2523     |
-    | Donna Seidel            | Taylor    | State Senate        | CITY OF MEDFORD Wards 1-8     | 8     | 1638    | 
+    | Van H. Wanggaard         | Racine    | State Senate        | Village of Mount Pleasant Wards 19,21,22,23 | 1321    | 2523     |
+    | Donna Seidel            | Taylor    | State Senate        | CITY OF MEDFORD Wards 1-8     | 588     | 1638    | 
 
 
   Examples: 20120814__wi__primary_ward.csv
