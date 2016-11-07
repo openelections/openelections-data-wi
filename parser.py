@@ -86,15 +86,11 @@ def process_xls_2002_to_2010(sheet):
         ward = '{} of {} {}'.format(*ward_info)
         
         votes = collect_columns(row, candidate_col)
-        if isinstance(votes[0], str):
-            if votes[0].isdigit():
-                votes = map(int, votes)
-            else:
-                print '    row {}, col {}, data:"{}"'.format(rowx, candidate_col, votes[0])
-                raise ValueError('Non-digit chars in votes field')
-        else:
-            # assume int or float
-            votes = map(int, votes)
+        if isinstance(votes[0], basestring) and not votes[0].isdigit():
+            print '    row {}, col {}, data:"{}"'.format(rowx, candidate_col, votes[0])
+            raise ValueError('Non-digit chars in votes field')
+        # assume votes are strings of digits, or ints or floats
+        votes = map(int, votes)
         total_votes = sum(votes)
         
         for i, candidate in enumerate(candidates):
