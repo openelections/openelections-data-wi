@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/acouch/openelections-data-wi.svg?branch=master)](https://travis-ci.org/acouch/openelections-data-wi)
+[![Build Status](https://travis-ci.org/davipo/openelections-data-wi.svg?branch=master)](https://travis-ci.org/davipo/openelections-data-wi)
 
 # openelections-data-wi
 Pre-processed election results for Wisconsin elections
