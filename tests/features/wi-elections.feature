@@ -5,6 +5,31 @@ Feature: WI Elections
     And I search for candidate <candidate> running for <office> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
+  Examples: 20100216__wi__primary_ward.csv
+    | candidate                       | county     | office                         | ward                              | votes      | total |
+    | John M. O'Boyle                 | Pierce     | Pierce County Circuit Court    | VILLAGE OF PLUM CITY                              | 6          | 75    |
+
+  Examples: 20100406__wi__general_ward.csv
+    | candidate                       | county     | office                         | ward                              | votes      | total |
+    | Linda M. Van De Water           | Calumet    | Court of Appeals               | VILLAGE OF POTTER                            | 8          | 17    |
+    | Edward E. Leineweber            | Dane       | Court of Appeals               | TOWN OF MADISON Wards 2 - 11                      | 50         | 238       |
+
+  # Examples: 20100914__wi__primary_ward.csv
+
+  Examples: 20101102__wi__general_ward.csv
+    | candidate                       | county     | office                         | ward                           | votes | total |
+    | James James & No Candidate      | Kewaunee   | Governor & Lieutenant Governor | VILLAGE OF LUXEMBURG Wards 1 & 2       | 2     | 628   |
+    | Scattering                      | Iron       | Attorney General               | CITY OF MONTREAL Ward 1   | 0     | 157   |
+    | Ernest J. Pagels Jr. (Write-In) | Pierce     | United States Senator                     | VILLAGE OF ELMWOOD Ward 1   | 9     | 245   |
+    | L. D. Rockwell                  | Walworth   | State Senate                   | CITY OF LAKE GENEVA Wards 3-6, 9-11, 13, 14, 16, 17, 19 - 25 | 376   | 1106  |
+    | Rich Zipperer                   | Washington | State Senate                   | CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49 | 1251  | 1255  |
+    | Ted Zigmunt                     | Brown      | Assembly                       | CITY OF DE PERE Wards 15 - 17            | 53     | 143    |
+    | Gary Tauchen                    | Waupaca    | Assembly                       | VILLAGE OF EMBARRASS Ward 1         | 102    | 102    |
+    | Richard J. Spanbauer            | Fond Du Lac | Assembly                      | CITY OF FOND DU LAC Ward 39                  | 0      | 0      |
+    | Samantha Kerkman                | Kenosha    | Assembly                       | CITY OF KENOSHA Ward 58                  | 1      | 2      |
+    | Scott Suder                     | Taylor     | Assembly                       | TOWN OF TAFT Ward 1                        | 46     | 47     |
+    | Don Pridemore                   | Dodge      | Assembly                       | CITY OF HARTFORD Ward 16                  | 0      | 0      |
+
   Examples: 20110405__wi__general_ward.csv
     | candidate             | county    | office                       | ward                           | votes | total |
     | David T. Prosser, Jr. | MANITOWOC | JUSTICE OF THE SUPREME COURT | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36 | 306  | 555  |
