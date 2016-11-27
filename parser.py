@@ -195,6 +195,7 @@ def clean_votes(item):
   return to_int(item)
 
 def clean_candidate(item):
+  item = item.replace("\n"," & ")
   item = clean_string(item)
   item = item.replace("/"," &")
   return item
