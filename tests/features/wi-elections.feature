@@ -18,9 +18,9 @@ Feature: WI Elections
 
   Examples: 20101102__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                           | votes | total |
-    | James James & No Candidate      | Kewaunee   | Governor & Lieutenant Governor | VILLAGE OF LUXEMBURG Wards 1 & 2       | 2     | 628   |
+    | James James & No Candidate      | Kewaunee   | Governor/Lieutenant Governor   | VILLAGE OF LUXEMBURG Wards 1 & 2       | 2     | 934   |
     | Scattering                      | Iron       | Attorney General               | CITY OF MONTREAL Ward 1   | 0     | 157   |
-    | Ernest J. Pagels Jr. (Write-In) | Pierce     | United States Senator                     | VILLAGE OF ELMWOOD Ward 1   | 9     | 245   |
+    | Ernest J. Pagels Jr. (Write-In) | Pierce     | United States Senator          | VILLAGE OF ELMWOOD Ward 1   | 9     | 245   |
     | L. D. Rockwell                  | Walworth   | State Senate                   | CITY OF LAKE GENEVA Wards 3-6, 9-11, 13, 14, 16, 17, 19 - 25 | 376   | 1106  |
     | Rich Zipperer                   | Washington | State Senate                   | CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49 | 1251  | 1255  |
     | Ted Zigmunt                     | Brown      | Assembly                       | CITY OF DE PERE Wards 15 - 17            | 53     | 143    |
@@ -75,7 +75,7 @@ Feature: WI Elections
 
   Examples: 20121106__wi__general_ward.csv
     | candidate               | county    | office                         | ward                     | votes  | total  |
-    | BARACK OBAMA JOE BIDEN  | CHIPPEWA  | President of the United States | TOWN OF HALLIE Ward 1    | 54	   | 100    |
+    | BARACK OBAMA & JOE BIDEN  | CHIPPEWA  | President of the United States | TOWN OF HALLIE Ward 1    | 54	   | 100    |
     | JOSEPH KEXEL            | WALWORTH  | US SENATOR                     | TOWN OF GENEVA Wards 1-8 | 77     | 2525   |
     | SHEILA HARSDORF         | POLK      | STATE SENATE                   | TOWN OF LAKETOWN Ward 1  | 316    | 542    |
 
@@ -112,7 +112,7 @@ Feature: WI Elections
 
   Examples: 20141104__wi__general_ward.csv
     | candidate                 | county    | office                       | ward                            | votes  | total |
-    | Mary Burke John Lehman    | Adams     | Governor/Lieutenant Governor | Town Of Adams Wards 1-3         | 233    | 500   |
+    | Mary Burke & John Lehman    | Adams     | Governor/Lieutenant Governor | Town Of Adams Wards 1-3         | 233    | 500   |
     | Steve R. Evans (Write-In) | Dane      | Governor/Lieutenant Governor | City Of Verona Wards 1, 5       | 0      | 1037  |
     | Chris Kapenga             | Waukesha  | Assembly                     | Village of Summit Wards 2,3,4,5 | 1227   | 1643  |
     | Peter Flesch              | Vernon    | Assembly                     | City of Westby Wards 1 - 5      | 375    | 837   |
