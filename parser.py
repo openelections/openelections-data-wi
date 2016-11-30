@@ -195,6 +195,7 @@ def clean_votes(item):
   return to_int(item)
 
 def clean_candidate(item):
+  item = item.replace("\n"," & ")
   item = clean_string(item)
   item = item.replace("/"," &")
   return item
@@ -400,8 +401,7 @@ available_ids = [
 # Elections with no files available.
 no_results_ids = [674, 685, 689,448]
 
-# File won't open
-bad_file = [440]
+# File 440 won't open in Pages, but parses fine (Google docs also works)
 
 # Election with PDF files.
 pdf_elections = [
