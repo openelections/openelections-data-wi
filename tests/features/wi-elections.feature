@@ -6,7 +6,7 @@ Feature: WI Elections
     Then I should see <votes> out of <total>
   Examples: 20080219__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | Ken Sortedahl                   | St. Croix  | Circuit Court                  | VILLAGE OF DEER PARK                              | 3          | 50     |
+    | Ken Sortedahl                   | St. Croix  | St. Croix County Circuit Court                  | VILLAGE OF DEER PARK                              | 3          | 50     |
 
   Examples: 20080401__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
@@ -18,14 +18,14 @@ Feature: WI Elections
     | candidate                       | county     | office                         | ward                              | votes      | total  |
     | Tara Johnson                    | LaCrosse   | State Senate                   | TOWN OF SHELBY Wards 1, 4 - 6                    | 38         | 38     |
     | Clyde Winter                    | Ozaukee    | State Senate                   | CITY OF MEQUON Ward 2                                 | 1          | 1      |
-    | Mark Wollum                     | Dodge      | US Congress                    | CITY OF WAUPUN Wards 1 - 3                       | 9          | 28     |
+    | Mark Wollum                     | Dodge      | US Congress                    | CITY OF WAUPUN Wards 1 - 3 & 8                       | 9          | 28     |
     | Scattering                      | Ozaukee    | State Senate                   | CITY OF MEQUON Wards 16, 17 & 19                 | 1          | 1      |
     | Scattering                      | Marquette  | State Senate                   | TOWN OF BUFFALO Wards 1 & 2                       | 1          | 1      |
     | Joseph Kexel                    | Kenosha    | US Congress                    | TOWN OF SALEM Wards 1, 7, 11 - 15                     | 8          | 8      |
     | Kevin Barrett                   | Crawford   | US Congress                    | TOWN OF UTICA                             | 3          | 3      |
     | Chad Fradette                   | Brown      | State Senate                   | CITY OF GREEN BAY Ward 7                            | 44         | 45     |
     | Paul Stark                      | Buffalo    | US Congress                    | TOWN OF MAXVILLE                          | 19         | 19     |
-    | Scattering                      | Dane       | State Senator                  | CITY OF MADISON Ward 7                            | 2          | 2      |
+    | Scattering                      | Dane       | State Senate                  | CITY OF MADISON Ward 7                            | 2          | 2      |
     | Scattering                      | Winnebago  | US Congress                    | CITY OF OSHKOSH Ward 33                           | 6          | 6      |
     | Christopher Baeb                | Door       | State Assembly                 | TOWN OF SEVASTOPOL Wards 1 - 3                       | 39         | 197    |
     | Garey Bies                      | Brown      | State Assembly                 | TOWN OF SCOTT Wards 1 - 4                             | 47         | 47     |
@@ -34,28 +34,28 @@ Feature: WI Elections
 
   Examples: 20081104__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | Mark D. Thibodeau               | Adams      | District Attorney              | TOWN OF DELL PRAIRIE Wards 1 & 2               | 514        | 517    |
-    | Robert D. Zapf                  | Kenosha    | District Attorney              | VILLAGE OF PLEASANT PRAIRIE Wards 8 - 11              | 2088       | 2122   |
+    | Mark D. Thibodeau               | Adams      | Adams County District Attorney              | TOWN OF DELL PRAIRIE Wards 1 & 2               | 514        | 517    |
+    | Robert D. Zapf                  | Kenosha    | Kenosha County District Attorney              | VILLAGE OF PLEASANT PRAIRIE Wards 8 - 11              | 2088       | 2122   |
     | Darrell L. Castle Chuck Baldwin | Marathon   | President                      | VILLAGE OF Kronenwetter Wards 5 - 8          | 7          | 1758   |
     | Dick Skare                      | Door       | State Assembly                 | TOWN OF BAILEYS HARBOR Wards 1 & 2                | 473        | 776    |
-    | Chad Fradette                   | Shawano    | State Senate                   | VILLAGE OF PULASKI                           | 35         | 68     |
-    | Peter Theron                    | Columbia   | US Congress                    | VILLAGE OF POYNETTE Wards 1 - 3                       | 806        | 1222   |
+    | Chad Fradette                   | Shawano    | State Senate                   | VILLAGE OF PULASKI Wards 1-3 & 6                           | 35         | 68     |
+    | Peter Theron                    | Columbia   | US Congress                    | VILLAGE OF POYNETTE Wards 1 - 3                       | 415        | 1222   |
 
   Examples: 20090217__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | Julie Genovese                  | Dane       | Circuit Court                  | VILLAGE OF ROCKDALE                          | 4          | 14     |
-    | Peter C. Rotter                 | Marathon   | Circuit Court                  | VILLAGE OF BROKAW                            | 1          | 18     |
-    | Lowell E. Holtz                 | Adams      | State Superintendent of Public Instruction | TOWN OF STRONGS PRAIRIE, Wards 1 & 2      | 3          | 35     |
+    | Julie Genovese                  | Dane       | Dane County Circuit Court                  | VILLAGE OF ROCKDALE                          | 4          | 14     |
+    | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court                  | VILLAGE OF BROKAW                            | 1          | 18     |
+    | Lowell E. Holtz                 | Adams      | State Superintendent Of Public Instruction | TOWN OF STRONGS PRAIRIE, Wards 1 & 2      | 3          | 35     |
 
   Examples: 20090407__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total |
-    | Kitty K. Brennan                | Milwaukee  | Court of Appeals               | VILLAGE OF HALES CORNERS, Wards 7 - 9     | 235   | 236   |
-    | Michael W. Hoover               | St. Croix  | Court of Appeals               | VILLAGE OF SPRING VALLEY, Ward 3           | 1     | 1     |
-    | Tony Evers                      | Kenosha    | State Superintendent of Public Instruction | VILLAGE OF PADDOCK LAKE          | 239   | 419   |
-    | Randy R. Koschnick              | Adams      | Supreme Court                  | CITY OF WISCONSIN DELLS, Ward 5            | 1     | 1     |
-    | Gene D. Linehan                 | Bayfield   | Circuit Court                  | TOWN OF OULU                     | 23    | 80    |
-    | David A. Hansher                | Milwaukee  | Circuit Court                  | CITY OF MILWAUKEE, Ward 208                 | 7     | 7     |
-    | Scattering                      | Taylor     | Circuit Court                  | CITY OF MEDFORD, Wards 1 & 2              | 1     | 321   |
+    | Kitty K. Brennan                | Milwaukee  | Court of Appeals               | VILLAGE OF HALES CORNERS Wards 7 - 9     | 235   | 236   |
+    | Michael W. Hoover               | St. Croix  | Court of Appeals               | VILLAGE OF SPRING VALLEY Ward 3           | 1     | 1     |
+    | Tony Evers                      | Kenosha    | State Superintendent Of Public Instruction | VILLAGE OF PADDOCK LAKE          | 239   | 419   |
+    | Randy R. Koschnick              | Adams      | Supreme Court                  | CITY OF WISCONSIN DELLS Ward 5            | 1     | 1     |
+    | Gene D. Linehan                 | Bayfield   | Bayfield County Circuit Court                  | TOWN OF OULU                     | 23    | 80    |
+    | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court                  | CITY OF MILWAUKEE Ward 208                 | 7     | 7     |
+    | Scattering                      | Taylor     | Taylor County Circuit Court                  | CITY OF MEDFORD Wards 1 & 2              | 1     | 321   |
 
   Examples: 20100216__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total |
