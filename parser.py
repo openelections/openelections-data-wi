@@ -257,19 +257,33 @@ def any_party_in(sequence):
             return True
     return False
 
+
+CAND_COL = 3    # column holding first candidate
+TOTAL_VOTES_HEADER = 'Total Votes Cast'
+
 def detect_headers(sheet):
-    for i in range(3,12):
-        row = sheet.row_values(i)
-        if row[2].strip() == 'Total Votes Cast':
-            if any_party_in(row):
-                parties = [x for x in row[3:] if x != None]
-                candidates = [x for x in sheet.row_values(i+1)[3:] if x!= None]
-                start_row = i+2
-            else:
-                parties = sheet.row_values(i-1)[3:]
-                candidates = row[3:]
-                start_row = i+1
-            return candidates, parties, start_row
+    """ Extract candidate names and parties from sheet.
+    
+        Returns: candidates, parties, start_row
+    """
+    # Search rows for Total Votes header, in column before candidates
+    for rowx in range(3, 12):
+        value = sheet.cell_value(rowx, CAND_COL - 1)
+        if value.strip() == TOTAL_VOTES_HEADER:
+            break
+    else:   # loop not exited with break
+        raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
+    
+    row = sheet.row_values(rowx, start_colx=CAND_COL)
+    if any_party_in(row):   # look for any party abbreviation in row
+        parties = row
+        candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
+        start_row = rowx + 2
+    else:   # assume parties in previous row
+        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
+        candidates = row
+        start_row = rowx + 1
+    return candidates, parties, start_row
 
 
 def parse_office(office_string):
@@ -336,11 +350,9 @@ def parse_sheet(sheet, office):
         total_votes = results[2]
         
         # Some columns are randomly empty.
-        candidate_votes = results[3:]
+        candidate_votes = results[CAND_COL:]
         for index, candidate in enumerate(candidates):
-            if (candidate == None or candidate == ''):
-                continue
-            else:
+            if candidate:   # not empty
                 party = parties[index]
                 output.append([county, ward, office, district, total_votes, 
                                 party, candidate, candidate_votes[index]])
@@ -353,6 +365,7 @@ def parse_without_title_sheet(sheet, office):
     candidates, parties, start_row = detect_headers(sheet)
     if '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
+    ### TO DO: Process recount results after first empty cell
     district = ''
     party = ''
     county = ''
@@ -365,7 +378,7 @@ def parse_without_title_sheet(sheet, office):
             county = col0
         ward = row[1].strip()
         total_votes = row[2]
-        candidate_votes = row[3:]
+        candidate_votes = row[CAND_COL:]
         for index, candidate in enumerate(candidates):
             output.append([county, ward, office, district, total_votes, party, candidate,
                             candidate_votes[index]])
@@ -437,9 +450,14 @@ working = [
 # Files with offices in second column of title sheet (working):
 #   1573,1574,1576,1658,1659,1660,1661
 
-# test_set = [404, 407, 408, 419, 1659, 1573, 1574, 1575, 1576, 1661, 1662]
+test_set = [
+404, 407, 408, 419, 
+426, 434, 440, 444,
+1573, 1574, 1575, 1576, 1577, 1659, 1661, 1662
+]
 # get_all_results(test_set, WIOpenElectionsAPI)
 
 get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI)
 get_all_results(xls_2002_to_2010_unfinished, WIOpenElectionsAPI)
 get_all_results(working, WIOpenElectionsAPI)
+
