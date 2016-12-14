@@ -2,11 +2,12 @@ Feature: WI Elections
 
   Scenario Outline: Tests
     When I visit the election file
-    And I search for candidate <candidate> running for <office> in the <ward> in <county>
+    And I search for <party> party candidate <candidate> running for <office> in the <ward> in <county>
     Then I should see <votes> out of <total>
+
   Examples: 20080219__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | Ken Sortedahl                   | St. Croix  | St. Croix County Circuit Court                  | VILLAGE OF DEER PARK                              | 3          | 50     |
+    | Ken Sortedahl                   | St. Croix  | St Croix County Circuit Court                  | VILLAGE OF DEER PARK                              | 3          | 50     |
 
   Examples: 20080401__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
@@ -15,18 +16,21 @@ Feature: WI Elections
     | Louis Butler                    | Forest     | Supreme Court                  | TOWN OF POPPLE RIVER                             | 3          | 18     |
 
   Examples: 20080909__wi__primary_ward.csv
+    | party | candidate                       | county     | office                         | ward                              | votes      | total  |
+    | LIB   | Scattering                      | Ozaukee    | State Senate                   | CITY OF MEQUON Wards 16, 17 & 19                 | 1          | 1      |
+    | LIB   | Scattering                      | Marquette  | State Senate                   | TOWN OF BUFFALO Wards 1 & 2                       | 1          | 1      |
+    | WGR   | Scattering                      | Dane       | State Senate                   | CITY OF MADISON Ward 7                            | 2          | 2      |
+    | WGR   | Scattering                      | Winnebago  | US Congress                    | CITY OF OSHKOSH Ward 33                           | 6          | 6      |
+
+  Examples: 20080909__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total  |
     | Tara Johnson                    | LaCrosse   | State Senate                   | TOWN OF SHELBY Wards 1, 4 - 6                    | 38         | 38     |
     | Clyde Winter                    | Ozaukee    | State Senate                   | CITY OF MEQUON Ward 2                                 | 1          | 1      |
     | Mark Wollum                     | Dodge      | US Congress                    | CITY OF WAUPUN Wards 1 - 3 & 8                       | 9          | 28     |
-    | Scattering                      | Ozaukee    | State Senate                   | CITY OF MEQUON Wards 16, 17 & 19                 | 1          | 1      |
-    | Scattering                      | Marquette  | State Senate                   | TOWN OF BUFFALO Wards 1 & 2                       | 1          | 1      |
     | Joseph Kexel                    | Kenosha    | US Congress                    | TOWN OF SALEM Wards 1, 7, 11 - 15                     | 8          | 8      |
     | Kevin Barrett                   | Crawford   | US Congress                    | TOWN OF UTICA                             | 3          | 3      |
     | Chad Fradette                   | Brown      | State Senate                   | CITY OF GREEN BAY Ward 7                            | 44         | 45     |
     | Paul Stark                      | Buffalo    | US Congress                    | TOWN OF MAXVILLE                          | 19         | 19     |
-    | Scattering                      | Dane       | State Senate                  | CITY OF MADISON Ward 7                            | 2          | 2      |
-    | Scattering                      | Winnebago  | US Congress                    | CITY OF OSHKOSH Ward 33                           | 6          | 6      |
     | Christopher Baeb                | Door       | State Assembly                 | TOWN OF SEVASTOPOL Wards 1 - 3                       | 39         | 197    |
     | Garey Bies                      | Brown      | State Assembly                 | TOWN OF SCOTT Wards 1 - 4                             | 47         | 47     |
     | Al Ott                          | Calumet    | State Assembly                 | CITY OF APPLETON Ward 44                           | 20         | 20     |
@@ -117,7 +121,7 @@ Feature: WI Elections
     | Hari Trivedi            | Adams     | Governor            | Town of Adams Wards 1-3                  | 6      | 525  |
     | Scattering              | Wood      | Governor            | City Of Wisconsin Rapids Wards 16 -23 & 25 | 3    | 2221  |
     | Rebecca Kleefisch       | St. Croix | Lieutenant Governor | CITY OF HUDSON Wards 1 & 2             | 324   | 579       | 
-    | Van H. Wanggaard         | Racine    | State Senate        | Village of Mount Pleasant Wards 19,21,22,23 | 1321    | 2523     |
+    | Van H. Wanggaard         | Racine    | State Senate       | Village of Mount Pleasant Wards 19,21,22,23 | 1321    | 2523     |
     | Donna Seidel            | Taylor    | State Senate        | CITY OF MEDFORD Wards 1-8     | 588     | 1638    | 
 
 
