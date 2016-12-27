@@ -57,7 +57,6 @@ def process_xls_2002_to_2010(sheet):
             col_offset =  first_header[colA]
             candidate_col = 17 - col_offset         # first column of candidate data
             candidates = collect_columns(row, candidate_col)
-            blank_count = 0
             continue
         elif colA in ('DATE', 'KEYWORD', 'NAME'):
             # second row of block, collect party names
@@ -66,11 +65,7 @@ def process_xls_2002_to_2010(sheet):
                 parties.append('')
             continue
         elif colA in ('', ' '):
-            blank_count += 1
-            if blank_count == 3:
-                break   # assume no more data, done with sheet
-            else:
-                continue
+            continue
         
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
