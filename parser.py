@@ -395,7 +395,14 @@ def get_all_results(ids, url):
           get_election_result(election)
 
 
+def get_result_for_json(filename):
+    with open(filename) as jsonfile:
+        election = json.load(jsonfile)
+        get_election_result(election)
+
+
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
+
 
 # All ids from available elections.
 available_ids = [
@@ -460,4 +467,9 @@ test_set = [
 get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI)
 get_all_results(xls_2002_to_2010_unfinished, WIOpenElectionsAPI)
 get_all_results(working, WIOpenElectionsAPI)
+
+
+# jsonfilenames = ['410.json', '1710.json']
+# for filename in jsonfilenames:
+#     get_result_for_json(filename)
 
