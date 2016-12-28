@@ -49,13 +49,13 @@ Feature: WI Elections
     | candidate                       | county     | office                         | ward                              | votes      | total  |
     | Julie Genovese                  | Dane       | Dane County Circuit Court                  | VILLAGE OF ROCKDALE                          | 4          | 14     |
     | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court                  | VILLAGE OF BROKAW                            | 1          | 18     |
-    | Lowell E. Holtz                 | Adams      | State Superintendent Of Public Instruction | TOWN OF STRONGS PRAIRIE, Wards 1 & 2      | 3          | 35     |
+    | Lowell E. Holtz                 | Adams      | State Superintendent Of Public Instruction | TOWN OF STRONGS PRAIRIE Wards 1 & 2      | 3          | 35     |
 
   Examples: 20090407__wi__general_ward.csv
     | candidate                       | county     | office                         | ward                              | votes      | total |
     | Kitty K. Brennan                | Milwaukee  | Court of Appeals               | VILLAGE OF HALES CORNERS Wards 7 - 9     | 235   | 236   |
     | Michael W. Hoover               | St. Croix  | Court of Appeals               | VILLAGE OF SPRING VALLEY Ward 3           | 1     | 1     |
-    | Tony Evers                      | Kenosha    | State Superintendent Of Public Instruction | VILLAGE OF PADDOCK LAKE          | 239   | 419   |
+    | Tony Evers                      | Kenosha    | State Superintendent Of Public Instruction | VILLAGE OF PADDOCK LAKE Wards 1 - 5 | 239   | 419   |
     | Randy R. Koschnick              | Adams      | Supreme Court                  | CITY OF WISCONSIN DELLS Ward 5            | 1     | 1     |
     | Gene D. Linehan                 | Bayfield   | Bayfield County Circuit Court                  | TOWN OF OULU                     | 23    | 80    |
     | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court                  | CITY OF MILWAUKEE Ward 208                 | 7     | 7     |
@@ -105,9 +105,12 @@ Feature: WI Elections
     | David A. Drewes | La Crosse  | ASSEMBLY | CITY OF LA CROSSE Ward 15      | 161   | 573   |
 
   Examples: 20120403__wi__primary_ward.csv
+    | party | candidate               | county    | office                                            | ward                     | votes  | total  |
+    | REP | MICHELE BACHMANN        | ADAMS     | President of the United States                    | TOWN OF QUINCY Ward 1    | 4	    | 151    |
+    | DEM | UNINSTRUCTED DELEGATION | WASHBURN  | President of the United States                    | Town of Gull Lake Ward 1          | 6      | 20     |
+
+  Examples: 20120403__wi__primary_ward.csv
     | candidate               | county    | office                                            | ward                     | votes  | total  |
-    | MICHELE BACHMANN        | ADAMS     | President of the United States                    | TOWN OF QUINCY Ward 1    | 4	    | 151    |
-    | UNINSTRUCTED DELEGATION | WASHBURN  | President of the United States                    | Town of Gull Lake Ward 1          | 6      | 20     |
     | JOHN C. ALBERT          | DANE      | DANE COUNTY CIRCUIT COURT JUDGE, BRANCH 3         | TOWN OF OREGON WARDS 1-4 | 583    | 584    |
     | THOMAS J. GRITTON       | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE, BRANCH 1    | CITY OF OSHKOSH D8 W15   | 359    | 361    |
     | SCATTERING              | WINNEBAGO | COURT OF APPEALS                                  | TOWN OF ALGOMA Wards 1-2, 7-10    | 4      | 791     |
