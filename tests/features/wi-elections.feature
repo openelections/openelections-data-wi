@@ -5,18 +5,37 @@ Feature: WI Elections
     And I search for <party> party candidate <candidate> running for <office> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
+  Examples: 20020910__wi__primary_ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes     | total |
+    | DEM   | Dale Moore                        | Racine    | US Congress                       | CITY OF RACINE Ward 30                            | 38        | 151   |
+    | REP   | Peggy A. Rosenzweig               | Milwaukee | State Senate                      | CITY OF MILWAUKEE Ward 286                        | 19        | 58    |
+
+  Examples: 20041102__wi__general_ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes     | total |
+    | IND   | Peter Miguel Camejo & Ralph Nader | Brown     | President                         | VILLAGE OF HOWARD Wards 1 - 8                     | 27        | 3767  |
+    | DEM   | Russ Feingold                     | Outagamie | US Senate                         | CITY OF APPLETON Ward 22                          | 725       | 1319  |
+    | REP   | Tim Michels                       | Oconto    | US Senate                         | TOWN OF BRAZEAU Wards 1 - 3                       | 411       | 793   |
+
+  Examples: 20050405__wi__general_ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes     | total |
+    | NP    | Paul B. Higginbotham              | Wood      | Court of Appeals                  | TOWN OF SENECA Wards 1 - 3                        | 90        | 90    |
+
+  Examples: 20060110__wi__special_general_ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes     | total |
+    | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTA Wards 1 & 2                    | 75        | 106   |
+
   Examples: 20080219__wi__primary_ward.csv
-    | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | Ken Sortedahl                   | St. Croix  | St Croix County Circuit Court                  | VILLAGE OF DEER PARK                              | 3          | 50     |
+    | candidate                       | county     | office                         | ward                                              | votes      | total  |
+    | Ken Sortedahl                   | St. Croix  | St Croix County Circuit Court  | VILLAGE OF DEER PARK                              | 3          | 50     |
 
   Examples: 20080401__wi__general_ward.csv
-    | candidate                       | county     | office                         | ward                              | votes      | total  |
-    | James D. Babbitt                | Barron     | Barron County Circuit Court    | TOWN OF DALLAS Wards 1 & 2                       | 57         | 68     |
-    | Burneatta L. Bridge             | Grant      | Court Of Appeals               | TOWN OF CASTLE ROCK                              | 48         | 48     |
-    | Louis Butler                    | Forest     | Supreme Court                  | TOWN OF POPPLE RIVER                             | 3          | 18     |
+    | candidate                       | county     | office                         | ward                                              | votes      | total  |
+    | James D. Babbitt                | Barron     | Barron County Circuit Court    | TOWN OF DALLAS Wards 1 & 2                        | 57         | 68     |
+    | Burneatta L. Bridge             | Grant      | Court Of Appeals               | TOWN OF CASTLE ROCK                               | 48         | 48     |
+    | Louis Butler                    | Forest     | Supreme Court                  | TOWN OF POPPLE RIVER                              | 3          | 18     |
 
   Examples: 20080909__wi__primary_ward.csv
-    | party | candidate                       | county     | office                         | ward                              | votes      | total  |
+    | party | candidate                       | county     | office                         | ward                                      | votes      | total  |
     | LIB   | Scattering                      | Ozaukee    | State Senate                   | CITY OF MEQUON Wards 16, 17 & 19                 | 1          | 1      |
     | LIB   | Scattering                      | Marquette  | State Senate                   | TOWN OF BUFFALO Wards 1 & 2                       | 1          | 1      |
     | WGR   | Scattering                      | Dane       | State Senate                   | CITY OF MADISON Ward 7                            | 2          | 2      |
