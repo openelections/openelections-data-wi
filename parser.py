@@ -105,7 +105,13 @@ def get_offices(sheet):
 
 
 def process(filename):
-    xlsfile = xlrd.open_workbook(filename)
+    try:
+        xlsfile = xlrd.open_workbook(filename)
+    except IOError as exc:
+        print 'Failed to open input file {}'.format(filename)
+        print exc
+        print
+        return []
     sheet = xlsfile.sheet_by_index(0)
     if sheet.cell_value(rowx=0, colx=0) in first_header:
         results = [process_xls_2002_to_2010(sheet)]
