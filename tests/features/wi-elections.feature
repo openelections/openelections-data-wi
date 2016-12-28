@@ -42,7 +42,7 @@ Feature: WI Elections
     | Robert D. Zapf                  | Kenosha    | Kenosha County District Attorney              | VILLAGE OF PLEASANT PRAIRIE Wards 8 - 11              | 2088       | 2122   |
     | Darrell L. Castle Chuck Baldwin | Marathon   | President                      | VILLAGE OF Kronenwetter Wards 5 - 8          | 7          | 1758   |
     | Dick Skare                      | Door       | State Assembly                 | TOWN OF BAILEYS HARBOR Wards 1 & 2                | 473        | 776    |
-    | Chad Fradette                   | Shawano    | State Senate                   | VILLAGE OF PULASKI Wards 1-3 & 6                           | 35         | 68     |
+    | Chad Fradette                   | Shawano    | State Senate                   | VILLAGE OF PULASKI Wards 4 & 7                           | 35         | 68     |
     | Peter Theron                    | Columbia   | US Congress                    | VILLAGE OF POYNETTE Wards 1 - 3                       | 415        | 1222   |
 
   Examples: 20090217__wi__primary_ward.csv
