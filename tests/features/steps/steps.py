@@ -20,7 +20,7 @@ def step_impl(context):
 @when('I search for {party} party candidate {candidate} running for {office} in the {ward} in {county}')
 def step_impl(context, party, candidate, office, ward, county):
     context.passes = False
-    field_names = ['party', 'candidate', 'ward', 'office', 'county']
+    field_names = ['party', 'candidate', 'office', 'ward', 'county']
     if party == '<party>':  # No party was specified in the test, don't check party
       field_names.remove('party') 
     expected_values = [locals()[field_name] for field_name in field_names]
