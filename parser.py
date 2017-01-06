@@ -36,6 +36,7 @@ def collect_columns(row, start_col):
 
 
 def process_xls_2002_to_2010(sheet):
+    """Return list of records from spreadsheet in 2002-2010 format"""
     results = []
     for rowx in range(sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
@@ -341,7 +342,7 @@ xls_2002_to_2010_working = [
 ]
 xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
 
-working = [
+xls_after_2010_working = [
     404,405,407,408,409,
     411,413,415,416,419,
     421,                        # Single sheet with no cover sheet, unlike others
@@ -353,6 +354,9 @@ working = [
 # Files with offices in second column of title sheet (working):
 #   1573,1574,1576,1658,1659,1660,1661
 
+working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
+working += xls_after_2010_working
+
 test_set = [
 404, 407, 408, 419, 
 426, 434, 440, 444,
@@ -360,12 +364,10 @@ test_set = [
 ]
 # get_all_results(test_set, WIOpenElectionsAPI)
 
-get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI)
-get_all_results(xls_2002_to_2010_unfinished, WIOpenElectionsAPI)
-get_all_results(working, WIOpenElectionsAPI)
-
-
 # jsonfilenames = ['410.json', '1710.json']
 # for filename in jsonfilenames:
 #     get_result_for_json(filename)
+
+
+get_all_results(working, WIOpenElectionsAPI)
 
