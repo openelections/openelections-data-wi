@@ -2,10 +2,10 @@
 
 import re
 import os.path
-import csv
 
 from behave import given, when, then, step
 from hamcrest import assert_that, has_items, equal_to
+import unicodecsv
 
 
 @when('I visit the election file')
@@ -30,12 +30,9 @@ def step_impl(context, party, candidate, office, ward, county):
     expected_values = map(unicode.title, expected_values)
     print ("Expecting " + ", ".join(expected_values))
 
-    election_data = csv.DictReader(open(context.path))
+    election_data = unicodecsv.DictReader(open(context.path))
     for row in election_data:
       actual_values = [row[field_name] for field_name in field_names]
-      # convert to unicode to match expected,
-      #     Python 2.7 csv library does not support unicode
-      actual_values = map(unicode, actual_values)
       actual_values = map(unicode.title, actual_values)
       if actual_values == expected_values:
         if context.passes:
