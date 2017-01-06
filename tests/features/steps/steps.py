@@ -30,7 +30,10 @@ def step_impl(context, party, candidate, office, ward, county):
     election_data = csv.DictReader(open(context.path))
     for row in election_data:
       actual_values = [row[field_name] for field_name in field_names]
-      actual_values = map(str.title, actual_values)
+      # convert to unicode to match expected,
+      #     Python 2.7 csv library does not support unicode
+      actual_values = map(unicode, actual_values)
+      actual_values = map(unicode.title, actual_values)
       if actual_values == expected_values:
         if context.passes:
           raise AssertionError("More than one row found with expected values")
