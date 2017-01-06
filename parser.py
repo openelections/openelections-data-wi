@@ -96,12 +96,24 @@ def process_xls_2002_to_2010(sheet):
 
 
 def get_offices(sheet):
+    """Extract office names from title sheet.
+    Return list of names and index of first sheet to process.
+    """
     # Title page may have offices in column A or B (0 or 1), detect which column
     column = 0 if sheet.cell_value(1, 0) else 1
     offices = sheet.col_values(column)[1:]     # skip first row
-    if offices[0] == '':    # if first office empty,
-        offices = []            # assume not a title sheet, no offices
-    return offices
+    if offices[0] == '':
+        # first office empty, assume first sheet is not a title sheet
+        offices = []
+        sheet_index = 0     # start with sheet 0
+        for office in offices_without_title_sheet:
+            # Look for an office in first column, search first 12 rows
+            if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
+                offices.append(office)
+                break
+    else:
+        sheet_index = 1     # start with sheet 1
+    return offices, sheet_index
 
 
 def process(filename):
@@ -113,23 +125,15 @@ def process(filename):
         print
         return []
     sheet = xlsfile.sheet_by_index(0)
+    results = []
     if sheet.cell_value(rowx=0, colx=0) in first_header:
-        results = [process_xls_2002_to_2010(sheet)]
+        results.append(process_xls_2002_to_2010(sheet))
     else:
-        offices = get_offices(sheet)
-        if offices:
-            results = []
-            for i, office in enumerate(offices):
-                sheet = xlsfile.sheet_by_index(i + 1)
-                results.append(parse_sheet(sheet, office))
-        else:
-            # no offices found, assume first sheet is not a title sheet
-            sheet = xlsfile.sheet_by_index(0)
-            for office in offices_without_title_sheet:
-                # Look for an office in first column, search first 12 rows
-                if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
-                    results = [parse_without_title_sheet(sheet, office)]
-                    break
+        offices, sheet_index = get_offices(sheet)
+        for office in offices:
+            sheet = xlsfile.sheet_by_index(sheet_index)
+            results.append(parse_sheet(sheet, office, sheet_index))
+            sheet_index += 1
     return results
 
 
@@ -332,44 +336,15 @@ def parse_office(office_string):
     return office, district, party
 
 
-def parse_sheet(sheet, office):
-    parse = parse_office(office)
-#     print '{:65} {}'.format(office, parse)
-    office, district, party = parse
+def parse_sheet(sheet, office, sheet_index):
+    """Return list of records for (string) office, extracted from xlrd sheet."""
+    office, district, party = parse_office(office)
     candidates, parties, start_row = detect_headers(sheet)
-    county = ''
-    output = []
-    for i in range(start_row, sheet.nrows):
-        results = sheet.row_values(i)
-        if "Totals" in results[1]:
-            continue
-        
-        col0 = results[0].strip()
-        if col0 != '':
-            county = col0
-        ward = results[1].strip()
-        total_votes = results[2]
-        
-        # Some columns are randomly empty.
-        candidate_votes = results[CAND_COL:]
-        for index, candidate in enumerate(candidates):
-            if candidate:   # not empty
-                party = parties[index]
-                output.append([county, ward, office, district, total_votes, 
-                                party, candidate, candidate_votes[index]])
-    return output
-
-
-def parse_without_title_sheet(sheet, office):
-    """ Return list of records for (string) office, extracted from xlrd sheet. """
-    output = []
-    candidates, parties, start_row = detect_headers(sheet)
-    if '' in candidates:
+    if sheet_index == 0 and '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
-    ### TO DO: Process recount results after first empty cell
-    district = ''
-    party = ''
+        ### TO DO: Process recount results after first empty cell
     county = ''
+    output = []
     for rowx in range(start_row, sheet.nrows):
         row = sheet.row_values(rowx)
         if "Totals" in row[0] or "Totals" in row[1]:
@@ -381,9 +356,12 @@ def parse_without_title_sheet(sheet, office):
         total_votes = row[2]
         candidate_votes = row[CAND_COL:]
         for index, candidate in enumerate(candidates):
-            output.append([county, ward, office, district, total_votes, party, candidate,
-                            candidate_votes[index]])
+            if candidate:   # column not empty
+                party = parties[index]
+                output.append([county, ward, office, district, total_votes, 
+                                party, candidate, candidate_votes[index]])
     return output
+
 
 def get_all_results(ids, url):
   r = requests.get(url)
