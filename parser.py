@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import json
-import re
 import os
 import sys
 
@@ -10,22 +9,11 @@ import six
 import unicodecsv as csv
 import xlrd
 
+import cleaner
+
+### Is this needed?
 reload(sys)
 sys.setdefaultencoding('utf8')
-
-party_recode = {
-    "Democratic": "DEM",
-    "Republican": "REP",
-    "Wisconsin Green": "WGR",
-    "Wisconsin Greens": "WGR",
-    "Libertarian": "LIB",
-    "Independent": "IND",
-    "Constitution": "CON",
-    "Non-Partisan": "NP"
-}
-
-### use party_recode.values() instead when all parties are listed there
-party_list = ['IND', 'REP', 'DEM', 'NA', 'NP', 'CON', 'WIG', 'LIB']
 
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
@@ -167,82 +155,11 @@ def get_election_result(election):
         results = process(cached_filename)
         for result in results:
             for row in result:
-                row = clean_particular(election, row)
-                row = clean_row(row)
+                row = cleaner.clean_particular(election, row)
+                row = cleaner.clean_row(row)
                 if "Office Totals:" not in row:
                     wr.writerow(row)
 
-
-def clean_county(item):
-  return clean_string(item)
-
-def clean_ward(item):
-  return clean_string(item)
-
-def clean_office(item):
-  return clean_string(item)
-
-def clean_district(item):
-  item = item.strip()
-  if re.match(r"[0-9,]+", item):
-    return to_int(item)
-  else:
-    return None
-
-def clean_total(item):
-  return to_int(item)
-
-def clean_party(item):
-    code = party_recode.get(item)
-    return code if code else item
-
-def clean_votes(item):
-  return to_int(item)
-
-def clean_candidate(item):
-  item = item.replace("\n"," & ")
-  item = clean_string(item)
-  item = item.replace("/"," &")
-  return item
-
-def clean_row(row):
-  row[0] = clean_county(row[0])
-  row[1] = clean_ward(row[1])
-  row[2] = clean_office(row[2])
-  row[3] = clean_district(row[3])
-  row[4] = clean_total(row[4])
-  row[5] = clean_party(row[5])
-  row[6] = clean_candidate(row[6])
-  row[7] = clean_votes(row[7])
-  return row
-
-def to_int(item):
-    if isinstance(item, basestring):
-        item = item.replace(',','').strip()
-        if item.isdigit():
-            item = int(item)
-        elif item == '':
-            item = 0
-    else:   # assume int or float
-        item = int(item)
-    return item
-
-def clean_string(item):
-  item = item.strip()
-  item = item.replace("\n"," ")
-  item = item.title()
-  return item
-
-# Here is where things get messy.
-def clean_particular(election,row):
-  if election['id'] == 411 or election['id'] == 413:
-    row[1] = row[1].replace("!","1")
-  elif (election['id'] == 424):
-    row[2] = row[2].replace(" - 2011-2017","")
-  elif (election['id'] == 1662):
-    row[2] = row[2].replace("RECALL ","")
-    row[1] = row[1].replace("!","1")
-  return row
 
 def open_file(url, filename):
     r = requests.get(url)
@@ -255,9 +172,9 @@ def open_file(url, filename):
 
 def any_party_in(sequence):
     """ Return True if any party abbreviation is an element of sequence, else False.
-        Uses abbreviations in party_list.
+        Uses abbreviations from cleaner.party_recode map.
     """
-    for party in party_list:
+    for party in cleaner.party_recode.values():
         if party in sequence:
             return True
     return False
