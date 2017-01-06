@@ -22,7 +22,7 @@ Feature: WI Elections
 
   Examples: 20060110__wi__special_general_ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes     | total |
-    | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTA Wards 1 & 2                    | 75        | 106   |
+    | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTAH Wards 1 & 2                   | 75        | 106   |
 
   Examples: 20080219__wi__primary_ward.csv
     | candidate                       | county     | office                         | ward                                              | votes      | total  |
