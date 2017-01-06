@@ -1,9 +1,12 @@
 # -- FILE: features/steps/steps.py
-from behave import given, when, then, step
-from hamcrest import assert_that, has_items, equal_to
+
 import re
 import os.path
 import csv
+
+from behave import given, when, then, step
+from hamcrest import assert_that, has_items, equal_to
+
 
 @when('I visit the election file')
 def step_impl(context):
