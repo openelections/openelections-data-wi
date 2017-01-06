@@ -29,8 +29,6 @@ def step_impl(context, party, candidate, office, ward, county):
 
     election_data = csv.DictReader(open(context.path))
     for row in election_data:
-###   Generates too many lines in log
-###      print ("Found %s %s %s %s %s %s" % (row['candidate'], row['office'], row['ward'], row['county'], row['votes'], row['total votes'])) 
       actual_values = [row[field_name] for field_name in field_names]
       actual_values = map(str.title, actual_values)
       if actual_values == expected_values:
