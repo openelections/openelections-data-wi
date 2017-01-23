@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 
 import json
-import re
 import os
 import sys
 
@@ -10,22 +9,11 @@ import six
 import unicodecsv as csv
 import xlrd
 
+import cleaner
+
+### Is this needed?
 reload(sys)
 sys.setdefaultencoding('utf8')
-
-party_recode = {
-    "Democratic": "DEM",
-    "Republican": "REP",
-    "Wisconsin Green": "WGR",
-    "Wisconsin Greens": "WGR",
-    "Libertarian": "LIB",
-    "Independent": "IND",
-    "Constitution": "CON",
-    "Non-Partisan": "NP"
-}
-
-### use party_recode.values() instead when all parties are listed there
-party_list = ['IND', 'REP', 'DEM', 'NA', 'NP', 'CON', 'WIG', 'LIB']
 
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
@@ -48,6 +36,7 @@ def collect_columns(row, start_col):
 
 
 def process_xls_2002_to_2010(sheet):
+    """Return list of records from spreadsheet in 2002-2010 format"""
     results = []
     for rowx in range(sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
@@ -57,7 +46,6 @@ def process_xls_2002_to_2010(sheet):
             col_offset =  first_header[colA]
             candidate_col = 17 - col_offset         # first column of candidate data
             candidates = collect_columns(row, candidate_col)
-            blank_count = 0
             continue
         elif colA in ('DATE', 'KEYWORD', 'NAME'):
             # second row of block, collect party names
@@ -66,11 +54,7 @@ def process_xls_2002_to_2010(sheet):
                 parties.append('')
             continue
         elif colA in ('', ' '):
-            blank_count += 1
-            if blank_count == 3:
-                break   # assume no more data, done with sheet
-            else:
-                continue
+            continue
         
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
@@ -86,15 +70,11 @@ def process_xls_2002_to_2010(sheet):
         ward = '{} of {} {}'.format(*ward_info)
         
         votes = collect_columns(row, candidate_col)
-        if isinstance(votes[0], str):
-            if votes[0].isdigit():
-                votes = map(int, votes)
-            else:
-                print '    row {}, col {}, data:"{}"'.format(rowx, candidate_col, votes[0])
-                raise ValueError('Non-digit chars in votes field')
-        else:
-            # assume int or float
-            votes = map(int, votes)
+        if isinstance(votes[0], basestring) and not votes[0].isdigit():
+            print '    row {}, col {}, data:"{}"'.format(rowx, candidate_col, votes[0])
+            raise ValueError('Non-digit chars in votes field')
+        # assume votes are strings of digits, or ints or floats
+        votes = map(int, votes)
         total_votes = sum(votes)
         
         for i, candidate in enumerate(candidates):
@@ -105,34 +85,44 @@ def process_xls_2002_to_2010(sheet):
 
 
 def get_offices(sheet):
+    """Extract office names from title sheet.
+    Return list of names and index of first sheet to process.
+    """
     # Title page may have offices in column A or B (0 or 1), detect which column
     column = 0 if sheet.cell_value(1, 0) else 1
     offices = sheet.col_values(column)[1:]     # skip first row
-    if offices[0] == '':    # if first office empty,
-        offices = []            # assume not a title sheet, no offices
-    return offices
+    if offices[0] == '':
+        # first office empty, assume first sheet is not a title sheet
+        offices = []
+        sheet_index = 0     # start with sheet 0
+        for office in offices_without_title_sheet:
+            # Look for an office in first column, search first 12 rows
+            if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
+                offices.append(office)
+                break
+    else:
+        sheet_index = 1     # start with sheet 1
+    return offices, sheet_index
 
 
 def process(filename):
-    xlsfile = xlrd.open_workbook(filename)
+    try:
+        xlsfile = xlrd.open_workbook(filename)
+    except IOError as exc:
+        print 'Failed to open input file {}'.format(filename)
+        print exc
+        print
+        return []
     sheet = xlsfile.sheet_by_index(0)
+    results = []
     if sheet.cell_value(rowx=0, colx=0) in first_header:
-        results = [process_xls_2002_to_2010(sheet)]
+        results.append(process_xls_2002_to_2010(sheet))
     else:
-        offices = get_offices(sheet)
-        if offices:
-            results = []
-            for i, office in enumerate(offices):
-                sheet = xlsfile.sheet_by_index(i + 1)
-                results.append(parse_sheet(sheet, office))
-        else:
-            # no offices found, assume first sheet is not a title sheet
-            sheet = xlsfile.sheet_by_index(0)
-            for office in offices_without_title_sheet:
-                # Look for an office in first column, search first 12 rows
-                if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
-                    results = [parse_without_title_sheet(sheet, office)]
-                    break
+        offices, sheet_index = get_offices(sheet)
+        for office in offices:
+            sheet = xlsfile.sheet_by_index(sheet_index)
+            results.append(parse_sheet(sheet, office, sheet_index))
+            sheet_index += 1
     return results
 
 
@@ -166,81 +156,11 @@ def get_election_result(election):
         results = process(cached_filename)
         for result in results:
             for row in result:
-                row = clean_particular(election, row)
-                row = clean_row(row)
+                row = cleaner.clean_particular(election, row)
+                row = cleaner.clean_row(row)
                 if "Office Totals:" not in row:
                     wr.writerow(row)
 
-
-def clean_county(item):
-  return clean_string(item)
-
-def clean_ward(item):
-  return clean_string(item)
-
-def clean_office(item):
-  return clean_string(item)
-
-def clean_district(item):
-  item = item.strip()
-  if re.match(r"[0-9,]+", item):
-    return to_int(item)
-  else:
-    return None
-
-def clean_total(item):
-  return to_int(item)
-
-def clean_party(item):
-    code = party_recode.get(item)
-    return code if code else item
-
-def clean_votes(item):
-  return to_int(item)
-
-def clean_candidate(item):
-  item = clean_string(item)
-  item = item.replace("/"," &")
-  return item
-
-def clean_row(row):
-  row[0] = clean_county(row[0])
-  row[1] = clean_ward(row[1])
-  row[2] = clean_office(row[2])
-  row[3] = clean_district(row[3])
-  row[4] = clean_total(row[4])
-  row[5] = clean_party(row[5])
-  row[6] = clean_candidate(row[6])
-  row[7] = clean_votes(row[7])
-  return row
-
-def to_int(item):
-    if isinstance(item, basestring):
-        item = item.replace(',','').strip()
-        if item.isdigit():
-            item = int(item)
-        elif item == '':
-            item = 0
-    else:   # assume int or float
-        item = int(item)
-    return item
-
-def clean_string(item):
-  item = item.strip()
-  item = item.replace("\n"," ")
-  item = item.title()
-  return item
-
-# Here is where things get messy.
-def clean_particular(election,row):
-  if election['id'] == 411 or election['id'] == 413:
-    row[1] = row[1].replace("!","1")
-  elif (election['id'] == 424):
-    row[2] = row[2].replace(" - 2011-2017","")
-  elif (election['id'] == 1662):
-    row[2] = row[2].replace("RECALL ","")
-    row[1] = row[1].replace("!","1")
-  return row
 
 def open_file(url, filename):
     r = requests.get(url)
@@ -253,26 +173,40 @@ def open_file(url, filename):
 
 def any_party_in(sequence):
     """ Return True if any party abbreviation is an element of sequence, else False.
-        Uses abbreviations in party_list.
+        Uses abbreviations from cleaner.party_recode map.
     """
-    for party in party_list:
+    for party in cleaner.party_recode.values():
         if party in sequence:
             return True
     return False
 
+
+CAND_COL = 3    # column holding first candidate
+TOTAL_VOTES_HEADER = 'Total Votes Cast'
+
 def detect_headers(sheet):
-    for i in range(3,12):
-        row = sheet.row_values(i)
-        if row[2].strip() == 'Total Votes Cast':
-            if any_party_in(row):
-                parties = [x for x in row[3:] if x != None]
-                candidates = [x for x in sheet.row_values(i+1)[3:] if x!= None]
-                start_row = i+2
-            else:
-                parties = sheet.row_values(i-1)[3:]
-                candidates = row[3:]
-                start_row = i+1
-            return candidates, parties, start_row
+    """ Extract candidate names and parties from sheet.
+    
+        Returns: candidates, parties, start_row
+    """
+    # Search rows for Total Votes header, in column before candidates
+    for rowx in range(3, 12):
+        value = sheet.cell_value(rowx, CAND_COL - 1)
+        if value.strip() == TOTAL_VOTES_HEADER:
+            break
+    else:   # loop not exited with break
+        raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
+    
+    row = sheet.row_values(rowx, start_colx=CAND_COL)
+    if any_party_in(row):   # look for any party abbreviation in row
+        parties = row
+        candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
+        start_row = rowx + 2
+    else:   # assume parties in previous row
+        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
+        candidates = row
+        start_row = rowx + 1
+    return candidates, parties, start_row
 
 
 def parse_office(office_string):
@@ -320,45 +254,15 @@ def parse_office(office_string):
     return office, district, party
 
 
-def parse_sheet(sheet, office):
-    parse = parse_office(office)
-#     print '{:65} {}'.format(office, parse)
-    office, district, party = parse
+def parse_sheet(sheet, office, sheet_index):
+    """Return list of records for (string) office, extracted from xlrd sheet."""
+    office, district, party = parse_office(office)
     candidates, parties, start_row = detect_headers(sheet)
-    county = ''
-    output = []
-    for i in range(start_row, sheet.nrows):
-        results = sheet.row_values(i)
-        if "Totals" in results[1]:
-            continue
-        
-        col0 = results[0].strip()
-        if col0 != '':
-            county = col0
-        ward = results[1].strip()
-        total_votes = results[2]
-        
-        # Some columns are randomly empty.
-        candidate_votes = results[3:]
-        for index, candidate in enumerate(candidates):
-            if (candidate == None or candidate == ''):
-                continue
-            else:
-                party = parties[index]
-                output.append([county, ward, office, district, total_votes, 
-                                party, candidate, candidate_votes[index]])
-    return output
-
-
-def parse_without_title_sheet(sheet, office):
-    """ Return list of records for (string) office, extracted from xlrd sheet. """
-    output = []
-    candidates, parties, start_row = detect_headers(sheet)
-    if '' in candidates:
+    if sheet_index == 0 and '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
-    district = ''
-    party = ''
+        ### TO DO: Process recount results after first empty cell
     county = ''
+    output = []
     for rowx in range(start_row, sheet.nrows):
         row = sheet.row_values(rowx)
         if "Totals" in row[0] or "Totals" in row[1]:
@@ -368,11 +272,14 @@ def parse_without_title_sheet(sheet, office):
             county = col0
         ward = row[1].strip()
         total_votes = row[2]
-        candidate_votes = row[3:]
+        candidate_votes = row[CAND_COL:]
         for index, candidate in enumerate(candidates):
-            output.append([county, ward, office, district, total_votes, party, candidate,
-                            candidate_votes[index]])
+            if candidate:   # column not empty
+                party = parties[index]
+                output.append([county, ward, office, district, total_votes, 
+                                party, candidate, candidate_votes[index]])
     return output
+
 
 def get_all_results(ids, url):
   r = requests.get(url)
@@ -385,19 +292,33 @@ def get_all_results(ids, url):
           get_election_result(election)
 
 
+def get_result_for_json(filename):
+    with open(filename) as jsonfile:
+        election = json.load(jsonfile)
+        get_election_result(election)
+
+
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
 
+
 # All ids from available elections.
-available_ids = [1658, 1659, 1660,1661,1576,1573,1574,1575,1538,1539,404,405,
-407,408,409,410,411,1662,413,415,416,419,421,422,424,425,426,427,428,429,430,
-431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,664,
-674,685,689,1577,1578]
+available_ids = [
+1658,1659,1660,1661,
+1576,1573,1574,1575,
+1538,1539,
+404,405,
+407,408,409,410,411,
+1662,
+413,415,416,419,421,422,424,425,426,427,428,429,430,
+431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,
+664,
+674,685,689,
+1577,1578]
 
 # Elections with no files available.
 no_results_ids = [674, 685, 689,448]
 
-# File won't open
-bad_file = [440]
+# File 440 won't open in Pages, but parses fine (Google docs also works)
 
 # Election with PDF files.
 pdf_elections = [
@@ -421,7 +342,7 @@ xls_2002_to_2010_working = [
 ]
 xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
 
-working = [
+xls_after_2010_working = [
     404,405,407,408,409,
     411,413,415,416,419,
     421,                        # Single sheet with no cover sheet, unlike others
@@ -433,9 +354,20 @@ working = [
 # Files with offices in second column of title sheet (working):
 #   1573,1574,1576,1658,1659,1660,1661
 
-# test_set = [404, 407, 408, 419, 1659, 1573, 1574, 1575, 1576, 1661, 1662]
+working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
+working += xls_after_2010_working
+
+test_set = [
+404, 407, 408, 419, 
+426, 434, 440, 444,
+1573, 1574, 1575, 1576, 1577, 1659, 1661, 1662
+]
 # get_all_results(test_set, WIOpenElectionsAPI)
 
-get_all_results(xls_2002_to_2010_working, WIOpenElectionsAPI)
-get_all_results(xls_2002_to_2010_unfinished, WIOpenElectionsAPI)
+# jsonfilenames = ['410.json', '1710.json']
+# for filename in jsonfilenames:
+#     get_result_for_json(filename)
+
+
 get_all_results(working, WIOpenElectionsAPI)
+
