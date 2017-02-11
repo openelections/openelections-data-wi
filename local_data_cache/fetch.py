@@ -4,6 +4,7 @@ import json
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
 
 def save_file(url, filename):
+    url = url.strip()
     r = requests.get(url)
     if r.status_code == 200:
         with open(filename, 'wb') as f:
@@ -12,6 +13,7 @@ def save_file(url, filename):
       print "Could not download file %s, status code %s" % (url, r.status_code)
 
 def update_cache(url):
+  url = url.strip()
   r = requests.get(url)
   if r.status_code == 200:
     parsed = json.loads(r.content)['objects']
