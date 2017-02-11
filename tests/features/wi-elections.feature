@@ -7,14 +7,14 @@ Feature: WI Elections
 
   Examples: 20020910__wi__primary_ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
-    | DEM   | Dale Moore                        | Racine    | US Congress                       | CITY OF RACINE Ward 30                            | 38    | 151   |
+    | DEM   | Dale Moore                        | Racine    | House                             | CITY OF RACINE Ward 30                            | 38    | 151   |
     | REP   | Peggy A. Rosenzweig               | Milwaukee | State Senate                      | CITY OF MILWAUKEE Ward 286                        | 19    | 58    |
 
   Examples: 20041102__wi__general_ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | IND   | Peter Miguel Camejo & Ralph Nader | Brown     | President                         | VILLAGE OF HOWARD Wards 1 - 8                     | 27    | 3767  |
-    | DEM   | Russ Feingold                     | Outagamie | US Senate                         | CITY OF APPLETON Ward 22                          | 725   | 1319  |
-    | REP   | Tim Michels                       | Oconto    | US Senate                         | TOWN OF BRAZEAU Wards 1 - 3                       | 411   | 793   |
+    | DEM   | Russ Feingold                     | Outagamie | Senate                            | CITY OF APPLETON Ward 22                          | 725   | 1319  |
+    | REP   | Tim Michels                       | Oconto    | Senate                            | TOWN OF BRAZEAU Wards 1 - 3                       | 411   | 793   |
 
   Examples: 20050405__wi__general_ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
@@ -40,17 +40,17 @@ Feature: WI Elections
     | LIB   | Scattering                        | Ozaukee    | State Senate                     | CITY OF MEQUON Wards 16, 17 & 19                  | 1     | 1     |
     | LIB   | Scattering                        | Marquette  | State Senate                     | TOWN OF BUFFALO Wards 1 & 2                       | 1     | 1     |
     | WGR   | Scattering                        | Dane       | State Senate                     | CITY OF MADISON Ward 7                            | 2     | 2     |
-    | WGR   | Scattering                        | Winnebago  | US Congress                      | CITY OF OSHKOSH Ward 33                           | 6     | 6     |
+    | WGR   | Scattering                        | Winnebago  | House                            | CITY OF OSHKOSH Ward 33                           | 6     | 6     |
 
   Examples: 20080909__wi__primary_ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Tara Johnson                              | LaCrosse   | State Senate                     | TOWN OF SHELBY Wards 1, 4 - 6                     | 38    | 38    |
     | Clyde Winter                              | Ozaukee    | State Senate                     | CITY OF MEQUON Ward 2                             | 1     | 1     |
-    | Mark Wollum                               | Dodge      | US Congress                      | CITY OF WAUPUN Wards 1 - 3 & 8                    | 9     | 28    |
-    | Joseph Kexel                              | Kenosha    | US Congress                      | TOWN OF SALEM Wards 1, 7, 11 - 15                 | 8     | 8     |
-    | Kevin Barrett                             | Crawford   | US Congress                      | TOWN OF UTICA                                     | 3     | 3     |
+    | Mark Wollum                               | Dodge      | House                            | CITY OF WAUPUN Wards 1 - 3 & 8                    | 9     | 28    |
+    | Joseph Kexel                              | Kenosha    | House                            | TOWN OF SALEM Wards 1, 7, 11 - 15                 | 8     | 8     |
+    | Kevin Barrett                             | Crawford   | House                            | TOWN OF UTICA                                     | 3     | 3     |
     | Chad Fradette                             | Brown      | State Senate                     | CITY OF GREEN BAY Ward 7                          | 44    | 45    |
-    | Paul Stark                                | Buffalo    | US Congress                      | TOWN OF MAXVILLE                                  | 19    | 19    |
+    | Paul Stark                                | Buffalo    | House                            | TOWN OF MAXVILLE                                  | 19    | 19    |
     | Christopher Baeb                          | Door       | State Assembly                   | TOWN OF SEVASTOPOL Wards 1 - 3                    | 39    | 197   |
     | Garey Bies                                | Brown      | State Assembly                   | TOWN OF SCOTT Wards 1 - 4                         | 47    | 47    |
     | Al Ott                                    | Calumet    | State Assembly                   | CITY OF APPLETON Ward 44                          | 20    | 20    |
@@ -63,7 +63,7 @@ Feature: WI Elections
     | Darrell L. Castle Chuck Baldwin           | Marathon   | President                        | VILLAGE OF Kronenwetter Wards 5 - 8               | 7     | 1758  |
     | Dick Skare                                | Door       | State Assembly                   | TOWN OF BAILEYS HARBOR Wards 1 & 2                | 473   | 776   |
     | Chad Fradette                             | Shawano    | State Senate                     | VILLAGE OF PULASKI Wards 4 & 7                    | 35    | 68    |
-    | Peter Theron                              | Columbia   | US Congress                      | VILLAGE OF POYNETTE Wards 1 - 3                   | 415   | 1222  |
+    | Peter Theron                              | Columbia   | House                            | VILLAGE OF POYNETTE Wards 1 - 3                   | 415   | 1222  |
 
 
   Examples: 20090217__wi__primary_ward.csv
@@ -96,17 +96,17 @@ Feature: WI Elections
 
   Examples: 20101102__wi__general_ward.csv
     | candidate                       | county      | office                        | ward                                                          | votes | total |
-    | James James & No Candidate      | Kewaunee    | Governor/Lieutenant Governor  | VILLAGE OF LUXEMBURG Wards 1 & 2                              | 2     | 934   |
+    | James James & No Candidate      | Kewaunee    | Governor                      | VILLAGE OF LUXEMBURG Wards 1 & 2                              | 2     | 934   |
     | Scattering                      | Iron        | Attorney General              | CITY OF MONTREAL Ward 1                                       | 0     | 157   |
-    | Ernest J. Pagels Jr. (Write-In) | Pierce      | United States Senator         | VILLAGE OF ELMWOOD Ward 1                                     | 9     | 245   |
+    | Ernest J. Pagels Jr. (Write-In) | Pierce      | Senate                        | VILLAGE OF ELMWOOD Ward 1                                     | 9     | 245   |
     | L. D. Rockwell                  | Walworth    | State Senate                  | CITY OF LAKE GENEVA Wards 3-6, 9-11, 13, 14, 16, 17, 19 - 25  | 376   | 1106  |
     | Rich Zipperer                   | Washington  | State Senate | CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49 | 1251  | 1255  |
-    | Ted Zigmunt                     | Brown       | Assembly                      | CITY OF DE PERE Wards 15 - 17                                 | 53    | 143   |
-    | Gary Tauchen                    | Waupaca     | Assembly                      | VILLAGE OF EMBARRASS Ward 1                                   | 102   | 102   |
-    | Richard J. Spanbauer            | Fond Du Lac | Assembly                      | CITY OF FOND DU LAC Ward 39                                   | 0     | 0     |
-    | Samantha Kerkman                | Kenosha     | Assembly                      | CITY OF KENOSHA Ward 58                                       | 1     | 2     |
-    | Scott Suder                     | Taylor      | Assembly                      | TOWN OF TAFT Ward 1                                           | 46    | 47    |
-    | Don Pridemore                   | Dodge       | Assembly                      | CITY OF HARTFORD Ward 16                                      | 0     | 0     |
+    | Ted Zigmunt                     | Brown       | State Assembly                | CITY OF DE PERE Wards 15 - 17                                 | 53    | 143   |
+    | Gary Tauchen                    | Waupaca     | State Assembly                | VILLAGE OF EMBARRASS Ward 1                                   | 102   | 102   |
+    | Richard J. Spanbauer            | Fond Du Lac | State Assembly                | CITY OF FOND DU LAC Ward 39                                   | 0     | 0     |
+    | Samantha Kerkman                | Kenosha     | State Assembly                | CITY OF KENOSHA Ward 58                                       | 1     | 2     |
+    | Scott Suder                     | Taylor      | State Assembly                | TOWN OF TAFT Ward 1                                           | 46    | 47    |
+    | Don Pridemore                   | Dodge       | State Assembly                | CITY OF HARTFORD Ward 16                                      | 0     | 0     |
 
 
   Examples: 20110405__wi__general_ward.csv
@@ -115,23 +115,23 @@ Feature: WI Elections
 
   Examples: 20110503__wi__special_general_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
-    | RICK AARON                    | OZAUKEE       | ASSEMBLY                      | TOWN OF GRAFTON WARDS 1 2, & 6                                | 69    | 422   |
-    | DUEY STROEBEL                 | WASHINGTON    | ASSEMBLY                      | TOWN OF TRENTON WDS-1.2.5.6.7                                 | 316   | 375   |
-    | ANDREW ALLEN BERG (WRITE IN)  | RACINE        | ASSEMBLY                      | VILLAGE OF WATERFORD Wards 1 - 7                              | 9     | 900   |
+    | RICK AARON                    | OZAUKEE       | State Assembly                | TOWN OF GRAFTON WARDS 1 2, & 6                                | 69    | 422   |
+    | DUEY STROEBEL                 | WASHINGTON    | State Assembly                | TOWN OF TRENTON WDS-1.2.5.6.7                                 | 316   | 375   |
+    | ANDREW ALLEN BERG (WRITE IN)  | RACINE        | State Assembly                | VILLAGE OF WATERFORD Wards 1 - 7                              | 9     | 900   |
 
   Examples: 20111011__wi__special_primary_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
-    | David A. Drewes               | La Crosse     | ASSEMBLY                      | TOWN OF CAMPBELL Town of Campbell - Ward 7                    | 0     | 0     |
+    | David A. Drewes               | La Crosse     | State Assembly                | TOWN OF CAMPBELL Town of Campbell - Ward 7                    | 0     | 0     |
 
   Examples: 20111108__wi__special_general_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
-    | David A. Drewes               | La Crosse     | ASSEMBLY                      | CITY OF LA CROSSE Ward 15                                     | 161   | 573   |
+    | David A. Drewes               | La Crosse     | State Assembly                | CITY OF LA CROSSE Ward 15                                     | 161   | 573   |
 
 
   Examples: 20120403__wi__primary_ward.csv
     | party | candidate                 | county    | office                                            | ward                                      | votes | total |
-    | REP   | MICHELE BACHMANN          | ADAMS     | President of the United States                    | TOWN OF QUINCY Ward 1                     | 4     | 151   |
-    | DEM   | UNINSTRUCTED DELEGATION   | WASHBURN  | President of the United States                    | Town of Gull Lake Ward 1                  | 6     | 20    |
+    | REP   | MICHELE BACHMANN          | ADAMS     | President                                         | TOWN OF QUINCY Ward 1                     | 4     | 151   |
+    | DEM   | UNINSTRUCTED DELEGATION   | WASHBURN  | President                                         | Town of Gull Lake Ward 1                  | 6     | 20    |
 
   Examples: 20120403__wi__primary_ward.csv
     | candidate                         | county    | office                                            | ward                                      | votes | total |
@@ -146,30 +146,30 @@ Feature: WI Elections
   Examples: 20120605__wi__general-recall_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
     | Hari Trivedi                  | Adams         | Governor                      | Town of Adams Wards 1-3                                       | 6     | 525   |
-    | Scattering                    | Wood          | Governor                      | City Of Wisconsin Rapids Wards 16 -23 & 25                    | 3     | 2221  |
-    | Rebecca Kleefisch             | St. Croix     | Lieutenant Governor           | CITY OF HUDSON Wards 1 & 2                                    | 324   | 579   |
+    | Scattering                    | Wood          | Governor                      | City of Wisconsin Rapids Wards 16 -23 & 25                    | 3     | 2221  |
+    | Rebecca Kleefisch             | St. Croix     | Lieutenant Governor           | City of Hudson Wards 1 & 2                                    | 324   | 579   |
     | Van H. Wanggaard              | Racine        | State Senate                  | Village of Mount Pleasant Wards 19,21,22,23                   | 1321  | 2523  |
-    | Donna Seidel                  | Taylor        | State Senate                  | CITY OF MEDFORD Wards 1-8                                     | 588   | 1638  |
+    | Donna Seidel                  | Taylor        | State Senate                  | City of Medford Wards 1-8                                     | 588   | 1638  |
 
   Examples: 20120814__wi__primary_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
-    | Al Ott                        | Outagamie     | Assembly                      | Village of Combined Locks Wards 1-4                           | 263   | 368   |
+    | Al Ott                        | Outagamie     | State Assembly                | Village of Combined Locks Wards 1-4                           | 263   | 368   |
 
   Examples: 20121106__wi__general_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | BARACK OBAMA & JOE BIDEN      | CHIPPEWA      | President of the United States    | TOWN OF HALLIE Ward 1                                     | 54    | 100   |
-    | JOSEPH KEXEL                  | WALWORTH      | US SENATOR                        | TOWN OF GENEVA Wards 1-8                                  | 77    | 2525  |
-    | SHEILA HARSDORF               | POLK          | STATE SENATE                      | TOWN OF LAKETOWN Ward 1                                   | 316   | 542   |
+    | Barack Obama & Joe Biden      | Chippewa      | President                         | Town of Hallie Ward 1                                     | 54    | 100   |
+    | Joseph Kexel                  | Walworth      | Senate                            | Town of Geneva Wards 1-8                                  | 77    | 2525  |
+    | Sheila Harsdorf               | Polk          | State Senate                      | Town of Laketown Ward 1                                   | 316   | 542   |
 
   Examples: 20121204__wi__special_general_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | PAUL FARROW                   | Waukesha      | STATE SENATE                      | CITY OF PEWAUKEE WARDS 8-10                               | 274   | 281   |
+    | Paul Farrow                   | Waukesha      | State Senate                      | City of Pewaukee Wards 8-10                               | 274   | 281   |
 
 
   Examples: 20130219__wi__special_primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | MATT MORZY                    | Waukesha      | ASSEMBLY                          | CITY OF WAUKESHA Ward 4                                   | 6     | 70    |
-    | ADAM NEYLON                   | Waukesha      | ASSEMBLY                          | CITY OF PEWAUKEE WARDS 5-7                                | 219   | 559   |
+    | Matt Morzy                    | Waukesha      | State Assembly                    | City of Waukesha Ward 4                                   | 6     | 70    |
+    | Adam Neylon                   | Waukesha      | State Assembly                    | City of Pewaukee Wards 5-7                                | 219   | 559   |
 
   Examples: 20130402__wi__general_ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
@@ -180,27 +180,27 @@ Feature: WI Elections
 
   Examples: 20131119__wi__special_primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Stephanie Mares               | Milwaukee     | Assembly                          | Village of Greendale Wards 9-10                           | 132   | 231   |
+    | Stephanie Mares               | Milwaukee     | State Assembly                    | Village of Greendale Wards 9-10                           | 132   | 231   |
 
   Examples: 20131217__wi__special_general_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | John R. Hermes                | Milwaukee     | Assembly                          | City of Greenfield Ward 20                                | 86    | 223   |
+    | John R. Hermes                | Milwaukee     | State Assembly                    | City of Greenfield Ward 20                                | 86    | 223   |
 
 
   Examples: 20140812__wi__primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | MARY BURKE                    | BROWN         | GOVERNOR                          | TOWN OF HOLLAND Wards 1 - 2                               | 41    | 49    |
-    | JERRY BROITZMAN               | DANE          | SECRETARY OF STATE                | CITY OF MADISON Ward 38                                   | 3     | 3     |
-    | REBECCA KLEEFISCH             | DOUGLAS       | LIEUTENANT GOVERNOR               | TOWN OF BRULE Wards 1 & 2                                 | 9     | 9     |
+    | Mary Burke                    | Brown         | Governor                          | Town of Holland Wards 1 - 2                               | 41    | 49    |
+    | Jerry Broitzman               | Dane          | Secretary Of State                | City of Madison Ward 38                                   | 3     | 3     |
+    | Rebecca Kleefisch             | Douglas       | Lieutenant Governor               | Town of Brule Wards 1 & 2                                 | 9     | 9     |
 
   Examples: 20141104__wi__general_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Mary Burke & John Lehman      | Adams         | Governor/Lieutenant Governor      | Town Of Adams Wards 1-3                                   | 233   | 500   |
-    | Steve R. Evans (Write-In)     | Dane          | Governor/Lieutenant Governor      | City Of Verona Wards 1, 5                                 | 0     | 1037  |
-    | Chris Kapenga                 | Waukesha      | Assembly                          | Village of Summit Wards 2,3,4,5                           | 1227  | 1643  |
-    | Peter Flesch                  | Vernon        | Assembly                          | City of Westby Wards 1 - 5                                | 375   | 837   |
+    | Mary Burke & John Lehman      | Adams         | Governor                          | Town of Adams Wards 1-3                                   | 233   | 500   |
+    | Steve R. Evans (Write-In)     | Dane          | Governor                          | City of Verona Wards 1, 5                                 | 0     | 1037  |
+    | Chris Kapenga                 | Waukesha      | State Assembly                    | Village of Summit Wards 2,3,4,5                           | 1227  | 1643  |
+    | Peter Flesch                  | Vernon        | State Assembly                    | City of Westby Wards 1 - 5                                | 375   | 837   |
     | Dean P. Debroux               | Outagamie     | State Senate                      | City of Appleton Ward 59                                  | 1     | 1     |
-    | Lawrence Dale                 | Wood          | Congressional                     | City of Pittsville Ward 1                                 | 7     | 356   |
+    | Lawrence Dale                 | Wood          | House                             | City of Pittsville Ward 1                                 | 7     | 356   |
     | Jerry Shidell                 | Ashland       | State Treasurer                   | City of Mellen Ward 1                                     | 3     | 221   |
 
 
@@ -210,11 +210,11 @@ Feature: WI Elections
 
   Examples: 20150901__wi__special_primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Scattering                    | Waukesha      | Representative To The Assembly    | Village of Oconomowoc Lake Ward 1                         | 0     | 28    |
-    | Spencer Zimmerman             | Waukesha      | Representative To The Assembly    | Town of Genesee Wards 1-5, 9 10                           | 9     | 278   |
+    | Scattering                    | Waukesha      | State Assembly                    | Village of Oconomowoc Lake Ward 1                         | 0     | 28    |
+    | Spencer Zimmerman             | Waukesha      | State Assembly                    | Town of Genesee Wards 1-5, 9 10                           | 9     | 278   |
 
   Examples: 20150929__wi__special_general_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Cindi Duchow                  | Waukesha      | Assembly                          | Village Of Hartland Wards 1-13                            | 117   | 140   |
-    | Thomas D. Hibbard (Write-In)  | Waukesha      | Assembly                          | Village Of Wales Wards 1-4                                | 10    | 106   |
-    | Scattering                    | Waukesha      | Assembly                          | City of Delafield Wards 1 - 14                            | 18    | 217   |
+    | Cindi Duchow                  | Waukesha      | State Assembly                    | Village of Hartland Wards 1-13                            | 117   | 140   |
+    | Thomas D. Hibbard (Write-In)  | Waukesha      | State Assembly                    | Village of Wales Wards 1-4                                | 10    | 106   |
+    | Scattering                    | Waukesha      | State Assembly                    | City of Delafield Wards 1 - 14                            | 18    | 217   |

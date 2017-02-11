@@ -15,6 +15,46 @@ party_recode = {
     "not applicable?": "NA"
 }
 
+"""Recode office names to conform to
+    https://github.com/openelections/specs/wiki/Office-Names
+    -- except for State Senate and State Assembly.
+    Keys in this map should be in titlecase.
+"""
+office_recode = {
+    'President Of The United States': 'President',
+    'Us Senator': 'Senate',
+    'Us Senate': 'Senate',
+    'United States Senator': 'Senate',
+    'Us Congress': 'House',
+    'Congressional': 'House',
+    'Governor/Lieutenant Governor': 'Governor',
+    'Assembly': 'State Assembly',
+    'Representative To The Assembly': 'State Assembly',
+}
+
+
+### To Do: Check that office is one of these?
+office_names = [
+    # federal
+    'President', 'Senate', 'House',
+#     'President', 'US Senate', 'US House',
+    
+    # statewide
+    'Governor', 'Lieutenant Governor', 'Attorney General',
+    'Secretary of State', 'State Treasurer',
+    'State Superintendent of Public Instruction',
+    
+    # judges
+    'Supreme Court[ Justice]', 'Court of Appeals[ Judge][, District __]',
+    '__ County Circuit Court[ Judge][, Branch __]',
+    
+    # state representatives
+    'State Senate', 'State Assembly',
+    
+    # county offices
+    '__ County District Attorney',
+]
+
 
 def clean_county(item):
     return clean_string(item)
@@ -23,7 +63,11 @@ def clean_ward(item):
     return clean_string(item)
 
 def clean_office(item):
-  return clean_string(item)
+    item = item.title()
+    office = office_recode.get(item)
+    if office is None:
+        office = clean_string(item)
+    return office
 
 def clean_district(item):
     item = item.strip()

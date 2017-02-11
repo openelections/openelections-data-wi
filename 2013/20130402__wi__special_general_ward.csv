@@ -1,49 +1,49 @@
 county,ward,office,district,total votes,party,candidate,votes
-Waukesha,Town Of Lisbon Ward 3,Assembly,98,158,REP,Adam Neylon,158
-Waukesha,Town Of Lisbon Ward 3,Assembly,98,158,,Scattering,0
-Waukesha,Village Of Pewaukee Wards 1 - 5,Assembly,98,518,REP,Adam Neylon,515
-Waukesha,Village Of Pewaukee Wards 1 - 5,Assembly,98,518,,Scattering,3
-Waukesha,Village Of Pewaukee Wards 6 - 10,Assembly,98,357,REP,Adam Neylon,356
-Waukesha,Village Of Pewaukee Wards 6 - 10,Assembly,98,357,,Scattering,1
-Waukesha,"Village Of Sussex Wards 1,3",Assembly,98,253,REP,Adam Neylon,253
-Waukesha,"Village Of Sussex Wards 1,3",Assembly,98,253,,Scattering,0
-Waukesha,"Village Of Sussex Wards 2,4",Assembly,98,362,REP,Adam Neylon,362
-Waukesha,"Village Of Sussex Wards 2,4",Assembly,98,362,,Scattering,0
-Waukesha,"Village Of Sussex Wards 5,6,7",Assembly,98,419,REP,Adam Neylon,417
-Waukesha,"Village Of Sussex Wards 5,6,7",Assembly,98,419,,Scattering,2
-Waukesha,Village Of Sussex Ward 8,Assembly,98,12,REP,Adam Neylon,12
-Waukesha,Village Of Sussex Ward 8,Assembly,98,12,,Scattering,0
-Waukesha,City Of Pewaukee Wards 1-4,Assembly,98,659,REP,Adam Neylon,653
-Waukesha,City Of Pewaukee Wards 1-4,Assembly,98,659,,Scattering,6
-Waukesha,City Of Pewaukee Wards 5-7,Assembly,98,590,REP,Adam Neylon,588
-Waukesha,City Of Pewaukee Wards 5-7,Assembly,98,590,,Scattering,2
-Waukesha,City Of Pewaukee Wards 8-10,Assembly,98,626,REP,Adam Neylon,622
-Waukesha,City Of Pewaukee Wards 8-10,Assembly,98,626,,Scattering,4
-Waukesha,City Of Waukesha Ward 1,Assembly,98,191,REP,Adam Neylon,190
-Waukesha,City Of Waukesha Ward 1,Assembly,98,191,,Scattering,1
-Waukesha,City Of Waukesha Ward 2,Assembly,98,258,REP,Adam Neylon,255
-Waukesha,City Of Waukesha Ward 2,Assembly,98,258,,Scattering,3
-Waukesha,City Of Waukesha Ward 3,Assembly,98,57,REP,Adam Neylon,56
-Waukesha,City Of Waukesha Ward 3,Assembly,98,57,,Scattering,1
-Waukesha,City Of Waukesha Ward 4,Assembly,98,73,REP,Adam Neylon,71
-Waukesha,City Of Waukesha Ward 4,Assembly,98,73,,Scattering,2
-Waukesha,City Of Waukesha Ward 6,Assembly,98,106,REP,Adam Neylon,104
-Waukesha,City Of Waukesha Ward 6,Assembly,98,106,,Scattering,2
-Waukesha,City Of Waukesha Ward 9,Assembly,98,227,REP,Adam Neylon,224
-Waukesha,City Of Waukesha Ward 9,Assembly,98,227,,Scattering,3
-Waukesha,City Of Waukesha Ward 10,Assembly,98,81,REP,Adam Neylon,80
-Waukesha,City Of Waukesha Ward 10,Assembly,98,81,,Scattering,1
-Waukesha,City Of Waukesha Ward 12,Assembly,98,224,REP,Adam Neylon,220
-Waukesha,City Of Waukesha Ward 12,Assembly,98,224,,Scattering,4
-Waukesha,City Of Waukesha Ward 13,Assembly,98,183,REP,Adam Neylon,183
-Waukesha,City Of Waukesha Ward 13,Assembly,98,183,,Scattering,0
-Waukesha,City Of Waukesha Ward 27,Assembly,98,2,REP,Adam Neylon,2
-Waukesha,City Of Waukesha Ward 27,Assembly,98,2,,Scattering,0
-Waukesha,City Of Waukesha Ward 29,Assembly,98,61,REP,Adam Neylon,61
-Waukesha,City Of Waukesha Ward 29,Assembly,98,61,,Scattering,0
-Waukesha,City Of Waukesha Ward 34,Assembly,98,70,REP,Adam Neylon,70
-Waukesha,City Of Waukesha Ward 34,Assembly,98,70,,Scattering,0
-Waukesha,City Of Waukesha Ward 35,Assembly,98,245,REP,Adam Neylon,240
-Waukesha,City Of Waukesha Ward 35,Assembly,98,245,,Scattering,5
-Waukesha,City Of Waukesha Ward 36,Assembly,98,315,REP,Adam Neylon,314
-Waukesha,City Of Waukesha Ward 36,Assembly,98,315,,Scattering,1
+Waukesha,Town Of Lisbon Ward 3,State Assembly,98,158,REP,Adam Neylon,158
+Waukesha,Town Of Lisbon Ward 3,State Assembly,98,158,,Scattering,0
+Waukesha,Village Of Pewaukee Wards 1 - 5,State Assembly,98,518,REP,Adam Neylon,515
+Waukesha,Village Of Pewaukee Wards 1 - 5,State Assembly,98,518,,Scattering,3
+Waukesha,Village Of Pewaukee Wards 6 - 10,State Assembly,98,357,REP,Adam Neylon,356
+Waukesha,Village Of Pewaukee Wards 6 - 10,State Assembly,98,357,,Scattering,1
+Waukesha,"Village Of Sussex Wards 1,3",State Assembly,98,253,REP,Adam Neylon,253
+Waukesha,"Village Of Sussex Wards 1,3",State Assembly,98,253,,Scattering,0
+Waukesha,"Village Of Sussex Wards 2,4",State Assembly,98,362,REP,Adam Neylon,362
+Waukesha,"Village Of Sussex Wards 2,4",State Assembly,98,362,,Scattering,0
+Waukesha,"Village Of Sussex Wards 5,6,7",State Assembly,98,419,REP,Adam Neylon,417
+Waukesha,"Village Of Sussex Wards 5,6,7",State Assembly,98,419,,Scattering,2
+Waukesha,Village Of Sussex Ward 8,State Assembly,98,12,REP,Adam Neylon,12
+Waukesha,Village Of Sussex Ward 8,State Assembly,98,12,,Scattering,0
+Waukesha,City Of Pewaukee Wards 1-4,State Assembly,98,659,REP,Adam Neylon,653
+Waukesha,City Of Pewaukee Wards 1-4,State Assembly,98,659,,Scattering,6
+Waukesha,City Of Pewaukee Wards 5-7,State Assembly,98,590,REP,Adam Neylon,588
+Waukesha,City Of Pewaukee Wards 5-7,State Assembly,98,590,,Scattering,2
+Waukesha,City Of Pewaukee Wards 8-10,State Assembly,98,626,REP,Adam Neylon,622
+Waukesha,City Of Pewaukee Wards 8-10,State Assembly,98,626,,Scattering,4
+Waukesha,City Of Waukesha Ward 1,State Assembly,98,191,REP,Adam Neylon,190
+Waukesha,City Of Waukesha Ward 1,State Assembly,98,191,,Scattering,1
+Waukesha,City Of Waukesha Ward 2,State Assembly,98,258,REP,Adam Neylon,255
+Waukesha,City Of Waukesha Ward 2,State Assembly,98,258,,Scattering,3
+Waukesha,City Of Waukesha Ward 3,State Assembly,98,57,REP,Adam Neylon,56
+Waukesha,City Of Waukesha Ward 3,State Assembly,98,57,,Scattering,1
+Waukesha,City Of Waukesha Ward 4,State Assembly,98,73,REP,Adam Neylon,71
+Waukesha,City Of Waukesha Ward 4,State Assembly,98,73,,Scattering,2
+Waukesha,City Of Waukesha Ward 6,State Assembly,98,106,REP,Adam Neylon,104
+Waukesha,City Of Waukesha Ward 6,State Assembly,98,106,,Scattering,2
+Waukesha,City Of Waukesha Ward 9,State Assembly,98,227,REP,Adam Neylon,224
+Waukesha,City Of Waukesha Ward 9,State Assembly,98,227,,Scattering,3
+Waukesha,City Of Waukesha Ward 10,State Assembly,98,81,REP,Adam Neylon,80
+Waukesha,City Of Waukesha Ward 10,State Assembly,98,81,,Scattering,1
+Waukesha,City Of Waukesha Ward 12,State Assembly,98,224,REP,Adam Neylon,220
+Waukesha,City Of Waukesha Ward 12,State Assembly,98,224,,Scattering,4
+Waukesha,City Of Waukesha Ward 13,State Assembly,98,183,REP,Adam Neylon,183
+Waukesha,City Of Waukesha Ward 13,State Assembly,98,183,,Scattering,0
+Waukesha,City Of Waukesha Ward 27,State Assembly,98,2,REP,Adam Neylon,2
+Waukesha,City Of Waukesha Ward 27,State Assembly,98,2,,Scattering,0
+Waukesha,City Of Waukesha Ward 29,State Assembly,98,61,REP,Adam Neylon,61
+Waukesha,City Of Waukesha Ward 29,State Assembly,98,61,,Scattering,0
+Waukesha,City Of Waukesha Ward 34,State Assembly,98,70,REP,Adam Neylon,70
+Waukesha,City Of Waukesha Ward 34,State Assembly,98,70,,Scattering,0
+Waukesha,City Of Waukesha Ward 35,State Assembly,98,245,REP,Adam Neylon,240
+Waukesha,City Of Waukesha Ward 35,State Assembly,98,245,,Scattering,5
+Waukesha,City Of Waukesha Ward 36,State Assembly,98,315,REP,Adam Neylon,314
+Waukesha,City Of Waukesha Ward 36,State Assembly,98,315,,Scattering,1
