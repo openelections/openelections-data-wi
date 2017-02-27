@@ -30,6 +30,8 @@ office_recode = {
     'Governor/Lieutenant Governor': 'Governor',
     'Assembly': 'State Assembly',
     'Representative To The Assembly': 'State Assembly',
+    'Representative In Congress': 'House',
+    'State Senator': 'State Senate'
 }
 
 

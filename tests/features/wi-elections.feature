@@ -218,3 +218,21 @@ Feature: WI Elections
     | Cindi Duchow                  | Waukesha      | State Assembly                    | Village of Hartland Wards 1-13                            | 117   | 140   |
     | Thomas D. Hibbard (Write-In)  | Waukesha      | State Assembly                    | Village of Wales Wards 1-4                                | 10    | 106   |
     | Scattering                    | Waukesha      | State Assembly                    | City of Delafield Wards 1 - 14                            | 18    | 217   |
+
+  Examples: 20160405__wi__primary_ward.csv
+    | party | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | DEM   | Uninstructed Delegation       | Milwaukee     | President                         | CITY OF SOUTH MILWAUKEE Ward 13-16                   | 1     | 867    |
+
+    Examples: 20160405__wi__primary_ward.csv
+    | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | Paul F. Reilly                | Sheboygan     | Court of Appeals Judge | VILLAGE OF RANDOM LAKE Wards 1-2                         | 494   | 496    |
+    | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38   | 449   | 452    |
+    | Rebecca G. Bradley            | Chippewa       | Justice of the Supreme Court      | TOWN OF GOETZ Ward 3                                      | 4     | 4      |
+
+  Examples: 20161108__wi__general_ward.csv
+    | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | Darrell L. Castle & Scott N. Bradley | Burnett | President                        | TOWN OF WOOD RIVER Ward 1-3                               | 10     | 517   |
+    | Ron Johnson                   | Wood          | Senate                            | TOWN OF GRAND RAPIDS Ward 1-11                              | 2573   | 4505  |
+    | Sarah Lloyd                   | Dodge         | House                             | CITY OF MAYVILLE Wards 1-8                              | 781    | 2524  |
+    | Fred A. Risser                   | Dane          | State Senate                      | CITY OF MIDDLETON Wards 19-20                            | 0      | 0     |
+    | Cindi Duchow                  | Waukesha      | State Assembly                    | TOWN OF OTTAWA Wards 1-5                                    | 1912   | 1938  |
