@@ -225,7 +225,7 @@ Feature: WI Elections
 
   Examples: 20160405__wi__primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Paul F. Reilly                | Sheboygan     | Court of Appeals Judge            | VILLAGE OF RANDOM LAKE Wards 1-2                          | 494   | 496    |
+    | Paul F. Reilly                | Sheboygan     | Court of Appeals                  | VILLAGE OF RANDOM LAKE Wards 1-2                          | 494   | 496    |
     | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452    |
     | Rebecca G. Bradley            | Chippewa      | Supreme Court      | TOWN OF GOETZ Ward 3                                      | 4     | 4      |
 
