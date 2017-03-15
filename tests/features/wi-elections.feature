@@ -92,7 +92,12 @@ Feature: WI Elections
     | Linda M. Van De Water           | Calumet    | Court of Appeals               | VILLAGE OF POTTER                                             | 8     | 17    |
     | Edward E. Leineweber            | Dane       | Court of Appeals               | TOWN OF MADISON Wards 2 - 11                                  | 50    | 238   |
 
-  # Examples: 20100914__wi__primary_ward.csv
+  Examples: 20100914__wi__primary_ward.csv
+    | party | candidate                         | county     | office                           | ward                                              | votes | total |
+    | DEM   | Tim John                          | Polk       | Governor                         | VILLAGE OF FREDERIC Wards 1 & 2                   | 5     | 28    |
+    | REP   | Dan Mielke                        | Marathon   | House                            | VILLAGE OF KRONENWETTER Wards 1 - 8               | 118   | 568   |
+    | LIB   | Joseph Kexel                      | Kenosha    | House                            | VILLAGE OF PLEASANT PRAIRIE Wards 6 & 7           | 2     | 2     | 
+    | WIG   | Ben Manski                        | Dane       | State Assembly                   | CITY OF MIDDLETON Wards 2-4                       | 33    | 33    |
 
   Examples: 20101102__wi__general_ward.csv
     | candidate                       | county      | office                        | ward                                                          | votes | total |
@@ -111,7 +116,7 @@ Feature: WI Elections
 
   Examples: 20110405__wi__general_ward.csv
     | candidate                     | county    | office                       | ward                                                               | votes | total |
-    | David T. Prosser, Jr.         | MANITOWOC | SUPREME COURT | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36  | 306   | 555   |
+    | David T. Prosser, Jr.         | MANITOWOC | SUPREME COURT | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36                 | 306   | 555   |
 
   Examples: 20110503__wi__special_general_ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
@@ -220,19 +225,19 @@ Feature: WI Elections
     | Scattering                    | Waukesha      | State Assembly                    | City of Delafield Wards 1 - 14                            | 18    | 217   |
 
   Examples: 20160405__wi__primary_ward.csv
-    | party | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | DEM   | Uninstructed Delegation       | Milwaukee     | President                         | CITY OF SOUTH MILWAUKEE Ward 13-16                   | 1     | 867    |
+    | party | candidate                     | county        | office                            | ward                                              | votes | total |
+    | DEM   | Uninstructed Delegation       | Milwaukee     | President                         | CITY OF SOUTH MILWAUKEE Ward 13-16                | 1     | 867   |
 
   Examples: 20160405__wi__primary_ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Paul F. Reilly                | Sheboygan     | Court of Appeals                  | VILLAGE OF RANDOM LAKE Wards 1-2                          | 494   | 496    |
-    | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452    |
-    | Rebecca G. Bradley            | Chippewa      | Supreme Court      | TOWN OF GOETZ Ward 3                                      | 4     | 4      |
+    | Paul F. Reilly                | Sheboygan     | Court of Appeals                  | VILLAGE OF RANDOM LAKE Wards 1-2                          | 494   | 496   |
+    | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
+    | Rebecca G. Bradley            | Chippewa      | Supreme Court                     | TOWN OF GOETZ Ward 3                                      | 4     | 4     |
 
   Examples: 20161108__wi__general_ward.csv
-    | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Darrell L. Castle & Scott N. Bradley | Burnett | President                        | TOWN OF WOOD RIVER Ward 1-3                               | 10     | 517   |
-    | Ron Johnson                   | Wood          | Senate                            | TOWN OF GRAND RAPIDS Ward 1-11                            | 2573   | 4505  |
-    | Sarah Lloyd                   | Dodge         | House                             | CITY OF MAYVILLE Wards 1-8                                | 781    | 2524  |
-    | Fred A. Risser                | Dane          | State Senate                      | CITY OF MIDDLETON Wards 19-20                             | 0      | 0     |
-    | Cindi Duchow                  | Waukesha      | State Assembly                    | TOWN OF OTTAWA Wards 1-5                                  | 1912   | 1938  |
+    | candidate                             | county        | office                    | ward                                                      | votes | total |
+    | Darrell L. Castle & Scott N. Bradley  | Burnett       | President                 | TOWN OF WOOD RIVER Ward 1-3                               | 10    | 517   |
+    | Ron Johnson                           | Wood          | Senate                    | TOWN OF GRAND RAPIDS Ward 1-11                            | 2573  | 4505  |
+    | Sarah Lloyd                           | Dodge         | House                     | CITY OF MAYVILLE Wards 1-8                                | 781   | 2524  |
+    | Fred A. Risser                        | Dane          | State Senate              | CITY OF MIDDLETON Wards 19-20                             | 0     | 0     |
+    | Cindi Duchow                          | Waukesha      | State Assembly            | TOWN OF OTTAWA Wards 1-5                                  | 1912  | 1938  |
