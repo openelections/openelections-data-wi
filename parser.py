@@ -343,7 +343,7 @@ xls_2002_to_2010_working = [
 ]
 xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
 
-xls_after_2010_working = [
+xls_2010_onward_working = [
     404,405,407,408,409,
     410,411,413,415,416,419,
     421,                        # Single sheet with no cover sheet, unlike others
@@ -357,7 +357,7 @@ xls_after_2010_working = [
 #   1573,1574,1576,1658,1659,1660,1661
 
 working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
-working += xls_after_2010_working
+working += xls_2010_onward_working
 
 test_set = [
 404, 407, 408, 419, 
