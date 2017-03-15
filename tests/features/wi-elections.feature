@@ -92,7 +92,12 @@ Feature: WI Elections
     | Linda M. Van De Water           | Calumet    | Court of Appeals               | VILLAGE OF POTTER                                             | 8     | 17    |
     | Edward E. Leineweber            | Dane       | Court of Appeals               | TOWN OF MADISON Wards 2 - 11                                  | 50    | 238   |
 
-  # Examples: 20100914__wi__primary_ward.csv
+  Examples: 20100914__wi__primary_ward.csv
+    | party | candidate                         | county     | office                           | ward                                              | votes | total |
+    | DEM   | Tim John                          | Polk       | Governor                         | VILLAGE OF FREDERIC Wards 1 & 2                   | 5     | 28    |
+    | REP   | Dan Mielke                        | Marathon   | House                            | VILLAGE OF KRONENWETTER Wards 1 - 8               | 118   | 568   |
+    | LIB   | Joseph Kexel                      | Kenosha    | House                            | VILLAGE OF PLEASANT PRAIRIE Wards 6 & 7           | 2     | 2     | 
+    | WIG   | Ben Manski                        | Dane       | State Assembly                   | CITY OF MIDDLETON Wards 2-4                       | 33    | 33    |
 
   Examples: 20101102__wi__general_ward.csv
     | candidate                       | county      | office                        | ward                                                          | votes | total |
