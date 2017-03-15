@@ -18,8 +18,6 @@ sys.setdefaultencoding('utf8')
 
 headers = ["county","ward","office","district","total votes","party","candidate","votes"]
 
-offices_without_title_sheet = ['JUSTICE OF THE SUPREME COURT']
-
 # {colA_header: num_missing} -- given first header, number of missing columns
 #   (for 2002 to 2010 single sheet spreadsheets)
 first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10}
@@ -88,20 +86,30 @@ def get_offices(sheet):
     """Extract office names from title sheet.
     Return list of names and index of first sheet to process.
     """
-    # Title page may have offices in column A or B (0 or 1), detect which column
-    column = 0 if sheet.cell_value(1, 0) else 1
-    offices = sheet.col_values(column)[1:]     # skip first row
-    if offices[0] == '':
-        # first office empty, assume first sheet is not a title sheet
-        offices = []
-        sheet_index = 0     # start with sheet 0
-        for office in offices_without_title_sheet:
-            # Look for an office in first column, search first 12 rows
-            if office in sheet.col_values(colx=0, start_rowx=0, end_rowx=12):
-                offices.append(office)
-                break
+    # Determine file format by checking a few cells
+    # (0-origin row and col numbers)
+    row1_AB = sheet.row_values(rowx=1, start_colx=0, end_colx=2)
+    value_2A = sheet.cell_value(rowx=2, colx=0) if sheet.nrows > 2 else ''
+    
+    if ''.join(row1_AB) == '':
+        # First two cols in row 1 are blank,
+        #   is this 2011-04-05 Supreme Court election (id 421)?
+        office = 'JUSTICE OF THE SUPREME COURT'
+        if value_2A == office:
+            offices = [office]
+            sheet_index = 0     # start parsing data with sheet 0
+        else:
+            raise Exception('Unrecognized spreadsheet format')
     else:
-        sheet_index = 1     # start with sheet 1
+        if value_2A == 'Canvass Detail':   # probably 2010-09-14, id 425
+            row = 3     # offices start in row 3 (0-origin)
+            column = 0
+        else:   # normal title sheet, offices in column A or B
+            row = 1
+            column = 1 if sheet.cell_value(rowx=1, colx=0) == '' else 0
+        offices = sheet.col_values(colx=column, start_rowx=row)
+        sheet_index = 1     # data starts on sheet 1
+        
     return offices, sheet_index
 
 
@@ -115,8 +123,11 @@ def process(filename):
         return []
     sheet = xlsfile.sheet_by_index(0)
     results = []
+    
+    # If we recognize an old header, process single sheet file
     if sheet.cell_value(rowx=0, colx=0) in first_header:
         results.append(process_xls_2002_to_2010(sheet))
+    
     else:
         offices, sheet_index = get_offices(sheet)
         for office in offices:
@@ -360,8 +371,7 @@ working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
 working += xls_2010_onward_working
 
 test_set = [
-404, 407, 408, 419, 
-426, 434, 440, 444,
+404, 407, 408, 419, 421, 424, 425, 426, 434, 440, 444,
 1573, 1574, 1575, 1576, 1577, 1659, 1661, 1662
 ]
 # get_all_results(test_set, WIOpenElectionsAPI)
