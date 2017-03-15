@@ -26,8 +26,12 @@ office_recode = {
     'Us Senate': 'Senate',
     'United States Senator': 'Senate',
     'Us Congress': 'House',
+    'Representative In Congress': 'House',
     'Congressional': 'House',
     'Governor/Lieutenant Governor': 'Governor',
+    'Justice Of The Supreme Court': 'Supreme Court',
+    'Court Of Appeals Judge': 'Court Of Appeals',
+    'State Senator': 'State Senate',
     'Assembly': 'State Assembly',
     'Representative To The Assembly': 'State Assembly',
 }

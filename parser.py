@@ -322,7 +322,7 @@ no_results_ids = [674, 685, 689,448]
 
 # Election with PDF files.
 pdf_elections = [
-    410, 422, 443,
+    422, 443,
     444,                # contains both xls and pdf files
     445, 446, 447, 
     664,
@@ -344,10 +344,10 @@ xls_2002_to_2010_working = [
 xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
 
 xls_after_2010_working = [
-    404,405,407,408,409,
-    411,413,415,416,419,
+    404,405,407,408,409,410,411,
+    413,415,416,419,
     421,                        # Single sheet with no cover sheet, unlike others
-    424,425,
+    424,#425, not working yet!
     1538,1539,1573,1574,1575,1576,
     1658,1659,1660,1661,1662,
     1748,1710
