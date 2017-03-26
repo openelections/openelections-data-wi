@@ -137,11 +137,16 @@ def process(filename):
 
 
 def make_filepath(election):
-    type = election['race_type']
-    if election['special']:
-        type = 'special_' + type
+    # See http://docs.openelections.net/archive-standardization/
     start_date = election['start_date'].replace("-","")
-    filename = '{}__wi__{}_ward.csv'.format(start_date, type)
+    state = 'wi'
+    party = ''
+    special = 'special' if election['special'] else ''
+    race_type = election['race_type']
+    reporting_level = 'ward'
+    names = [start_date, state, party, special, race_type, reporting_level]
+    names = [name for name in names if name]    # remove empty names
+    filename = '__'.join(names) + '.csv'
     print 'Processing ' + filename
     year = start_date[:4]
     if not os.path.isdir(year):
