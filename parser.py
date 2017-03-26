@@ -380,5 +380,18 @@ test_set = [
 #     get_result_for_json(filename)
 
 
-get_all_results(working, WIOpenElectionsAPI)
+# Running from command line without args, process results for all working ids.
+# With args, get results for the ids listed as args.
+if __name__ == '__main__':
+    args = sys.argv[1:]
+    if args:
+        if all(map(str.isdigit, args)):
+            ids = map(int, args)
+        else:
+            print 'Args must be positive integers (election ids)'
+            sys.exit(1)
+    else:
+        ids = working
+    get_all_results(ids, WIOpenElectionsAPI)
+
 
