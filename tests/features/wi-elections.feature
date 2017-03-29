@@ -241,3 +241,11 @@ Feature: WI Elections
     | Sarah Lloyd                           | Dodge         | House                     | CITY OF MAYVILLE Wards 1-8                                | 781   | 2524  |
     | Fred A. Risser                        | Dane          | State Senate              | CITY OF MIDDLETON Wards 19-20                             | 0     | 0     |
     | Cindi Duchow                          | Waukesha      | State Assembly            | TOWN OF OTTAWA Wards 1-5                                  | 1912  | 1938  |
+
+
+  Examples: 20170221__wi__primary__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court Judge        | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
+    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Judge Branch 3 | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
+    | Lowell E. Holtz               | Rock          | State Superintendent Of Public Instruction    | CITY OF BRODHEAD Wards 7-8                    | 0     | 5     |
+    
