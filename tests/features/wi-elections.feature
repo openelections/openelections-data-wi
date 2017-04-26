@@ -24,6 +24,38 @@ Feature: WI Elections
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTAH Wards 1 & 2                   | 75    | 106   |
 
+  Examples: 20060404__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Patrick Crooks                            | Brown      | Supreme Court                    | CITY OF GREEN BAY Ward 34                         | 306   | 311   |
+    | Margaret J. Vergeront                     | Columbia   | Court of Appeals                 | CITY OF LODI Wards 1 - 4                          | 253   | 253   |
+    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court   | VILLAGE OF BROWN DEER Wards 1 - 9                 | 2     | 1523  |
+
+  Examples: 20060912__wi__primary__ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes | total |
+    | CON   | Scattering                        | Rusk      | Attorney General                  | TOWN OF FLAMBEAU Wards 1 - 3                      | 1     | 1     |
+    | DEM   | Jim Doyle                         | Clark     | Governor                          | TOWN OF BEAVER Wards 1 & 2                        | 19    | 19    |
+    | LIB   | Scattering                        | Barron    | Lieutenant Governor               | CITY OF CUMBERLAND Wards 1 - 5                    | 1     | 1     |
+
+  Examples: 20061107__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | H. Craig Haukaas                          | Bayfield   | Bayfield County District Attorney | TOWN OF BELL                                     | 107   | 109   |
+    | Michael LaForest                          | Monroe     | Secretary of State               | TOWN OF WILTON Wards 1 - 3                        | 10    | 161   |
+    | Winston Sephus, Jr.                       | Chippewa   | State Treasurer                  | CITY OF BLOOMER Wards 1 - 4                       | 21    | 1085  |
+    | Charlie Most                              | Brown      | State Senate                     | VILLAGE OF BELLEVUE Wards 7 - 10                  | 1109  | 2835  |
+    | Ben Bourdo                                | Jefferson  | State Assembly                   | CITY OF WHITEWATER Wards 14 & 15                  | 0     | 2     |
+    | Robert Gerald Lorge                       | Buffalo    | Senate                           | TOWN OF MODENA                                    | 33    | 136   |
+    | David R. Obey                             | Ashland    | House                            | TOWN OF AGENDA                                    | 128   | 190   |
+
+  Examples: 20070220__wi__primary__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Joseph Sommers                            | Marathon   | Supreme Court                    | TOWN OF EAU PLEINE                                | 2     | 24    |
+    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court    | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
+
+  Examples: 20070403__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Linda M. Clifford                         | Walworth   | Supreme Court                    | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
+    | Scattering                                | Barron     | Court Of Appeals                 | TOWN OF STANFOLD                                  | 2     | 138   |
+    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
 
   Examples: 20080219__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
