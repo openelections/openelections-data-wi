@@ -7,6 +7,7 @@ import sys
 import requests
 import unicodecsv as csv
 import xlrd
+import zipfile
 
 import cleaner
 
@@ -164,11 +165,7 @@ def get_election_result(election):
     for direct_link in direct_links:
         infilename = os.path.basename(direct_link)
         cached_filename = os.path.join('local_data_cache', 'data', infilename)
-        if cached_filename.lower().endswith('.pdf'):
-            print '**** Skipping PDF file: ' + cached_filename
-            continue
-        print 'Opening ' + cached_filename
-        results = process(cached_filename)
+        results = process_file(cached_filename)
         for result in results:
             for row in result:
                 row = cleaner.clean_particular(election, row)
@@ -176,6 +173,23 @@ def get_election_result(election):
                 if "Office Totals:" not in row:
                     wr.writerow(row)
 
+def process_file(cached_filename):
+    if cached_filename.lower().endswith('.pdf'):
+        print '**** Skipping PDF file: ' + cached_filename
+        return []
+    elif cached_filename.lower().endswith('.zip'):
+        archive = zipfile.ZipFile(cached_filename, 'r')
+        archive.extractall('tmp/')
+        archive.close()
+        results = []
+        for filename in os.listdir('tmp/'):
+            local_file = 'tmp/' + filename
+            results = results + process_file(local_file)
+            os.remove(local_file)
+        return results
+    else: # Excel file
+        print 'Opening ' + cached_filename
+        return process(cached_filename)
 
 def open_file(url, filename):
     r = requests.get(url)
@@ -337,22 +351,21 @@ no_results_ids = [674, 685, 689,448]
 
 # Election with PDF files.
 pdf_elections = [
-    422, 443,
+    422,
+    437,                # PDF and excel (in zips) 
+    443,
     444,                # contains both xls and pdf files
     445, 446, 447, 
     664,
     1711
 ]
 
-zip_file = [437]
-
-
 # Working Elections:
 
 # Single sheet spreadsheets, older format, repeated headings
 xls_2002_to_2010_working = [
     426, 427, 428, 429, 
-    430, 431, 432, 433, 434, 435, 436,
+    430, 431, 432, 433, 434, 435, 436, 437,
     438, 439, 440, 441, 442, 
     1577, 1578
 ]
