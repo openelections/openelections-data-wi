@@ -285,6 +285,6 @@ Feature: WI Elections
   Examples: 20170404__wi__general__ward.csv
     | candidate                   | county        | office                              | ward                                                      | votes | total |
     | Rick Melcher (write-in)     | Shawano       | State Superintendent of Public Instruction | CITY OF SHAWANO Wards 7-8                          | 1     | 165   |
-    | Scattering                  | Dane          | Justice of the Supreme Court        | CITY OF MADISON Ward 40                                   | 184   | 723   |
-    | Brian K. Hagedorn           | Ozaukee       | Court of Appeals Judge District 2   | TOWN OF BELGIUM Ward 1-3                                  | 113   | 113   |
+    | Scattering                  | Dane          | Supreme Court                       | CITY OF MADISON Ward 40                                   | 184   | 723   |
+    | Brian K. Hagedorn           | Ozaukee       | Court of Appeals                    | TOWN OF BELGIUM Ward 1-3                                  | 113   | 113   |
     | Guy Dutcher                 | Waushara      | Waushara County Circuit Court Judge | CITY OF WAUTOMA Wards 1-3                                 | 117   | 117   |
