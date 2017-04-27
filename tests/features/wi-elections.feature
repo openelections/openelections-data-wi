@@ -273,3 +273,15 @@ Feature: WI Elections
     | Sarah Lloyd                           | Dodge         | House                     | CITY OF MAYVILLE Wards 1-8                                | 781   | 2524  |
     | Fred A. Risser                        | Dane          | State Senate              | CITY OF MIDDLETON Wards 19-20                             | 0     | 0     |
     | Cindi Duchow                          | Waukesha      | State Assembly            | TOWN OF OTTAWA Wards 1-5                                  | 1912  | 1938  |
+
+  Examples: 20170221__wi__primary__ward.csv
+    | candidate                   | county        | office                              | ward                                                      | votes | total |
+    | John Humphries              | Crawford      | State Superintendent of Public Instruction | CITY OF PRAIRIE DU CHIEN Wards 2,7                 | 6     | 55    |
+    | Malia Malone                | Polk          | Polk County Circuit Court Judge Branch 1   | VILLAGE OF TURTLE LAKE Wards 2A,2B                 | 7     | 8     |
+    
+  Examples: 20170404__wi__general__ward.csv
+    | candidate                   | county        | office                              | ward                                                      | votes | total |
+    | Rick Melcher (write-in)     | Shawano       | State Superintendent of Public Instruction | CITY OF SHAWANO Wards 7-8                          | 1     | 165   |
+    | Scattering                  | Dane          | Justice of the Supreme Court        | CITY OF MADISON Ward 40                                   | 184   | 723   |
+    | Brian K. Hagedorn           | Ozaukee       | Court of Appeals Judge District 2   | TOWN OF BELGIUM Ward 1-3                                  | 113   | 113   |
+    | Guy Dutcher                 | Waushara      | Waushara County Circuit Court Judge | CITY OF WAUTOMA Wards 1-3                                 | 117   | 117   |
