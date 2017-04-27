@@ -278,7 +278,10 @@ Feature: WI Elections
     | candidate                   | county        | office                              | ward                                                      | votes | total |
     | John Humphries              | Crawford      | State Superintendent of Public Instruction | CITY OF PRAIRIE DU CHIEN Wards 2,7                 | 6     | 55    |
     | Malia Malone                | Polk          | Polk County Circuit Court Judge Branch 1   | VILLAGE OF TURTLE LAKE Wards 2A,2B                 | 7     | 8     |
-    
+    | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court Judge        | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
+    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Judge Branch 3 | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
+    | Lowell E. Holtz               | Rock          | State Superintendent Of Public Instruction    | CITY OF BRODHEAD Wards 7-8                    | 0     | 5     |
+
   Examples: 20170404__wi__general__ward.csv
     | candidate                   | county        | office                              | ward                                                      | votes | total |
     | Rick Melcher (write-in)     | Shawano       | State Superintendent of Public Instruction | CITY OF SHAWANO Wards 7-8                          | 1     | 165   |
