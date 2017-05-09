@@ -57,9 +57,11 @@ def process_xls_2002_to_2010(sheet):
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
         if office_col >= 0:
-            office, _, district = row[office_col].partition(',')
-            if district.strip():    # some non-space characters
-                district = district.rsplit(None, 1)[-1]
+            office = row[office_col]
+            head, _, district = office.partition(', District ')
+            if district:        # separator was found
+                office = head
+                district = district.split()[-1]     # parse 'No. 1'
         else:
             # (use last office)
             district = ''
