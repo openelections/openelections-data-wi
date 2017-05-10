@@ -28,7 +28,7 @@ Feature: WI Elections
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Patrick Crooks                            | Brown      | Supreme Court                    | CITY OF GREEN BAY Ward 34                         | 306   | 311   |
     | Margaret J. Vergeront                     | Columbia   | Court of Appeals                 | CITY OF LODI Wards 1 - 4                          | 253   | 253   |
-    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court   | VILLAGE OF BROWN DEER Wards 1 - 9                 | 2     | 1523  |
+    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court, Branch 39 | VILLAGE OF BROWN DEER Wards 1 - 9                 | 2     | 1523  |
 
   Examples: 20060912__wi__primary__ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
@@ -49,21 +49,21 @@ Feature: WI Elections
   Examples: 20070220__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Joseph Sommers                            | Marathon   | Supreme Court                    | TOWN OF EAU PLEINE                                | 2     | 24    |
-    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court    | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
+    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court, Branch 4 | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
 
   Examples: 20070403__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Linda M. Clifford                         | Walworth   | Supreme Court                    | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
     | Scattering                                | Barron     | Court Of Appeals                 | TOWN OF STANFOLD                                  | 2     | 138   |
-    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
+    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct, Branch 2 | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
 
   Examples: 20080219__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court    | VILLAGE OF DEER PARK                              | 3     | 50    |
+    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court, Branch 4 | VILLAGE OF DEER PARK                              | 3     | 50    |
 
   Examples: 20080401__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | James D. Babbitt                          | Barron     | Barron County Circuit Court      | TOWN OF DALLAS Wards 1 & 2                        | 57    | 68    |
+    | James D. Babbitt                          | Barron     | Barron County Circuit Court, Branch 3 | TOWN OF DALLAS Wards 1 & 2                        | 57    | 68    |
     | Burneatta L. Bridge                       | Grant      | Court Of Appeals                 | TOWN OF CASTLE ROCK                               | 48    | 48    |
     | Louis Butler                              | Forest     | Supreme Court                    | TOWN OF POPPLE RIVER                              | 3     | 18    |
 
@@ -100,8 +100,8 @@ Feature: WI Elections
 
   Examples: 20090217__wi__primary__ward.csv
     | candidate                       | county     | office                                     | ward                                              | votes | total |
-    | Julie Genovese                  | Dane       | Dane County Circuit Court                  | VILLAGE OF ROCKDALE                               | 4     | 14    |
-    | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court              | VILLAGE OF BROKAW                                 | 1     | 18    |
+    | Julie Genovese                  | Dane       | Dane County Circuit Court, Branch 13       | VILLAGE OF ROCKDALE                               | 4     | 14    |
+    | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court, Branch 1    | VILLAGE OF BROKAW                                 | 1     | 18    |
     | Lowell E. Holtz                 | Adams      | State Superintendent Of Public Instruction | TOWN OF STRONGS PRAIRIE Wards 1 & 2               | 3     | 35    |
 
   Examples: 20090407__wi__general__ward.csv
@@ -111,7 +111,7 @@ Feature: WI Elections
     | Tony Evers                      | Kenosha    | State Superintendent Of Public Instruction | VILLAGE OF PADDOCK LAKE Wards 1 - 5               | 239   | 419   |
     | Randy R. Koschnick              | Adams      | Supreme Court                              | CITY OF WISCONSIN DELLS Ward 5                    | 1     | 1     |
     | Gene D. Linehan                 | Bayfield   | Bayfield County Circuit Court              | TOWN OF OULU                                      | 23    | 80    |
-    | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court             | CITY OF MILWAUKEE Ward 208                        | 7     | 7     |
+    | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court, Branch 42  | CITY OF MILWAUKEE Ward 208                        | 7     | 7     |
     | Scattering                      | Taylor     | Taylor County Circuit Court                | CITY OF MEDFORD Wards 1 & 2                       | 1     | 321   |
 
 
