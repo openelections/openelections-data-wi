@@ -24,14 +24,46 @@ Feature: WI Elections
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTAH Wards 1 & 2                   | 75    | 106   |
 
+  Examples: 20060404__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Patrick Crooks                            | Brown      | Supreme Court                    | CITY OF GREEN BAY Ward 34                         | 306   | 311   |
+    | Margaret J. Vergeront                     | Columbia   | Court of Appeals                 | CITY OF LODI Wards 1 - 4                          | 253   | 253   |
+    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court, Branch 39 | VILLAGE OF BROWN DEER Wards 1 - 9                 | 2     | 1523  |
+
+  Examples: 20060912__wi__primary__ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes | total |
+    | CON   | Scattering                        | Rusk      | Attorney General                  | TOWN OF FLAMBEAU Wards 1 - 3                      | 1     | 1     |
+    | DEM   | Jim Doyle                         | Clark     | Governor                          | TOWN OF BEAVER Wards 1 & 2                        | 19    | 19    |
+    | LIB   | Scattering                        | Barron    | Lieutenant Governor               | CITY OF CUMBERLAND Wards 1 - 5                    | 1     | 1     |
+
+  Examples: 20061107__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | H. Craig Haukaas                          | Bayfield   | Bayfield County District Attorney | TOWN OF BELL                                     | 107   | 109   |
+    | Michael LaForest                          | Monroe     | Secretary of State               | TOWN OF WILTON Wards 1 - 3                        | 10    | 161   |
+    | Winston Sephus, Jr.                       | Chippewa   | State Treasurer                  | CITY OF BLOOMER Wards 1 - 4                       | 21    | 1085  |
+    | Charlie Most                              | Brown      | State Senate                     | VILLAGE OF BELLEVUE Wards 7 - 10                  | 1109  | 2835  |
+    | Ben Bourdo                                | Jefferson  | State Assembly                   | CITY OF WHITEWATER Wards 14 & 15                  | 0     | 2     |
+    | Robert Gerald Lorge                       | Buffalo    | Senate                           | TOWN OF MODENA                                    | 33    | 136   |
+    | David R. Obey                             | Ashland    | House                            | TOWN OF AGENDA                                    | 128   | 190   |
+
+  Examples: 20070220__wi__primary__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Joseph Sommers                            | Marathon   | Supreme Court                    | TOWN OF EAU PLEINE                                | 2     | 24    |
+    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court, Branch 4 | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
+
+  Examples: 20070403__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Linda M. Clifford                         | Walworth   | Supreme Court                    | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
+    | Scattering                                | Barron     | Court Of Appeals                 | TOWN OF STANFOLD                                  | 2     | 138   |
+    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct, Branch 2 | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
 
   Examples: 20080219__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court    | VILLAGE OF DEER PARK                              | 3     | 50    |
+    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court, Branch 4 | VILLAGE OF DEER PARK                              | 3     | 50    |
 
   Examples: 20080401__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | James D. Babbitt                          | Barron     | Barron County Circuit Court      | TOWN OF DALLAS Wards 1 & 2                        | 57    | 68    |
+    | James D. Babbitt                          | Barron     | Barron County Circuit Court, Branch 3 | TOWN OF DALLAS Wards 1 & 2                        | 57    | 68    |
     | Burneatta L. Bridge                       | Grant      | Court Of Appeals                 | TOWN OF CASTLE ROCK                               | 48    | 48    |
     | Louis Butler                              | Forest     | Supreme Court                    | TOWN OF POPPLE RIVER                              | 3     | 18    |
 
@@ -68,8 +100,8 @@ Feature: WI Elections
 
   Examples: 20090217__wi__primary__ward.csv
     | candidate                       | county     | office                                     | ward                                              | votes | total |
-    | Julie Genovese                  | Dane       | Dane County Circuit Court                  | VILLAGE OF ROCKDALE                               | 4     | 14    |
-    | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court              | VILLAGE OF BROKAW                                 | 1     | 18    |
+    | Julie Genovese                  | Dane       | Dane County Circuit Court, Branch 13       | VILLAGE OF ROCKDALE                               | 4     | 14    |
+    | Peter C. Rotter                 | Marathon   | Marathon County Circuit Court, Branch 1    | VILLAGE OF BROKAW                                 | 1     | 18    |
     | Lowell E. Holtz                 | Adams      | State Superintendent Of Public Instruction | TOWN OF STRONGS PRAIRIE Wards 1 & 2               | 3     | 35    |
 
   Examples: 20090407__wi__general__ward.csv
@@ -79,7 +111,7 @@ Feature: WI Elections
     | Tony Evers                      | Kenosha    | State Superintendent Of Public Instruction | VILLAGE OF PADDOCK LAKE Wards 1 - 5               | 239   | 419   |
     | Randy R. Koschnick              | Adams      | Supreme Court                              | CITY OF WISCONSIN DELLS Ward 5                    | 1     | 1     |
     | Gene D. Linehan                 | Bayfield   | Bayfield County Circuit Court              | TOWN OF OULU                                      | 23    | 80    |
-    | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court             | CITY OF MILWAUKEE Ward 208                        | 7     | 7     |
+    | David A. Hansher                | Milwaukee  | Milwaukee County Circuit Court, Branch 42  | CITY OF MILWAUKEE Ward 208                        | 7     | 7     |
     | Scattering                      | Taylor     | Taylor County Circuit Court                | CITY OF MEDFORD Wards 1 & 2                       | 1     | 321   |
 
 
@@ -234,6 +266,14 @@ Feature: WI Elections
     | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
     | Rebecca G. Bradley            | Chippewa      | Supreme Court                     | TOWN OF GOETZ Ward 3                                      | 4     | 4     |
 
+  Examples: 20160809__wi__primary__ward.csv
+    | party | candidate                     | county        | office                            | ward                                              | votes | total |
+    | REP   | Nicholas Bolz                 | Calumet       | Calumet County District Attorney  | CITY OF CHILTON Ward 1-5                          | 168   | 478   |
+    | LIB   | John Arndt                    | Washington    | House                             | VILLAGE OF GERMANTOWN Wards 1,8,10-11             | 5     | 5     |
+    | DEM   | Scott Harbach                 | Lincoln       | Senate                            | TOWN OF PINE RIVER Wards 1-3                      | 20    | 97    |
+    | DEM   | Jared William Landry          | Monroe        | State Senate                      | TOWN OF ADRIAN Ward 1                             | 3     | 32    |
+    | REP   | Christopher Schaefer          | Outagamie     | State Assembly                    | VILLAGE OF LITTLE CHUTE Wards 3,9-11              | 47    | 244   |
+
   Examples: 20161108__wi__general__ward.csv
     | candidate                             | county        | office                    | ward                                                      | votes | total |
     | Darrell L. Castle & Scott N. Bradley  | Burnett       | President                 | TOWN OF WOOD RIVER Ward 1-3                               | 10    | 517   |
@@ -242,10 +282,17 @@ Feature: WI Elections
     | Fred A. Risser                        | Dane          | State Senate              | CITY OF MIDDLETON Wards 19-20                             | 0     | 0     |
     | Cindi Duchow                          | Waukesha      | State Assembly            | TOWN OF OTTAWA Wards 1-5                                  | 1912  | 1938  |
 
-
   Examples: 20170221__wi__primary__ward.csv
-    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | candidate                   | county        | office                              | ward                                                      | votes | total |
+    | John Humphries              | Crawford      | State Superintendent of Public Instruction | CITY OF PRAIRIE DU CHIEN Wards 2,7                 | 6     | 55    |
+    | Malia Malone                | Polk          | Polk County Circuit Court Judge Branch 1   | VILLAGE OF TURTLE LAKE Wards 2A,2B                 | 7     | 8     |
     | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court Judge        | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
     | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Judge Branch 3 | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
     | Lowell E. Holtz               | Rock          | State Superintendent Of Public Instruction    | CITY OF BRODHEAD Wards 7-8                    | 0     | 5     |
-    
+
+  Examples: 20170404__wi__general__ward.csv
+    | candidate                   | county        | office                              | ward                                                      | votes | total |
+    | Rick Melcher (write-in)     | Shawano       | State Superintendent of Public Instruction | CITY OF SHAWANO Wards 7-8                          | 1     | 165   |
+    | Scattering                  | Dane          | Supreme Court                       | CITY OF MADISON Ward 40                                   | 184   | 723   |
+    | Brian K. Hagedorn           | Ozaukee       | Court of Appeals                    | TOWN OF BELGIUM Ward 1-3                                  | 113   | 113   |
+    | Guy Dutcher                 | Waushara      | Waushara County Circuit Court Judge | CITY OF WAUTOMA Wards 1-3                                 | 117   | 117   |
