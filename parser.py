@@ -260,7 +260,7 @@ def parse_office(office_string):
     office = office.replace('―','-')    # change \u2015 HORIZONTAL BAR to hyphen
     office = office.replace('–', '-')   # change \u2013 EN DASH to hyphen
     
-    if ' DISTRICT ' in office:
+    if ' DISTRICT ' in office and ' DISTRICT ATTORNEY' not in office:
         head, sep, tail = office.partition(' DISTRICT ')
         office = head.strip(',- ')
         district, sep, party = tail.partition(' ')
