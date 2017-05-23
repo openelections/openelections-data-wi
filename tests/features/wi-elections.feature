@@ -266,6 +266,14 @@ Feature: WI Elections
     | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
     | Rebecca G. Bradley            | Chippewa      | Supreme Court                     | TOWN OF GOETZ Ward 3                                      | 4     | 4     |
 
+  Examples: 20160809__wi__primary__ward.csv
+    | party | candidate                     | county        | office                            | ward                                              | votes | total |
+    | REP   | Nicholas Bolz                 | Calumet       | Calumet County District Attorney  | CITY OF CHILTON Ward 1-5                          | 168   | 478   |
+    | LIB   | John Arndt                    | Washington    | House                             | VILLAGE OF GERMANTOWN Wards 1,8,10-11             | 5     | 5     |
+    | DEM   | Scott Harbach                 | Lincoln       | Senate                            | TOWN OF PINE RIVER Wards 1-3                      | 20    | 97    |
+    | DEM   | Jared William Landry          | Monroe        | State Senate                      | TOWN OF ADRIAN Ward 1                             | 3     | 32    |
+    | REP   | Christopher Schaefer          | Outagamie     | State Assembly                    | VILLAGE OF LITTLE CHUTE Wards 3,9-11              | 47    | 244   |
+
   Examples: 20161108__wi__general__ward.csv
     | candidate                             | county        | office                    | ward                                                      | votes | total |
     | Darrell L. Castle & Scott N. Bradley  | Burnett       | President                 | TOWN OF WOOD RIVER Ward 1-3                               | 10    | 517   |
