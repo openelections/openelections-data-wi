@@ -189,8 +189,10 @@ Feature: WI Elections
     | Donna Seidel                  | Taylor        | State Senate                  | City of Medford Wards 1-8                                     | 588   | 1638  |
 
   Examples: 20120814__wi__primary__ward.csv
-    | candidate                     | county        | office                        | ward                                                          | votes | total |
-    | Al Ott                        | Outagamie     | State Assembly                | Village of Combined Locks Wards 1-4                           | 263   | 368   |
+    | party | candidate             | county        | office                                            | ward                                      | votes | total |
+    | REP   | Al Ott                | Outagamie     | State Assembly                                    | Village of Combined Locks Wards 1-4       | 263   | 368   |
+    | DEM   | John T. Chisholm      | Milwaukee     | District Attorney - Milwaukee County              | CITY OF MILWAUKEE WARD 243                | 72    | 0     |
+    | AME   | Scattering            | Menominee     | District Attorney - Menominee-Shawano County      | TOWN OF MENOMINEE Ward 2                  | 0     | 0     |
 
   Examples: 20121106__wi__general__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |

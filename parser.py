@@ -84,6 +84,35 @@ def process_xls_2002_to_2010(sheet):
     return results
 
 
+def process_xls_2012_DA_primary(sheet):
+    """Return list of records from 2012-08-14 District Attorney spreadsheet"""
+    
+    fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
+    fieldnames = fieldnames.split()         # the fields we need
+    headers = sheet.row_values(rowx=0)      # first row
+    try:
+        fieldindexes = [headers.index(fieldname) for fieldname in fieldnames]
+    except ValueError:
+        print fieldname, 'not found in headers:'
+        print headers
+        raise
+    
+    results = []
+    for rowx in range(1, sheet.nrows):     # index to rows
+        row = sheet.row_values(rowx)
+        office, county, candidate, ward, votes = [row[col] for col in fieldindexes]
+        head, _, tail = office.rstrip().rpartition(' - ')
+        if len(tail) == 3:
+            office, party = head, tail
+        else:
+            party = ''
+        district = ''
+        total_votes = ''    # not computed
+        results.append([
+            county, ward, office, district, total_votes, party, candidate, votes])
+    return results
+
+
 def get_offices(sheet):
     """Extract office names from title sheet.
     Return list of names and index of first sheet to process.
@@ -123,15 +152,25 @@ def process(filename):
         print exc
         print
         return []
-    sheet = xlsfile.sheet_by_index(0)
+    sheet0 = xlsfile.sheet_by_index(0)
+    sheet0_cell0A = sheet0.cell_value(rowx=0, colx=0)   # first row, first column
+    
+    sheet1_cell0A = None
+    if xlsfile.nsheets > 1:
+        sheet1 = xlsfile.sheet_by_index(1)
+        if sheet1.nrows > 0:
+            sheet1_cell0A = sheet1.cell_value(rowx=0, colx=0)        
     results = []
     
-    # If we recognize an old header, process single sheet file
-    if sheet.cell_value(rowx=0, colx=0) in first_header:
-        results.append(process_xls_2002_to_2010(sheet))
+    # Check for unusual file formats
+    if sheet1_cell0A == 'ElectionName':
+    	results.append(process_xls_2012_DA_primary(sheet1))
+    # for an older-style header, process single sheet file
+    elif sheet0_cell0A in first_header:
+        results.append(process_xls_2002_to_2010(sheet0))
     
     else:
-        offices, sheet_index = get_offices(sheet)
+        offices, sheet_index = get_offices(sheet0)
         for office in offices:
             sheet = xlsfile.sheet_by_index(sheet_index)
             results.append(parse_sheet(sheet, office, sheet_index))
