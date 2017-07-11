@@ -171,14 +171,14 @@ Feature: WI Elections
     | DEM   | UNINSTRUCTED DELEGATION   | WASHBURN  | President                                         | Town of Gull Lake Ward 1                  | 6     | 20    |
 
   Examples: 20120403__wi__primary__ward.csv
-    | candidate                         | county    | office                                            | ward                                      | votes | total |
-    | JOHN C. ALBERT                    | DANE      | DANE COUNTY CIRCUIT COURT JUDGE, BRANCH 3         | TOWN OF OREGON WARDS 1-4                  | 583   | 584   |
-    | THOMAS J. GRITTON                 | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT JUDGE, BRANCH 1    | CITY OF OSHKOSH D8 W15                    | 359   | 361   |
-    | SCATTERING                        | WINNEBAGO | COURT OF APPEALS                                  | TOWN OF ALGOMA Wards 1-2, 7-10            | 4     | 791   |
-    | ROBERT E. EATON                   | ASHLAND   | ASHLAND COUNTY CIRCUIT COURT JUDGE                | VILLAGE OF BUTTERNUT Wards 1 & 2          | 69    | 69    |
-    | JAMES JUDGE DUVALL                | PEPIN     | BUFFALO-PEPIN COUNTY CIRCUIT COURT JUDGE          | CITY OF DURAND Wards 1 - 3                | 434   | 434   |
-    | NELSON WESLEY PHILLIPS, III       | MILWAUKEE | MILWAUKEE COUNTY CIRCUIT COURT JUDGE, BRANCH 17 | VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6  | 6     | 16    |
-    | NICHOLAS J. BRAZEAU, JR.          | WOOD      | WOOD COUNTY CIRCUIT COURT JUDGE, BRANCH 2         | CITY OF WISCONSIN RAPIDS Ward 23          | 67    | 69    |
+    | candidate                         | county    | office                                        | ward                                          | votes | total |
+    | JOHN C. ALBERT                    | DANE      | DANE COUNTY CIRCUIT COURT, BRANCH 3           | TOWN OF OREGON WARDS 1-4                      | 583   | 584   |
+    | THOMAS J. GRITTON                 | WINNEBAGO | WINNEBAGO COUNTY CIRCUIT COURT, BRANCH 1      | CITY OF OSHKOSH D8 W15                        | 359   | 361   |
+    | SCATTERING                        | WINNEBAGO | COURT OF APPEALS                              | TOWN OF ALGOMA Wards 1-2, 7-10                | 4     | 791   |
+    | ROBERT E. EATON                   | ASHLAND   | ASHLAND COUNTY CIRCUIT COURT                  | VILLAGE OF BUTTERNUT Wards 1 & 2              | 69    | 69    |
+    | JAMES JUDGE DUVALL                | PEPIN     | BUFFALO-PEPIN COUNTY CIRCUIT COURT            | CITY OF DURAND Wards 1 - 3                    | 434   | 434   |
+    | NELSON WESLEY PHILLIPS, III       | MILWAUKEE | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17     | VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6    | 6     | 16    |
+    | NICHOLAS J. BRAZEAU, JR.          | WOOD      | WOOD COUNTY CIRCUIT COURT, BRANCH 2           | CITY OF WISCONSIN RAPIDS Ward 23              | 67    | 69    |
 
   Examples: 20120605__wi__general-recall__ward.csv
     | candidate                     | county        | office                        | ward                                                          | votes | total |
@@ -263,7 +263,7 @@ Feature: WI Elections
   Examples: 20160405__wi__primary__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
     | Paul F. Reilly                | Sheboygan     | Court of Appeals                  | VILLAGE OF RANDOM LAKE Wards 1-2                          | 494   | 496   |
-    | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Judge Branch 3 | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
+    | Barbara Hart Key              | Winnebago     | Winnebago County Circuit Court Branch 3   | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38      | 449   | 452   |
     | Rebecca G. Bradley            | Chippewa      | Supreme Court                     | TOWN OF GOETZ Ward 3                                      | 4     | 4     |
 
   Examples: 20160809__wi__primary__ward.csv
@@ -283,11 +283,11 @@ Feature: WI Elections
     | Cindi Duchow                          | Waukesha      | State Assembly            | TOWN OF OTTAWA Wards 1-5                                  | 1912  | 1938  |
 
   Examples: 20170221__wi__primary__ward.csv
-    | candidate                   | county        | office                              | ward                                                      | votes | total |
-    | John Humphries              | Crawford      | State Superintendent of Public Instruction | CITY OF PRAIRIE DU CHIEN Wards 2,7                 | 6     | 55    |
-    | Malia Malone                | Polk          | Polk County Circuit Court Judge Branch 1   | VILLAGE OF TURTLE LAKE Wards 2A,2B                 | 7     | 8     |
-    | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court Judge        | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
-    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Judge Branch 3 | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | John Humphries                | Crawford      | State Superintendent of Public Instruction    | CITY OF PRAIRIE DU CHIEN Wards 2,7            | 6     | 55    |
+    | Malia Malone                  | Polk          | Polk County Circuit Court Branch 1            | VILLAGE OF TURTLE LAKE Wards 2A,2B            | 7     | 8     |
+    | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court              | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
+    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Branch 3       | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
     | Lowell E. Holtz               | Rock          | State Superintendent Of Public Instruction    | CITY OF BRODHEAD Wards 7-8                    | 0     | 5     |
 
   Examples: 20170404__wi__general__ward.csv
@@ -295,4 +295,4 @@ Feature: WI Elections
     | Rick Melcher (write-in)     | Shawano       | State Superintendent of Public Instruction | CITY OF SHAWANO Wards 7-8                          | 1     | 165   |
     | Scattering                  | Dane          | Supreme Court                       | CITY OF MADISON Ward 40                                   | 184   | 723   |
     | Brian K. Hagedorn           | Ozaukee       | Court of Appeals                    | TOWN OF BELGIUM Ward 1-3                                  | 113   | 113   |
-    | Guy Dutcher                 | Waushara      | Waushara County Circuit Court Judge | CITY OF WAUTOMA Wards 1-3                                 | 117   | 117   |
+    | Guy Dutcher                 | Waushara      | Waushara County Circuit Court       | CITY OF WAUTOMA Wards 1-3                                 | 117   | 117   |
