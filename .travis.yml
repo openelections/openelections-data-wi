@@ -9,6 +9,6 @@ install:
 
 script:
   - python parser.py
-  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
+#  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
   - cd tests
   - behave -T -q --format pretty
