@@ -7,6 +7,7 @@ import sys
 import requests
 import unicodecsv as csv
 import xlrd
+import zipfile
 
 import cleaner
 
@@ -56,9 +57,11 @@ def process_xls_2002_to_2010(sheet):
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
         if office_col >= 0:
-            office, _, district = row[office_col].partition(',')
-            if district.strip():    # some non-space characters
-                district = district.rsplit(None, 1)[-1]
+            office = row[office_col]
+            head, _, district = office.partition(', District ')
+            if district:        # separator was found
+                office = head
+                district = district.split()[-1]     # parse 'No. 1'
         else:
             # (use last office)
             district = ''
@@ -78,6 +81,35 @@ def process_xls_2002_to_2010(sheet):
             results.append([
                 county, ward, office, district, total_votes, parties[i], candidate, votes[i]
             ])
+    return results
+
+
+def process_xls_2012_DA_primary(sheet):
+    """Return list of records from 2012-08-14 District Attorney spreadsheet"""
+    
+    fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
+    fieldnames = fieldnames.split()         # the fields we need
+    headers = sheet.row_values(rowx=0)      # first row
+    try:
+        fieldindexes = [headers.index(fieldname) for fieldname in fieldnames]
+    except ValueError:
+        print fieldname, 'not found in headers:'
+        print headers
+        raise
+    
+    results = []
+    for rowx in range(1, sheet.nrows):     # index to rows
+        row = sheet.row_values(rowx)
+        office, county, candidate, ward, votes = [row[col] for col in fieldindexes]
+        head, _, tail = office.rstrip().rpartition(' - ')
+        if len(tail) == 3:
+            office, party = head, tail
+        else:
+            party = ''
+        district = ''
+        total_votes = ''    # not computed
+        results.append([
+            county, ward, office, district, total_votes, party, candidate, votes])
     return results
 
 
@@ -120,15 +152,25 @@ def process(filename):
         print exc
         print
         return []
-    sheet = xlsfile.sheet_by_index(0)
+    sheet0 = xlsfile.sheet_by_index(0)
+    sheet0_cell0A = sheet0.cell_value(rowx=0, colx=0)   # first row, first column
+    
+    sheet1_cell0A = None
+    if xlsfile.nsheets > 1:
+        sheet1 = xlsfile.sheet_by_index(1)
+        if sheet1.nrows > 0:
+            sheet1_cell0A = sheet1.cell_value(rowx=0, colx=0)        
     results = []
     
-    # If we recognize an old header, process single sheet file
-    if sheet.cell_value(rowx=0, colx=0) in first_header:
-        results.append(process_xls_2002_to_2010(sheet))
+    # Check for unusual file formats
+    if sheet1_cell0A == 'ElectionName':
+    	results.append(process_xls_2012_DA_primary(sheet1))
+    # for an older-style header, process single sheet file
+    elif sheet0_cell0A in first_header:
+        results.append(process_xls_2002_to_2010(sheet0))
     
     else:
-        offices, sheet_index = get_offices(sheet)
+        offices, sheet_index = get_offices(sheet0)
         for office in offices:
             sheet = xlsfile.sheet_by_index(sheet_index)
             results.append(parse_sheet(sheet, office, sheet_index))
@@ -164,11 +206,7 @@ def get_election_result(election):
     for direct_link in direct_links:
         infilename = os.path.basename(direct_link)
         cached_filename = os.path.join('local_data_cache', 'data', infilename)
-        if cached_filename.lower().endswith('.pdf'):
-            print '**** Skipping PDF file: ' + cached_filename
-            continue
-        print 'Opening ' + cached_filename
-        results = process(cached_filename)
+        results = process_file(cached_filename)
         for result in results:
             for row in result:
                 row = cleaner.clean_particular(election, row)
@@ -176,6 +214,23 @@ def get_election_result(election):
                 if "Office Totals:" not in row:
                     wr.writerow(row)
 
+def process_file(cached_filename):
+    if cached_filename.lower().endswith('.pdf'):
+        print '**** Skipping PDF file: ' + cached_filename
+        return []
+    elif cached_filename.lower().endswith('.zip'):
+        archive = zipfile.ZipFile(cached_filename, 'r')
+        archive.extractall('tmp/')
+        archive.close()
+        results = []
+        for filename in os.listdir('tmp/'):
+            local_file = 'tmp/' + filename
+            results = results + process_file(local_file)
+            os.remove(local_file)
+        return results
+    else: # Excel file
+        print 'Opening ' + cached_filename
+        return process(cached_filename)
 
 def open_file(url, filename):
     r = requests.get(url)
@@ -244,7 +299,7 @@ def parse_office(office_string):
     office = office.replace('―','-')    # change \u2015 HORIZONTAL BAR to hyphen
     office = office.replace('–', '-')   # change \u2013 EN DASH to hyphen
     
-    if ' DISTRICT ' in office:
+    if ' DISTRICT ' in office and ' DISTRICT ATTORNEY' not in office:
         head, sep, tail = office.partition(' DISTRICT ')
         office = head.strip(',- ')
         district, sep, party = tail.partition(' ')
@@ -328,7 +383,8 @@ available_ids = [
 431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,
 664,
 674,685,689,
-1577,1578]
+1577,1578,
+1755,1761]
 
 # Elections with no files available.
 no_results_ids = [674, 685, 689,448]
@@ -337,22 +393,21 @@ no_results_ids = [674, 685, 689,448]
 
 # Election with PDF files.
 pdf_elections = [
-    422, 443,
+    422,
+    437,                # PDF and excel (in zips) 
+    443,
     444,                # contains both xls and pdf files
     445, 446, 447, 
     664,
     1711
 ]
 
-zip_file = [437]
-
-
 # Working Elections:
 
 # Single sheet spreadsheets, older format, repeated headings
 xls_2002_to_2010_working = [
     426, 427, 428, 429, 
-    430, 431, 432, 433, 434, 435, 436,
+    430, 431, 432, 433, 434, 435, 436, 437,
     438, 439, 440, 441, 442, 
     1577, 1578
 ]
@@ -365,7 +420,7 @@ xls_2010_onward_working = [
     424,425,
     1538,1539,1573,1574,1575,1576,
     1658,1659,1660,1661,1662,
-    1710,1748,1755
+    1710,1748,1755,1761
 ]
 
 # Files with offices in second column of title sheet (working):

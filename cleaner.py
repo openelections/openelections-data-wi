@@ -30,7 +30,6 @@ office_recode = {
     'Congressional': 'House',
     'Governor/Lieutenant Governor': 'Governor',
     'Justice Of The Supreme Court': 'Supreme Court',
-    'Court Of Appeals Judge': 'Court Of Appeals',
     'State Senator': 'State Senate',
     'Assembly': 'State Assembly',
     'Representative To The Assembly': 'State Assembly',
@@ -49,8 +48,8 @@ office_names = [
     'State Superintendent of Public Instruction',
     
     # judges
-    'Supreme Court[ Justice]', 'Court of Appeals[ Judge][, District __]',
-    '__ County Circuit Court[ Judge][, Branch __]',
+    'Supreme Court', 'Court of Appeals[, District __]',
+    '__ County Circuit Court[, Branch __]',
     
     # state representatives
     'State Senate', 'State Assembly',
@@ -68,6 +67,7 @@ def clean_ward(item):
 
 def clean_office(item):
     item = item.title()
+    item = item.replace(' Judge', '', 1)    # remove first occurrence
     office = office_recode.get(item)
     if office is None:
         office = clean_string(item)
