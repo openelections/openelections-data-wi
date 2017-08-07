@@ -10,6 +10,16 @@ Feature: WI Elections
     | DEM   | Dale Moore                        | Racine    | House                             | CITY OF RACINE Ward 30                            | 38    | 151   |
     | REP   | Peggy A. Rosenzweig               | Milwaukee | State Senate                      | CITY OF MILWAUKEE Ward 286                        | 19    | 58    |
 
+  Examples: 20021105__wi__general__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Scott McCallum/ Margaret A. Farrow        | Adams      | Governor                         | TOWN OF ADAMS Wards 1 & 2                         | 113   | 428   |
+    | Peggy A. Lautenschlager                   | Dodge      | Attorney General                 | CITY OF MAYVILLE Wards 1 - 7                      | 617   | 1336  |
+    | Edward J. Frami                           | Oneida     | Secretary of State               | TOWN OF STELLA                                    | 2     | 196   |
+    | Paul Aschenbrenner                        | Vilas      | State Treasurer                  | TOWN OF LINCOLN Wards 1 - 5                       | 100   | 996   |
+    | Scattering                                | Green Lake | House                            | CITY OF BERLIN                                    | 16    | 1161  |
+    | Dale W. Schultz                           | Grant      | State Senate                     | TOWN OF LITTLE GRANT                              | 54    | 70    |
+    | John H. Ainsworth                         | Oconto     | State Assembly                   | TOWN OF HOW Wards 1 - 3                           | 175   | 175   |
+
   Examples: 20041102__wi__general__ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | IND   | Peter Miguel Camejo & Ralph Nader | Brown     | President                         | VILLAGE OF HOWARD Wards 1 - 8                     | 27    | 3767  |
@@ -20,15 +30,24 @@ Feature: WI Elections
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | NP    | Paul B. Higginbotham              | Wood      | Court of Appeals                  | TOWN OF SENECA Wards 1 - 3                        | 90    | 90    |
 
+  Examples: 20051213__wi__special__primary__ward.csv
+    | party | candidate                         | county    | office                            | ward                                              | votes | total |
+    | DEM   | Patrick Byrne                     | Waukesha  | State Assembly                    | VILLAGE OF MUKWONAGO Ward 10                      | 0     | 0     |
+    | REP   | Kent D. Woods                     | Waukesha  | State Assembly                    | TOWN OF WAUKESHA Wards 3, 7 & 8                   | 21    | 154   |
+
   Examples: 20060110__wi__special__general__ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
     | REP   | Scott Newcomer                    | Waukesha  | State Assembly                    | VILLAGE OF NASHOTAH Wards 1 & 2                   | 75    | 106   |
+
+  Examples: 20060221__wi__primary__ward.csv
+    | candidate                                 | county     | office                           | ward                                              | votes | total |
+    | Karen L. Seifert                          | Winnebago  | Winnebago County Circuit Court, Branch 4 | VILLAGE OF WINNECONNE, Wards 1 - 4        | 91    | 128   |
 
   Examples: 20060404__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Patrick Crooks                            | Brown      | Supreme Court                    | CITY OF GREEN BAY Ward 34                         | 306   | 311   |
     | Margaret J. Vergeront                     | Columbia   | Court of Appeals                 | CITY OF LODI Wards 1 - 4                          | 253   | 253   |
-    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court, Branch 39 | VILLAGE OF BROWN DEER Wards 1 - 9                 | 2     | 1523  |
+    | Scattering                                | Milwaukee  | Milwaukee County Circuit Court, Branch 39 | VILLAGE OF BROWN DEER Wards 1 - 9        | 2     | 1523  |
 
   Examples: 20060912__wi__primary__ward.csv
     | party | candidate                         | county    | office                            | ward                                              | votes | total |
@@ -49,21 +68,21 @@ Feature: WI Elections
   Examples: 20070220__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Joseph Sommers                            | Marathon   | Supreme Court                    | TOWN OF EAU PLEINE                                | 2     | 24    |
-    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court, Branch 4 | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
+    | Kara M. Burgos                            | LaCrosse   | LaCrosse County Circuit Court, Branch 4 | VILLAGE OF WEST SALEM Wards 1 - 6          | 78    | 400   |
 
   Examples: 20070403__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
     | Linda M. Clifford                         | Walworth   | Supreme Court                    | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
     | Scattering                                | Barron     | Court Of Appeals                 | TOWN OF STANFOLD                                  | 2     | 138   |
-    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct, Branch 2 | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
+    | Thomas G. Grover                          | Shawano    | Menominee-Shawano County Circ Ct, Branch 2 | TOWN OF ANGELICA Wards 1 - 3            | 297   | 297   |
 
   Examples: 20080219__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court, Branch 4 | VILLAGE OF DEER PARK                              | 3     | 50    |
+    | Ken Sortedahl                             | St. Croix  | St Croix County Circuit Court, Branch 4 | VILLAGE OF DEER PARK                       | 3     | 50    |
 
   Examples: 20080401__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | James D. Babbitt                          | Barron     | Barron County Circuit Court, Branch 3 | TOWN OF DALLAS Wards 1 & 2                        | 57    | 68    |
+    | James D. Babbitt                          | Barron     | Barron County Circuit Court, Branch 3 | TOWN OF DALLAS Wards 1 & 2                   | 57    | 68    |
     | Burneatta L. Bridge                       | Grant      | Court Of Appeals                 | TOWN OF CASTLE ROCK                               | 48    | 48    |
     | Louis Butler                              | Forest     | Supreme Court                    | TOWN OF POPPLE RIVER                              | 3     | 18    |
 
@@ -200,6 +219,12 @@ Feature: WI Elections
     | Joseph Kexel                  | Walworth      | Senate                            | Town of Geneva Wards 1-8                                  | 77    | 2525  |
     | Sheila Harsdorf               | Polk          | State Senate                      | Town of Laketown Ward 1                                   | 316   | 542   |
 
+  Examples: 20121106__wi__special__primary__ward.csv
+    | party | candidate             | county        | office                                            | ward                                      | votes | total |
+    | REP   | Paul Farrow           | Waukesha      | State Senate                                      | VILLAGE OF OCONOMOWOC LAKE WARD 1         | 144   | 244   |
+    | DEM   | Scattering            | Waukesha      | State Senate                                      | TOWN OF DELAFIELD WARDS 1, 2, 5, 6        | 33    | 33    |
+    | AME   | Scattering            | Waukesha      | State Senate                                      | CITY OF WAUKESHA Ward 9                   | 2     | 2     |
+
   Examples: 20121204__wi__special__general__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
     | Paul Farrow                   | Waukesha      | State Senate                      | City of Pewaukee Wards 8-10                               | 274   | 281   |
@@ -216,6 +241,10 @@ Feature: WI Elections
     | Tony Evers                    | Columbia      | State Superintendent Of Public Instruction    | City Of Wisconsin Dells Ward 1                | 54    | 74    |
     | Don Pridemore                 | Dane          | State Superintendent Of Public Instruction    | City Of Madison Ward 49                       | 12    | 82    |
     | Don Pridemore                 | Wood          | State Superintendent Of Public Instruction    | Town Of Seneca Wards 1 -3                     | 55    | 136   |
+
+  Examples: 20130402__wi__special__general__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Adam Neylon                   | Waukesha      | State Assembly                                | CITY OF WAUKESHA Ward 36                      | 314   | 315   |
 
   Examples: 20131119__wi__special__primary__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
@@ -242,10 +271,30 @@ Feature: WI Elections
     | Lawrence Dale                 | Wood          | House                             | City of Pittsville Ward 1                                 | 7     | 356   |
     | Jerry Shidell                 | Ashland       | State Treasurer                   | City of Mellen Ward 1                                     | 3     | 221   |
 
+  Examples: 20150217__wi__special__primary__ward.csv
+    | party | candidate                     | county        | office                            | ward                                              | votes | total |
+    | REP   | Lee E. Schlenvogt             | Calumet       | State Senate                      | TOWN OF BROTHERTOWN Ward 1-2                      | 12    | 50    |
+    | DEM   | Nicholas J. Stamates (Write-in) | Sheboygan   | State Senate                      | VILLAGE OF WALDO Ward 1                           | 0     | 0     |
+    | CON   | Scattering                    | Fond du Lac   | State Senate                      | VILLAGE OF KEWASKUM WD 6                          | 0     | 0     |
+
+  Examples: 20150217__wi__special__primary__ward.csv
+    | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | Michelle Greendeer (write-in) | Jackson       | Jackson County Circuit Court Judge | TOWN OF KOMENSKY Ward 1                                  | 45    | 64    |
+    | Candice C. M. Tlustosch       | La Crosse     | La Crosse County Circuit Court Judge, Branch 5 | VILLAGE OF WEST SALEM Wards 1-6              | 139   | 289   |
+    | Guy M. Taylor                 | Lafayette     | Lafayette County Circuit Court Judge | CITY OF CUBA CITY Ward 5                               | 1     | 7     |
+    | Catherine Q. Delahunt         | Sheboygan     | Sheboygan County Circuit Court Judge, Branch 4 | VILLAGE OF RANDOM LAKE Wards 1 - 2           | 93    | 245   |
+
+  Examples: 20150407__wi__special__general__ward.csv
+    | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | Nicholas J. Stamates (Write-in) | Ozaukee     | State Senate                      | VILLAGE OF SAUKVILLE Wards 1; 6-7                         | 0     | 319   |
 
   Examples: 20150623__wi__special__primary__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
     | Sherryll Shaddock             | Waukesha      | State Senate                      | City of Waukesha Ward 38                                  | 19    | 19    |
+
+  Examples: 20150721__wi__special__general__ward.csv
+    | candidate                     | county        | office                            | ward                                                      | votes | total |
+    | Sherryll Shaddock             | Waukesha      | State Senate                      | TOWN OF WAUKESHA Wards 1,2,3,4,5,6 & 8                    | 128   | 433   |
 
   Examples: 20150901__wi__special__primary__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
