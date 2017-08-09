@@ -12,11 +12,11 @@ Feature: WI Elections
 
   Examples: 20021105__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | Scott McCallum/ Margaret A. Farrow        | Adams      | Governor                         | TOWN OF ADAMS Wards 1 & 2                         | 113   | 428   |
+    | Scott McCallum & Margaret A. Farrow       | Adams      | Governor                         | TOWN OF ADAMS Wards 1 & 2                         | 113   | 428   |
     | Peggy A. Lautenschlager                   | Dodge      | Attorney General                 | CITY OF MAYVILLE Wards 1 - 7                      | 617   | 1336  |
     | Edward J. Frami                           | Oneida     | Secretary of State               | TOWN OF STELLA                                    | 2     | 196   |
     | Paul Aschenbrenner                        | Vilas      | State Treasurer                  | TOWN OF LINCOLN Wards 1 - 5                       | 100   | 996   |
-    | Scattering                                | Green Lake | House                            | CITY OF BERLIN                                    | 16    | 1161  |
+    | Scattering                                | Green Lake | House                            | CITY OF BERLIN Wards 1 - 6, 8 - 10                | 16    | 1161  |
     | Dale W. Schultz                           | Grant      | State Senate                     | TOWN OF LITTLE GRANT                              | 54    | 70    |
     | John H. Ainsworth                         | Oconto     | State Assembly                   | TOWN OF HOW Wards 1 - 3                           | 175   | 175   |
 
@@ -41,7 +41,7 @@ Feature: WI Elections
 
   Examples: 20060221__wi__primary__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
-    | Karen L. Seifert                          | Winnebago  | Winnebago County Circuit Court, Branch 4 | VILLAGE OF WINNECONNE, Wards 1 - 4        | 91    | 128   |
+    | Karen L. Seifert                          | Winnebago  | Winnebago County Circuit Court, Branch 4 | VILLAGE OF WINNECONNE Wards 1 - 4        | 91    | 128   |
 
   Examples: 20060404__wi__general__ward.csv
     | candidate                                 | county     | office                           | ward                                              | votes | total |
@@ -279,10 +279,10 @@ Feature: WI Elections
 
   Examples: 20150217__wi__special__primary__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Michelle Greendeer (write-in) | Jackson       | Jackson County Circuit Court Judge | TOWN OF KOMENSKY Ward 1                                  | 45    | 64    |
-    | Candice C. M. Tlustosch       | La Crosse     | La Crosse County Circuit Court Judge, Branch 5 | VILLAGE OF WEST SALEM Wards 1-6              | 139   | 289   |
-    | Guy M. Taylor                 | Lafayette     | Lafayette County Circuit Court Judge | CITY OF CUBA CITY Ward 5                               | 1     | 7     |
-    | Catherine Q. Delahunt         | Sheboygan     | Sheboygan County Circuit Court Judge, Branch 4 | VILLAGE OF RANDOM LAKE Wards 1 - 2           | 93    | 245   |
+    | Michelle Greendeer (write-in) | Jackson       | Jackson County Circuit Court      | TOWN OF KOMENSKY Ward 1                                   | 45    | 64    |
+    | Candice C. M. Tlustosch       | La Crosse     | LaCrosse County Circuit Court, Branch 5 | VILLAGE OF WEST SALEM Wards 1-6                     | 139   | 289   |
+    | Guy M. Taylor                 | Lafayette     | Lafayette County Circuit Court    | CITY OF CUBA CITY Ward 5                                  | 1     | 7     |
+    | Catherine Q. Delahunt         | Sheboygan     | Sheboygan County Circuit Court, Branch 4 | VILLAGE OF RANDOM LAKE Wards 1 - 2                 | 93    | 245   |
 
   Examples: 20150407__wi__special__general__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
