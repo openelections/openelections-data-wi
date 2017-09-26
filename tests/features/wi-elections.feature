@@ -149,6 +149,7 @@ Feature: WI Elections
     | REP   | Dan Mielke                        | Marathon   | House                            | VILLAGE OF KRONENWETTER Wards 1 - 8               | 118   | 568   |
     | LIB   | Joseph Kexel                      | Kenosha    | House                            | VILLAGE OF PLEASANT PRAIRIE Wards 6 & 7           | 2     | 2     | 
     | WIG   | Ben Manski                        | Dane       | State Assembly                   | CITY OF MIDDLETON Wards 2-4                       | 33    | 33    |
+    | NA    | James James                       | Adams      | Governor                         | TOWN OF BIG FLATS Ward 1                          | 1     | 2     |
 
   Examples: 20101102__wi__general__ward.csv
     | candidate                       | county      | office                        | ward                                                          | votes | total |
@@ -210,7 +211,7 @@ Feature: WI Elections
   Examples: 20120814__wi__primary__ward.csv
     | party | candidate             | county        | office                                            | ward                                      | votes | total |
     | REP   | Al Ott                | Outagamie     | State Assembly                                    | Village of Combined Locks Wards 1-4       | 263   | 368   |
-    | DEM   | John T. Chisholm      | Milwaukee     | District Attorney - Milwaukee County              | CITY OF MILWAUKEE WARD 243                | 72    | 0     |
+    | DEM   | John T. Chisholm      | Milwaukee     | District Attorney - Milwaukee County              | CITY OF MILWAUKEE WARD 243                | 72    | 72    |
     | AME   | Scattering            | Menominee     | District Attorney - Menominee-Shawano County      | TOWN OF MENOMINEE Ward 2                  | 0     | 0     |
 
   Examples: 20121106__wi__general__ward.csv
