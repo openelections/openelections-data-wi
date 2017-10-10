@@ -16,7 +16,8 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-headers = ["county","ward","office","district","total votes","party","candidate","votes"]
+output_headers = [
+    "county","ward","office","district","total votes","party","candidate","votes"]
 
 # {colA_header: num_missing} -- given first header, number of missing columns
 #   (for 2002 to 2010 single sheet spreadsheets)
@@ -89,12 +90,13 @@ def process_xls_2012_DA_primary(sheet):
     
     fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
     fieldnames = fieldnames.split()         # the fields we need
-    headers = sheet.row_values(rowx=0)      # first row
+    col_headers = sheet.row_values(rowx=0)  # first row
     try:
-        fieldindexes = [headers.index(fieldname) for fieldname in fieldnames]
+        # Find indexes of desired fields in spreadsheet
+        fieldindexes = [col_headers.index(fieldname) for fieldname in fieldnames]
     except ValueError:
-        print fieldname, 'not found in headers:'
-        print headers
+        print fieldname, 'not found in spreadsheet column headers:'
+        print col_headers
         raise
     
     results = []
@@ -201,7 +203,7 @@ def get_election_result(election):
     filepath = make_filepath(election)
     outfile = open(filepath, 'w')
     wr = csv.writer(outfile)
-    wr.writerow(headers)
+    wr.writerow(output_headers)
     direct_links = election['direct_links']
     for direct_link in direct_links:
         infilename = os.path.basename(direct_link)
@@ -254,7 +256,7 @@ def any_party_in(sequence):
 CAND_COL = 3    # column holding first candidate
 TOTAL_VOTES_HEADER = 'Total Votes Cast'
 
-def detect_headers(sheet):
+def extract_candidates(sheet):
     """ Extract candidate names and parties from sheet.
     
         Returns: candidates, parties, start_row
@@ -325,9 +327,11 @@ def parse_office(office_string):
 
 
 def parse_sheet(sheet, office, sheet_index):
-    """Return list of records for (string) office, extracted from xlrd sheet."""
+    """Return list of records for (string) office, extracted from spreadsheet.
+        This is used to parse Fall 2010 and later elections.
+    """
     office, district, party = parse_office(office)
-    candidates, parties, start_row = detect_headers(sheet)
+    candidates, parties, start_row = extract_candidates(sheet)
     if sheet_index == 0 and '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
         ### TO DO: Process recount results after first empty cell
