@@ -85,7 +85,7 @@ def process_xls_2002_to_2010(sheet):
     return results
 
 
-def process_xls_2012_DA_primary(sheet):
+def process_xls_2012_DA_primary(sheet): # Election 411
     """Return list of records from 2012-08-14 District Attorney spreadsheet"""
     
     fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
@@ -98,8 +98,11 @@ def process_xls_2012_DA_primary(sheet):
         print fieldname, 'not found in spreadsheet column headers:'
         print col_headers
         raise
-    
+
     results = []
+    candidate_votes = []
+    previous_race_place = ()
+    candidates = []
     for rowx in range(1, sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
         office, county, candidate, ward, votes = [row[col] for col in fieldindexes]
@@ -109,9 +112,25 @@ def process_xls_2012_DA_primary(sheet):
         else:
             party = ''
         district = ''
-        total_votes = ''    # not computed
+
+        race_place = county, ward, office, district, party
+        if previous_race_place and (race_place != previous_race_place):
+            results.extend(collect_results(candidates, candidate_votes, previous_race_place))
+            candidates = []
+            candidate_votes = []
+        candidates.append(candidate)
+        candidate_votes.append(votes)
+        previous_race_place = race_place
+    results.extend(collect_results(candidates, candidate_votes, race_place))
+    return results
+
+def collect_results(candidates, votes, race_place):
+    results = []
+    county, ward, office, district, party = race_place
+    total_votes = sum(votes)
+    for i, candidate in enumerate(candidates):
         results.append([
-            county, ward, office, district, total_votes, party, candidate, votes])
+            county, ward, office, district, total_votes, party, candidate, votes[i]])
     return results
 
 
