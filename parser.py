@@ -267,15 +267,16 @@ def detect_headers(sheet):
     else:   # loop not exited with break
         raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
     
+    # Total Votes header in rowx, parties in this row or previous
     row = sheet.row_values(rowx, start_colx=CAND_COL)
     if any_party_in(row):   # look for any party abbreviation in row
         parties = row
-        candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
-        start_row = rowx + 2
     else:   # assume parties in previous row
-        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
-        candidates = row
-        start_row = rowx + 1
+        rowx -= 1
+        parties = sheet.row_values(rowx, start_colx=CAND_COL)
+    
+    candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
+    start_row = rowx + 2
     return candidates, parties, start_row
 
 
