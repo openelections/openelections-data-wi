@@ -277,6 +277,16 @@ def detect_headers(sheet):
     
     candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
     start_row = rowx + 2
+    
+    # For primary elections, fill in party if missing for "Scattering" candidate
+    ### Add parameter "election" to check if election['race_type'] == 'primary' ?
+    if candidates[-1] == "SCATTERING" and parties[len(candidates) - 1] == '':
+        office_title = sheet.cell_value(rowx - 2, 0)
+        party = office_title.rpartition(' - ')[-1].title()
+        party = cleaner.party_recode.get(party)
+        if party:   # assume a primary election if office title ends in a party name
+            parties[len(candidates) - 1] = party
+    
     return candidates, parties, start_row
 
 
