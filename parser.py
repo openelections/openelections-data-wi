@@ -16,7 +16,8 @@ reload(sys)
 sys.setdefaultencoding('utf8')
 
 
-headers = ["county","ward","office","district","total votes","party","candidate","votes"]
+output_headers = [
+    "county","ward","office","district","total votes","party","candidate","votes"]
 
 # {colA_header: num_missing} -- given first header, number of missing columns
 #   (for 2002 to 2010 single sheet spreadsheets)
@@ -84,20 +85,24 @@ def process_xls_2002_to_2010(sheet):
     return results
 
 
-def process_xls_2012_DA_primary(sheet):
+def process_xls_2012_DA_primary(sheet): # Election 411
     """Return list of records from 2012-08-14 District Attorney spreadsheet"""
     
     fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
     fieldnames = fieldnames.split()         # the fields we need
-    headers = sheet.row_values(rowx=0)      # first row
+    col_headers = sheet.row_values(rowx=0)  # first row
     try:
-        fieldindexes = [headers.index(fieldname) for fieldname in fieldnames]
+        # Find indexes of desired fields in spreadsheet
+        fieldindexes = [col_headers.index(fieldname) for fieldname in fieldnames]
     except ValueError:
-        print fieldname, 'not found in headers:'
-        print headers
+        print fieldname, 'not found in spreadsheet column headers:'
+        print col_headers
         raise
-    
+
     results = []
+    candidate_votes = []
+    previous_race_place = ()
+    candidates = []
     for rowx in range(1, sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
         office, county, candidate, ward, votes = [row[col] for col in fieldindexes]
@@ -107,9 +112,25 @@ def process_xls_2012_DA_primary(sheet):
         else:
             party = ''
         district = ''
-        total_votes = ''    # not computed
+
+        race_place = county, ward, office, district, party
+        if previous_race_place and (race_place != previous_race_place):
+            results.extend(collect_results(candidates, candidate_votes, previous_race_place))
+            candidates = []
+            candidate_votes = []
+        candidates.append(candidate)
+        candidate_votes.append(votes)
+        previous_race_place = race_place
+    results.extend(collect_results(candidates, candidate_votes, race_place))
+    return results
+
+def collect_results(candidates, votes, race_place):
+    results = []
+    county, ward, office, district, party = race_place
+    total_votes = sum(votes)
+    for i, candidate in enumerate(candidates):
         results.append([
-            county, ward, office, district, total_votes, party, candidate, votes])
+            county, ward, office, district, total_votes, party, candidate, votes[i]])
     return results
 
 
@@ -201,7 +222,7 @@ def get_election_result(election):
     filepath = make_filepath(election)
     outfile = open(filepath, 'w')
     wr = csv.writer(outfile)
-    wr.writerow(headers)
+    wr.writerow(output_headers)
     direct_links = election['direct_links']
     for direct_link in direct_links:
         infilename = os.path.basename(direct_link)
@@ -241,20 +262,10 @@ def open_file(url, filename):
     return xlsfile
 
 
-def any_party_in(sequence):
-    """ Return True if any party abbreviation is an element of sequence, else False.
-        Uses abbreviations from cleaner.party_recode map.
-    """
-    for party in cleaner.party_recode.values():
-        if party in sequence:
-            return True
-    return False
-
-
 CAND_COL = 3    # column holding first candidate
 TOTAL_VOTES_HEADER = 'Total Votes Cast'
 
-def detect_headers(sheet):
+def extract_candidates(sheet, sheet_index):
     """ Extract candidate names and parties from sheet.
     
         Returns: candidates, parties, start_row
@@ -267,15 +278,31 @@ def detect_headers(sheet):
     else:   # loop not exited with break
         raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
     
+    # Total Votes header in rowx, candidates in this row or next
+    # Candidate row will have "SCATTERING" in it
     row = sheet.row_values(rowx, start_colx=CAND_COL)
-    if any_party_in(row):   # look for any party abbreviation in row
-        parties = row
-        candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
-        start_row = rowx + 2
-    else:   # assume parties in previous row
-        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
+    if "SCATTERING" in row:
         candidates = row
-        start_row = rowx + 1
+        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
+    else:
+        parties = row
+        rowx += 1
+        candidates = sheet.row_values(rowx, start_colx=CAND_COL)
+        if "SCATTERING" in candidates:
+            # Fill in party if missing for "Scattering" candidate (primary elections)
+            ### Check if election['race_type'] == 'primary'?
+            scattering_index = candidates.index("SCATTERING")
+            if parties[scattering_index] == '':
+                office_title = sheet.cell_value(rowx - 3, 0)
+                party = office_title.rpartition(' - ')[-1].strip().title()
+                party = cleaner.party_recode.get(party)
+                # assume a primary election if office title ends in a party name
+                if party:
+                    parties[scattering_index] = party
+        else:
+            print 'Warning: SCATTERING not found in sheet {}'.format(sheet_index)
+    
+    start_row = rowx + 1        # first data row
     return candidates, parties, start_row
 
 
@@ -325,9 +352,11 @@ def parse_office(office_string):
 
 
 def parse_sheet(sheet, office, sheet_index):
-    """Return list of records for (string) office, extracted from xlrd sheet."""
+    """Return list of records for (string) office, extracted from spreadsheet.
+        This is used to parse Fall 2010 and later elections.
+    """
     office, district, party = parse_office(office)
-    candidates, parties, start_row = detect_headers(sheet)
+    candidates, parties, start_row = extract_candidates(sheet, sheet_index)
     if sheet_index == 0 and '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
         ### TO DO: Process recount results after first empty cell

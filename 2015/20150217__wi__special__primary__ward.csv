@@ -2,453 +2,528 @@ county,ward,office,district,total votes,party,candidate,votes
 Calumet,Town Of Brothertown Ward 1-2,State Senate,20,50,REP,Tiffany Koehler,7
 Calumet,Town Of Brothertown Ward 1-2,State Senate,20,50,REP,Duey Stroebel,31
 Calumet,Town Of Brothertown Ward 1-2,State Senate,20,50,REP,Lee E. Schlenvogt,12
-Calumet,Town Of Brothertown Ward 1-2,State Senate,20,50,,Scattering,0
+Calumet,Town Of Brothertown Ward 1-2,State Senate,20,50,REP,Scattering,0
 Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,49,REP,Tiffany Koehler,7
 Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,49,REP,Duey Stroebel,26
 Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,49,REP,Lee E. Schlenvogt,16
-Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,49,,Scattering,0
+Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,49,REP,Scattering,0
 Calumet,City Of New Holstein Wards 1-5,State Senate,20,125,REP,Tiffany Koehler,21
 Calumet,City Of New Holstein Wards 1-5,State Senate,20,125,REP,Duey Stroebel,86
 Calumet,City Of New Holstein Wards 1-5,State Senate,20,125,REP,Lee E. Schlenvogt,18
-Calumet,City Of New Holstein Wards 1-5,State Senate,20,125,,Scattering,0
+Calumet,City Of New Holstein Wards 1-5,State Senate,20,125,REP,Scattering,0
 Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,114,REP,Tiffany Koehler,14
 Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,114,REP,Duey Stroebel,74
 Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,114,REP,Lee E. Schlenvogt,26
-Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,114,,Scattering,0
+Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,114,REP,Scattering,0
 Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,178,REP,Tiffany Koehler,21
 Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,178,REP,Duey Stroebel,107
 Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,178,REP,Lee E. Schlenvogt,50
-Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,178,,Scattering,0
+Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,178,REP,Scattering,0
 Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,117,REP,Tiffany Koehler,22
 Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,117,REP,Duey Stroebel,68
 Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,117,REP,Lee E. Schlenvogt,27
-Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,117,,Scattering,0
+Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,117,REP,Scattering,0
 Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,85,REP,Tiffany Koehler,7
 Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,85,REP,Duey Stroebel,48
 Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,85,REP,Lee E. Schlenvogt,30
-Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,85,,Scattering,0
+Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,85,REP,Scattering,0
 Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,77,REP,Tiffany Koehler,10
 Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,77,REP,Duey Stroebel,43
 Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,77,REP,Lee E. Schlenvogt,24
-Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,77,,Scattering,0
+Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,77,REP,Scattering,0
 Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,55,REP,Tiffany Koehler,6
 Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,55,REP,Duey Stroebel,36
 Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,55,REP,Lee E. Schlenvogt,13
-Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,55,,Scattering,0
+Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,55,REP,Scattering,0
 Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,148,REP,Tiffany Koehler,18
 Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,148,REP,Duey Stroebel,87
 Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,148,REP,Lee E. Schlenvogt,43
-Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,148,,Scattering,0
+Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,148,REP,Scattering,0
 Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,91,REP,Tiffany Koehler,10
 Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,91,REP,Duey Stroebel,57
 Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,91,REP,Lee E. Schlenvogt,24
-Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,91,,Scattering,0
+Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,91,REP,Scattering,0
 Fond Du Lac,Village Of Eden Ward 1,State Senate,20,43,REP,Tiffany Koehler,9
 Fond Du Lac,Village Of Eden Ward 1,State Senate,20,43,REP,Duey Stroebel,20
 Fond Du Lac,Village Of Eden Ward 1,State Senate,20,43,REP,Lee E. Schlenvogt,14
-Fond Du Lac,Village Of Eden Ward 1,State Senate,20,43,,Scattering,0
+Fond Du Lac,Village Of Eden Ward 1,State Senate,20,43,REP,Scattering,0
 Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,REP,Tiffany Koehler,0
 Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,REP,Duey Stroebel,0
 Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,REP,Lee E. Schlenvogt,0
-Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,REP,Scattering,0
 Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,28,REP,Tiffany Koehler,6
 Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,28,REP,Duey Stroebel,17
 Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,28,REP,Lee E. Schlenvogt,5
-Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,28,,Scattering,0
+Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,28,REP,Scattering,0
 Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,48,REP,Tiffany Koehler,6
 Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,48,REP,Duey Stroebel,28
 Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,48,REP,Lee E. Schlenvogt,14
-Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,48,,Scattering,0
+Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,48,REP,Scattering,0
 Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,198,REP,Tiffany Koehler,6
 Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,198,REP,Duey Stroebel,120
 Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,198,REP,Lee E. Schlenvogt,72
-Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,198,,Scattering,0
+Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,198,REP,Scattering,0
 Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,229,REP,Tiffany Koehler,9
 Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,229,REP,Duey Stroebel,187
 Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,229,REP,Lee E. Schlenvogt,33
-Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,229,,Scattering,0
+Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,229,REP,Scattering,0
 Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,207,REP,Tiffany Koehler,5
 Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,207,REP,Duey Stroebel,173
 Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,207,REP,Lee E. Schlenvogt,29
-Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,207,,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,207,REP,Scattering,0
 Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,320,REP,Tiffany Koehler,16
 Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,320,REP,Duey Stroebel,252
 Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,320,REP,Lee E. Schlenvogt,52
-Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,320,,Scattering,0
+Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,320,REP,Scattering,0
 Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,242,REP,Tiffany Koehler,11
 Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,242,REP,Duey Stroebel,186
 Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,242,REP,Lee E. Schlenvogt,45
-Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,242,,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,242,REP,Scattering,0
 Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,303,REP,Tiffany Koehler,5
 Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,303,REP,Duey Stroebel,155
 Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,303,REP,Lee E. Schlenvogt,143
-Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,303,,Scattering,0
+Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,303,REP,Scattering,0
 Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,285,REP,Tiffany Koehler,4
 Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,285,REP,Duey Stroebel,135
 Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,285,REP,Lee E. Schlenvogt,146
-Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,285,,Scattering,0
+Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,285,REP,Scattering,0
 Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,314,REP,Tiffany Koehler,10
 Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,314,REP,Duey Stroebel,217
 Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,314,REP,Lee E. Schlenvogt,87
-Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,314,,Scattering,0
+Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,314,REP,Scattering,0
 Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,171,REP,Tiffany Koehler,4
 Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,171,REP,Duey Stroebel,96
 Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,171,REP,Lee E. Schlenvogt,71
-Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,171,,Scattering,0
+Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,171,REP,Scattering,0
 Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,214,REP,Tiffany Koehler,3
 Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,214,REP,Duey Stroebel,124
 Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,214,REP,Lee E. Schlenvogt,87
-Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,214,,Scattering,0
+Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,214,REP,Scattering,0
 Ozaukee,Village Of Newburg Ward 3,State Senate,20,12,REP,Tiffany Koehler,0
 Ozaukee,Village Of Newburg Ward 3,State Senate,20,12,REP,Duey Stroebel,6
 Ozaukee,Village Of Newburg Ward 3,State Senate,20,12,REP,Lee E. Schlenvogt,6
-Ozaukee,Village Of Newburg Ward 3,State Senate,20,12,,Scattering,0
+Ozaukee,Village Of Newburg Ward 3,State Senate,20,12,REP,Scattering,0
 Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,171,REP,Tiffany Koehler,5
 Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,171,REP,Duey Stroebel,107
 Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,171,REP,Lee E. Schlenvogt,59
-Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,171,,Scattering,0
+Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,171,REP,Scattering,0
 Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,143,REP,Tiffany Koehler,10
 Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,143,REP,Duey Stroebel,90
 Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,143,REP,Lee E. Schlenvogt,43
-Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,143,,Scattering,0
+Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,143,REP,Scattering,0
 Ozaukee,City Of Cedarburg Ward 1,State Senate,20,234,REP,Tiffany Koehler,26
 Ozaukee,City Of Cedarburg Ward 1,State Senate,20,234,REP,Duey Stroebel,158
 Ozaukee,City Of Cedarburg Ward 1,State Senate,20,234,REP,Lee E. Schlenvogt,50
-Ozaukee,City Of Cedarburg Ward 1,State Senate,20,234,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 1,State Senate,20,234,REP,Scattering,0
 Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,224,REP,Tiffany Koehler,13
 Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,224,REP,Duey Stroebel,165
 Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,224,REP,Lee E. Schlenvogt,46
-Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,224,,Scattering,0
+Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,224,REP,Scattering,0
 Ozaukee,City Of Cedarburg Ward 3,State Senate,20,198,REP,Tiffany Koehler,16
 Ozaukee,City Of Cedarburg Ward 3,State Senate,20,198,REP,Duey Stroebel,149
 Ozaukee,City Of Cedarburg Ward 3,State Senate,20,198,REP,Lee E. Schlenvogt,33
-Ozaukee,City Of Cedarburg Ward 3,State Senate,20,198,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 3,State Senate,20,198,REP,Scattering,0
 Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,147,REP,Tiffany Koehler,9
 Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,147,REP,Duey Stroebel,108
 Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,147,REP,Lee E. Schlenvogt,30
-Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,147,,Scattering,0
+Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,147,REP,Scattering,0
 Ozaukee,City Of Cedarburg Ward 5,State Senate,20,149,REP,Tiffany Koehler,18
 Ozaukee,City Of Cedarburg Ward 5,State Senate,20,149,REP,Duey Stroebel,100
 Ozaukee,City Of Cedarburg Ward 5,State Senate,20,149,REP,Lee E. Schlenvogt,31
-Ozaukee,City Of Cedarburg Ward 5,State Senate,20,149,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 5,State Senate,20,149,REP,Scattering,0
 Ozaukee,City Of Cedarburg Ward 6,State Senate,20,233,REP,Tiffany Koehler,13
 Ozaukee,City Of Cedarburg Ward 6,State Senate,20,233,REP,Duey Stroebel,174
 Ozaukee,City Of Cedarburg Ward 6,State Senate,20,233,REP,Lee E. Schlenvogt,46
-Ozaukee,City Of Cedarburg Ward 6,State Senate,20,233,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 6,State Senate,20,233,REP,Scattering,0
 Ozaukee,City Of Cedarburg Ward 7,State Senate,20,217,REP,Tiffany Koehler,14
 Ozaukee,City Of Cedarburg Ward 7,State Senate,20,217,REP,Duey Stroebel,177
 Ozaukee,City Of Cedarburg Ward 7,State Senate,20,217,REP,Lee E. Schlenvogt,26
-Ozaukee,City Of Cedarburg Ward 7,State Senate,20,217,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 7,State Senate,20,217,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 1,State Senate,20,190,REP,Tiffany Koehler,6
 Ozaukee,City Of Port Washington Ward 1,State Senate,20,190,REP,Duey Stroebel,85
 Ozaukee,City Of Port Washington Ward 1,State Senate,20,190,REP,Lee E. Schlenvogt,99
-Ozaukee,City Of Port Washington Ward 1,State Senate,20,190,,Scattering,0
+Ozaukee,City Of Port Washington Ward 1,State Senate,20,190,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 2,State Senate,20,129,REP,Tiffany Koehler,5
 Ozaukee,City Of Port Washington Ward 2,State Senate,20,129,REP,Duey Stroebel,68
 Ozaukee,City Of Port Washington Ward 2,State Senate,20,129,REP,Lee E. Schlenvogt,56
-Ozaukee,City Of Port Washington Ward 2,State Senate,20,129,,Scattering,0
+Ozaukee,City Of Port Washington Ward 2,State Senate,20,129,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 3,State Senate,20,153,REP,Tiffany Koehler,3
 Ozaukee,City Of Port Washington Ward 3,State Senate,20,153,REP,Duey Stroebel,87
 Ozaukee,City Of Port Washington Ward 3,State Senate,20,153,REP,Lee E. Schlenvogt,63
-Ozaukee,City Of Port Washington Ward 3,State Senate,20,153,,Scattering,0
+Ozaukee,City Of Port Washington Ward 3,State Senate,20,153,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 4,State Senate,20,82,REP,Tiffany Koehler,8
 Ozaukee,City Of Port Washington Ward 4,State Senate,20,82,REP,Duey Stroebel,45
 Ozaukee,City Of Port Washington Ward 4,State Senate,20,82,REP,Lee E. Schlenvogt,29
-Ozaukee,City Of Port Washington Ward 4,State Senate,20,82,,Scattering,0
+Ozaukee,City Of Port Washington Ward 4,State Senate,20,82,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 5,State Senate,20,181,REP,Tiffany Koehler,5
 Ozaukee,City Of Port Washington Ward 5,State Senate,20,181,REP,Duey Stroebel,112
 Ozaukee,City Of Port Washington Ward 5,State Senate,20,181,REP,Lee E. Schlenvogt,64
-Ozaukee,City Of Port Washington Ward 5,State Senate,20,181,,Scattering,0
+Ozaukee,City Of Port Washington Ward 5,State Senate,20,181,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 6,State Senate,20,95,REP,Tiffany Koehler,1
 Ozaukee,City Of Port Washington Ward 6,State Senate,20,95,REP,Duey Stroebel,41
 Ozaukee,City Of Port Washington Ward 6,State Senate,20,95,REP,Lee E. Schlenvogt,53
-Ozaukee,City Of Port Washington Ward 6,State Senate,20,95,,Scattering,0
+Ozaukee,City Of Port Washington Ward 6,State Senate,20,95,REP,Scattering,0
 Ozaukee,City Of Port Washington Ward 7,State Senate,20,202,REP,Tiffany Koehler,8
 Ozaukee,City Of Port Washington Ward 7,State Senate,20,202,REP,Duey Stroebel,82
 Ozaukee,City Of Port Washington Ward 7,State Senate,20,202,REP,Lee E. Schlenvogt,112
-Ozaukee,City Of Port Washington Ward 7,State Senate,20,202,,Scattering,0
+Ozaukee,City Of Port Washington Ward 7,State Senate,20,202,REP,Scattering,0
 Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,124,REP,Tiffany Koehler,15
 Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,124,REP,Duey Stroebel,81
 Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,124,REP,Lee E. Schlenvogt,27
-Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,124,,Scattering,1
+Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,124,REP,Scattering,1
 Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,108,REP,Tiffany Koehler,9
 Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,108,REP,Duey Stroebel,64
 Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,108,REP,Lee E. Schlenvogt,35
-Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,108,,Scattering,0
+Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,108,REP,Scattering,0
 Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,98,REP,Tiffany Koehler,10
 Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,98,REP,Duey Stroebel,63
 Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,98,REP,Lee E. Schlenvogt,25
-Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,98,,Scattering,0
+Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,98,REP,Scattering,0
 Sheboygan,Town Of Russell Ward 1,State Senate,20,34,REP,Tiffany Koehler,1
 Sheboygan,Town Of Russell Ward 1,State Senate,20,34,REP,Duey Stroebel,20
 Sheboygan,Town Of Russell Ward 1,State Senate,20,34,REP,Lee E. Schlenvogt,13
-Sheboygan,Town Of Russell Ward 1,State Senate,20,34,,Scattering,0
+Sheboygan,Town Of Russell Ward 1,State Senate,20,34,REP,Scattering,0
 Sheboygan,Town Of Scott Wards 1-3,State Senate,20,134,REP,Tiffany Koehler,6
 Sheboygan,Town Of Scott Wards 1-3,State Senate,20,134,REP,Duey Stroebel,88
 Sheboygan,Town Of Scott Wards 1-3,State Senate,20,134,REP,Lee E. Schlenvogt,40
-Sheboygan,Town Of Scott Wards 1-3,State Senate,20,134,,Scattering,0
+Sheboygan,Town Of Scott Wards 1-3,State Senate,20,134,REP,Scattering,0
 Sheboygan,Village Of Cascade Ward 1,State Senate,20,46,REP,Tiffany Koehler,1
 Sheboygan,Village Of Cascade Ward 1,State Senate,20,46,REP,Duey Stroebel,34
 Sheboygan,Village Of Cascade Ward 1,State Senate,20,46,REP,Lee E. Schlenvogt,11
-Sheboygan,Village Of Cascade Ward 1,State Senate,20,46,,Scattering,0
+Sheboygan,Village Of Cascade Ward 1,State Senate,20,46,REP,Scattering,0
 Sheboygan,Village Of Waldo Ward 1,State Senate,20,54,REP,Tiffany Koehler,10
 Sheboygan,Village Of Waldo Ward 1,State Senate,20,54,REP,Duey Stroebel,24
 Sheboygan,Village Of Waldo Ward 1,State Senate,20,54,REP,Lee E. Schlenvogt,20
-Sheboygan,Village Of Waldo Ward 1,State Senate,20,54,,Scattering,0
+Sheboygan,Village Of Waldo Ward 1,State Senate,20,54,REP,Scattering,0
 Washington,Town Of Addison Wards 1-6,State Senate,20,232,REP,Tiffany Koehler,12
 Washington,Town Of Addison Wards 1-6,State Senate,20,232,REP,Duey Stroebel,171
 Washington,Town Of Addison Wards 1-6,State Senate,20,232,REP,Lee E. Schlenvogt,49
-Washington,Town Of Addison Wards 1-6,State Senate,20,232,,Scattering,0
+Washington,Town Of Addison Wards 1-6,State Senate,20,232,REP,Scattering,0
 Washington,Town Of Barton Wards 1 - 4,State Senate,20,226,REP,Tiffany Koehler,8
 Washington,Town Of Barton Wards 1 - 4,State Senate,20,226,REP,Duey Stroebel,170
 Washington,Town Of Barton Wards 1 - 4,State Senate,20,226,REP,Lee E. Schlenvogt,48
-Washington,Town Of Barton Wards 1 - 4,State Senate,20,226,,Scattering,0
+Washington,Town Of Barton Wards 1 - 4,State Senate,20,226,REP,Scattering,0
 Washington,Town Of Farmington Wards 1-5,State Senate,20,322,REP,Tiffany Koehler,14
 Washington,Town Of Farmington Wards 1-5,State Senate,20,322,REP,Duey Stroebel,221
 Washington,Town Of Farmington Wards 1-5,State Senate,20,322,REP,Lee E. Schlenvogt,87
-Washington,Town Of Farmington Wards 1-5,State Senate,20,322,,Scattering,0
+Washington,Town Of Farmington Wards 1-5,State Senate,20,322,REP,Scattering,0
 Washington,Town Of Hartford Wards 1-5,State Senate,20,244,REP,Tiffany Koehler,20
 Washington,Town Of Hartford Wards 1-5,State Senate,20,244,REP,Duey Stroebel,175
 Washington,Town Of Hartford Wards 1-5,State Senate,20,244,REP,Lee E. Schlenvogt,49
-Washington,Town Of Hartford Wards 1-5,State Senate,20,244,,Scattering,0
+Washington,Town Of Hartford Wards 1-5,State Senate,20,244,REP,Scattering,0
 Washington,Town Of Jackson Wards 1-6,State Senate,20,422,REP,Tiffany Koehler,22
 Washington,Town Of Jackson Wards 1-6,State Senate,20,422,REP,Duey Stroebel,327
 Washington,Town Of Jackson Wards 1-6,State Senate,20,422,REP,Lee E. Schlenvogt,73
-Washington,Town Of Jackson Wards 1-6,State Senate,20,422,,Scattering,0
+Washington,Town Of Jackson Wards 1-6,State Senate,20,422,REP,Scattering,0
 Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,123,REP,Tiffany Koehler,6
 Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,123,REP,Duey Stroebel,79
 Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,123,REP,Lee E. Schlenvogt,38
-Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,123,,Scattering,0
+Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,123,REP,Scattering,0
 Washington,Town Of Polk Wards 1-6,State Senate,20,358,REP,Tiffany Koehler,44
 Washington,Town Of Polk Wards 1-6,State Senate,20,358,REP,Duey Stroebel,264
 Washington,Town Of Polk Wards 1-6,State Senate,20,358,REP,Lee E. Schlenvogt,49
-Washington,Town Of Polk Wards 1-6,State Senate,20,358,,Scattering,1
+Washington,Town Of Polk Wards 1-6,State Senate,20,358,REP,Scattering,1
 Washington,Town Of Trenton Wards 1-8,State Senate,20,439,REP,Tiffany Koehler,30
 Washington,Town Of Trenton Wards 1-8,State Senate,20,439,REP,Duey Stroebel,328
 Washington,Town Of Trenton Wards 1-8,State Senate,20,439,REP,Lee E. Schlenvogt,81
-Washington,Town Of Trenton Wards 1-8,State Senate,20,439,,Scattering,0
+Washington,Town Of Trenton Wards 1-8,State Senate,20,439,REP,Scattering,0
 Washington,Town Of Wayne Wards 1 - 3,State Senate,20,173,REP,Tiffany Koehler,10
 Washington,Town Of Wayne Wards 1 - 3,State Senate,20,173,REP,Duey Stroebel,119
 Washington,Town Of Wayne Wards 1 - 3,State Senate,20,173,REP,Lee E. Schlenvogt,44
-Washington,Town Of Wayne Wards 1 - 3,State Senate,20,173,,Scattering,0
+Washington,Town Of Wayne Wards 1 - 3,State Senate,20,173,REP,Scattering,0
 Washington,Town Of West Bend Wards 1-8,State Senate,20,418,REP,Tiffany Koehler,36
 Washington,Town Of West Bend Wards 1-8,State Senate,20,418,REP,Duey Stroebel,285
 Washington,Town Of West Bend Wards 1-8,State Senate,20,418,REP,Lee E. Schlenvogt,97
-Washington,Town Of West Bend Wards 1-8,State Senate,20,418,,Scattering,0
+Washington,Town Of West Bend Wards 1-8,State Senate,20,418,REP,Scattering,0
 Washington,Village Of Jackson Wards 1-10,State Senate,20,609,REP,Tiffany Koehler,97
 Washington,Village Of Jackson Wards 1-10,State Senate,20,609,REP,Duey Stroebel,430
 Washington,Village Of Jackson Wards 1-10,State Senate,20,609,REP,Lee E. Schlenvogt,80
-Washington,Village Of Jackson Wards 1-10,State Senate,20,609,,Scattering,2
+Washington,Village Of Jackson Wards 1-10,State Senate,20,609,REP,Scattering,2
 Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,207,REP,Tiffany Koehler,24
 Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,207,REP,Duey Stroebel,143
 Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,207,REP,Lee E. Schlenvogt,39
-Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,207,,Scattering,1
+Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,207,REP,Scattering,1
 Washington,Village Of Newburg Wards 1 & 2,State Senate,20,92,REP,Tiffany Koehler,6
 Washington,Village Of Newburg Wards 1 & 2,State Senate,20,92,REP,Duey Stroebel,71
 Washington,Village Of Newburg Wards 1 & 2,State Senate,20,92,REP,Lee E. Schlenvogt,15
-Washington,Village Of Newburg Wards 1 & 2,State Senate,20,92,,Scattering,0
+Washington,Village Of Newburg Wards 1 & 2,State Senate,20,92,REP,Scattering,0
 Washington,Village Of Richfield Wards 4-6,State Senate,20,350,REP,Tiffany Koehler,24
 Washington,Village Of Richfield Wards 4-6,State Senate,20,350,REP,Duey Stroebel,281
 Washington,Village Of Richfield Wards 4-6,State Senate,20,350,REP,Lee E. Schlenvogt,45
-Washington,Village Of Richfield Wards 4-6,State Senate,20,350,,Scattering,0
+Washington,Village Of Richfield Wards 4-6,State Senate,20,350,REP,Scattering,0
 Washington,Village Of Slinger Wards 1-8,State Senate,20,288,REP,Tiffany Koehler,56
 Washington,Village Of Slinger Wards 1-8,State Senate,20,288,REP,Duey Stroebel,198
 Washington,Village Of Slinger Wards 1-8,State Senate,20,288,REP,Lee E. Schlenvogt,34
-Washington,Village Of Slinger Wards 1-8,State Senate,20,288,,Scattering,0
+Washington,Village Of Slinger Wards 1-8,State Senate,20,288,REP,Scattering,0
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Tiffany Koehler,14
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Duey Stroebel,78
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Lee E. Schlenvogt,10
-Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,,Scattering,0
+Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Scattering,0
 Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Tiffany Koehler,22
 Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Duey Stroebel,113
 Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Lee E. Schlenvogt,14
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,,Scattering,1
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Scattering,1
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Tiffany Koehler,21
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Duey Stroebel,160
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Lee E. Schlenvogt,20
-Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,,Scattering,0
+Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Scattering,0
 Washington,City Of West Bend Wards 1-3,State Senate,20,196,REP,Tiffany Koehler,18
 Washington,City Of West Bend Wards 1-3,State Senate,20,196,REP,Duey Stroebel,150
 Washington,City Of West Bend Wards 1-3,State Senate,20,196,REP,Lee E. Schlenvogt,27
-Washington,City Of West Bend Wards 1-3,State Senate,20,196,,Scattering,1
+Washington,City Of West Bend Wards 1-3,State Senate,20,196,REP,Scattering,1
 Washington,City Of West Bend Wards 4-6,State Senate,20,271,REP,Tiffany Koehler,48
 Washington,City Of West Bend Wards 4-6,State Senate,20,271,REP,Duey Stroebel,164
 Washington,City Of West Bend Wards 4-6,State Senate,20,271,REP,Lee E. Schlenvogt,58
-Washington,City Of West Bend Wards 4-6,State Senate,20,271,,Scattering,1
+Washington,City Of West Bend Wards 4-6,State Senate,20,271,REP,Scattering,1
 Washington,City Of West Bend Wards 7-8,State Senate,20,341,REP,Tiffany Koehler,43
 Washington,City Of West Bend Wards 7-8,State Senate,20,341,REP,Duey Stroebel,247
 Washington,City Of West Bend Wards 7-8,State Senate,20,341,REP,Lee E. Schlenvogt,51
-Washington,City Of West Bend Wards 7-8,State Senate,20,341,,Scattering,0
+Washington,City Of West Bend Wards 7-8,State Senate,20,341,REP,Scattering,0
 Washington,City Of West Bend Wards 9-10,State Senate,20,178,REP,Tiffany Koehler,16
 Washington,City Of West Bend Wards 9-10,State Senate,20,178,REP,Duey Stroebel,123
 Washington,City Of West Bend Wards 9-10,State Senate,20,178,REP,Lee E. Schlenvogt,39
-Washington,City Of West Bend Wards 9-10,State Senate,20,178,,Scattering,0
+Washington,City Of West Bend Wards 9-10,State Senate,20,178,REP,Scattering,0
 Washington,City Of West Bend Wards 11-14,State Senate,20,165,REP,Tiffany Koehler,25
 Washington,City Of West Bend Wards 11-14,State Senate,20,165,REP,Duey Stroebel,105
 Washington,City Of West Bend Wards 11-14,State Senate,20,165,REP,Lee E. Schlenvogt,35
-Washington,City Of West Bend Wards 11-14,State Senate,20,165,,Scattering,0
+Washington,City Of West Bend Wards 11-14,State Senate,20,165,REP,Scattering,0
 Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,172,REP,Tiffany Koehler,20
 Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,172,REP,Duey Stroebel,114
 Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,172,REP,Lee E. Schlenvogt,38
-Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,172,,Scattering,0
+Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,172,REP,Scattering,0
 Washington,City Of West Bend Wards 20-22,State Senate,20,113,REP,Tiffany Koehler,7
 Washington,City Of West Bend Wards 20-22,State Senate,20,113,REP,Duey Stroebel,75
 Washington,City Of West Bend Wards 20-22,State Senate,20,113,REP,Lee E. Schlenvogt,31
-Washington,City Of West Bend Wards 20-22,State Senate,20,113,,Scattering,0
+Washington,City Of West Bend Wards 20-22,State Senate,20,113,REP,Scattering,0
 Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,345,REP,Tiffany Koehler,54
 Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,345,REP,Duey Stroebel,225
 Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,345,REP,Lee E. Schlenvogt,66
-Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,345,,Scattering,0
+Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,345,REP,Scattering,0
 Calumet,Town Of Brothertown Ward 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Calumet,Town Of Brothertown Ward 1-2,State Senate,20,0,,Scattering,0
+Calumet,Town Of Brothertown Ward 1-2,State Senate,20,0,DEM,Scattering,0
 Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,0,,Scattering,0
+Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,0,DEM,Scattering,0
 Calumet,City Of New Holstein Wards 1-5,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Calumet,City Of New Holstein Wards 1-5,State Senate,20,1,,Scattering,1
+Calumet,City Of New Holstein Wards 1-5,State Senate,20,1,DEM,Scattering,1
 Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,0,,Scattering,0
+Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Village Of Eden Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Village Of Eden Ward 1,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of Eden Ward 1,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,0,DEM,Scattering,0
 Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,0,,Scattering,0
+Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),1
-Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,1,,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,1,DEM,Scattering,0
 Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,0,,Scattering,0
+Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,0,,Scattering,0
+Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,0,,Scattering,0
+Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,0,,Scattering,0
+Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Village Of Newburg Ward 3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Village Of Newburg Ward 3,State Senate,20,0,,Scattering,0
+Ozaukee,Village Of Newburg Ward 3,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,0,,Scattering,0
+Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,0,DEM,Scattering,0
 Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,0,,Scattering,0
+Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Cedarburg Ward 1,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),1
-Ozaukee,City Of Cedarburg Ward 1,State Senate,20,2,,Scattering,1
+Ozaukee,City Of Cedarburg Ward 1,State Senate,20,2,DEM,Scattering,1
 Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),1
-Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,2,,Scattering,1
+Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,2,DEM,Scattering,1
 Ozaukee,City Of Cedarburg Ward 3,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Cedarburg Ward 3,State Senate,20,1,,Scattering,1
+Ozaukee,City Of Cedarburg Ward 3,State Senate,20,1,DEM,Scattering,1
 Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Cedarburg Ward 5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Cedarburg Ward 5,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 5,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Cedarburg Ward 6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Cedarburg Ward 6,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 6,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Cedarburg Ward 7,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Cedarburg Ward 7,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Cedarburg Ward 7,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 1,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),1
-Ozaukee,City Of Port Washington Ward 1,State Senate,20,1,,Scattering,0
+Ozaukee,City Of Port Washington Ward 1,State Senate,20,1,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 2,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Port Washington Ward 2,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 3,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 3,State Senate,20,1,,Scattering,1
+Ozaukee,City Of Port Washington Ward 3,State Senate,20,1,DEM,Scattering,1
 Ozaukee,City Of Port Washington Ward 4,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 4,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Port Washington Ward 4,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 5,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Port Washington Ward 5,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 6,State Senate,20,0,,Scattering,0
+Ozaukee,City Of Port Washington Ward 6,State Senate,20,0,DEM,Scattering,0
 Ozaukee,City Of Port Washington Ward 7,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),0
-Ozaukee,City Of Port Washington Ward 7,State Senate,20,2,,Scattering,2
+Ozaukee,City Of Port Washington Ward 7,State Senate,20,2,DEM,Scattering,2
 Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,1,,Scattering,1
+Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,1,DEM,Scattering,1
 Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,1,,Scattering,1
+Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,1,DEM,Scattering,1
 Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,0,,Scattering,0
+Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,0,DEM,Scattering,0
 Sheboygan,Town Of Russell Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Town Of Russell Ward 1,State Senate,20,0,,Scattering,0
+Sheboygan,Town Of Russell Ward 1,State Senate,20,0,DEM,Scattering,0
 Sheboygan,Town Of Scott Wards 1-3,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),1
-Sheboygan,Town Of Scott Wards 1-3,State Senate,20,1,,Scattering,0
+Sheboygan,Town Of Scott Wards 1-3,State Senate,20,1,DEM,Scattering,0
 Sheboygan,Village Of Cascade Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Village Of Cascade Ward 1,State Senate,20,0,,Scattering,0
+Sheboygan,Village Of Cascade Ward 1,State Senate,20,0,DEM,Scattering,0
 Sheboygan,Village Of Waldo Ward 1,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Sheboygan,Village Of Waldo Ward 1,State Senate,20,0,,Scattering,0
+Sheboygan,Village Of Waldo Ward 1,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Addison Wards 1-6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Addison Wards 1-6,State Senate,20,0,,Scattering,0
+Washington,Town Of Addison Wards 1-6,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Barton Wards 1 - 4,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Barton Wards 1 - 4,State Senate,20,0,,Scattering,0
+Washington,Town Of Barton Wards 1 - 4,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Farmington Wards 1-5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Farmington Wards 1-5,State Senate,20,0,,Scattering,0
+Washington,Town Of Farmington Wards 1-5,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Hartford Wards 1-5,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Hartford Wards 1-5,State Senate,20,1,,Scattering,1
+Washington,Town Of Hartford Wards 1-5,State Senate,20,1,DEM,Scattering,1
 Washington,Town Of Jackson Wards 1-6,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),2
-Washington,Town Of Jackson Wards 1-6,State Senate,20,2,,Scattering,0
+Washington,Town Of Jackson Wards 1-6,State Senate,20,2,DEM,Scattering,0
 Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,1,,Scattering,1
+Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,1,DEM,Scattering,1
 Washington,Town Of Polk Wards 1-6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Polk Wards 1-6,State Senate,20,0,,Scattering,0
+Washington,Town Of Polk Wards 1-6,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Trenton Wards 1-8,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Trenton Wards 1-8,State Senate,20,0,,Scattering,0
+Washington,Town Of Trenton Wards 1-8,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of Wayne Wards 1 - 3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Town Of Wayne Wards 1 - 3,State Senate,20,0,,Scattering,0
+Washington,Town Of Wayne Wards 1 - 3,State Senate,20,0,DEM,Scattering,0
 Washington,Town Of West Bend Wards 1-8,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),1
-Washington,Town Of West Bend Wards 1-8,State Senate,20,2,,Scattering,1
+Washington,Town Of West Bend Wards 1-8,State Senate,20,2,DEM,Scattering,1
 Washington,Village Of Jackson Wards 1-10,State Senate,20,5,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Village Of Jackson Wards 1-10,State Senate,20,5,,Scattering,5
+Washington,Village Of Jackson Wards 1-10,State Senate,20,5,DEM,Scattering,5
 Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,0,,Scattering,0
+Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,0,DEM,Scattering,0
 Washington,Village Of Newburg Wards 1 & 2,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Village Of Newburg Wards 1 & 2,State Senate,20,0,,Scattering,0
+Washington,Village Of Newburg Wards 1 & 2,State Senate,20,0,DEM,Scattering,0
 Washington,Village Of Richfield Wards 4-6,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,Village Of Richfield Wards 4-6,State Senate,20,0,,Scattering,0
+Washington,Village Of Richfield Wards 4-6,State Senate,20,0,DEM,Scattering,0
 Washington,Village Of Slinger Wards 1-8,State Senate,20,2,DEM,Nicholas J. Stamates (Write-In),2
-Washington,Village Of Slinger Wards 1-8,State Senate,20,2,,Scattering,0
+Washington,Village Of Slinger Wards 1-8,State Senate,20,2,DEM,Scattering,0
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,,Scattering,0
+Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,DEM,Scattering,0
 Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,,Scattering,0
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,DEM,Scattering,0
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,,Scattering,0
+Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,DEM,Scattering,0
 Washington,City Of West Bend Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 1-3,State Senate,20,0,,Scattering,0
+Washington,City Of West Bend Wards 1-3,State Senate,20,0,DEM,Scattering,0
 Washington,City Of West Bend Wards 4-6,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 4-6,State Senate,20,1,,Scattering,1
+Washington,City Of West Bend Wards 4-6,State Senate,20,1,DEM,Scattering,1
 Washington,City Of West Bend Wards 7-8,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 7-8,State Senate,20,0,,Scattering,0
+Washington,City Of West Bend Wards 7-8,State Senate,20,0,DEM,Scattering,0
 Washington,City Of West Bend Wards 9-10,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 9-10,State Senate,20,1,,Scattering,1
+Washington,City Of West Bend Wards 9-10,State Senate,20,1,DEM,Scattering,1
 Washington,City Of West Bend Wards 11-14,State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 11-14,State Senate,20,1,,Scattering,1
+Washington,City Of West Bend Wards 11-14,State Senate,20,1,DEM,Scattering,1
 Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,1,,Scattering,1
+Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,1,DEM,Scattering,1
 Washington,City Of West Bend Wards 20-22,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,City Of West Bend Wards 20-22,State Senate,20,0,,Scattering,0
+Washington,City Of West Bend Wards 20-22,State Senate,20,0,DEM,Scattering,0
 Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,1,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,1,,Scattering,1
+Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,1,DEM,Scattering,1
+Calumet,Town Of Brothertown Ward 1-2,State Senate,20,0,CON,Scattering,0
+Calumet,"Town Of New Holstein Ward 1, 2, 3",State Senate,20,0,CON,Scattering,0
+Calumet,City Of New Holstein Wards 1-5,State Senate,20,1,CON,Scattering,1
+Fond Du Lac,Town Of Ashford Wards 1 -3,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Auburn Wards 1-3,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Calumet Ward 2,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Eden Wards 1-2,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Forest Wards 1-2,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Marshfield Wards 1-2,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Town Of Osceola Wards 1-2,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Village Of Campbellsport Wards 1-4,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Village Of Eden Ward 1,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Village Of Kewaskum Wd 6,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Village Of Mount Calvary Ward 1,State Senate,20,0,CON,Scattering,0
+Fond Du Lac,Village Of St. Cloud Ward 1,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Belgium Wards 1-3,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Cedarburg Ward 1-2,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 3-4,State Senate,20,0,CON,Scattering,0
+Ozaukee,"Town Of Cedarburg Wards 5-6,10",State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Cedarburg Wards 7-9,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Fredonia Wards 1-4,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Port Washington Wards 1-2,State Senate,20,0,CON,Scattering,0
+Ozaukee,Town Of Saukville Wards 1-3,State Senate,20,0,CON,Scattering,0
+Ozaukee,Village Of Belgium Wards 1-3,State Senate,20,0,CON,Scattering,0
+Ozaukee,Village Of Fredonia Wards 1-3,State Senate,20,0,CON,Scattering,0
+Ozaukee,Village Of Newburg Ward 3,State Senate,20,0,CON,Scattering,0
+Ozaukee,Village Of Saukville Wards 1; 6-7,State Senate,20,0,CON,Scattering,0
+Ozaukee,Village Of Saukville Wards 2-5,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Ward 1,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Wards 2 & 9,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Ward 3,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Wards 4 & 8,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Ward 5,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Cedarburg Ward 6,State Senate,20,1,CON,Scattering,1
+Ozaukee,City Of Cedarburg Ward 7,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 1,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 2,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 3,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 4,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 5,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 6,State Senate,20,0,CON,Scattering,0
+Ozaukee,City Of Port Washington Ward 7,State Senate,20,0,CON,Scattering,0
+Sheboygan,Town Of Greenbush Wards 1 - 3,State Senate,20,0,CON,Scattering,0
+Sheboygan,Town Of Lyndon Wards 1 - 3,State Senate,20,0,CON,Scattering,0
+Sheboygan,Town Of Mitchell Wards 1 - 3,State Senate,20,0,CON,Scattering,0
+Sheboygan,Town Of Russell Ward 1,State Senate,20,0,CON,Scattering,0
+Sheboygan,Town Of Scott Wards 1-3,State Senate,20,0,CON,Scattering,0
+Sheboygan,Village Of Cascade Ward 1,State Senate,20,0,CON,Scattering,0
+Sheboygan,Village Of Waldo Ward 1,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Addison Wards 1-6,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Barton Wards 1 - 4,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Farmington Wards 1-5,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Hartford Wards 1-5,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Jackson Wards 1-6,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Kewaskum Ward 1 & 2,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Polk Wards 1-6,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Trenton Wards 1-8,State Senate,20,0,CON,Scattering,0
+Washington,Town Of Wayne Wards 1 - 3,State Senate,20,0,CON,Scattering,0
+Washington,Town Of West Bend Wards 1-8,State Senate,20,0,CON,Scattering,0
+Washington,Village Of Jackson Wards 1-10,State Senate,20,0,CON,Scattering,0
+Washington,"Village Of Kewaskum Wards 1 - 5, 7",State Senate,20,0,CON,Scattering,0
+Washington,Village Of Newburg Wards 1 & 2,State Senate,20,0,CON,Scattering,0
+Washington,Village Of Richfield Wards 4-6,State Senate,20,0,CON,Scattering,0
+Washington,Village Of Slinger Wards 1-8,State Senate,20,0,CON,Scattering,0
+Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,CON,Scattering,0
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,CON,Scattering,0
+Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 1-3,State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 4-6,State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 7-8,State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 9-10,State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 11-14,State Senate,20,0,CON,Scattering,0
+Washington,"City Of West Bend Wards 15-19, 25, 27",State Senate,20,0,CON,Scattering,0
+Washington,City Of West Bend Wards 20-22,State Senate,20,0,CON,Scattering,0
+Washington,"City Of West Bend Wards 23, 24, 26",State Senate,20,0,CON,Scattering,0
 Jackson,Town Of Adams Wards 1-3,Jackson County Circuit Court,,282,NP,Anna L. Becker,99
 Jackson,Town Of Adams Wards 1-3,Jackson County Circuit Court,,282,NP,Mark A. Radcliffe,25
 Jackson,Town Of Adams Wards 1-3,Jackson County Circuit Court,,282,NP,Robyn Matousek,33

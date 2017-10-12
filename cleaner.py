@@ -3,6 +3,7 @@ import re
 
 
 party_recode = {
+    "Americans Elect": "AME",	
     "Constitution": "CON",
     "Democratic": "DEM",
     "Independent": "IND",

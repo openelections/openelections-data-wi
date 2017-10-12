@@ -20,7 +20,7 @@ fields:
       - ^[\d]+|$
   totalvotes: isNumeric
   party:
-    isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA,GRE,WGR
+    isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA,GRE,WGR,AME
   candidate:
     - matches:
       # Line break, letter, number ()&,".+ or spaace
