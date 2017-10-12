@@ -298,9 +298,9 @@ Feature: WI Elections
     | Sherryll Shaddock             | Waukesha      | State Senate                      | TOWN OF WAUKESHA Wards 1,2,3,4,5,6 & 8                    | 128   | 433   |
 
   Examples: 20150901__wi__special__primary__ward.csv
-    | candidate                     | county        | office                            | ward                                                      | votes | total |
-    | Scattering                    | Waukesha      | State Assembly                    | Village of Oconomowoc Lake Ward 1                         | 0     | 28    |
-    | Spencer Zimmerman             | Waukesha      | State Assembly                    | Town of Genesee Wards 1-5, 9 10                           | 9     | 278   |
+    | party | candidate             | county        | office                            | ward                                                      | votes | total |
+    | REP   | Scattering            | Waukesha      | State Assembly                    | Village of Oconomowoc Lake Ward 1                         | 0     | 28    |
+    | REP   | Spencer Zimmerman     | Waukesha      | State Assembly                    | Town of Genesee Wards 1-5, 9 10                           | 9     | 278   |
 
   Examples: 20150929__wi__special__general__ward.csv
     | candidate                     | county        | office                            | ward                                                      | votes | total |
