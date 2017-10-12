@@ -262,20 +262,10 @@ def open_file(url, filename):
     return xlsfile
 
 
-def any_party_in(sequence):
-    """ Return True if any party abbreviation is an element of sequence, else False.
-        Uses abbreviations from cleaner.party_recode map.
-    """
-    for party in cleaner.party_recode.values():
-        if party in sequence:
-            return True
-    return False
-
-
 CAND_COL = 3    # column holding first candidate
 TOTAL_VOTES_HEADER = 'Total Votes Cast'
 
-def extract_candidates(sheet):
+def extract_candidates(sheet, sheet_index):
     """ Extract candidate names and parties from sheet.
     
         Returns: candidates, parties, start_row
@@ -288,26 +278,31 @@ def extract_candidates(sheet):
     else:   # loop not exited with break
         raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
     
-    # Total Votes header in rowx, parties in this row or previous
+    # Total Votes header in rowx, candidates in this row or next
+    # Candidate row will have "SCATTERING" in it
     row = sheet.row_values(rowx, start_colx=CAND_COL)
-    if any_party_in(row):   # look for any party abbreviation in row
+    if "SCATTERING" in row:
+        candidates = row
+        parties = sheet.row_values(rowx - 1, start_colx=CAND_COL)
+    else:
         parties = row
-    else:   # assume parties in previous row
-        rowx -= 1
-        parties = sheet.row_values(rowx, start_colx=CAND_COL)
+        rowx += 1
+        candidates = sheet.row_values(rowx, start_colx=CAND_COL)
+        if "SCATTERING" in candidates:
+            # Fill in party if missing for "Scattering" candidate (primary elections)
+            ### Check if election['race_type'] == 'primary'?
+            scattering_index = candidates.index("SCATTERING")
+            if parties[scattering_index] == '':
+                office_title = sheet.cell_value(rowx - 3, 0)
+                party = office_title.rpartition(' - ')[-1].strip().title()
+                party = cleaner.party_recode.get(party)
+                # assume a primary election if office title ends in a party name
+                if party:
+                    parties[scattering_index] = party
+        else:
+            print 'Warning: SCATTERING not found in sheet {}'.format(sheet_index)
     
-    candidates = sheet.row_values(rowx + 1, start_colx=CAND_COL)
-    start_row = rowx + 2
-    
-    # For primary elections, fill in party if missing for "Scattering" candidate
-    ### Add parameter "election" to check if election['race_type'] == 'primary' ?
-    if candidates[-1] == "SCATTERING" and parties[len(candidates) - 1] == '':
-        office_title = sheet.cell_value(rowx - 2, 0)
-        party = office_title.rpartition(' - ')[-1].title()
-        party = cleaner.party_recode.get(party)
-        if party:   # assume a primary election if office title ends in a party name
-            parties[len(candidates) - 1] = party
-    
+    start_row = rowx + 1        # first data row
     return candidates, parties, start_row
 
 
@@ -361,7 +356,7 @@ def parse_sheet(sheet, office, sheet_index):
         This is used to parse Fall 2010 and later elections.
     """
     office, district, party = parse_office(office)
-    candidates, parties, start_row = extract_candidates(sheet)
+    candidates, parties, start_row = extract_candidates(sheet, sheet_index)
     if sheet_index == 0 and '' in candidates:
         del candidates[candidates.index(''):]   # truncate at first empty cell
         ### TO DO: Process recount results after first empty cell
