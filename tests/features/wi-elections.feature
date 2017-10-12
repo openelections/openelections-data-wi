@@ -211,6 +211,7 @@ Feature: WI Elections
   Examples: 20120814__wi__primary__ward.csv
     | party | candidate             | county        | office                                            | ward                                      | votes | total |
     | REP   | Al Ott                | Outagamie     | State Assembly                                    | Village of Combined Locks Wards 1-4       | 263   | 368   |
+    | REP   | Michael W. Schiek     | Oneida        | District Attorney - Oneida County                 | TOWN OF NOKOMIS WARDS 1 & 2               | 70    | 117   |
     | DEM   | John T. Chisholm      | Milwaukee     | District Attorney - Milwaukee County              | CITY OF MILWAUKEE WARD 243                | 72    | 72    |
     | AME   | Scattering            | Menominee     | District Attorney - Menominee-Shawano County      | TOWN OF MENOMINEE Ward 2                  | 0     | 0     |
 
