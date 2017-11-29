@@ -3,16 +3,25 @@
 # openelections-data-wi
 Pre-processed election results for Wisconsin elections
 
-To re-parse files:
+To re-parse data files:
 ```bash
 python parser.py
 ```
 
-A folder ``local_data_cache`` keeps a local version of files. To update it:
+To parse data files for specific elections, append one or more election ids:
+```bash
+python parser.py wi 426
+```
 
+A folder ``local_data_cache`` keeps a local copy of input data files. To update it:
 ```bash
 cd local_data_cache
-python fetcher.py
+python fetch.py wi
+```
+
+To fetch input files for specific elections, append one or more election ids:
+```bash
+python fetch.py wi 1577 404
 ```
 
 There are two types of tests:
@@ -31,4 +40,7 @@ Examples: 20150929__wi__general_ward.csv
   | Thomas D. Hibbard (Write-In)| ASSEMBLY | Village of Wales Wards 1-4     | 10     | 106   |
 ```
 
-To run those tests ``cd tests; behave``  
+To run those tests:
+```bash
+cd tests; behave
+```
