@@ -10,7 +10,7 @@ python parser.py
 
 To parse data files for specific elections, append one or more election ids:
 ```bash
-python parser.py wi 426
+python parser.py 426
 ```
 
 A folder ``local_data_cache`` keeps a local copy of input data files. To update it:
