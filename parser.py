@@ -357,9 +357,16 @@ def parse_sheet(sheet, office, sheet_index):
     """
     office, district, party = parse_office(office)
     candidates, parties, start_row = extract_candidates(sheet, sheet_index)
+    offset = 0
     if sheet_index == 0 and '' in candidates:
-        del candidates[candidates.index(''):]   # truncate at first empty cell
-        ### TO DO: Process recount results after first empty cell
+        # probably this is 2011-04-05 Supreme Court election (id 421)
+        i = candidates.index('') + 1    # next after blank
+        if len(candidates) > i and candidates[i] == TOTAL_VOTES_HEADER:
+            # this is the second total votes header, for recounts
+            offset = i + 1          # of column to read recount data
+            candidates = candidates[offset:]
+            parties = parties[offset:]
+    cand_col = CAND_COL + offset    # 1st candidate is in this column
     county = ''
     output = []
     for rowx in range(start_row, sheet.nrows):
@@ -370,8 +377,8 @@ def parse_sheet(sheet, office, sheet_index):
         if col0 != '':
             county = col0
         ward = row[1].strip()
-        total_votes = row[2]
-        candidate_votes = row[CAND_COL:]
+        total_votes = row[2 + offset]
+        candidate_votes = row[cand_col:]
         for index, candidate in enumerate(candidates):
             if candidate:   # column not empty
                 party = parties[index]

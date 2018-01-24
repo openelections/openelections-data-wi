@@ -173,7 +173,8 @@ Feature: WI Elections
 
   Examples: 20110405__wi__general__ward.csv
     | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | David T. Prosser, Jr.         | MANITOWOC     | SUPREME COURT             | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36 | 306   | 555   |
+    | David T. Prosser, Jr.         | Manitowoc     | Supreme Court             | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36 | 306   | 555   |
+    | Joanne F. Kloppenburg         | Racine        | Supreme Court             | TOWN OF WATERFORD Wards 1 - 10                                    | 573   | 2183  |
 
   Examples: 20110503__wi__special__general__ward.csv
     | candidate                     | county        | office                    | ward                                                              | votes | total |
