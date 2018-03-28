@@ -25,7 +25,7 @@ first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10, 'ELECTION DATE': 
 
 
 def collect_columns(row, start_col):
-    """Collect data from row starting at start_col, until empty or bad cell."""
+    """Collect data from row starting at start_col, until empty or bad cell"""
     data = []
     for value in row[start_col:]:
         if value in ('', 'dem'):
@@ -62,7 +62,7 @@ def process_xls_2000_to_2010(sheet):
         if colA in first_header:
             # first row of block, collect candidate names
             col_offset =  first_header[colA]
-            candidate_col = 17 - col_offset         # first column of candidate data
+            candidate_col = 17 - col_offset   # first column of candidate data
             candidates = collect_columns(row, candidate_col)
             if colA == 'ELECTION DATE':       # single header, extract parties
                 candidates, parties = split_candidate_party(candidates)
@@ -108,7 +108,7 @@ def process_xls_2000_to_2010(sheet):
     return results
 
 
-def process_xls_2012_DA_primary(sheet): # Election 411
+def process_xls_2012_DA_primary(sheet):     # election id 411
     """Return list of records from 2012-08-14 District Attorney spreadsheet"""
     
     fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
@@ -197,7 +197,7 @@ def process(filename):
         print
         return []
     sheet0 = xlsfile.sheet_by_index(0)
-    sheet0_cell0A = sheet0.cell_value(rowx=0, colx=0)   # first row, first column
+    sheet0_cell0A = sheet0.cell_value(rowx=0, colx=0)   # 1st row, 1st column
     
     sheet1_cell0A = None
     if xlsfile.nsheets > 1:
@@ -276,6 +276,7 @@ def process_file(cached_filename):
         print 'Opening ' + cached_filename
         return process(cached_filename)
 
+
 def open_file(url, filename):
     r = requests.get(url)
     if r.status_code == 200:
@@ -312,14 +313,14 @@ def extract_candidates(sheet, sheet_index):
         rowx += 1
         candidates = sheet.row_values(rowx, start_colx=CAND_COL)
         if "SCATTERING" in candidates:
-            # Fill in party if missing for "Scattering" candidate (primary elections)
+            # Fill in party if missing for "Scattering" candidate in primaries
             ### Check if election['race_type'] == 'primary'?
             scattering_index = candidates.index("SCATTERING")
             if parties[scattering_index] == '':
                 office_title = sheet.cell_value(rowx - 3, 0)
                 party = office_title.rpartition(' - ')[-1].strip().title()
                 party = cleaner.party_recode.get(party)
-                # assume a primary election if office title ends in a party name
+                # assume a primary election if office ends in a party name
                 if party:
                     parties[scattering_index] = party
         else:
@@ -386,7 +387,7 @@ def parse_sheet(sheet, office, sheet_index):
         i = candidates.index('') + 1    # next after blank
         if len(candidates) > i and candidates[i] == TOTAL_VOTES_HEADER:
             # this is the second total votes header, for recounts
-            offset = i + 1          # of column to read recount data
+            offset = i + 1          # column offset to get recount data
             candidates = candidates[offset:]
             parties = parties[offset:]
     cand_col = CAND_COL + offset    # 1st candidate is in this column
@@ -448,7 +449,7 @@ xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
 xls_2010_onward_working = [
     404,405,407,408,409,
     410,411,413,415,416,419,
-    421,                        # Single sheet with no cover sheet, unlike others
+    421,                    # Single sheet with no cover sheet, unlike others
     422,
     424,425,
     1538,1539,1573,1574,1575,1576,
