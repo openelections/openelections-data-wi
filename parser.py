@@ -76,8 +76,6 @@ def process_xls_2000_to_2010(sheet):
             for i in range(len(candidates) - len(parties)):
                 parties.append('')
             continue
-        elif colA in ('', ' '):
-            continue
         elif colA in ('', 'SQL>') or colA.endswith('rows selected.'):
             continue    # not a data row
         
