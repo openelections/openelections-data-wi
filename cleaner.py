@@ -11,10 +11,13 @@ party_recode = {
     "Republican": "REP",
     "Wisconsin Green": "WGR",
     "Wisconsin Greens": "WGR",
-    "Wisconsin Green 2010-09-14": "WIG",  # only in 2010-09-14 primary Assembly District 77
+    "Wisconsin Green 2010-09-14": "WIG",
+        # WIG appears only in 2010-09-14 primary for Assembly District 77
+        # (included here to record all abbreviations)
     "Non-Partisan": "NP",
     "not applicable?": "NA"
 }
+
 
 """Recode office names to conform to
     https://github.com/openelections/specs/wiki/Office-Names

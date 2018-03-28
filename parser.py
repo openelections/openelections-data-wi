@@ -472,10 +472,6 @@ xls_2010_onward_working = [
 
 working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
 working += xls_2010_onward_working
-
-# jsonfilenames = ['1748.json', '1710.json']
-# for filename in jsonfilenames:
-#     get_result_for_json(filename)
 working += [1845]       # 2000-11-07
 
 
