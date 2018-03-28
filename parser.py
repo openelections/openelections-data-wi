@@ -11,9 +11,6 @@ import zipfile
 
 import cleaner
 
-### Is this needed?
-reload(sys)
-sys.setdefaultencoding('utf8')
 
 output_headers = ["county", "ward", "office", "district", "total votes",
                     "party", "candidate", "votes"]
@@ -355,9 +352,9 @@ def parse_office(office_string):
           EAU CLAIRE COUNTY CIRCUIT COURT JUDGE, BRANCH 1
           RECALL STATE SENATE-29
     """
-    office = str(office_string).upper()
-    office = office.replace('―','-')    # change \u2015 HORIZONTAL BAR to hyphen
-    office = office.replace('–', '-')   # change \u2013 EN DASH to hyphen
+    office = office_string.upper()
+    office = office.replace(u'\u2015','-')   # change HORIZONTAL BAR to hyphen
+    office = office.replace(u'\u2013', '-')  # change EN DASH to hyphen
     
     if ' DISTRICT ' in office and ' DISTRICT ATTORNEY' not in office:
         head, sep, tail = office.partition(' DISTRICT ')
