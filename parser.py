@@ -250,6 +250,7 @@ def get_election_result(election):
     wr = csv.writer(outfile)
     wr.writerow(output_headers)
     direct_links = election['direct_links']
+    row = None
     for direct_link in direct_links:
         infilename = os.path.basename(direct_link)
         cached_filename = os.path.join('local_data_cache', 'data', infilename)
@@ -260,6 +261,11 @@ def get_election_result(election):
                 row = cleaner.clean_row(row)
                 if "Office Totals:" not in row:
                     wr.writerow(row)
+    if row is None:     # no rows written, delete file
+        outfile.close()
+        os.remove(filepath)
+        print 'No data parsed, output file removed'
+
 
 def process_file(cached_filename):
     if cached_filename.lower().endswith('.pdf'):
