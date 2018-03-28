@@ -20,8 +20,8 @@ output_headers = [
     "county","ward","office","district","total votes","party","candidate","votes"]
 
 # {colA_header: num_missing} -- given first header, number of missing columns
-#   (for 2002 to 2010 single sheet spreadsheets)
-first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10}
+#   (for 2000 to 2010 single sheet spreadsheets)
+first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10, 'ELECTION DATE': 0}
 
 
 def collect_columns(row, start_col):
@@ -34,17 +34,38 @@ def collect_columns(row, start_col):
     return data
 
 
-def process_xls_2002_to_2010(sheet):
-    """Return list of records from spreadsheet in 2002-2010 format"""
+def split_candidate_party(candidates):
+    """Split list of "<candidate> <party>" into separate lists"""
+    parties = []
+    for i, candidate in enumerate(candidates):
+        if candidate == 'Scattering':
+            parties.append('')
+            continue
+        for party in cleaner.party_recode:
+            head, __, __ = candidate.rpartition(party)
+            if head:    # party found in candidate field
+                parties.append(party)
+                candidates[i] = head
+                break   # next candidate
+        else:   # no break
+            raise ValueError(
+                'Party not found in candidate "{}"'.format(candidate))
+    return candidates, parties
+
+
+def process_xls_2000_to_2010(sheet):
+    """Return list of records from spreadsheet in 2000-2010 formats"""
     results = []
     for rowx in range(sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
-        colA = row[0]
+        colA = str(row[0]).strip()
         if colA in first_header:
             # first row of block, collect candidate names
             col_offset =  first_header[colA]
             candidate_col = 17 - col_offset         # first column of candidate data
             candidates = collect_columns(row, candidate_col)
+            if colA == 'ELECTION DATE':       # single header, extract parties
+                candidates, parties = split_candidate_party(candidates)
             continue
         elif colA in ('DATE', 'KEYWORD', 'NAME'):
             # second row of block, collect party names
@@ -54,6 +75,8 @@ def process_xls_2002_to_2010(sheet):
             continue
         elif colA in ('', ' '):
             continue
+        elif colA in ('', 'SQL>') or colA.endswith('rows selected.'):
+            continue    # not a data row
         
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
@@ -188,7 +211,7 @@ def process(filename):
     	results.append(process_xls_2012_DA_primary(sheet1))
     # for an older-style header, process single sheet file
     elif sheet0_cell0A in first_header:
-        results.append(process_xls_2002_to_2010(sheet0))
+        results.append(process_xls_2000_to_2010(sheet0))
     
     else:
         offices, sheet_index = get_offices(sheet0)
@@ -407,37 +430,9 @@ def get_result_for_json(filename):
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
 
 
-# All ids from available elections.
-available_ids = [
-1761, 1755, 1748, 1711, 1710,
-1658,1659,1660,1661,
-1576,1573,1574,1575,
-1538,1539,
-404,405,
-407,408,409,410,411,
-1662,
-413,415,416,419,421,422,424,425,426,427,428,429,430,
-431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,
-664,
-674,685,689,
-1756,
-1577,1578
-]
-
 # Elections with no files available.
 no_results_ids = [448, 664, 674, 689]
 
-# File 440 won't open in Pages, but parses fine (Google docs also works)
-
-# Election with PDF files.
-pdf_elections = [
-    437,                # PDF and excel (in zips) 
-    443,
-    444,                # contains both xls and pdf files
-    445, 446, 447, 
-    685,
-    1756
-]
 
 # Working Elections:
 
@@ -467,15 +462,10 @@ xls_2010_onward_working = [
 working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
 working += xls_2010_onward_working
 
-test_set = [
-404, 407, 408, 419, 421, 424, 425, 426, 434, 440, 444,
-1573, 1574, 1575, 1576, 1577, 1659, 1661, 1662
-]
-# get_all_results(test_set, WIOpenElectionsAPI)
-
 # jsonfilenames = ['1748.json', '1710.json']
 # for filename in jsonfilenames:
 #     get_result_for_json(filename)
+working += [1845]       # 2000-11-07
 
 
 # Running from command line without args, process results for all working ids.
