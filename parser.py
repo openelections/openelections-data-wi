@@ -73,8 +73,7 @@ def process_xls_2000_to_2010(sheet):
         elif colA in ('DATE', 'KEYWORD', 'NAME'):
             # second row of block, collect party names
             parties = collect_columns(row, candidate_col)
-            for i in range(len(candidates) - len(parties)):
-                parties.append('')
+            parties.extend([''] * (len(candidates) - len(parties)))
             continue
         elif colA in ('', 'SQL>') or colA.endswith('rows selected.'):
             continue    # not a data row
@@ -235,7 +234,7 @@ def make_filepath(election):
     race_type = election['race_type']
     reporting_level = 'ward'
     names = [start_date, state, party, special, race_type, reporting_level]
-    names = [name for name in names if name]    # remove empty names
+    names = filter(bool, names)     # remove empty names
     filename = '__'.join(names) + '.csv'
     print 'Processing ' + filename
     year = start_date[:4]
