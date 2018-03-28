@@ -15,13 +15,16 @@ import cleaner
 reload(sys)
 sys.setdefaultencoding('utf8')
 
+output_headers = ["county", "ward", "office", "district", "total votes",
+                    "party", "candidate", "votes"]
 
-output_headers = [
-    "county","ward","office","district","total votes","party","candidate","votes"]
 
-# {colA_header: num_missing} -- given first header, number of missing columns
-#   (for 2000 to 2010 single sheet spreadsheets)
-first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10, 'ELECTION DATE': 0}
+first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10,
+                    'ELECTION DATE': 0}
+"""Given first header, number of missing columns
+        {colA_header: num_missing}
+        (for year 2000 to 2010 single sheet spreadsheets)
+"""
 
 
 def collect_columns(row, start_col):
@@ -95,28 +98,29 @@ def process_xls_2000_to_2010(sheet):
         
         votes = collect_columns(row, candidate_col)
         if isinstance(votes[0], basestring) and not votes[0].isdigit():
-            print '    row {}, col {}, data:"{}"'.format(rowx, candidate_col, votes[0])
+            print '   row {}, col {}, data:"{}"'.format(
+                rowx, candidate_col, votes[0])
             raise ValueError('Non-digit chars in votes field')
         # assume votes are strings of digits, or ints or floats
         votes = map(int, votes)
         total_votes = sum(votes)
         
         for i, candidate in enumerate(candidates):
-            results.append([
-                county, ward, office, district, total_votes, parties[i], candidate, votes[i]
-            ])
+            results.append([county, ward, office, district, total_votes,
+                parties[i], candidate, votes[i]])
     return results
 
 
 def process_xls_2012_DA_primary(sheet):     # election id 411
     """Return list of records from 2012-08-14 District Attorney spreadsheet"""
     
-    fieldnames = 'ContestName CountyName CandidateName ReportingUnitText VoteCount'
-    fieldnames = fieldnames.split()         # the fields we need
+    fieldnames = ['ContestName', 'CountyName', 'CandidateName',
+                    'ReportingUnitText', 'VoteCount']
     col_headers = sheet.row_values(rowx=0)  # first row
     try:
         # Find indexes of desired fields in spreadsheet
-        fieldindexes = [col_headers.index(fieldname) for fieldname in fieldnames]
+        fieldindexes = [col_headers.index(fieldname) 
+                            for fieldname in fieldnames]
     except ValueError:
         print fieldname, 'not found in spreadsheet column headers:'
         print col_headers
@@ -128,7 +132,8 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
     candidates = []
     for rowx in range(1, sheet.nrows):     # index to rows
         row = sheet.row_values(rowx)
-        office, county, candidate, ward, votes = [row[col] for col in fieldindexes]
+        office, county, candidate, ward, votes = [
+                                    row[col] for col in fieldindexes]
         head, _, tail = office.rstrip().rpartition(' - ')
         if len(tail) == 3:
             office, party = head, tail
@@ -138,7 +143,8 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
 
         race_place = county, ward, office, district, party
         if previous_race_place and (race_place != previous_race_place):
-            results.extend(collect_results(candidates, candidate_votes, previous_race_place))
+            results.extend(collect_results(
+                            candidates, candidate_votes, previous_race_place))
             candidates = []
             candidate_votes = []
         candidates.append(candidate)
@@ -152,8 +158,8 @@ def collect_results(candidates, votes, race_place):
     county, ward, office, district, party = race_place
     total_votes = sum(votes)
     for i, candidate in enumerate(candidates):
-        results.append([
-            county, ward, office, district, total_votes, party, candidate, votes[i]])
+        results.append([county, ward, office, district, total_votes, party,
+                        candidate, votes[i]])
     return results
 
 
@@ -324,7 +330,7 @@ def extract_candidates(sheet, sheet_index):
                 if party:
                     parties[scattering_index] = party
         else:
-            print 'Warning: SCATTERING not found in sheet {}'.format(sheet_index)
+            print 'Warning: SCATTERING missing, sheet {}'.format(sheet_index)
     
     start_row = rowx + 1        # first data row
     return candidates, parties, start_row
@@ -428,7 +434,8 @@ def get_result_for_json(filename):
         get_election_result(election)
 
 
-WIOpenElectionsAPI = "http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI"
+WIOpenElectionsAPI = "http://openelections.net/api/v1/election/"
+WIOpenElectionsAPI += "?format=json&limit=0&state__postal=WI"
 
 
 # Elections with no files available.
