@@ -23,7 +23,7 @@ fields:
     isOneOf: DEM,REP,IND,,CON,NP,LIB,NA,WIG,NA,GRE,WGR,AME
   candidate:
     - matches:
-      # Line break, letter, number ()&,".+ or spaace
-      - ^[\r\na-z0-9-()\&,"\.\+' ]+$
+      # Letter, number ()&,".+ or spaace
+      - ^[áa-z0-9-()\&,"\.\+' ]+$
       - i
   votes: isNumeric

@@ -433,7 +433,7 @@ def get_result_for_json(filename):
         election = json.load(jsonfile)
         get_election_result(election)
 
-
+# http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/"
 WIOpenElectionsAPI += "?format=json&limit=0&state__postal=WI"
 
@@ -469,7 +469,7 @@ xls_2010_onward_working = [
 
 working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
 working += xls_2010_onward_working
-working += [1845]       # 2000-11-07
+working += range(1822,1852) + [1864]
 
 
 # Running from command line without args, process results for all working ids.
