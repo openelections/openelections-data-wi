@@ -433,7 +433,7 @@ def get_result_for_json(filename):
         election = json.load(jsonfile)
         get_election_result(election)
 
-
+# http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
 WIOpenElectionsAPI = "http://openelections.net/api/v1/election/"
 WIOpenElectionsAPI += "?format=json&limit=0&state__postal=WI"
 
