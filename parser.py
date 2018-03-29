@@ -469,6 +469,7 @@ xls_2010_onward_working = [
 
 working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
 working += xls_2010_onward_working
+working += xls_2010_onward_working + range(1822,1852)
 working += [1845]       # 2000-11-07
 
 
