@@ -1,0 +1,557 @@
+county,ward,office,district,total votes,party,candidate,votes
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,4,DEM,Elizabeth Coppola,4
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,4,DEM,Scattering,0
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,3,DEM,Elizabeth Coppola,3
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,3,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,54,DEM,Elizabeth Coppola,54
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,54,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,39,DEM,Elizabeth Coppola,39
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,39,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,67,DEM,Elizabeth Coppola,67
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,67,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,65,DEM,Elizabeth Coppola,65
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,65,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,37,DEM,Elizabeth Coppola,37
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,37,DEM,Scattering,0
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,40,DEM,Elizabeth Coppola,40
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,40,DEM,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,94,DEM,Elizabeth Coppola,94
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,94,DEM,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,96,DEM,Elizabeth Coppola,96
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,96,DEM,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,77,DEM,Elizabeth Coppola,77
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,77,DEM,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,100,DEM,Elizabeth Coppola,100
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,100,DEM,Scattering,0
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Chris Kujawa,15
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Jessie Rodriguez,36
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Larry Gamble,7
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Jason Red Arnold,0
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Ken Gehl,6
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,65,REP,Scattering,1
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Chris Kujawa,7
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Jessie Rodriguez,21
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Larry Gamble,15
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Jason Red Arnold,0
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Ken Gehl,4
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,47,REP,Scattering,0
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Chris Kujawa,69
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Jessie Rodriguez,178
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Larry Gamble,12
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Jason Red Arnold,1
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Ken Gehl,67
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,327,REP,Scattering,0
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Chris Kujawa,46
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Jessie Rodriguez,122
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Larry Gamble,14
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Jason Red Arnold,4
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Ken Gehl,36
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,222,REP,Scattering,0
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Chris Kujawa,79
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Jessie Rodriguez,129
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Larry Gamble,8
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Jason Red Arnold,5
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Ken Gehl,76
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,299,REP,Scattering,2
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Chris Kujawa,65
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Jessie Rodriguez,170
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Larry Gamble,24
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Jason Red Arnold,11
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Ken Gehl,69
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,339,REP,Scattering,0
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Chris Kujawa,65
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Jessie Rodriguez,230
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Larry Gamble,20
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Jason Red Arnold,0
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Ken Gehl,122
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,438,REP,Scattering,1
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Chris Kujawa,28
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Jessie Rodriguez,110
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Larry Gamble,11
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Jason Red Arnold,1
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Ken Gehl,46
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,196,REP,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Chris Kujawa,134
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Jessie Rodriguez,136
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Larry Gamble,23
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Jason Red Arnold,8
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Ken Gehl,19
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,321,REP,Scattering,1
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Chris Kujawa,95
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Jessie Rodriguez,99
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Larry Gamble,11
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Jason Red Arnold,14
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Ken Gehl,24
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,243,REP,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Chris Kujawa,134
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Jessie Rodriguez,159
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Larry Gamble,13
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Jason Red Arnold,9
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Ken Gehl,27
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,342,REP,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Chris Kujawa,129
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Jessie Rodriguez,123
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Larry Gamble,12
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Jason Red Arnold,20
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Ken Gehl,40
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,325,REP,Scattering,1
+Milwaukee,City Of Franklin Ward 12,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of Franklin Ward 15B,State Assembly,21,1,CON,Scattering,1
+Milwaukee,City Of Oak Creek Wards 1-3,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of Oak Creek Wards 4-6,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of Oak Creek Wards 7-9,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of Oak Creek Wards 10-12,State Assembly,21,1,CON,Scattering,1
+Milwaukee,City Of Oak Creek Wards 13-15,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of Oak Creek Wards 16-19,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 1 - 4,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 5 - 8,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 9 - 12,State Assembly,21,0,CON,Scattering,0
+Milwaukee,City Of South Milwaukee Wards 13 -16,State Assembly,21,1,CON,Scattering,1
+Clark,Town Of Beaver Ward 1,State Assembly,69,3,DEM,Kenneth A. Slezak,3
+Clark,Town Of Beaver Ward 1,State Assembly,69,3,DEM,Scattering,0
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,5,DEM,Scattering,0
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,2,DEM,Scattering,0
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,7,DEM,Kenneth A. Slezak,6
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,7,DEM,Scattering,1
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,13,DEM,Kenneth A. Slezak,13
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,13,DEM,Scattering,0
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,5,DEM,Scattering,0
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,10,DEM,Kenneth A. Slezak,10
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,10,DEM,Scattering,0
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,4,DEM,Scattering,0
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,5,DEM,Scattering,0
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,1,DEM,Scattering,0
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,1,DEM,Scattering,0
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,3,DEM,Kenneth A. Slezak,3
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,3,DEM,Scattering,0
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,11,DEM,Kenneth A. Slezak,11
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,11,DEM,Scattering,0
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,5,DEM,Scattering,0
+Clark,Town Of Sherwood Ward 1,State Assembly,69,6,DEM,Kenneth A. Slezak,6
+Clark,Town Of Sherwood Ward 1,State Assembly,69,6,DEM,Scattering,0
+Clark,Town Of Unity Ward 1,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Clark,Town Of Unity Ward 1,State Assembly,69,0,DEM,Scattering,0
+Clark,Town Of Washburn Ward 1,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Clark,Town Of Washburn Ward 1,State Assembly,69,2,DEM,Scattering,0
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,4,DEM,Scattering,0
+Clark,Town Of York Ward 1 & 2,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Clark,Town Of York Ward 1 & 2,State Assembly,69,4,DEM,Scattering,0
+Clark,Village Of Curtiss Ward 1,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Clark,Village Of Curtiss Ward 1,State Assembly,69,0,DEM,Scattering,0
+Clark,Village Of Dorchester Ward 1,State Assembly,69,9,DEM,Kenneth A. Slezak,9
+Clark,Village Of Dorchester Ward 1,State Assembly,69,9,DEM,Scattering,0
+Clark,Village Of Granton Ward 1,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Clark,Village Of Granton Ward 1,State Assembly,69,0,DEM,Scattering,0
+Clark,Village Of Unity Ward 2,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Clark,Village Of Unity Ward 2,State Assembly,69,0,DEM,Scattering,0
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,21,DEM,Kenneth A. Slezak,21
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,21,DEM,Scattering,0
+Clark,City Of Colby Wards 2-4,State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Clark,City Of Colby Wards 2-4,State Assembly,69,5,DEM,Scattering,0
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,7,DEM,Kenneth A. Slezak,7
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,7,DEM,Scattering,0
+Clark,City Of Neillsville Ward 1,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Clark,City Of Neillsville Ward 1,State Assembly,69,2,DEM,Scattering,0
+Clark,City Of Neillsville Ward 2,State Assembly,69,6,DEM,Kenneth A. Slezak,6
+Clark,City Of Neillsville Ward 2,State Assembly,69,6,DEM,Scattering,0
+Clark,City Of Neillsville Ward 3,State Assembly,69,18,DEM,Kenneth A. Slezak,17
+Clark,City Of Neillsville Ward 3,State Assembly,69,18,DEM,Scattering,1
+Clark,City Of Neillsville Ward 4,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Clark,City Of Neillsville Ward 4,State Assembly,69,4,DEM,Scattering,0
+Clark,City Of Neillsville Ward 5,State Assembly,69,6,DEM,Kenneth A. Slezak,6
+Clark,City Of Neillsville Ward 5,State Assembly,69,6,DEM,Scattering,0
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,11,DEM,Kenneth A. Slezak,11
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,11,DEM,Scattering,0
+Marathon,Town Of Brighton Ward 1,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Marathon,Town Of Brighton Ward 1,State Assembly,69,1,DEM,Scattering,0
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,4,DEM,Scattering,0
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,1,DEM,Scattering,0
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,0,DEM,Scattering,0
+Marathon,Town Of Hull Ward 1,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Marathon,Town Of Hull Ward 1,State Assembly,69,2,DEM,Scattering,0
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,7,DEM,Kenneth A. Slezak,7
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,7,DEM,Scattering,0
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,6,DEM,Kenneth A. Slezak,6
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,6,DEM,Scattering,0
+Marathon,Town Of Wien Ward 1,State Assembly,69,3,DEM,Kenneth A. Slezak,3
+Marathon,Town Of Wien Ward 1,State Assembly,69,3,DEM,Scattering,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,DEM,Scattering,0
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,19,DEM,Kenneth A. Slezak,19
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,19,DEM,Scattering,0
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,1,DEM,Scattering,0
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,16,DEM,Kenneth A. Slezak,15
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,16,DEM,Scattering,1
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,2,DEM,Scattering,0
+Marathon,Village Of Unity Ward 1,State Assembly,69,1,DEM,Kenneth A. Slezak,1
+Marathon,Village Of Unity Ward 1,State Assembly,69,1,DEM,Scattering,0
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,2,DEM,Kenneth A. Slezak,2
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,2,DEM,Scattering,0
+Marathon,City Of Colby Ward I,State Assembly,69,3,DEM,Kenneth A. Slezak,3
+Marathon,City Of Colby Ward I,State Assembly,69,3,DEM,Scattering,0
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,9,DEM,Kenneth A. Slezak,9
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,9,DEM,Scattering,0
+Wood,Town Of Cameron Ward 1,State Assembly,69,3,DEM,Kenneth A. Slezak,3
+Wood,Town Of Cameron Ward 1,State Assembly,69,3,DEM,Scattering,0
+Wood,Town Of Cary Ward 1,State Assembly,69,0,DEM,Kenneth A. Slezak,0
+Wood,Town Of Cary Ward 1,State Assembly,69,0,DEM,Scattering,0
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,5,DEM,Kenneth A. Slezak,5
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,5,DEM,Scattering,0
+Wood,Town Of Rock Ward 1,State Assembly,69,4,DEM,Kenneth A. Slezak,4
+Wood,Town Of Rock Ward 1,State Assembly,69,4,DEM,Scattering,0
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,79,DEM,Kenneth A. Slezak,78
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,79,DEM,Scattering,1
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,31,DEM,Kenneth A. Slezak,31
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,31,DEM,Scattering,0
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,15,DEM,Kenneth A. Slezak,15
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,15,DEM,Scattering,0
+Clark,Town Of Beaver Ward 1,State Assembly,69,57,REP,Tommy Dahlen,10
+Clark,Town Of Beaver Ward 1,State Assembly,69,57,REP,Bob Kulp,29
+Clark,Town Of Beaver Ward 1,State Assembly,69,57,REP,Alanna Feddick,9
+Clark,Town Of Beaver Ward 1,State Assembly,69,57,REP,Scott Kenneth Noble,9
+Clark,Town Of Beaver Ward 1,State Assembly,69,57,REP,Scattering,0
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,43,REP,Tommy Dahlen,3
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,43,REP,Bob Kulp,18
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,43,REP,Alanna Feddick,16
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,43,REP,Scott Kenneth Noble,6
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,43,REP,Scattering,0
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,35,REP,Tommy Dahlen,10
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,35,REP,Bob Kulp,10
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,35,REP,Alanna Feddick,14
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,35,REP,Scott Kenneth Noble,1
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,35,REP,Scattering,0
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,154,REP,Tommy Dahlen,76
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,154,REP,Bob Kulp,44
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,154,REP,Alanna Feddick,15
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,154,REP,Scott Kenneth Noble,19
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,154,REP,Scattering,0
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,119,REP,Tommy Dahlen,73
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,119,REP,Bob Kulp,21
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,119,REP,Alanna Feddick,18
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,119,REP,Scott Kenneth Noble,7
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,119,REP,Scattering,0
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,25,REP,Tommy Dahlen,3
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,25,REP,Bob Kulp,16
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,25,REP,Alanna Feddick,2
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,25,REP,Scott Kenneth Noble,4
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,25,REP,Scattering,0
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,29,REP,Tommy Dahlen,15
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,29,REP,Bob Kulp,4
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,29,REP,Alanna Feddick,6
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,29,REP,Scott Kenneth Noble,4
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,29,REP,Scattering,0
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,47,REP,Tommy Dahlen,4
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,47,REP,Bob Kulp,28
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,47,REP,Alanna Feddick,9
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,47,REP,Scott Kenneth Noble,6
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,47,REP,Scattering,0
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,42,REP,Tommy Dahlen,25
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,42,REP,Bob Kulp,2
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,42,REP,Alanna Feddick,3
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,42,REP,Scott Kenneth Noble,12
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,42,REP,Scattering,0
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,52,REP,Tommy Dahlen,19
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,52,REP,Bob Kulp,21
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,52,REP,Alanna Feddick,9
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,52,REP,Scott Kenneth Noble,3
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,52,REP,Scattering,0
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,79,REP,Tommy Dahlen,46
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,79,REP,Bob Kulp,14
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,79,REP,Alanna Feddick,10
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,79,REP,Scott Kenneth Noble,9
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,79,REP,Scattering,0
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,52,REP,Tommy Dahlen,4
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,52,REP,Bob Kulp,34
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,52,REP,Alanna Feddick,9
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,52,REP,Scott Kenneth Noble,5
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,52,REP,Scattering,0
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,133,REP,Tommy Dahlen,64
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,133,REP,Bob Kulp,19
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,133,REP,Alanna Feddick,23
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,133,REP,Scott Kenneth Noble,27
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,133,REP,Scattering,0
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,76,REP,Tommy Dahlen,25
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,76,REP,Bob Kulp,32
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,76,REP,Alanna Feddick,6
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,76,REP,Scott Kenneth Noble,13
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,76,REP,Scattering,0
+Clark,Town Of Sherwood Ward 1,State Assembly,69,29,REP,Tommy Dahlen,12
+Clark,Town Of Sherwood Ward 1,State Assembly,69,29,REP,Bob Kulp,6
+Clark,Town Of Sherwood Ward 1,State Assembly,69,29,REP,Alanna Feddick,4
+Clark,Town Of Sherwood Ward 1,State Assembly,69,29,REP,Scott Kenneth Noble,7
+Clark,Town Of Sherwood Ward 1,State Assembly,69,29,REP,Scattering,0
+Clark,Town Of Unity Ward 1,State Assembly,69,48,REP,Tommy Dahlen,15
+Clark,Town Of Unity Ward 1,State Assembly,69,48,REP,Bob Kulp,24
+Clark,Town Of Unity Ward 1,State Assembly,69,48,REP,Alanna Feddick,6
+Clark,Town Of Unity Ward 1,State Assembly,69,48,REP,Scott Kenneth Noble,3
+Clark,Town Of Unity Ward 1,State Assembly,69,48,REP,Scattering,0
+Clark,Town Of Washburn Ward 1,State Assembly,69,53,REP,Tommy Dahlen,22
+Clark,Town Of Washburn Ward 1,State Assembly,69,53,REP,Bob Kulp,7
+Clark,Town Of Washburn Ward 1,State Assembly,69,53,REP,Alanna Feddick,12
+Clark,Town Of Washburn Ward 1,State Assembly,69,53,REP,Scott Kenneth Noble,12
+Clark,Town Of Washburn Ward 1,State Assembly,69,53,REP,Scattering,0
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,82,REP,Tommy Dahlen,29
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,82,REP,Bob Kulp,21
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,82,REP,Alanna Feddick,17
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,82,REP,Scott Kenneth Noble,15
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,82,REP,Scattering,0
+Clark,Town Of York Ward 1 & 2,State Assembly,69,120,REP,Tommy Dahlen,63
+Clark,Town Of York Ward 1 & 2,State Assembly,69,120,REP,Bob Kulp,23
+Clark,Town Of York Ward 1 & 2,State Assembly,69,120,REP,Alanna Feddick,19
+Clark,Town Of York Ward 1 & 2,State Assembly,69,120,REP,Scott Kenneth Noble,15
+Clark,Town Of York Ward 1 & 2,State Assembly,69,120,REP,Scattering,0
+Clark,Village Of Curtiss Ward 1,State Assembly,69,20,REP,Tommy Dahlen,1
+Clark,Village Of Curtiss Ward 1,State Assembly,69,20,REP,Bob Kulp,16
+Clark,Village Of Curtiss Ward 1,State Assembly,69,20,REP,Alanna Feddick,2
+Clark,Village Of Curtiss Ward 1,State Assembly,69,20,REP,Scott Kenneth Noble,1
+Clark,Village Of Curtiss Ward 1,State Assembly,69,20,REP,Scattering,0
+Clark,Village Of Dorchester Ward 1,State Assembly,69,52,REP,Tommy Dahlen,4
+Clark,Village Of Dorchester Ward 1,State Assembly,69,52,REP,Bob Kulp,26
+Clark,Village Of Dorchester Ward 1,State Assembly,69,52,REP,Alanna Feddick,16
+Clark,Village Of Dorchester Ward 1,State Assembly,69,52,REP,Scott Kenneth Noble,6
+Clark,Village Of Dorchester Ward 1,State Assembly,69,52,REP,Scattering,0
+Clark,Village Of Granton Ward 1,State Assembly,69,78,REP,Tommy Dahlen,60
+Clark,Village Of Granton Ward 1,State Assembly,69,78,REP,Bob Kulp,9
+Clark,Village Of Granton Ward 1,State Assembly,69,78,REP,Alanna Feddick,1
+Clark,Village Of Granton Ward 1,State Assembly,69,78,REP,Scott Kenneth Noble,8
+Clark,Village Of Granton Ward 1,State Assembly,69,78,REP,Scattering,0
+Clark,Village Of Unity Ward 2,State Assembly,69,12,REP,Tommy Dahlen,0
+Clark,Village Of Unity Ward 2,State Assembly,69,12,REP,Bob Kulp,9
+Clark,Village Of Unity Ward 2,State Assembly,69,12,REP,Alanna Feddick,2
+Clark,Village Of Unity Ward 2,State Assembly,69,12,REP,Scott Kenneth Noble,1
+Clark,Village Of Unity Ward 2,State Assembly,69,12,REP,Scattering,0
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,132,REP,Tommy Dahlen,11
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,132,REP,Bob Kulp,52
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,132,REP,Alanna Feddick,48
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,132,REP,Scott Kenneth Noble,21
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,132,REP,Scattering,0
+Clark,City Of Colby Wards 2-4,State Assembly,69,99,REP,Tommy Dahlen,6
+Clark,City Of Colby Wards 2-4,State Assembly,69,99,REP,Bob Kulp,57
+Clark,City Of Colby Wards 2-4,State Assembly,69,99,REP,Alanna Feddick,26
+Clark,City Of Colby Wards 2-4,State Assembly,69,99,REP,Scott Kenneth Noble,10
+Clark,City Of Colby Wards 2-4,State Assembly,69,99,REP,Scattering,0
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,142,REP,Tommy Dahlen,42
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,142,REP,Bob Kulp,52
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,142,REP,Alanna Feddick,36
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,142,REP,Scott Kenneth Noble,12
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,142,REP,Scattering,0
+Clark,City Of Neillsville Ward 1,State Assembly,69,72,REP,Tommy Dahlen,32
+Clark,City Of Neillsville Ward 1,State Assembly,69,72,REP,Bob Kulp,11
+Clark,City Of Neillsville Ward 1,State Assembly,69,72,REP,Alanna Feddick,24
+Clark,City Of Neillsville Ward 1,State Assembly,69,72,REP,Scott Kenneth Noble,5
+Clark,City Of Neillsville Ward 1,State Assembly,69,72,REP,Scattering,0
+Clark,City Of Neillsville Ward 2,State Assembly,69,77,REP,Tommy Dahlen,25
+Clark,City Of Neillsville Ward 2,State Assembly,69,77,REP,Bob Kulp,19
+Clark,City Of Neillsville Ward 2,State Assembly,69,77,REP,Alanna Feddick,25
+Clark,City Of Neillsville Ward 2,State Assembly,69,77,REP,Scott Kenneth Noble,8
+Clark,City Of Neillsville Ward 2,State Assembly,69,77,REP,Scattering,0
+Clark,City Of Neillsville Ward 3,State Assembly,69,67,REP,Tommy Dahlen,23
+Clark,City Of Neillsville Ward 3,State Assembly,69,67,REP,Bob Kulp,16
+Clark,City Of Neillsville Ward 3,State Assembly,69,67,REP,Alanna Feddick,15
+Clark,City Of Neillsville Ward 3,State Assembly,69,67,REP,Scott Kenneth Noble,13
+Clark,City Of Neillsville Ward 3,State Assembly,69,67,REP,Scattering,0
+Clark,City Of Neillsville Ward 4,State Assembly,69,44,REP,Tommy Dahlen,11
+Clark,City Of Neillsville Ward 4,State Assembly,69,44,REP,Bob Kulp,11
+Clark,City Of Neillsville Ward 4,State Assembly,69,44,REP,Alanna Feddick,12
+Clark,City Of Neillsville Ward 4,State Assembly,69,44,REP,Scott Kenneth Noble,10
+Clark,City Of Neillsville Ward 4,State Assembly,69,44,REP,Scattering,0
+Clark,City Of Neillsville Ward 5,State Assembly,69,34,REP,Tommy Dahlen,14
+Clark,City Of Neillsville Ward 5,State Assembly,69,34,REP,Bob Kulp,10
+Clark,City Of Neillsville Ward 5,State Assembly,69,34,REP,Alanna Feddick,7
+Clark,City Of Neillsville Ward 5,State Assembly,69,34,REP,Scott Kenneth Noble,3
+Clark,City Of Neillsville Ward 5,State Assembly,69,34,REP,Scattering,0
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,55,REP,Tommy Dahlen,6
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,55,REP,Bob Kulp,26
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,55,REP,Alanna Feddick,11
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,55,REP,Scott Kenneth Noble,12
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,55,REP,Scattering,0
+Marathon,Town Of Brighton Ward 1,State Assembly,69,48,REP,Tommy Dahlen,5
+Marathon,Town Of Brighton Ward 1,State Assembly,69,48,REP,Bob Kulp,32
+Marathon,Town Of Brighton Ward 1,State Assembly,69,48,REP,Alanna Feddick,8
+Marathon,Town Of Brighton Ward 1,State Assembly,69,48,REP,Scott Kenneth Noble,3
+Marathon,Town Of Brighton Ward 1,State Assembly,69,48,REP,Scattering,0
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,192,REP,Tommy Dahlen,8
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,192,REP,Bob Kulp,161
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,192,REP,Alanna Feddick,18
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,192,REP,Scott Kenneth Noble,5
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,192,REP,Scattering,0
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,80,REP,Tommy Dahlen,3
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,80,REP,Bob Kulp,64
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,80,REP,Alanna Feddick,10
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,80,REP,Scott Kenneth Noble,3
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,80,REP,Scattering,0
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,55,REP,Tommy Dahlen,4
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,55,REP,Bob Kulp,47
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,55,REP,Alanna Feddick,4
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,55,REP,Scott Kenneth Noble,0
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,55,REP,Scattering,0
+Marathon,Town Of Hull Ward 1,State Assembly,69,46,REP,Tommy Dahlen,1
+Marathon,Town Of Hull Ward 1,State Assembly,69,46,REP,Bob Kulp,29
+Marathon,Town Of Hull Ward 1,State Assembly,69,46,REP,Alanna Feddick,9
+Marathon,Town Of Hull Ward 1,State Assembly,69,46,REP,Scott Kenneth Noble,7
+Marathon,Town Of Hull Ward 1,State Assembly,69,46,REP,Scattering,0
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,173,REP,Tommy Dahlen,8
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,173,REP,Bob Kulp,117
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,173,REP,Alanna Feddick,46
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,173,REP,Scott Kenneth Noble,2
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,173,REP,Scattering,0
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,119,REP,Tommy Dahlen,21
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,119,REP,Bob Kulp,64
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,119,REP,Alanna Feddick,25
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,119,REP,Scott Kenneth Noble,9
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,119,REP,Scattering,0
+Marathon,Town Of Wien Ward 1,State Assembly,69,65,REP,Tommy Dahlen,3
+Marathon,Town Of Wien Ward 1,State Assembly,69,65,REP,Bob Kulp,43
+Marathon,Town Of Wien Ward 1,State Assembly,69,65,REP,Alanna Feddick,15
+Marathon,Town Of Wien Ward 1,State Assembly,69,65,REP,Scott Kenneth Noble,4
+Marathon,Town Of Wien Ward 1,State Assembly,69,65,REP,Scattering,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,REP,Tommy Dahlen,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,REP,Bob Kulp,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,REP,Alanna Feddick,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,REP,Scott Kenneth Noble,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,REP,Scattering,0
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,81,REP,Tommy Dahlen,3
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,81,REP,Bob Kulp,54
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,81,REP,Alanna Feddick,9
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,81,REP,Scott Kenneth Noble,15
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,81,REP,Scattering,0
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,16,REP,Tommy Dahlen,0
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,16,REP,Bob Kulp,15
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,16,REP,Alanna Feddick,0
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,16,REP,Scott Kenneth Noble,1
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,16,REP,Scattering,0
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,128,REP,Tommy Dahlen,17
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,128,REP,Bob Kulp,58
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,128,REP,Alanna Feddick,33
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,128,REP,Scott Kenneth Noble,20
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,128,REP,Scattering,0
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,222,REP,Tommy Dahlen,5
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,222,REP,Bob Kulp,186
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,222,REP,Alanna Feddick,25
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,222,REP,Scott Kenneth Noble,6
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,222,REP,Scattering,0
+Marathon,Village Of Unity Ward 1,State Assembly,69,17,REP,Tommy Dahlen,2
+Marathon,Village Of Unity Ward 1,State Assembly,69,17,REP,Bob Kulp,6
+Marathon,Village Of Unity Ward 1,State Assembly,69,17,REP,Alanna Feddick,6
+Marathon,Village Of Unity Ward 1,State Assembly,69,17,REP,Scott Kenneth Noble,3
+Marathon,Village Of Unity Ward 1,State Assembly,69,17,REP,Scattering,0
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,20,REP,Tommy Dahlen,1
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,20,REP,Bob Kulp,9
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,20,REP,Alanna Feddick,6
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,20,REP,Scott Kenneth Noble,4
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,20,REP,Scattering,0
+Marathon,City Of Colby Ward I,State Assembly,69,25,REP,Tommy Dahlen,0
+Marathon,City Of Colby Ward I,State Assembly,69,25,REP,Bob Kulp,12
+Marathon,City Of Colby Ward I,State Assembly,69,25,REP,Alanna Feddick,6
+Marathon,City Of Colby Ward I,State Assembly,69,25,REP,Scott Kenneth Noble,7
+Marathon,City Of Colby Ward I,State Assembly,69,25,REP,Scattering,0
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,71,REP,Tommy Dahlen,10
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,71,REP,Bob Kulp,19
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,71,REP,Alanna Feddick,37
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,71,REP,Scott Kenneth Noble,5
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,71,REP,Scattering,0
+Wood,Town Of Cameron Ward 1,State Assembly,69,72,REP,Tommy Dahlen,13
+Wood,Town Of Cameron Ward 1,State Assembly,69,72,REP,Bob Kulp,24
+Wood,Town Of Cameron Ward 1,State Assembly,69,72,REP,Alanna Feddick,25
+Wood,Town Of Cameron Ward 1,State Assembly,69,72,REP,Scott Kenneth Noble,10
+Wood,Town Of Cameron Ward 1,State Assembly,69,72,REP,Scattering,0
+Wood,Town Of Cary Ward 1,State Assembly,69,35,REP,Tommy Dahlen,5
+Wood,Town Of Cary Ward 1,State Assembly,69,35,REP,Bob Kulp,14
+Wood,Town Of Cary Ward 1,State Assembly,69,35,REP,Alanna Feddick,11
+Wood,Town Of Cary Ward 1,State Assembly,69,35,REP,Scott Kenneth Noble,5
+Wood,Town Of Cary Ward 1,State Assembly,69,35,REP,Scattering,0
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,158,REP,Tommy Dahlen,24
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,158,REP,Bob Kulp,66
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,158,REP,Alanna Feddick,39
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,158,REP,Scott Kenneth Noble,29
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,158,REP,Scattering,0
+Wood,Town Of Rock Ward 1,State Assembly,69,88,REP,Tommy Dahlen,32
+Wood,Town Of Rock Ward 1,State Assembly,69,88,REP,Bob Kulp,30
+Wood,Town Of Rock Ward 1,State Assembly,69,88,REP,Alanna Feddick,17
+Wood,Town Of Rock Ward 1,State Assembly,69,88,REP,Scott Kenneth Noble,9
+Wood,Town Of Rock Ward 1,State Assembly,69,88,REP,Scattering,0
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,828,REP,Tommy Dahlen,50
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,828,REP,Bob Kulp,362
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,828,REP,Alanna Feddick,303
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,828,REP,Scott Kenneth Noble,112
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,828,REP,Scattering,1
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,341,REP,Tommy Dahlen,36
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,341,REP,Bob Kulp,117
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,341,REP,Alanna Feddick,136
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,341,REP,Scott Kenneth Noble,52
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,341,REP,Scattering,0
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,133,REP,Tommy Dahlen,10
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,133,REP,Bob Kulp,44
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,133,REP,Alanna Feddick,53
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,133,REP,Scott Kenneth Noble,26
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,133,REP,Scattering,0
+Clark,Town Of Beaver Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,"Town Of Colby Wards 1, 2 & 3",State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Dewhurst Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Fremont Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Grant Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Green Grove Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Hewett Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Hoard Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Levis Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Loyal Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Lynn Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Mayville Ward 1 & 2,State Assembly,69,1,CON,Scattering,1
+Clark,Town Of Pine Valley Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Sherman Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Sherwood Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Unity Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Washburn Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of Weston Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Town Of York Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,Village Of Curtiss Ward 1,State Assembly,69,2,CON,Scattering,2
+Clark,Village Of Dorchester Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Village Of Granton Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,Village Of Unity Ward 2,State Assembly,69,0,CON,Scattering,0
+Clark,"City Of Abbotsford Ward 2, 3, 4, 5",State Assembly,69,0,CON,Scattering,0
+Clark,City Of Colby Wards 2-4,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Loyal Ward 1 & 2,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Neillsville Ward 1,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Neillsville Ward 2,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Neillsville Ward 3,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Neillsville Ward 4,State Assembly,69,0,CON,Scattering,0
+Clark,City Of Neillsville Ward 5,State Assembly,69,0,CON,Scattering,0
+Clark,"City Of Owen Ward 1, 2 & 3",State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Brighton Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Cleveland Wards 1 & 2,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Eau Pleine Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Frankfort Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Hull Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Mcmillan Wards 1-3,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Spencer Wards 1 & 2,State Assembly,69,0,CON,Scattering,0
+Marathon,Town Of Wien Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,Village Of Dorchester Ward 2,State Assembly,69,0,CON,Scattering,0
+Marathon,Village Of Edgar Wards 1 - 2,State Assembly,69,0,CON,Scattering,0
+Marathon,Village Of Fenwood Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,"Village Of Spencer Ward 1, 2 & 3",State Assembly,69,0,CON,Scattering,0
+Marathon,Village Of Stratford Wards 1 & 2,State Assembly,69,0,CON,Scattering,0
+Marathon,Village Of Unity Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,City Of Abbotsford Ward 1,State Assembly,69,0,CON,Scattering,0
+Marathon,City Of Colby Ward I,State Assembly,69,0,CON,Scattering,0
+Marathon,"City Of Marshfield Wards 12,20,21,24",State Assembly,69,0,CON,Scattering,0
+Wood,Town Of Cameron Ward 1,State Assembly,69,0,CON,Scattering,0
+Wood,Town Of Cary Ward 1,State Assembly,69,0,CON,Scattering,0
+Wood,Town Of Lincoln Wards 1 & 2,State Assembly,69,1,CON,Scattering,1
+Wood,Town Of Rock Ward 1,State Assembly,69,0,CON,Scattering,0
+Wood,"City Of Marshfield Wards 1-4, 10, 11, 13, 14",State Assembly,69,0,CON,Scattering,0
+Wood,"City Of Marshfield Wards 5, 6, 15, 17",State Assembly,69,1,CON,Scattering,1
+Wood,"City Of Marshfield Wards 9, 18",State Assembly,69,0,CON,Scattering,0
