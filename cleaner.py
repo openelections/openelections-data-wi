@@ -64,6 +64,7 @@ office_names = [
 
 
 def clean_county(item):
+    item = item.replace("Lacrosse", "La Crosse")
     return clean_string(item)
 
 def clean_ward(item):
@@ -73,6 +74,7 @@ def clean_ward(item):
 def clean_office(item):
     item = item.title()
     item = item.replace(' Judge', '', 1)    # remove first occurrence
+    item = item.replace("Lacrosse", "La Crosse")
     office = office_recode.get(item)
     if office is None:
         office = clean_string(item)
