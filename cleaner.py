@@ -64,20 +64,21 @@ office_names = [
 
 
 def clean_county(item):
+    item = clean_string(item)
     item = item.replace("Lacrosse", "La Crosse")
-    return clean_string(item)
+    return item
 
 def clean_ward(item):
     item = item.replace("Ward !-2", "Ward 1-2") # Fix typo in 2012-05-08
     return clean_string(item)
 
 def clean_office(item):
-    item = item.title()
+    item = clean_string(item)
     item = item.replace(' Judge', '', 1)    # remove first occurrence
     item = item.replace("Lacrosse", "La Crosse")
     office = office_recode.get(item)
     if office is None:
-        office = clean_string(item)
+        office = item
     return office
 
 def clean_district(item):
