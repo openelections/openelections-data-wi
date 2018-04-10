@@ -69,7 +69,6 @@ def clean_county(item):
     return item
 
 def clean_ward(item):
-    item = item.replace("Ward !-2", "Ward 1-2") # Fix typo in 2012-05-08
     return clean_string(item)
 
 def clean_office(item):
@@ -136,7 +135,7 @@ def clean_string(item):
 # Here is where things get messy.
 def clean_particular(election,row):
     id = election['id']
-    if id in (411, 413, 1662):
+    if id in (411, 413, 1662, 1830):
         row[1] = row[1].replace("!","1")
     if id == 424:
         row[2] = row[2].replace(" - 2011-2017","")
