@@ -138,7 +138,9 @@ def clean_particular(election,row):
     id = election['id']
     if id in (411, 413, 1662, 1830):
         row[1] = row[1].replace("!","1")                # ward
-    if id == 424:
+    if id == 411:
+        row[6] = row[6].replace("   "," ")              # candidate
+    elif id == 424:
         row[2] = row[2].replace(" - 2011-2017","")      # office
     elif id == 1662:
         row[2] = row[2].replace("RECALL ","")           # office
