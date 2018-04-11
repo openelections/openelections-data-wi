@@ -83,7 +83,7 @@ Feature: WI Elections
   Examples: 20070220__wi__primary__ward.csv
     | candidate                     | county    | office                                        | ward                                              | votes | total |
     | Joseph Sommers                | Marathon  | Supreme Court                                 | TOWN OF EAU PLEINE                                | 2     | 24    |
-    | Kara M. Burgos                | LaCrosse  | LaCrosse County Circuit Court, Branch 4       | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
+    | Kara M. Burgos                | La Crosse | La Crosse County Circuit Court, Branch 4      | VILLAGE OF WEST SALEM Wards 1 - 6                 | 78    | 400   |
 
   Examples: 20070403__wi__general__ward.csv
     | candidate                     | county    | office                                        | ward                                              | votes | total |
@@ -111,7 +111,7 @@ Feature: WI Elections
 
   Examples: 20080909__wi__primary__ward.csv
     | candidate                         | county        | office                                | ward                                              | votes | total |
-    | Tara Johnson                      | LaCrosse      | State Senate                          | TOWN OF SHELBY Wards 1, 4 - 6                     | 38    | 38    |
+    | Tara Johnson                      | La Crosse     | State Senate                          | TOWN OF SHELBY Wards 1, 4 - 6                     | 38    | 38    |
     | Clyde Winter                      | Ozaukee       | State Senate                          | CITY OF MEQUON Ward 2                             | 1     | 1     |
     | Mark Wollum                       | Dodge         | House                                 | CITY OF WAUPUN Wards 1 - 3 & 8                    | 9     | 28    |
     | Joseph Kexel                      | Kenosha       | House                                 | TOWN OF SALEM Wards 1, 7, 11 - 15                 | 8     | 8     |
@@ -300,7 +300,7 @@ Feature: WI Elections
   Examples: 20150217__wi__special__primary__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Michelle Greendeer (write-in) | Jackson       | Jackson County Circuit Court                  | TOWN OF KOMENSKY Ward 1                       | 45    | 64    |
-    | Candice C. M. Tlustosch       | La Crosse     | LaCrosse County Circuit Court, Branch 5       | VILLAGE OF WEST SALEM Wards 1-6               | 139   | 289   |
+    | Candice C. M. Tlustosch       | La Crosse     | La Crosse County Circuit Court, Branch 5      | VILLAGE OF WEST SALEM Wards 1-6               | 139   | 289   |
     | Guy M. Taylor                 | Lafayette     | Lafayette County Circuit Court                | CITY OF CUBA CITY Ward 5                      | 1     | 7     |
     | Catherine Q. Delahunt         | Sheboygan     | Sheboygan County Circuit Court, Branch 4      | VILLAGE OF RANDOM LAKE Wards 1 - 2            | 93    | 245   |
 
