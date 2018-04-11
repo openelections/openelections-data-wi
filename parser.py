@@ -376,6 +376,10 @@ def parse_office(office_string):
         if tail.isdigit():
             office = head
             district = tail
+        elif tail.endswith(' COUNTY'):      # id 409, 2012-11-06 D.A.
+            head = head.strip()
+            assert head == 'DISTRICT ATTORNEY'
+            office = tail + ' ' + head      # ____ County District Attorney 
         elif head.endswith(' '):    # not a hyphenated name
             office = head
             party = tail
@@ -389,7 +393,7 @@ def parse_sheet(sheet, office, sheet_index):
     """Return list of records for (string) office, extracted from spreadsheet.
         This is used to parse Fall 2010 and later elections.
     """
-    office, district, party = parse_office(office)
+    office, district, party = parse_office(office)      # (party not used)
     candidates, parties, start_row = extract_candidates(sheet, sheet_index)
     offset = 0
     if sheet_index == 0 and '' in candidates:
