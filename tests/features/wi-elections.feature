@@ -306,6 +306,10 @@ Feature: WI Elections
     | Guy M. Taylor                 | Lafayette     | Lafayette County Circuit Court                | CITY OF CUBA CITY Ward 5                      | 1     | 7     |
     | Catherine Q. Delahunt         | Sheboygan     | Sheboygan County Circuit Court, Branch 4      | VILLAGE OF RANDOM LAKE Wards 1 - 2            | 93    | 245   |
 
+  Examples: 20150407__wi__general__ward.csv
+    | candidate                         | county    | office                                        | ward                                          | votes | total |
+    | Kristina M. Bourget               | Marathon  | Court Of Appeals                              | VILLAGE OF KRONENWETTER Wards 6-10            | 92    | 364   |
+
   Examples: 20150407__wi__special__general__ward.csv
     | candidate                         | county    | office                                        | ward                                          | votes | total |
     | Nicholas J. Stamates (Write-in)   | Ozaukee   | State Senate                                  | VILLAGE OF SAUKVILLE Wards 1; 6-7             | 0     | 319   |
