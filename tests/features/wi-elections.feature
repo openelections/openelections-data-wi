@@ -332,7 +332,7 @@ Feature: WI Elections
     | party | candidate                 | county    | office                                        | ward                                          | votes | total |
     | DEM   | Uninstructed Delegation   | Milwaukee | President                                     | CITY OF SOUTH MILWAUKEE Ward 13-16            | 1     | 867   |
 
-  Examples: 20160405__wi__primary__ward.csv
+  Examples: 20160405__wi__general__ward.csv
     | candidate                         | county    | office                                        | ward                                          | votes | total |
     | Paul F. Reilly                    | Sheboygan | Court of Appeals                              | VILLAGE OF RANDOM LAKE Wards 1-2              | 494   | 496   |
     | Barbara Hart Key                  | Winnebago | Winnebago County Circuit Court Branch 3       | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
