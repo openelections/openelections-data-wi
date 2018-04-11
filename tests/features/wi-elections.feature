@@ -229,9 +229,9 @@ Feature: WI Elections
     | party | candidate             | county        | office                                        | ward                                          | votes | total |
     | DEM   | Mario R. Hall         | Milwaukee     | State Assembly                                | City Of Wauwatosa Ward 24                     | 7     | 104   |
     | REP   | Al Ott                | Outagamie     | State Assembly                                | Village of Combined Locks Wards 1-4           | 263   | 368   |
-    | REP   | Michael W. Schiek     | Oneida        | District Attorney - Oneida County             | TOWN OF NOKOMIS WARDS 1 & 2                   | 70    | 117   |
-    | DEM   | John T. Chisholm      | Milwaukee     | District Attorney - Milwaukee County          | CITY OF MILWAUKEE WARD 243                    | 72    | 72    |
-    | AME   | Scattering            | Menominee     | District Attorney - Menominee-Shawano County  | TOWN OF MENOMINEE Ward 2                      | 0     | 0     |
+    | REP   | Michael W. Schiek     | Oneida        | Oneida County District Attorney               | TOWN OF NOKOMIS WARDS 1 & 2                   | 70    | 117   |
+    | DEM   | John T. Chisholm      | Milwaukee     | Milwaukee County District Attorney            | CITY OF MILWAUKEE WARD 243                    | 72    | 72    |
+    | AME   | Scattering            | Menominee     | Menominee-Shawano County District Attorney    | TOWN OF MENOMINEE Ward 2                      | 0     | 0     |
 
   Examples: 20121106__wi__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |

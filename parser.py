@@ -128,13 +128,17 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
         row = sheet.row_values(rowx)
         office, county, candidate, ward, votes = [
                                     row[col] for col in fieldindexes]
-        head, _, tail = office.rstrip().rpartition(' - ')
-        if len(tail) == 3:
-            office, party = head, tail
-        else:
-            party = ''
-        district = ''
+        # split office and party, reorder office
+        parts = office.split(' - ')
+        assert len(parts) == 3
+        da, da_county, party = parts
+        assert da == 'District Attorney'
+        da_county = da_county.rstrip(' ')
+        assert da_county.endswith(' County')
+        office = da_county + ' ' + da       # ____ County District Attorney
+        assert party in cleaner.party_recode.values()
 
+        district = ''
         race_place = county, ward, office, district, party
         if previous_race_place and (race_place != previous_race_place):
             results.extend(collect_results(
