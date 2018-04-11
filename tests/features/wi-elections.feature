@@ -329,6 +329,10 @@ Feature: WI Elections
     | Scattering                    | Waukesha      | State Assembly                                | City of Delafield Wards 1 - 14                | 18    | 217   |
 
 
+  Examples: 20160216__wi__primary__ward.csv
+    | candidate                         | county    | office                                        | ward                                          | votes | total |
+    | Trish Baker                       | Portage   | Portage County Circuit Court, Branch 2        | TOWN OF ALBAN Ward 1                          | 40    | 107   |
+
   Examples: 20160405__wi__primary__ward.csv
     | party | candidate                 | county    | office                                        | ward                                          | votes | total |
     | DEM   | Uninstructed Delegation   | Milwaukee | President                                     | CITY OF SOUTH MILWAUKEE Ward 13-16            | 1     | 867   |
@@ -336,7 +340,7 @@ Feature: WI Elections
   Examples: 20160405__wi__general__ward.csv
     | candidate                         | county    | office                                        | ward                                          | votes | total |
     | Paul F. Reilly                    | Sheboygan | Court of Appeals                              | VILLAGE OF RANDOM LAKE Wards 1-2              | 494   | 496   |
-    | Barbara Hart Key                  | Winnebago | Winnebago County Circuit Court Branch 3       | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
+    | Barbara Hart Key                  | Winnebago | Winnebago County Circuit Court, Branch 3      | CITY OF MENASHA Wards 5-6,8-9,23-29,31-35,38  | 449   | 452   |
     | Rebecca G. Bradley                | Chippewa  | Supreme Court                                 | TOWN OF GOETZ Ward 3                          | 4     | 4     |
 
   Examples: 20160809__wi__primary__ward.csv
@@ -359,9 +363,9 @@ Feature: WI Elections
   Examples: 20170221__wi__primary__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | John Humphries                | Crawford      | State Superintendent of Public Instruction    | CITY OF PRAIRIE DU CHIEN Wards 2,7            | 6     | 55    |
-    | Malia Malone                  | Polk          | Polk County Circuit Court Branch 1            | VILLAGE OF TURTLE LAKE Wards 2A,2B            | 7     | 8     |
+    | Malia Malone                  | Polk          | Polk County Circuit Court, Branch 1           | VILLAGE OF TURTLE LAKE Wards 2A,2B            | 7     | 8     |
     | Charles V. Feltes             | Trempealeau   | Trempealeau County Circuit Court              | VILLAGE OF ELEVA Ward 1                       | 8     | 52    |
-    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court Branch 3       | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
+    | Patricia Koppa                | Manitowoc     | Manitowoc County Circuit Court, Branch 3      | CITY OF TWO RIVERS Wards 3-4                  | 75    | 205   |
     | Lowell E. Holtz               | Rock          | State Superintendent Of Public Instruction    | CITY OF BRODHEAD Wards 7-8                    | 0     | 5     |
 
   Examples: 20170404__wi__general__ward.csv
