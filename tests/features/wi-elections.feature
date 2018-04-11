@@ -5,6 +5,17 @@ Feature: WI Elections
     And I search for <party> party candidate <candidate> running for <office> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
+
+  Examples: 20001107__wi__general__ward.csv
+    | party | candidate                     | county        | office                            | ward                                              | votes | total |
+    | REP   | Kitty Rhoades                 | Pierce        | State Assembly                    | City of Prescott Wards 1 - 4                      | 1036  |  1759 |
+    | LIB   | Tim Peterson                  | Racine        | Senate                            | Town of Mount Pleasant Wards 7 & 8                | 8     |  1851 |
+
+  Examples: 20001107__wi__general__ward.csv
+    | candidate                             | county        | office                            | ward                                              | votes | total |
+    | Scattering                            | Lincoln       | President                         | Town of Bradley Wards 1 - 6                       | 4     |  1457 |
+
+
   Examples: 20020910__wi__primary__ward.csv
     | party | candidate                     | county        | office                            | ward                                              | votes | total |
     | DEM   | Dale Moore                    | Racine        | House                             | CITY OF RACINE Ward 30                            | 38    | 151   |
