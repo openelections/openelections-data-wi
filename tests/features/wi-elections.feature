@@ -234,11 +234,11 @@ Feature: WI Elections
     | AME   | Scattering            | Menominee     | Menominee-Shawano County District Attorney    | TOWN OF MENOMINEE Ward 2                      | 0     | 0     |
 
   Examples: 20121106__wi__general__ward.csv
-    | candidate                     | county        | office                                        | ward                                          | votes | total |
-    | Barack Obama & Joe Biden      | Chippewa      | President                                     | Town of Hallie Ward 1                         | 54    | 100   |
-    | Joseph Kexel                  | Walworth      | Senate                                        | Town of Geneva Wards 1-8                      | 77    | 2525  |
-    | Sheila Harsdorf               | Polk          | State Senate                                  | Town of Laketown Ward 1                       | 316   | 542   |
-    | Joe Dececco                   | Sheboygan     | Sheboygan County District Attorney            | CITY OF SHEBOYGAN FALLS Wards 1-2 & 9         | 1246  | 1265  |
+    | party | candidate                 | county    | office                                        | ward                                          | votes | total |
+    | DEM   | Barack Obama & Joe Biden  | Chippewa  | President                                     | Town of Hallie Ward 1                         | 54    | 100   |
+    | IND   | Joseph Kexel              | Walworth  | Senate                                        | Town of Geneva Wards 1-8                      | 77    | 2525  |
+    | REP   | Sheila Harsdorf           | Polk      | State Senate                                  | Town of Laketown Ward 1                       | 316   | 542   |
+    | DEM   | Joe Dececco               | Sheboygan | Sheboygan County District Attorney            | CITY OF SHEBOYGAN FALLS Wards 1-2 & 9         | 1246  | 1265  |
 
   Examples: 20121106__wi__special__primary__ward.csv
     | party | candidate             | county        | office                                        | ward                                          | votes | total |
