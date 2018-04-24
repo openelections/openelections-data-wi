@@ -73,9 +73,9 @@ def clean_ward(item):
 
 def clean_office(item):
     item = clean_string(item)
-    item = item.replace(' Judge', '', 1)    # remove first occurrence
-    item = item.replace("Court Branch", "Court, Branch")
-    item = item.replace("Lacrosse", "La Crosse")
+    item = item.replace(' Judge', '', 1)    # first occurrence only, faster
+    item = item.replace("Court Branch", "Court, Branch", 1)
+    item = item.replace("Lacrosse", "La Crosse", 1)
     office = office_recode.get(item)
     if office is None:
         office = item
