@@ -14,7 +14,7 @@ import requests
 url_base = "http://openelections.net/api/v1/election/"
 url_query = "?format=json&limit=0&state__postal="
 
-cache_path = ''
+cache_path = 'local_data_cache'
 metadata_filepath = os.path.join(cache_path, 'elections_metadata.json')
 data_path = os.path.join(cache_path, 'data')    # path to input files
 
