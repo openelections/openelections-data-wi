@@ -4,7 +4,6 @@ import json
 import os
 import sys
 
-import requests
 import unicodecsv as csv
 import xlrd
 import zipfile
@@ -288,15 +287,6 @@ def process_file(cached_filename, election):
         return process(cached_filename, election)
 
 
-def open_file(url, filename):
-    r = requests.get(url)
-    if r.status_code == 200:
-        with open(filename, 'wb') as f:
-            f.write(r.content)
-    xlsfile = xlrd.open_workbook(filename)
-    return xlsfile
-
-
 CAND_COL = 3    # column holding first candidate
 TOTAL_VOTES_HEADER = 'Total Votes Cast'
 
@@ -447,9 +437,11 @@ def get_result_for_json(filename):
         election = json.load(jsonfile)
         get_election_result(election)
 
-# http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
-WIOpenElectionsAPI = "http://openelections.net/api/v1/election/"
-WIOpenElectionsAPI += "?format=json&limit=0&state__postal=WI"
+
+# for debugging; metadata now read from cached file
+WIOpenElectionsAPI = """
+http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
+""".strip()
 
 
 # Elections with no files available.
