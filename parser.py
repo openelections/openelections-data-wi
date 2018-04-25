@@ -10,6 +10,7 @@ import xlrd
 import zipfile
 
 import cleaner
+import fetch
 
 
 output_headers = ["county", "ward", "office", "district", "total votes",
@@ -433,12 +434,10 @@ def parse_sheet(sheet, office, sheet_index, election):
 
 
 def get_all_results(ids, url):
-  r = requests.get(url)
-  if r.status_code == 200:
-    parsed = json.loads(r.content)['objects']
+    metadata = fetch.read_cached_metadata()
     for id in ids:
       print "id %s" % id
-      for election in parsed:
+      for election in metadata['objects']:
         if election['id'] == id:
           get_election_result(election)
 
@@ -487,14 +486,18 @@ working += xls_2010_onward_working
 working += range(1822,1852) + [1864, 1865]
 
 
-# Running from command line without args, process results for all working ids.
-# With args, get results for the ids listed as args.
 if __name__ == '__main__':
+    usage_msg = 'Usage: {} [<list of ids>]\n'
+    usage_msg += '   Parse input files and process results for listed ids.\n'
+    usage_msg += '   Omit ids to process all ids for state.\n'
+    usage_msg += '   Uses elections metadata from file "{}".\n'
+    usage_msg = usage_msg.format(sys.argv[0], fetch.metadata_filepath)
     args = sys.argv[1:]
     if args:
         if all(map(str.isdigit, args)):
             ids = map(int, args)
         else:
+            print usage_msg
             print 'Args must be positive integers (election ids)'
             sys.exit(1)
     else:
