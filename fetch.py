@@ -16,7 +16,7 @@ url_query = "?format=json&limit=0&state__postal="
 
 cache_path = 'local_data_cache'
 metadata_filepath = os.path.join(cache_path, 'elections_metadata.json')
-data_path = os.path.join(cache_path, 'data')    # path to input files
+data_path = os.path.join(cache_path, 'data')    # dir to store input files
 
 
 def request_data(url, error_text='Error requesting data:'):
@@ -37,8 +37,20 @@ def request_data(url, error_text='Error requesting data:'):
     return r
 
 
+def check_state(election, state):
+    """Return True if json election data matches state, else False"""
+    state_info = election.get('state')
+    postal = state_info.get('postal') if state_info else None
+    if postal != state:
+        print "\nWrong state: id {} is for {}, not {}".format(
+                    election.get('id'), postal, state)
+        return False
+    return True
+
+
 def fetch_metadata(state, id=None):
     """Return json metadata for state and id, or None if fails.
+        If id, check that fetched election is for correct state.
         If id is None, return metadata for all ids.
     """
     state = state.upper()
@@ -46,9 +58,15 @@ def fetch_metadata(state, id=None):
     if id == None:
         url = url_base + url_query + state      # all ids
     else:
-        url = url_base + id + '/' + url_query + state
+        url = url_base + str(id) + '/' + url_query + state
     r = request_data(url, error_text='Error requesting metadata:')
-    return r.json() if r else None
+    if r is None:
+        return None
+    metadata = r.json()
+    if id is not None:
+        if not check_state(metadata, state):
+            return None
+    return metadata
 
 
 def read_cached_metadata():
@@ -56,34 +74,45 @@ def read_cached_metadata():
         return json.load(metadatafile)
 
 
-def update_cache(state, id=None):
+def update_cache(state, ids=None):
     """Download data files to update cache.
         
-        If id, check for correct state (2 letter abbrev) and
-            download data files for id;
+        If ids (must be a container or None),
+            check for correct state (2 letter abbrev) and
+            download data files for each election id in ids;
         else download data files for all elections in state.
     """
     elections = []
-    metadata = fetch_metadata(state, id)
+    metadata = read_cached_metadata()
     if metadata:
-        if id == None:  # fetch all elections for state
-            elections = metadata.get('objects')
-            if not elections:
-                print "No elections found for state {}".format(state)
-        else:  # fetching a single election, given by id: check state
-            state_data = metadata.get('state')
-            postal = state_data.get('postal') if state_data else None
-            if postal == state:
-                elections = [metadata]
-            else:
-                print "Wrong state: id {} is for {}, not {}".format(
-                        id, postal, state)
+        elections = metadata.get('objects')
+        if not elections:
+            print "No elections found in cached metadata."
+    all_ids = not ids   # download all ids if ids is None or empty
+    if not all_ids:
+        if not all(map(str.isdigit, ids)):      # all digits?
+            print 'Error: ids must be positive integers (election ids)'
+            return
+        ids = map(int, ids)     # convert to ints; & avoid altering parameter
     
     for election in elections:
-        print
-        if 'direct_links' in election:
-            print 'Downloading input files for election id', election['id']
-            for download_url in election['direct_links']:
+        id = election.get('id')
+        if not all_ids:
+            if id not in ids:
+                continue   # if ids are specified, skip elections not in list
+            ids.remove(id)
+        if not check_state(election, state):
+            break
+        descr = '{start_date} '
+        descr += 'special ' if election.get('special') else ''
+        descr += '{race_type} election (id {id})'
+        descr = descr.format(**election)
+        urls = election.get('direct_links')
+        if not urls:
+            print '\nNo data files for', descr
+        else:
+            print '\nDownloading input files for', descr
+            for download_url in urls:
                 filename = os.path.split(download_url)[-1]
                 filepath = os.path.join(data_path, filename)
                 r = request_data(download_url, 
@@ -92,9 +121,20 @@ def update_cache(state, id=None):
                     with open(filepath, 'wb') as f:
                         f.write(r.content)
                     print '   ', filename
-        else:
-            msg = "No data files for election id {id} on {start_date}"
-            print msg.format(election)
+    if ids:
+        print '\nIds not found in cached metadata:', ids
+
+
+def update_metadata(state):
+    """Fetch metadata for state, cache at metadata_filepath"""
+    metadata = fetch_metadata(state)
+    if metadata:
+        with open(metadata_filepath, 'w') as outfile:
+            json.dump(metadata, outfile, indent=3)
+        # save a dated copy
+        fpath, ext = metadata_filepath.rsplit('.', 1)
+        shutil.copy(metadata_filepath, '{}_{}.{}'.format(
+                        fpath, datetime.date.today(), ext))
 
 
 if __name__ == '__main__':
@@ -118,24 +158,13 @@ if __name__ == '__main__':
                     print usage_msg
                     print 'args not permitted after -m'
                 else:
-                    metadata = fetch_metadata(state)
-                    if metadata:
-                        with open(metadata_filepath, 'w') as outfile:
-                            json.dump(metadata, outfile, indent=3)
-                        # save a dated copy
-                        fpath, ext = metadata_filepath.rsplit('.', 1)
-                        shutil.copy(metadata_filepath, '{}_{}.{}'.format(
-                                        fpath, datetime.date.today(), ext))
-            else:
+                    update_metadata(state)
+            else:   # fetch input files
                 ids = args[1:]
-                if not ids:     # fetch all ids for state
-                    update_cache(state)
+                if not all(map(str.isdigit, ids)):  # all digits?
+                    print usage_msg
+                    print 'ids must be positive integers (election ids)'
                 else:
-                    if all(map(str.isdigit, ids)):      # all digits
-                        for id in ids:
-                            update_cache(state, id)
-                    else:
-                        print usage_msg
-                        print 'ids must be positive integers (election ids)'
+                    update_cache(state, ids)
     print
 
