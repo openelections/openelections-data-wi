@@ -325,7 +325,8 @@ def extract_candidates(sheet, sheet_index):
                 if party:
                     parties[scattering_index] = party
         else:
-            print 'Warning: SCATTERING missing, sheet {}'.format(sheet_index)
+            print '##### Warning: SCATTERING missing in sheet {} "{}"'.format(
+                    sheet_index, sheet.name)
     
     start_row = rowx + 1        # first data row
     return candidates, parties, start_row
@@ -385,12 +386,12 @@ def parse_sheet(sheet, office, sheet_index, election):
     """Return list of records for (string) office, extracted from spreadsheet.
         This is used to parse Fall 2010 and later elections.
     """
+    office_was = office
     office, district, party = parse_office(office)
     if party and election['race_type'] == 'general':
         print '##### Warning: skipping sheet "{}"'.format(sheet.name),
-        print 'in general election: party in office name indicates primary'
-        print  '    {} (id {})'.format(election['end_date'], election['id']),
-        print office, district, party
+        print 'in general election'
+        print  '    Party in office name indicates primary:', office_was
         return []
     candidates, parties, start_row = extract_candidates(sheet, sheet_index)
     offset = 0
