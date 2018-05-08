@@ -424,13 +424,16 @@ def parse_sheet(sheet, office, sheet_index, election):
     return output
 
 
-def get_all_results(ids, url):
+def get_all_results(ids):
+    """Process results for election ids given;
+        if none given, process all ids in metadata.
+    """
     metadata = fetch.read_cached_metadata()
-    for id in ids:
-      print "id %s" % id
-      for election in metadata['objects']:
-        if election['id'] == id:
-          get_election_result(election)
+    for election in metadata['objects']:
+        if ids and election.get('id') not in ids:
+            continue    # filter by ids list if not empty
+        print 'id {id}'.format(**election)
+        get_election_result(election)
 
 
 def get_result_for_json(filename):
@@ -445,38 +448,31 @@ http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
 """.strip()
 
 
-# Elections with no files available.
-no_results_ids = [448, 664, 674, 689]
 
+"""
+Elections with no files available:
+    448, 664, 674, 689
 
-# Working Elections:
+Election results available only in PDF files:
+    437 (2006-09-12) PDF and excel in zip files, some offices only PDF
+    444 (2004-11-02) has xls files for President and Senate,
+        only PDFs for House, State Senate, State Assembly, District Attorney
+    443, 445, 446, 447, 
+    685, 1756
 
-# Single sheet spreadsheets, older format, repeated headings
-xls_2002_to_2010_working = [
-    426, 427, 428, 429, 
-    430, 431, 432, 433, 434, 435, 436, 437,
-    438, 439, 440, 441, 442, 
-    1577, 1578
-]
-xls_2002_to_2010_unfinished = [444]     # contains both xls and pdf files
+Single sheet spreadsheets, 2002-2010 format, two-line repeated headings:
+    426-442, 1577, 1578 ...
 
-xls_2010_onward_working = [
-    404,405,407,408,409,
-    410,411,413,415,416,419,
-    421,                    # Single sheet with no cover sheet, unlike others
-    422,
-    424,425,
-    1538,1539,1573,1574,1575,1576,
-    1658,1659,1660,1661,1662,
-    1710,1711,1748,1755,1761
-]
+Single sheet spreadsheets, 2002-2010 format, single-line heading:
+    1845 (2000-11-07), 2 of 6 xls files have this format
 
-# Files with offices in second column of title sheet (working):
-#   1573,1574,1576,1658,1659,1660,1661
+2011-04-05 general election (id 421) Supreme Court xls has a
+    single sheet with no title sheet
+        WARD_BY_WARD_FOR_SPRING_2011_ELECTION_AND_RECOUNT.xls
 
-working = xls_2002_to_2010_working + xls_2002_to_2010_unfinished
-working += xls_2010_onward_working
-working += range(1822,1852) + [1864, 1865]
+xls files with offices in second column of title sheet:
+    1573, 1574, 1576, 1658, 1659, 1660, 1661
+"""
 
 
 if __name__ == '__main__':
@@ -486,15 +482,10 @@ if __name__ == '__main__':
     usage_msg += '   Uses elections metadata from file "{}".\n'
     usage_msg = usage_msg.format(sys.argv[0], fetch.metadata_filepath)
     args = sys.argv[1:]
-    if args:
-        if all(map(str.isdigit, args)):
-            ids = map(int, args)
-        else:
-            print usage_msg
-            print 'Args must be positive integers (election ids)'
-            sys.exit(1)
+    if not all(map(str.isdigit, args)):
+        print usage_msg
+        print 'Args must be positive integers (election ids)'
     else:
-        ids = working
-    get_all_results(ids, WIOpenElectionsAPI)
-
+        ids = map(int, args)
+        get_all_results(ids)
 
