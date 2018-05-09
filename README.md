@@ -3,9 +3,9 @@
 # openelections-data-wi
 Pre-processed election results for Wisconsin elections
 
-``parser.py`` processes files based on cached metadata in ``local_data_cache/elections_metadata.json``.\
+``parser.py`` processes files based on cached metadata in ``local_data_cache/elections_metadata.json``\
 To update this metadata from the OpenElections API, run ``python fetch.py wi -m``\
-(``fetch.py`` fetches data files based on the cached metadata.)
+(``fetch.py`` fetches data files based on the cached metadata)
 
 To re-parse data files:
 ```bash
