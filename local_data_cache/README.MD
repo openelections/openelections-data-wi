@@ -1,8 +1,8 @@
 ## Local copies of WI Election files
 
 This folder contains local cached copies of WI election data,
-from http://elections.wi.gov\
-(Some files may be from the former location http://www.gab.wi.gov/)
+from http://elections.wi.gov \
+(Some files may be from the former location http://www.gab.wi.gov)
 
 This is useful for testing ``parser.py`` (in the parent directory),
 without requesting the input files via http every time.
