@@ -9,4 +9,4 @@ without requesting the input files via http every time.
 fetch.py (now in parent directory) can be used to update the local cache. (See README there.)
 
 elections_metadata.json caches elections metadata from the OpenElections API.
-To update it, run "python fetch.py -m"
+To update it, run "python fetch.py wi -m"
