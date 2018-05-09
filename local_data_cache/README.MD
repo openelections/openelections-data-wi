@@ -6,4 +6,7 @@ from http://elections.wi.gov and http://www.gab.wi.gov/ (former location).
 This is useful for testing parser.py (in the parent directory),
 without requesting the input files via http every time.
 
-fetch.py (now in parent directory) can be used to update the local cache.
+fetch.py (now in parent directory) can be used to update the local cache. (See README there.)
+
+elections_metadata.json caches elections metadata from the OpenElections API.
+To update it, run "python fetch.py -m"
