@@ -76,6 +76,7 @@ def clean_office(item):
     item = item.replace(' Judge', '', 1)    # first occurrence only, faster
     item = item.replace('Recall ','', 1)    # (first occurrence only, faster)
     item = item.replace("Court Branch", "Court, Branch", 1)
+    item = item.replace(', Br ', ', Branch ', 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
     office = office_recode.get(item, item)
     return office
