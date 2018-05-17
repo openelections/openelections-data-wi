@@ -139,7 +139,8 @@
          "state_leg_level": false, 
          "direct_links": [
             "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Results-Assembly%2058%20Special%20Election.xlsx", 
-            "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Results-Senate%2010%20Special%20Election.xlsx"
+            "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Results-Senate%2010%20Special%20Election.xlsx", 
+            "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Results-Assembly%2066%20Special%20Election.xlsx"
          ], 
          "state_level": false, 
          "county_level": false, 
