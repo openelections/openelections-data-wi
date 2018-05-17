@@ -11,6 +11,7 @@ import zipfile
 import cleaner
 import fetch
 
+office_set = set()
 
 output_headers = ["county", "ward", "office", "district", "total votes",
                     "party", "candidate", "votes"]
@@ -83,6 +84,7 @@ def process_xls_2000_to_2010(sheet):
             if district:        # separator was found
                 office = head
                 district = district.split()[-1]     # parse 'No. 1'
+            office_set.add(normalize_office(office))
         else:
             # (use last office)
             district = ''
@@ -384,7 +386,18 @@ def parse_office(office_string):
     office = office.strip()
     party = party.replace(' PARTY', '')
     party = party.strip('0123456789-')      # remove years appended to office
+    
+    office_set.add(normalize_office(office))
     return office, district, party
+
+
+def normalize_office(office):
+    office = cleaner.clean_office(office)
+    _, sep, tail = office.rpartition(' County ')
+    office = sep + tail     # remove county name
+    head, sep, tail = office.partition(' Branch ')
+    office = head + sep     # remove branch number
+    return office.strip()
 
 
 def parse_sheet(sheet, office, sheet_index, election):
@@ -490,4 +503,9 @@ if __name__ == '__main__':
     else:
         ids = map(int, args)
         get_all_results(ids)
+    
+    print '\nOffices processed:'
+    offices = sorted(list(office_set))
+    print '\n'.join(offices)
+    print
 
