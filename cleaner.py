@@ -73,8 +73,9 @@ def clean_ward(item):
 
 def clean_office(item):
     item = clean_string(item)
-    item = item.replace(' Judge', '', 1)    # first occurrence only, faster
     item = item.replace('Recall ','', 1)    # (first occurrence only, faster)
+    item = item.replace(' Judge', '', 1)
+    item = item.replace('Circ Ct', 'Circuit Court', 1)
     item = item.replace("Court Branch", "Court, Branch", 1)
     item = item.replace(', Br ', ', Branch ', 1)
     item = item.replace(' And ', '-', 1)
