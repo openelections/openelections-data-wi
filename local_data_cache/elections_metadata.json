@@ -3113,7 +3113,6 @@
          "direct_links": [
             "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_CircuitCt_WardbyWard.xls", 
             "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_CtofAppeals_WardbyWard.xls", 
-            "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_Referendum_WardbyWard.xls", 
             "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_SupCt_WardbyWard.xls"
          ], 
          "state_level": false, 
@@ -3122,7 +3121,7 @@
          "portal_link": "http://www.gab.wi.gov/elections-voting/results/2008/spring-election", 
          "cong_dist_level": false, 
          "precinct_level_status": "", 
-         "user_fullname": "Paulson, Eric", 
+         "user_fullname": "Post, Davi", 
          "direct_link": "", 
          "start_date": "2008-04-01", 
          "organization": {
