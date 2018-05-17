@@ -1,12 +1,66 @@
 {
    "meta": {
       "previous": null, 
-      "total_count": 93, 
+      "total_count": 94, 
       "offset": 0, 
       "limit": 1000, 
       "next": null
    }, 
    "objects": [
+      {
+         "absentee_and_provisional": false, 
+         "house": false, 
+         "state_level_status": "", 
+         "primary_note": "", 
+         "race_type": "general", 
+         "id": 1866, 
+         "special": false, 
+         "state_leg_level_status": "", 
+         "state_officers": true, 
+         "senate": false, 
+         "state": {
+            "postal": "WI", 
+            "name": "Wisconsin", 
+            "resource_uri": "/api/v1/state/WI/"
+         }, 
+         "cong_dist_level_status": "", 
+         "prez": false, 
+         "gov": false, 
+         "county_level_status": "", 
+         "primary_type": "", 
+         "end_date": "2018-04-03", 
+         "state_leg": false, 
+         "state_leg_level": false, 
+         "direct_links": [
+            "http://elections.wi.gov/sites/default/files/Ward%20Report-4.3.18%20Spring%20Election-Supreme%20Court.xlsx", 
+            "http://elections.wi.gov/sites/default/files/Ward%20Report-4.3.18%20Spring%20Election-Appeals.xlsx", 
+            "http://elections.wi.gov/sites/default/files/Ward%20Report-4%2C.3.18%20Spring%20Election-Circuit%20Court-Includes%20Sauk%203%20Recount.xlsx"
+         ], 
+         "state_level": false, 
+         "county_level": false, 
+         "precinct_level": true, 
+         "portal_link": "http://elections.wi.gov/elections-voting/results/2018/spring-election", 
+         "cong_dist_level": false, 
+         "precinct_level_status": "yes", 
+         "user_fullname": "Davies, Nick", 
+         "direct_link": "", 
+         "start_date": "2018-04-03", 
+         "organization": {
+            "city": "", 
+            "name": "Wisconsin Elections Commission", 
+            "gov_level": "state", 
+            "url": "http://elections.wi.gov/", 
+            "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm", 
+            "slug": "wi-gab", 
+            "state": "WI", 
+            "street": "", 
+            "gov_agency": true, 
+            "id": 17, 
+            "resource_uri": "/api/v1/organization/17/"
+         }, 
+         "result_type": "certified", 
+         "resource_uri": "/api/v1/election/1866/"
+      }, 
       {
          "absentee_and_provisional": false, 
          "house": false, 
