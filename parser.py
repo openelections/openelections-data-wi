@@ -442,11 +442,8 @@ def get_result_for_json(filename):
         get_election_result(election)
 
 
-# for debugging; metadata now read from cached file
-WIOpenElectionsAPI = """
-http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
-""".strip()
-
+# API url: for debugging, metadata is now read from cached file
+# http://openelections.net/api/v1/election/?format=json&limit=0&state__postal=WI
 
 
 """
