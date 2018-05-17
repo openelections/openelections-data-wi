@@ -89,7 +89,7 @@ Feature: WI Elections
     | candidate                     | county    | office                                        | ward                                              | votes | total |
     | Linda M. Clifford             | Walworth  | Supreme Court                                 | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
     | Scattering                    | Barron    | Court Of Appeals                              | TOWN OF STANFOLD                                  | 2     | 138   |
-    | Thomas G. Grover              | Shawano  |Menominee-Shawano County Circuit Court, Branch 2| TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
+    | Thomas G. Grover              | Shawano   | Menominee-Shawano County Circ Ct, Branch 2    | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
 
 
   Examples: 20080219__wi__primary__ward.csv
@@ -217,6 +217,11 @@ Feature: WI Elections
     | NELSON WESLEY PHILLIPS, III       | MILWAUKEE | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17     | VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6    | 6     | 16    |
     | NICHOLAS J. BRAZEAU, JR.          | WOOD      | WOOD COUNTY CIRCUIT COURT, BRANCH 2           | CITY OF WISCONSIN RAPIDS Ward 23              | 67    | 69    |
 
+  Examples: 20120508__wi__primary-recall__ward.csv
+    | party | candidate             | county        | office                                        | ward                                          | votes | total |
+    | REP   | Patrick J. O'Brien (Write-In) | Monroe | Governor                                     | TOWN OF LA GRANGE WARDS 1A, 1B, 2A, 2B, 3A, 3B        | 0     | 233   |
+    | DEM   | Tamra Varebrook       | Racine        | State Senate                                  | VILLAGE OF MOUNT PLEASANT WARDS 10,11,12,15           | 390   | 1256  |
+
   Examples: 20120605__wi__general-recall__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Hari Trivedi                  | Adams         | Governor                                      | Town of Adams Wards 1-3                       | 6     | 525   |
@@ -251,10 +256,16 @@ Feature: WI Elections
     | Paul Farrow                   | Waukesha      | State Senate                                  | City of Pewaukee Wards 8-10                   | 274   | 281   |
 
 
-  Examples: 20130219__wi__special__primary__ward.csv
+  Examples: 20130219__wi__primary__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
-    | Matt Morzy                    | Waukesha      | State Assembly                                | City of Waukesha Ward 4                       | 6     | 70    |
-    | Adam Neylon                   | Waukesha      | State Assembly                                | City of Pewaukee Wards 5-7                    | 219   | 559   |
+    | Vince Megna                   | Grant         | Supreme Court                                 | TOWN OF SOUTH LANCASTER WARDS 1, 2 & 3                | 3     | 19    |
+    | Janet Claire Protasiewicz     | Milwaukee     | Milwaukee County Circuit Court, Branch 45     | CITY OF MILWAUKEE WARD 001                            | 32    | 140   |
+
+  Examples: 20130219__wi__special__primary__ward.csv
+    | party | candidate             | county        | office                                        | ward                                          | votes | total |
+    | REP   | Matt Morzy            | Waukesha      | State Assembly                                | City of Waukesha Ward 4                               | 6     | 70    |
+    | REP   | Adam Neylon           | Waukesha      | State Assembly                                | City of Pewaukee Wards 5-7                            | 219   | 559   |
+    | REP   | Jeanne Tarantino      | Waukesha      | State Assembly                                | TOWN OF LISBON WARD 3                                 | 11    | 132   |
 
   Examples: 20130402__wi__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
@@ -262,25 +273,55 @@ Feature: WI Elections
     | Tony Evers                    | Columbia      | State Superintendent Of Public Instruction    | City Of Wisconsin Dells Ward 1                | 54    | 74    |
     | Don Pridemore                 | Dane          | State Superintendent Of Public Instruction    | City Of Madison Ward 49                       | 12    | 82    |
     | Don Pridemore                 | Wood          | State Superintendent Of Public Instruction    | Town Of Seneca Wards 1 -3                     | 55    | 136   |
+    | Daniel T. Dillon              | Rock          | Rock County Circuit Court, Branch 4           | CITY OF BRODHEAD WARDS 7-8                    | 6     | 6     |
+    | Lisa K. Stark                 | Ashland       | Court of Appeals                              | TOWN OF SHANAGOLDEN Wards 1                   | 22    | 22    |
+    | Ed Fallone                    | Langlade      | Supreme Court                                 | TOWN OF AINSWORTH WARD 1                      | 30    | 100   |
 
   Examples: 20130402__wi__special__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Adam Neylon                   | Waukesha      | State Assembly                                | CITY OF WAUKESHA Ward 36                      | 314   | 315   |
+    | Adam Neylon                   | Waukesha      | State Assembly                                | VILLAGE OF SUSSEX Wards 5,6,7                         | 417   | 419   |
+
+  Examples: 20131022__wi__special__primary__ward.csv
+    | party | candidate                         | county        | office                            | ward                                          | votes | total |
+    | REP   | Jason Red Arnold                  | Milwaukee     | State Assembly                    | CITY OF SOUTH MILWAUKEE Wards 13 -16                  | 20    | 325   |
+    | CON   | Scattering                        | Clark         | State Assembly                    | VILLAGE OF CURTISS WARD 1                             | 2     | 2     |
 
   Examples: 20131119__wi__special__primary__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Stephanie Mares               | Milwaukee     | State Assembly                                | Village of Greendale Wards 9-10               | 132   | 231   |
 
+  Examples: 20131119__wi__special__general__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Jessie Rodriguez              | Milwaukee     | State Assembly                                | CITY OF FRANKLIN City of Franklin - Ward 15B          | 56    | 92    |
+    | Tim Swiggum                   | Wood          | State Assembly                                | CITY OF MARSHFIELD Wards 1-4, 10, 11, 13, 14          | 62    | 1198  |
+
   Examples: 20131217__wi__special__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | John R. Hermes                | Milwaukee     | State Assembly                                | City of Greenfield Ward 20                    | 86    | 223   |
 
+  Examples: 20140218__wi__primary__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Roger M. Hillestad            | Dunn          | Dunn County Circuit Court, Branch 1           | TOWN OF RED CEDAR WARD 1-3                            | 11    | 71    |
+
+  Examples: 20140424__wi__general__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Gary E. Sherman               | Waupaca       | Court of Appeals                              | TOWN OF HELVETIA Wards 1 & 2                          | 44    | 44    |
+    | Robert A. Kennedy, Jr.        | Florence      | Florence-Forest County Circuit Court          | TOWN OF FENCE WARD 1                                  | 24    | 46    |
 
   Examples: 20140812__wi__primary__ward.csv
-    | candidate                     | county        | office                                        | ward                                          | votes | total |
-    | Mary Burke                    | Brown         | Governor                                      | Town of Holland Wards 1 - 2                   | 41    | 49    |
-    | Jerry Broitzman               | Dane          | Secretary Of State                            | City of Madison Ward 38                       | 3     | 3     |
-    | Rebecca Kleefisch             | Douglas       | Lieutenant Governor                           | Town of Brule Wards 1 & 2                     | 9     | 9     |
+    | party | candidate                         | county        | office                            | ward                                          | votes | total |
+    | DEM   | Mary Burke                        | Brown         | Governor                          | Town of Holland Wards 1 - 2                   | 41    | 49    |
+    | CON   | Jerry Broitzman                   | Dane          | Secretary Of State                | City of Madison Ward 38                       | 3     | 3     |
+    | REP   | Rebecca Kleefisch                 | Douglas       | Lieutenant Governor               | Town of Brule Wards 1 & 2                     | 9     | 9     |
+    | REP   | Paul Ryan                         | Kenosha       | House                             | CITY OF KENOSHA WARD87                        | 66    | 77    |
+    | REP   | Reid J. Ribble                    | Winnebago     | House                             | TOWN OF WOLF RIVER Wards 2B and 2C               | 22    | 22    |
+    | DEM   | Kathleen Vinehout                 | Trempealeau   | State Senate                      | VILLAGE OF ETTRICK Ward 1                        | 79    | 79    |
+    | REP   | Dane Deutsch                      | Douglas       | State Senate                      | CITY OF SUPERIOR Wards 23 - 26 and 27 - 29     | 81    | 81    |
+    | CON   | Scattering                        | Sauk          | State Senate                      | TOWN OF PRAIRIE DU SAC WARDS 1-2, COMBINED       | 0     | 0     |
+    | DEM   | Daniel Riemer                     | Milwaukee     | State Assembly                    | VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5    | 94    | 94    |
+    | DEM   | Scattering                        | Fond Du Lac   | State Assembly                    | VILLAGE OF KEWASKUM WD 6                 | 0     | 0     |
+    | REP   | Adam Jarchow                      | Polk          | State Assembly                    | VILLAGE OF BALSAM LAKE Wards 1-2                | 37    | 37    |
 
   Examples: 20141104__wi__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
@@ -336,6 +377,9 @@ Feature: WI Elections
 
   Examples: 20160216__wi__primary__ward.csv
     | candidate                         | county    | office                                        | ward                                          | votes | total |
+    | JoAnne F. Kloppenburg             | Vilas     | Supreme Court                                 | TOWN OF LAND O-LAKES Ward 1                   | 81    | 196   |
+    | Larry Nelson                      | Iowa      | Iowa County Circuit Court                     | VILLAGE OF BLANCHARDVILLE Ward 2              | 6     | 14    |
+    | Daniel S. Johnson                 | Walworth  | Walworth County Circuit Court, Branch 2        | TOWN OF LINN Ward 5                           | 11    | 42    |
     | Trish Baker                       | Portage   | Portage County Circuit Court, Branch 2        | TOWN OF ALBAN Ward 1                          | 40    | 107   |
 
   Examples: 20160405__wi__primary__ward.csv
@@ -380,4 +424,29 @@ Feature: WI Elections
     | Brian K. Hagedorn             | Ozaukee       | Court of Appeals                              | TOWN OF BELGIUM Ward 1-3                      | 113   | 113   |
     | Guy Dutcher                   | Waushara      | Waushara County Circuit Court                 | CITY OF WAUTOMA Wards 1-3                     | 117   | 117   |
 
+  Examples: 20171219__wi__special__primary__ward.csv
+    | party | candidate                     | county        | office                                | ward                                          | votes | total |
+    | WGR   | Scattering                    | St. Croix     | State Senate                          | City of HUDSON Ward 11-12                     | 1     | 1     |
+    | DEM   | John Rocco Calabrese          | Dunn          | State Senate                          | Village of BOYCEVILLE Ward 1                  | 8     | 19    |
+    | REP   | Shannon Zimmerman             | St. Croix     | State Senate                          | Town of CYLON Ward 1                          | 11    | 40    |
+    | DEM   | JOHN TATE, II                 | Racine        | State Assembly                        | City of RACINE Ward 3                         | 176   | 336   |
+    | REP   | STEVE STANEK                  | Washington    | State Assembly                        | City of WEST BEND Wards 4-6                   | 107   | 251   |
 
+
+  Examples: 20180116__wi__special__general__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Greta Neubauer                | Racine        | State Assembly                                | City of RACINE Ward 3                         | 100   | 100   |
+    | Dennis D. Degenhardt          | Washington    | State Assembly                                | Town of WEST BEND Wards 1-8                   | 184   | 444   |
+    | Adam Jarchow                  | Pierce        | State Senate                                  | City of RIVER FALLS Wards 6-8                 | 130   | 624   |
+
+  Examples: 20180220__wi__primary__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Rebecca Dallet                | Taylor        | Supreme Court                                 | Town of MCKINLEY Ward 1                       | 1     | 27    |
+    | Brenda L. Yaskal              | Columbia      | Columbia County Circuit Court, Branch 3        | City of PORTAGE Ward 11                       | 0     | 0     |
+    | Ralph Sczygelski              | Manitowoc     | Manitowoc County Circuit Court, Branch 2       | City of MANITOWOC Wards 17-18,21,23-26,28     | 68    | 245   |
+
+  Examples: 20180403__wi__general__ward.csv
+    | candidate                     | county        | office                                        | ward                                          | votes | total |
+    | Rebecca Dallet                | Kewaunee      | Supreme Court                                 | City of ALGOMA Ward 1-6                               | 279   | 432   |
+    | Timothy G. Dugan              | Milwaukee     | Court of Appeals                              | Village of HALES CORNERS Wards 7-9                    | 338   | 338   |
+    | Sandra Cardo Gorsuch          | Sauk          | Sauk County Circuit Court, Branch 3           | Town of FREEDOM Ward 2                                | 41    | 65    |
