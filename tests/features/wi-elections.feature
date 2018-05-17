@@ -304,7 +304,7 @@ Feature: WI Elections
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Roger M. Hillestad            | Dunn          | Dunn County Circuit Court, Branch 1           | TOWN OF RED CEDAR WARD 1-3                            | 11    | 71    |
 
-  Examples: 20140424__wi__general__ward.csv
+  Examples: 20140401__wi__general__ward.csv
     | candidate                     | county        | office                                        | ward                                          | votes | total |
     | Gary E. Sherman               | Waupaca       | Court of Appeals                              | TOWN OF HELVETIA Wards 1 & 2                          | 44    | 44    |
     | Robert A. Kennedy, Jr.        | Florence      | Florence-Forest County Circuit Court          | TOWN OF FENCE WARD 1                                  | 24    | 46    |
