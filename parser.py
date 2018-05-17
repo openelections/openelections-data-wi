@@ -347,6 +347,7 @@ def parse_office(office_string):
           District Attorney - Fond Du Lac County
           EAU CLAIRE COUNTY CIRCUIT COURT JUDGE, BRANCH 1
           RECALL STATE SENATE-29
+          RECALL STATE SENATE-21 - DEMOCRATIC
     """
     office = office_string.upper()
     office = office.replace(u'\u2015','-')   # change HORIZONTAL BAR to hyphen
@@ -361,20 +362,24 @@ def parse_office(office_string):
         district = ''
         party = ''
     
-    # Separate party from office, handle district after '-'
-    head, sep, tail = office.partition('-')
+    # Handle D.A. followed by county, or remove party
+    head, sep, tail = office.partition(' -')
     tail = tail.strip()
     if tail:
-        if tail.isdigit():
-            office = head
-            district = tail
-        elif tail.endswith(' COUNTY'):      # id 409, 2012-11-06 D.A.
+        if tail.endswith(' COUNTY'):        # id 409, 2012-11-06 D.A.
             head = head.strip()
             assert head == 'DISTRICT ATTORNEY'
-            office = tail + ' ' + head      # ____ County District Attorney 
-        elif head.endswith(' '):    # not a hyphenated name
+            office = tail + ' ' + head      # ____ County District Attorney
+        else:
             office = head
             party = tail
+
+    # Handle district after '-'
+    head, sep, tail = office.partition('-')
+    tail = tail.strip()
+    if tail.isdigit():
+        office = head
+        district = tail
     
     office = office.strip()
     party = party.replace(' PARTY', '')

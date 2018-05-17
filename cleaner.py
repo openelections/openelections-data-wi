@@ -74,6 +74,7 @@ def clean_ward(item):
 def clean_office(item):
     item = clean_string(item)
     item = item.replace(' Judge', '', 1)    # first occurrence only, faster
+    item = item.replace('Recall ','', 1)    # (first occurrence only, faster)
     item = item.replace("Court Branch", "Court, Branch", 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
     office = office_recode.get(item)
@@ -143,7 +144,5 @@ def clean_particular(election,row):
         row[6] = row[6].replace("   "," ")              # candidate
     elif id == 424:
         row[2] = row[2].replace(" - 2011-2017","")      # office
-    elif id == 1662:
-        row[2] = row[2].replace("RECALL ","")           # office
     return row
 
