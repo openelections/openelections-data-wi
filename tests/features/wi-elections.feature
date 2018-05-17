@@ -89,7 +89,7 @@ Feature: WI Elections
     | candidate                     | county    | office                                        | ward                                              | votes | total |
     | Linda M. Clifford             | Walworth  | Supreme Court                                 | CITY OF WHITEWATER Wards 7 & 8                    | 27    | 46    |
     | Scattering                    | Barron    | Court Of Appeals                              | TOWN OF STANFOLD                                  | 2     | 138   |
-    | Thomas G. Grover              | Shawano   | Menominee-Shawano County Circ Ct, Branch 2    | TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
+    | Thomas G. Grover              | Shawano  |Menominee-Shawano County Circuit Court, Branch 2| TOWN OF ANGELICA Wards 1 - 3                      | 297   | 297   |
 
 
   Examples: 20080219__wi__primary__ward.csv
