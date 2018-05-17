@@ -1,5 +1,5 @@
-
-import re
+# cleaner.py
+# Data cleaning for WI OpenElections parser
 
 
 party_recode = {
@@ -77,24 +77,18 @@ def clean_office(item):
     item = item.replace('Recall ','', 1)    # (first occurrence only, faster)
     item = item.replace("Court Branch", "Court, Branch", 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
-    office = office_recode.get(item)
-    if office is None:
-        office = item
+    office = office_recode.get(item, item)
     return office
 
 def clean_district(item):
-    item = item.strip()
-    if re.match(r"[0-9,]+", item):
-        return to_int(item)
-    else:
-        return None
+    item = item.strip().replace(',','')
+    return int(item) if item.isdigit() else None
 
 def clean_total(item):
     return to_int(item)
 
 def clean_party(item):
-    code = party_recode.get(item)
-    return code if code else item
+    return party_recode.get(item, item)
 
 def clean_votes(item):
     return to_int(item)
@@ -106,26 +100,16 @@ def clean_candidate(item):
     return item
 
 def clean_row(row):
-    row[0] = clean_county(row[0])
-    row[1] = clean_ward(row[1])
-    row[2] = clean_office(row[2])
-    row[3] = clean_district(row[3])
-    row[4] = clean_total(row[4])
-    row[5] = clean_party(row[5])
-    row[6] = clean_candidate(row[6])
-    row[7] = clean_votes(row[7])
+    for i, clean_func in enumerate([
+            clean_county, clean_ward, clean_office, clean_district,
+            clean_total, clean_party, clean_candidate, clean_votes]):
+        row[i] = clean_func(row[i])
     return row
 
 def to_int(item):
     if isinstance(item, basestring):
-        item = item.replace(',','').strip()
-        if item.isdigit():
-            item = int(item)
-        elif item == '':
-            item = 0
-    else:   # assume int or float
-        item = int(item)
-    return item
+        item = '0' + item.replace(',','').strip()
+    return int(item)
 
 def clean_string(item):
     item = item.strip()
@@ -142,7 +126,5 @@ def clean_particular(election,row):
         row[1] = row[1].replace("!","1")                # ward
     if id == 411:
         row[6] = row[6].replace("   "," ")              # candidate
-    elif id == 424:
-        row[2] = row[2].replace(" - 2011-2017","")      # office
     return row
 
