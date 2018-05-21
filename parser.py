@@ -15,9 +15,11 @@ import fetch
 office_table_filename = 'office_table.csv'
 office_table_file = open(office_table_filename, 'w')
 office_table_wr = csv.writer(office_table_file)
-office_table_headers = ['id', 'date', 'special', 'primary']
+office_table_headers = ['id', 'date', 'special', 'primary', 'recall', 'no_data']
 office_table_headers += cleaner.short_office_names
 office_table_wr.writerow(office_table_headers)
+office_table_wr.writerow(['term:'] + 5 * [''])
+office_table_wr.writerow(['phase:'] + 5 * [''])
 offices_per_election = set()
 offices_found = set()
 
@@ -288,6 +290,8 @@ def tabulate_offices(election, offices_per_election):
     info = [election['id'], election['end_date']]
     info.append('S' if election['special'] else '')
     info.append('P' if election['race_type'].startswith('primary') else '')
+    info.append('R' if election['race_type'].endswith('-recall') else '')
+    info.append('' if offices_per_election else 'nd')       # no data
     for name in cleaner.office_names:
         info.append('X' if name.title() in offices_per_election else '')
     office_table_wr.writerow(info)
