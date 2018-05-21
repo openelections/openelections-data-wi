@@ -247,11 +247,12 @@ def make_filepath(election):
     return filepath
 
 
-def get_election_result(election):
+def get_election_result(election, no_output=False):
     filepath = make_filepath(election)
-    outfile = open(filepath, 'w')
-    wr = csv.writer(outfile)
-    wr.writerow(output_headers)
+    if not no_output:
+        outfile = open(filepath, 'w')
+        wr = csv.writer(outfile)
+        wr.writerow(output_headers)
     direct_links = election['direct_links']
     row = None
     for direct_link in direct_links:
@@ -262,9 +263,9 @@ def get_election_result(election):
             for row in result:
                 row = cleaner.clean_particular(election, row)
                 row = cleaner.clean_row(row)
-                if "Office Totals:" not in row:
+                if "Office Totals:" not in row and not no_output:
                     wr.writerow(row)
-    if row is None:     # no rows written, delete file
+    if row is None and not no_output:   # no rows written, delete file
         outfile.close()
         os.remove(filepath)
         print 'No data parsed, output file removed'
@@ -442,7 +443,7 @@ def parse_sheet(sheet, office, sheet_index, election):
     return output
 
 
-def get_all_results(ids):
+def get_all_results(ids, no_output=False):
     """Process results for election ids given;
         if none given, process all ids in metadata.
     """
@@ -451,7 +452,7 @@ def get_all_results(ids):
         if ids and election.get('id') not in ids:
             continue    # filter by ids list if not empty
         print 'id {id}'.format(**election)
-        get_election_result(election)
+        get_election_result(election, no_output)
 
 
 def get_result_for_json(filename):
@@ -491,18 +492,22 @@ xls files with offices in second column of title sheet:
 
 
 if __name__ == '__main__':
-    usage_msg = 'Usage: {} [<list of ids>]\n'
+    usage_msg = 'Usage: {} [-n] <list of ids>]\n'
     usage_msg += '   Parse input files and process results for listed ids.\n'
     usage_msg += '   Omit ids to process all ids for state.\n'
+    usage_msg += '   Use option -n for no results output.\n'
     usage_msg += '   Uses elections metadata from file "{}".\n'
     usage_msg = usage_msg.format(sys.argv[0], fetch.metadata_filepath)
     args = sys.argv[1:]
+    no_output = (args[:1] == ['-n'])
+    if no_output:
+        args = args[1:]
     if not all(map(str.isdigit, args)):
         print usage_msg
         print 'Args must be positive integers (election ids)'
     else:
         ids = map(int, args)
-        get_all_results(ids)
+        get_all_results(ids, no_output=no_output)
     
     print '\nOffices processed:'
     offices = sorted(list(office_set))
