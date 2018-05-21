@@ -395,9 +395,9 @@ def parse_office(office_string):
 def normalize_office(office):
     office = cleaner.clean_office(office)
     _, sep, tail = office.rpartition(' County ')
-    office = sep + tail     # remove county name
-    head, sep, tail = office.partition(' Branch ')
-    office = head + sep     # remove branch number
+    office = tail       # remove county
+    head, sep, tail = office.partition(', Branch ')
+    office = head       # remove branch
     return office.strip()
 
 
