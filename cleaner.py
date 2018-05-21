@@ -40,26 +40,32 @@ office_recode = {
 }
 
 
-### To Do: Check that office is one of these?
 office_names = [
     # federal
     'President', 'Senate', 'House',
-#     'President', 'US Senate', 'US House',
     
     # statewide
     'Governor', 'Lieutenant Governor', 'Attorney General',
     'Secretary of State', 'State Treasurer',
     'State Superintendent of Public Instruction',
     
-    # judges
-    'Supreme Court', 'Court of Appeals[, District __]',
-    '__ County Circuit Court[, Branch __]',
-    
     # state representatives
     'State Senate', 'State Assembly',
     
-    # county offices
-    '__ County District Attorney',
+    # judicial, D.A.
+    'Supreme Court', 
+    'Court of Appeals',         # followed by ', District __'
+    'Circuit Court',            # __ County Circuit Court[, Branch __]
+    'District Attorney',        # __ County District Attorney   
+]
+
+
+short_office_names = [
+    'President', 'Senate', 'House',
+    'Governor', 'Lt Gov', 'Atty General',
+    'Sec of St', 'St Treasurer', 'Supt Public Instr',
+    'St Senate', 'St Assembly',
+    'Supreme Ct', 'Ct Appeals', 'Circuit Ct', 'Dist Atty'
 ]
 
 
