@@ -287,7 +287,7 @@ def get_election_result(election, no_output=False):
 def tabulate_offices(election, offices_per_election):
     info = [election['id'], election['end_date']]
     info.append('S' if election['special'] else '')
-    info.append('P' if election['race_type'] == 'primary' else '')
+    info.append('P' if election['race_type'].startswith('primary') else '')
     for name in cleaner.office_names:
         info.append('X' if name.title() in offices_per_election else '')
     office_table_wr.writerow(info)
