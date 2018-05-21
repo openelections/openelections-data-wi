@@ -139,7 +139,8 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
         assert da_county.endswith(' County')
         office = da_county + ' ' + da       # ____ County District Attorney
         assert party in cleaner.party_recode.values()
-
+        office_set.add(normalize_office(office))
+        
         district = ''
         race_place = county, ward, office, district, party
         if previous_race_place and (race_place != previous_race_place):
