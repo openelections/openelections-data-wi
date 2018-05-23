@@ -151,39 +151,39 @@ Feature: WI Elections
     | Edward E. Leineweber                  | Dane      | Court of Appeals                          | TOWN OF MADISON Wards 2 - 11                  | 50    | 238   |
 
   Examples: 20100914__wi__primary__ward.csv
-    | party | candidate             | county        | office                                    | ward                                              | votes | total |
-    | DEM   | Tim John              | Polk          | Governor                                  | VILLAGE OF FREDERIC Wards 1 & 2                   | 5     | 28    |
-    | REP   | Dan Mielke            | Marathon      | House                                     | VILLAGE OF KRONENWETTER Wards 1 - 8               | 118   | 568   |
-    | LIB   | Joseph Kexel          | Kenosha       | House                                     | VILLAGE OF PLEASANT PRAIRIE Wards 6 & 7           | 2     | 2     |
-    | WIG   | Ben Manski            | Dane          | State Assembly                            | CITY OF MIDDLETON Wards 2-4                       | 33    | 33    |
-    | NA    | James James           | Adams         | Governor                                  | TOWN OF BIG FLATS Ward 1                          | 1     | 2     |
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | DEM   | Tim John                      | Polk      | Governor                                  | VILLAGE OF FREDERIC Wards 1 & 2               | 5     | 28    |
+    | REP   | Dan Mielke                    | Marathon  | House                                     | VILLAGE OF KRONENWETTER Wards 1 - 8           | 118   | 568   |
+    | LIB   | Joseph Kexel                  | Kenosha   | House                                     | VILLAGE OF PLEASANT PRAIRIE Wards 6 & 7       | 2     | 2     |
+    | WIG   | Ben Manski                    | Dane      | State Assembly                            | CITY OF MIDDLETON Wards 2-4                   | 33    | 33    |
+    | NA    | James James                   | Adams     | Governor                                  | TOWN OF BIG FLATS Ward 1                      | 1     | 2     |
 
   Examples: 20101102__wi__general__ward.csv
-    | candidate                       | county      | office                    | ward                                                              | votes | total |
-    | James James & No Candidate      | Kewaunee    | Governor                  | VILLAGE OF LUXEMBURG Wards 1 & 2                                  | 2     | 934   |
-    | Scattering                      | Iron        | Attorney General          | CITY OF MONTREAL Ward 1                                           | 0     | 157   |
-    | Ernest J. Pagels Jr. (Write-In) | Pierce      | Senate                    | VILLAGE OF ELMWOOD Ward 1                                         | 9     | 245   |
-    | L. D. Rockwell                  | Walworth    | State Senate              | CITY OF LAKE GENEVA Wards 3-6, 9-11, 13, 14, 16, 17, 19 - 25      | 376   | 1106  |
-    | Rich Zipperer                   | Washington  | State Senate | CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49 | 1251  | 1255  |
-    | Ted Zigmunt                     | Brown       | State Assembly            | CITY OF DE PERE Wards 15 - 17                                     | 53    | 143   |
-    | Gary Tauchen                    | Waupaca     | State Assembly            | VILLAGE OF EMBARRASS Ward 1                                       | 102   | 102   |
-    | Richard J. Spanbauer            | Fond Du Lac | State Assembly            | CITY OF FOND DU LAC Ward 39                                       | 0     | 0     |
-    | Samantha Kerkman                | Kenosha     | State Assembly            | CITY OF KENOSHA Ward 58                                           | 1     | 2     |
-    | Scott Suder                     | Taylor      | State Assembly            | TOWN OF TAFT Ward 1                                               | 46    | 47    |
-    | Don Pridemore                   | Dodge       | State Assembly            | CITY OF HARTFORD Ward 16                                          | 0     | 0     |
+    | candidate                         | county    | office          | ward                                                                        | votes | total |
+    | James James & No Candidate        | Kewaunee  | Governor        | VILLAGE OF LUXEMBURG Wards 1 & 2                                            | 2     | 934   |
+    | Scattering                        | Iron      | Attorney General| CITY OF MONTREAL Ward 1                                                     | 0     | 157   |
+    | Ernest J. Pagels Jr. (Write-In)   | Pierce    | Senate          | VILLAGE OF ELMWOOD Ward 1                                                   | 9     | 245   |
+    | L. D. Rockwell                    | Walworth  | State Senate    | CITY OF LAKE GENEVA Wards 3-6, 9-11, 13, 14, 16, 17, 19 - 25                | 376   | 1106  |
+    | Rich Zipperer                     | Washington| State Senate    | CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49| 1251| 1255  |
+    | Ted Zigmunt                       | Brown     | State Assembly  | CITY OF DE PERE Wards 15 - 17                                               | 53    | 143   |
+    | Gary Tauchen                      | Waupaca   | State Assembly  | VILLAGE OF EMBARRASS Ward 1                                                 | 102   | 102   |
+    | Richard J. Spanbauer              | Fond Du Lac| State Assembly | CITY OF FOND DU LAC Ward 39                                                 | 0     | 0     |
+    | Samantha Kerkman                  | Kenosha   | State Assembly  | CITY OF KENOSHA Ward 58                                                     | 1     | 2     |
+    | Scott Suder                       | Taylor    | State Assembly  | TOWN OF TAFT Ward 1                                                         | 46    | 47    |
+    | Don Pridemore                     | Dodge     | State Assembly  | CITY OF HARTFORD Ward 16                                                    | 0     | 0     |
 
   Examples: 20110215__wi__primary__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | JOEL WINNIG                   | Door          | Supreme Court             | TOWN OF GIBRALTAR Wards 1 & 2                                     | 6     | 102   |
-    | DANIEL P. STEFFEN             | Polk          | POLK COUNTY CIRCUIT COURT, BRANCH 2 | TOWN OF WEST SWEDEN Wards 1 & 2                         | 13    | 25    |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | JOEL WINNIG                           | Door      | Supreme Court                             | TOWN OF GIBRALTAR Wards 1 & 2                 | 6     | 102   |
+    | DANIEL P. STEFFEN                     | Polk      | POLK COUNTY CIRCUIT COURT, BRANCH 2       | TOWN OF WEST SWEDEN Wards 1 & 2               | 13    | 25    |
 
   Examples: 20110405__wi__general__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | David T. Prosser, Jr.         | Manitowoc     | Supreme Court             | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36 | 306   | 555   |
-    | Joanne F. Kloppenburg         | Racine        | Supreme Court             | TOWN OF WATERFORD Wards 1 - 10                                    | 573   | 2183  |
-    | SANDRA J. MARCUS              | Marathon      | MARATHON COUNTY CIRCUIT COURT, BRANCH 5 | VILLAGE OF BIRNAMWOOD Ward 2                        | 5     | 5     |
-    | GUY DUTCHER                   | Waushara      | WAUSHARA COUNTY CIRCUIT COURT | TOWN OF POY SIPPI Ward 1                                      | 170   | 170   |
-    | PAUL B. HIGGINBOTHAM          | Jackson       | Court of Appeals          | VILLAGE OF HIXTON Ward 1                                          | 93    | 93    |
+    | candidate                         | county    | office          | ward                                                                        | votes | total |
+    | David T. Prosser, Jr.             | Manitowoc | Supreme Court   | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36           | 306   | 555   |
+    | Joanne F. Kloppenburg             | Racine    | Supreme Court   | TOWN OF WATERFORD Wards 1 - 10                                              | 573   | 2183  |
+    | SANDRA J. MARCUS                  | Marathon  | MARATHON COUNTY CIRCUIT COURT, BRANCH 5| VILLAGE OF BIRNAMWOOD Ward 2                         | 5     | 5     |
+    | GUY DUTCHER                       | Waushara  | WAUSHARA COUNTY CIRCUIT COURT| TOWN OF POY SIPPI Ward 1                                       | 170   | 170   |
+    | PAUL B. HIGGINBOTHAM              | Jackson   | Court of Appeals| VILLAGE OF HIXTON Ward 1                                                    | 93    | 93    |
 
   Examples: 20110503__wi__special__general__ward.csv
     | candidate                             | county    | office                                    | ward                                          | votes | total |
@@ -192,46 +192,46 @@ Feature: WI Elections
     | ANDREW ALLEN BERG (WRITE IN)          | RACINE    | State Assembly                            | VILLAGE OF WATERFORD Wards 1 - 7              | 9     | 900   |
 
   Examples: 20110712__wi__primary-recall__ward.csv
-    | party | candidate             | county        | office                                    | ward                                              | votes | total |
-    | DEM   | OTTO C. JUNKERMANN    | Waupaca       | State Senate                              | VILLAGE OF EMBARRASS Ward 1                       | 24    | 42    |
-    | DEM   | SCATTERING            | Washington    | State Senate                              | VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17         | 19    | 1019  |
-    | DEM   | ISAAC WEIX            | Dunn          | State Senate                              | CITY OF MENOMONIE MENOMONIE CITY WARD 6           | 70    | 279   |
-    | DEM   | ROL CHURCH            | Fond Du Lac   | State Senate                              | TOWN OF RIPON Wards 1 & 2                         | 117   | 235   |
-    | DEM   | JOHN D. BUCKSTAFF     | Dodge         | State Senate                              | CITY OF WAUPUN Wards 1 - 8                        | 167   | 738   |
-    | DEM   | JENNIFER SHILLING     | La Crosse     | State Senate                              | CITY OF LA CROSSE Ward WD20                       | 1     | 1     |
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | DEM   | OTTO C. JUNKERMANN            | Waupaca   | State Senate                              | VILLAGE OF EMBARRASS Ward 1                   | 24    | 42    |
+    | DEM   | SCATTERING                    | Washington| State Senate                              | VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17     | 19    | 1019  |
+    | DEM   | ISAAC WEIX                    | Dunn      | State Senate                              | CITY OF MENOMONIE MENOMONIE CITY WARD 6       | 70    | 279   |
+    | DEM   | ROL CHURCH                    | Fond Du Lac| State Senate                             | TOWN OF RIPON Wards 1 & 2                     | 117   | 235   |
+    | DEM   | JOHN D. BUCKSTAFF             | Dodge     | State Senate                              | CITY OF WAUPUN Wards 1 - 8                    | 167   | 738   |
+    | DEM   | JENNIFER SHILLING             | La Crosse | State Senate                              | CITY OF LA CROSSE Ward WD20                   | 1     | 1     |
 
   Examples: 20110712__wi__special__primary__ward.csv
-    | party | candidate             | county        | office                                    | ward                                              | votes | total |
-    | DEM   | DAVE DE FELICE        | Dane          | State Assembly                            | VILLAGE OF MCFARLAND wards1-7                     | 61    | 1007  |
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | DEM   | DAVE DE FELICE                | Dane      | State Assembly                            | VILLAGE OF MCFARLAND wards1-7                 | 61    | 1007  |
 
   Examples: 20110719__wi__general-recall__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | DAVID VANDERLEEST             | Marinette     | State Senate              | CITY OF PESHTIGO Wards 1 - 8                                      | 180   | 572   |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | DAVID VANDERLEEST                     | Marinette | State Senate                              | CITY OF PESHTIGO Wards 1 - 8                  | 180   | 572   |
 
   Examples: 20110719__wi__primary-recall__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | KIM SIMAC                     | Forest        | State Senate              | TOWN OF LINCOLN Town of Lincoln                                   | 66    | 117   |
-    | JONATHAN STEITZ               | Racine        | State Senate              | CITY OF BURLINGTON Wards 9 - 16                                   | 247   | 452   |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | KIM SIMAC                             | Forest    | State Senate                              | TOWN OF LINCOLN Town of Lincoln               | 66    | 117   |
+    | JONATHAN STEITZ                       | Racine    | State Senate                              | CITY OF BURLINGTON Wards 9 - 16               | 247   | 452   |
 
   Examples: 20110809__wi__general-recall__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | ROBERT L. COWLES              | Brown         | State Senate              | CITY OF DE PERE District 1 Ward 1-3                               | 1057  | 2016  |
-    | NANCY J. NUSBAUM              | Outagamie     | State Senate              | VILLAGE OF SHIOCTON Village of Shiocton                           | 86    | 180   |
-    | SANDRA K. PASCH               | Washington    | State Senate              | CITY OF MILWAUKEE Ward 262                                        | 0     | 0     |
-    | SHEILA E. HARSDORF            | Burnett       | State Senate              | TOWN OF LINCOLN Lincoln Town                                      | 60    | 108   |
-    | Scattering                    | Shawano       | State Senate              | CITY OF MARION Wards 4 - 6                                        | 0     | 5     |
-    | JESSICA KING                  | Winnebago     | State Senate              | CITY OF OMRO Wards 1 - 7                                          | 598   | 1104  |
-    | DAN KAPANKE                   | Vernon        | State Senate              | CITY OF WESTBY City of Westby, Ward 1-5                           | 319   | 825   |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | ROBERT L. COWLES                      | Brown     | State Senate                              | CITY OF DE PERE District 1 Ward 1-3           | 1057  | 2016  |
+    | NANCY J. NUSBAUM                      | Outagamie | State Senate                              | VILLAGE OF SHIOCTON Village of Shiocton       | 86    | 180   |
+    | SANDRA K. PASCH                       | Washington| State Senate                              | CITY OF MILWAUKEE Ward 262                    | 0     | 0     |
+    | SHEILA E. HARSDORF                    | Burnett   | State Senate                              | TOWN OF LINCOLN Lincoln Town                  | 60    | 108   |
+    | Scattering                            | Shawano   | State Senate                              | CITY OF MARION Wards 4 - 6                    | 0     | 5     |
+    | JESSICA KING                          | Winnebago | State Senate                              | CITY OF OMRO Wards 1 - 7                      | 598   | 1104  |
+    | DAN KAPANKE                           | Vernon    | State Senate                              | CITY OF WESTBY City of Westby, Ward 1-5       | 319   | 825   |
 
   Examples: 20110809__wi__special__general__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | Chris Taylor                  | Dane          | State Assembly            | VILLAGE OF MCFARLAND wards1-7                                     | 486   | 589   |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | Chris Taylor                          | Dane      | State Assembly                            | VILLAGE OF MCFARLAND wards1-7                 | 486   | 589   |
 
   Examples: 20110816__wi__general-recall__ward.csv
-    | candidate                     | county        | office                    | ward                                                              | votes | total |
-    | JIM HOLPERIN                  | Oconto        | State Senate              | TOWN OF TOWNSEND Ward 1                                           | 195   | 381   |
-    | Scattering                    | Oneida        | State Senate              | TOWN OF NEWBOLD Wards 1 - 2 - 3 - 5                               | 2     | 1132  |
-    | BRIAN HARWOOD (WRITE-IN)      | Kenosha       | State Senate              | TOWN OF SALEM Wards 1-15                                          | 2     | 2687  |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | JIM HOLPERIN                          | Oconto    | State Senate                              | TOWN OF TOWNSEND Ward 1                       | 195   | 381   |
+    | Scattering                            | Oneida    | State Senate                              | TOWN OF NEWBOLD Wards 1 - 2 - 3 - 5           | 2     | 1132  |
+    | BRIAN HARWOOD (WRITE-IN)              | Kenosha   | State Senate                              | TOWN OF SALEM Wards 1-15                      | 2     | 2687  |
 
   Examples: 20111011__wi__special__primary__ward.csv
     | candidate                             | county    | office                                    | ward                                          | votes | total |
@@ -242,12 +242,12 @@ Feature: WI Elections
     | David A. Drewes                       | La Crosse | State Assembly                            | CITY OF LA CROSSE Ward 15                     | 161   | 573   |
 
   Examples: 20120221__wi__primary__ward.csv
-    | candidate                     | county        | office                                       | ward                                           | votes | total |
-    | Francis X. Sullivan           | Dane          | DANE COUNTY CIRCUIT COURT, BRANCH 11         | TOWN OF YORK Ward 1                            | 6     | 31    |
-    | Edward Richard Antaramian     | Kenosha       | KENOSHA COUNTY CIRCUIT COURT, BRANCH 2       | TOWN OF SOMERS Wards 10-11-13                  | 62    | 274   |
-    | Nelson Wesley Phillips, III   | Milwaukee     | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17    | VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5     | 26    | 96    |
-    | Christopher R. Lipscomb, Sr.  | Milwaukee     | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17    | CITY OF ST. FRANCIS Wards 9 - 12               | 140   | 395   |
-    | John F. O'Melia               | Oneida        | ONEIDA COUNTY CIRCUIT COURT, BRANCH 2        | TOWN OF PINE LAKE Wards 1 and 4                | 98    | 272   |
+    | candidate                             | county    | office                                    | ward                                          | votes | total |
+    | Francis X. Sullivan                   | Dane      | DANE COUNTY CIRCUIT COURT, BRANCH 11      | TOWN OF YORK Ward 1                           | 6     | 31    |
+    | Edward Richard Antaramian             | Kenosha   | KENOSHA COUNTY CIRCUIT COURT, BRANCH 2    | TOWN OF SOMERS Wards 10-11-13                 | 62    | 274   |
+    | Nelson Wesley Phillips, III           | Milwaukee | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17 | VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5    | 26    | 96    |
+    | Christopher R. Lipscomb, Sr.          | Milwaukee | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17 | CITY OF ST. FRANCIS Wards 9 - 12              | 140   | 395   |
+    | John F. O'Melia                       | Oneida    | ONEIDA COUNTY CIRCUIT COURT, BRANCH 2     | TOWN OF PINE LAKE Wards 1 and 4               | 98    | 272   |
 
   Examples: 20120403__wi__primary__ward.csv
     | party | candidate                     | county    | office                                    | ward                                          | votes | total |
