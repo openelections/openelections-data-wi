@@ -218,6 +218,7 @@ Feature: WI Elections
     | DAVID VANDERLEEST             | Marinette     | State Senate              | CITY OF PESHTIGO Wards 1 - 8                                      | 180   | 572   |
 
   Examples: 20110719__wi__primary-recall__ward.csv
+    | candidate                     | county        | office                    | ward                                                              | votes | total |
     | KIM SIMAC                     | Forest        | State Senate              | TOWN OF LINCOLN Town of Lincoln                                   | 66    | 117   |
     | JONATHAN STEITZ               | Racine        | State Senate              | CITY OF BURLINGTON Wards 9 - 16                                   | 247   | 452   |
 
@@ -256,7 +257,7 @@ Feature: WI Elections
     | Edward Richard Antaramian     | Kenosha       | KENOSHA COUNTY CIRCUIT COURT, BRANCH 2       | TOWN OF SOMERS Wards 10-11-13                  | 62    | 274   |
     | Nelson Wesley Phillips, III   | Milwaukee     | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17    | VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5     | 26    | 96    |
     | Christopher R. Lipscomb, Sr.  | Milwaukee     | MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17    | CITY OF ST. FRANCIS Wards 9 - 12               | 140   | 395   |
-    | John F. O'Melia               | Oneida        | ONEIDA COUNTY CIRCUIT COURT JUDGE, BRANCH 2  | TOWN OF PINE LAKE Wards 1 and 4                | 98    | 272   |
+    | John F. O'Melia               | Oneida        | ONEIDA COUNTY CIRCUIT COURT, BRANCH 2        | TOWN OF PINE LAKE Wards 1 and 4                | 98    | 272   |
 
   Examples: 20120403__wi__primary__ward.csv
     | party | candidate                 | county    | office                                        | ward                                          | votes | total |
