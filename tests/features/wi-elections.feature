@@ -181,6 +181,11 @@ Feature: WI Elections
     | Scott Suder                     | Taylor      | State Assembly            | TOWN OF TAFT Ward 1                                               | 46    | 47    |
     | Don Pridemore                   | Dodge       | State Assembly            | CITY OF HARTFORD Ward 16                                          | 0     | 0     |
 
+  Examples: 20110215__wi__primary__ward.csv
+    | candidate                     | county        | office                    | ward                                                              | votes | total |
+    | JOEL WINNIG                   | Door          | Supreme Court             | TOWN OF GIBRALTAR Wards 1 & 2                                     | 6     | 102   |
+    | DANIEL P. STEFFEN             | Polk          | POLK COUNTY CIRCUIT COURT, BRANCH 2 | TOWN OF WEST SWEDEN Wards 1 & 2                         | 13    | 25    |
+
   Examples: 20110405__wi__general__ward.csv
     | candidate                     | county        | office                    | ward                                                              | votes | total |
     | David T. Prosser, Jr.         | Manitowoc     | Supreme Court             | CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36 | 306   | 555   |
