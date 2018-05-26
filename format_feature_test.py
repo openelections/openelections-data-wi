@@ -86,7 +86,9 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
                 break
         else:  # no break, end of file
             break
-        writer.writerow([filename.rstrip()])
+        row = [''] * len(fieldnames)
+        row[0] = filename.rstrip()
+        writer.writerow(row)
         
         testfile.next()     # skip fieldnames row
         for line in testfile:
