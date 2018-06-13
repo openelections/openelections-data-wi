@@ -259,10 +259,10 @@ Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Tiffany Koehler,
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Duey Stroebel,78
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Lee E. Schlenvogt,10
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,102,REP,Scattering,0
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Tiffany Koehler,22
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Duey Stroebel,113
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Lee E. Schlenvogt,14
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,150,REP,Scattering,1
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,150,REP,Tiffany Koehler,22
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,150,REP,Duey Stroebel,113
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,150,REP,Lee E. Schlenvogt,14
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,150,REP,Scattering,1
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Tiffany Koehler,21
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Duey Stroebel,160
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,201,REP,Lee E. Schlenvogt,20
@@ -429,8 +429,8 @@ Washington,Village Of Slinger Wards 1-8,State Senate,20,2,DEM,Nicholas J. Stamat
 Washington,Village Of Slinger Wards 1-8,State Senate,20,2,DEM,Scattering,0
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,DEM,Scattering,0
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,DEM,Scattering,0
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,0,DEM,Scattering,0
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,DEM,Scattering,0
 Washington,City Of West Bend Wards 1-3,State Senate,20,0,DEM,Nicholas J. Stamates (Write-In),0
@@ -514,7 +514,7 @@ Washington,Village Of Newburg Wards 1 & 2,State Senate,20,0,CON,Scattering,0
 Washington,Village Of Richfield Wards 4-6,State Senate,20,0,CON,Scattering,0
 Washington,Village Of Slinger Wards 1-8,State Senate,20,0,CON,Scattering,0
 Washington,City Of Hartford Wards 3 - 5,State Senate,20,0,CON,Scattering,0
-Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17,  20, 23",State Senate,20,0,CON,Scattering,0
+Washington,"City Of Hartford Wards 6, 9, 10, 15 - 17, 20, 23",State Senate,20,0,CON,Scattering,0
 Washington,"City Of Hartford Wards 11 - 14, 21, 22",State Senate,20,0,CON,Scattering,0
 Washington,City Of West Bend Wards 1-3,State Senate,20,0,CON,Scattering,0
 Washington,City Of West Bend Wards 4-6,State Senate,20,0,CON,Scattering,0
@@ -734,202 +734,202 @@ Jackson,City Of Black River Falls Ward 4,Jackson County Circuit Court,,179,NP,Da
 Jackson,City Of Black River Falls Ward 4,Jackson County Circuit Court,,179,NP,James C. Ritland,11
 Jackson,City Of Black River Falls Ward 4,Jackson County Circuit Court,,179,NP,Michelle Greendeer (Write-In),6
 Jackson,City Of Black River Falls Ward 4,Jackson County Circuit Court,,179,,Scattering,0
-La Crosse,Town Of Bangor Ward 1,"Lacrosse County Circuit Court, Branch 5",,39,NP,Gloria L. Doyle,12
-La Crosse,Town Of Bangor Ward 1,"Lacrosse County Circuit Court, Branch 5",,39,NP,Candice C. M. Tlustosch,13
-La Crosse,Town Of Bangor Ward 1,"Lacrosse County Circuit Court, Branch 5",,39,NP,Brian K. Barton,14
-La Crosse,Town Of Bangor Ward 1,"Lacrosse County Circuit Court, Branch 5",,39,,Scattering,0
-La Crosse,Town Of Barre Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,67,NP,Gloria L. Doyle,28
-La Crosse,Town Of Barre Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,67,NP,Candice C. M. Tlustosch,27
-La Crosse,Town Of Barre Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,67,NP,Brian K. Barton,12
-La Crosse,Town Of Barre Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,67,,Scattering,0
-La Crosse,Town Of Burns Ward 1,"Lacrosse County Circuit Court, Branch 5",,45,NP,Gloria L. Doyle,17
-La Crosse,Town Of Burns Ward 1,"Lacrosse County Circuit Court, Branch 5",,45,NP,Candice C. M. Tlustosch,18
-La Crosse,Town Of Burns Ward 1,"Lacrosse County Circuit Court, Branch 5",,45,NP,Brian K. Barton,10
-La Crosse,Town Of Burns Ward 1,"Lacrosse County Circuit Court, Branch 5",,45,,Scattering,0
-La Crosse,Town Of Campbell Wards 1 - 6,"Lacrosse County Circuit Court, Branch 5",,434,NP,Gloria L. Doyle,227
-La Crosse,Town Of Campbell Wards 1 - 6,"Lacrosse County Circuit Court, Branch 5",,434,NP,Candice C. M. Tlustosch,88
-La Crosse,Town Of Campbell Wards 1 - 6,"Lacrosse County Circuit Court, Branch 5",,434,NP,Brian K. Barton,119
-La Crosse,Town Of Campbell Wards 1 - 6,"Lacrosse County Circuit Court, Branch 5",,434,,Scattering,0
-La Crosse,Town Of Farmington Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,117,NP,Gloria L. Doyle,51
-La Crosse,Town Of Farmington Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,117,NP,Candice C. M. Tlustosch,28
-La Crosse,Town Of Farmington Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,117,NP,Brian K. Barton,38
-La Crosse,Town Of Farmington Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,117,,Scattering,0
-La Crosse,Town Of Greenfield Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,119,NP,Gloria L. Doyle,56
-La Crosse,Town Of Greenfield Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,119,NP,Candice C. M. Tlustosch,36
-La Crosse,Town Of Greenfield Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,119,NP,Brian K. Barton,27
-La Crosse,Town Of Greenfield Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,119,,Scattering,0
-La Crosse,Town Of Hamilton Wards 1 - 5,"Lacrosse County Circuit Court, Branch 5",,190,NP,Gloria L. Doyle,67
-La Crosse,Town Of Hamilton Wards 1 - 5,"Lacrosse County Circuit Court, Branch 5",,190,NP,Candice C. M. Tlustosch,86
-La Crosse,Town Of Hamilton Wards 1 - 5,"Lacrosse County Circuit Court, Branch 5",,190,NP,Brian K. Barton,37
-La Crosse,Town Of Hamilton Wards 1 - 5,"Lacrosse County Circuit Court, Branch 5",,190,,Scattering,0
-La Crosse,Town Of Holland Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,204,NP,Gloria L. Doyle,116
-La Crosse,Town Of Holland Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,204,NP,Candice C. M. Tlustosch,49
-La Crosse,Town Of Holland Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,204,NP,Brian K. Barton,39
-La Crosse,Town Of Holland Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,204,,Scattering,0
-La Crosse,Town Of Medary Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,111,NP,Gloria L. Doyle,58
-La Crosse,Town Of Medary Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,111,NP,Candice C. M. Tlustosch,18
-La Crosse,Town Of Medary Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,111,NP,Brian K. Barton,35
-La Crosse,Town Of Medary Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,111,,Scattering,0
-La Crosse,Town Of Onalaska Wards 1-8,"Lacrosse County Circuit Court, Branch 5",,316,NP,Gloria L. Doyle,154
-La Crosse,Town Of Onalaska Wards 1-8,"Lacrosse County Circuit Court, Branch 5",,316,NP,Candice C. M. Tlustosch,70
-La Crosse,Town Of Onalaska Wards 1-8,"Lacrosse County Circuit Court, Branch 5",,316,NP,Brian K. Barton,92
-La Crosse,Town Of Onalaska Wards 1-8,"Lacrosse County Circuit Court, Branch 5",,316,,Scattering,0
-La Crosse,Town Of Shelby Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,383,NP,Gloria L. Doyle,204
-La Crosse,Town Of Shelby Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,383,NP,Candice C. M. Tlustosch,79
-La Crosse,Town Of Shelby Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,383,NP,Brian K. Barton,100
-La Crosse,Town Of Shelby Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,383,,Scattering,0
-La Crosse,Town Of Washington Ward 1,"Lacrosse County Circuit Court, Branch 5",,34,NP,Gloria L. Doyle,15
-La Crosse,Town Of Washington Ward 1,"Lacrosse County Circuit Court, Branch 5",,34,NP,Candice C. M. Tlustosch,9
-La Crosse,Town Of Washington Ward 1,"Lacrosse County Circuit Court, Branch 5",,34,NP,Brian K. Barton,10
-La Crosse,Town Of Washington Ward 1,"Lacrosse County Circuit Court, Branch 5",,34,,Scattering,0
-La Crosse,Village Of Bangor Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,64,NP,Gloria L. Doyle,28
-La Crosse,Village Of Bangor Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,64,NP,Candice C. M. Tlustosch,20
-La Crosse,Village Of Bangor Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,64,NP,Brian K. Barton,16
-La Crosse,Village Of Bangor Wards 1 & 2,"Lacrosse County Circuit Court, Branch 5",,64,,Scattering,0
-La Crosse,Village Of Holmen Wards 1-11,"Lacrosse County Circuit Court, Branch 5",,267,NP,Gloria L. Doyle,141
-La Crosse,Village Of Holmen Wards 1-11,"Lacrosse County Circuit Court, Branch 5",,267,NP,Candice C. M. Tlustosch,50
-La Crosse,Village Of Holmen Wards 1-11,"Lacrosse County Circuit Court, Branch 5",,267,NP,Brian K. Barton,76
-La Crosse,Village Of Holmen Wards 1-11,"Lacrosse County Circuit Court, Branch 5",,267,,Scattering,0
-La Crosse,Village Of Rockland Ward 1,"Lacrosse County Circuit Court, Branch 5",,29,NP,Gloria L. Doyle,10
-La Crosse,Village Of Rockland Ward 1,"Lacrosse County Circuit Court, Branch 5",,29,NP,Candice C. M. Tlustosch,12
-La Crosse,Village Of Rockland Ward 1,"Lacrosse County Circuit Court, Branch 5",,29,NP,Brian K. Barton,7
-La Crosse,Village Of Rockland Ward 1,"Lacrosse County Circuit Court, Branch 5",,29,,Scattering,0
-La Crosse,Village Of West Salem Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,289,NP,Gloria L. Doyle,111
-La Crosse,Village Of West Salem Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,289,NP,Candice C. M. Tlustosch,139
-La Crosse,Village Of West Salem Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,289,NP,Brian K. Barton,39
-La Crosse,Village Of West Salem Wards 1-6,"Lacrosse County Circuit Court, Branch 5",,289,,Scattering,0
-La Crosse,City Of La Crosse Ward 1,"Lacrosse County Circuit Court, Branch 5",,138,NP,Gloria L. Doyle,69
-La Crosse,City Of La Crosse Ward 1,"Lacrosse County Circuit Court, Branch 5",,138,NP,Candice C. M. Tlustosch,19
-La Crosse,City Of La Crosse Ward 1,"Lacrosse County Circuit Court, Branch 5",,138,NP,Brian K. Barton,50
-La Crosse,City Of La Crosse Ward 1,"Lacrosse County Circuit Court, Branch 5",,138,,Scattering,0
-La Crosse,City Of La Crosse Ward 2,"Lacrosse County Circuit Court, Branch 5",,46,NP,Gloria L. Doyle,28
-La Crosse,City Of La Crosse Ward 2,"Lacrosse County Circuit Court, Branch 5",,46,NP,Candice C. M. Tlustosch,8
-La Crosse,City Of La Crosse Ward 2,"Lacrosse County Circuit Court, Branch 5",,46,NP,Brian K. Barton,10
-La Crosse,City Of La Crosse Ward 2,"Lacrosse County Circuit Court, Branch 5",,46,,Scattering,0
-La Crosse,City Of La Crosse Ward 3,"Lacrosse County Circuit Court, Branch 5",,90,NP,Gloria L. Doyle,54
-La Crosse,City Of La Crosse Ward 3,"Lacrosse County Circuit Court, Branch 5",,90,NP,Candice C. M. Tlustosch,13
-La Crosse,City Of La Crosse Ward 3,"Lacrosse County Circuit Court, Branch 5",,90,NP,Brian K. Barton,23
-La Crosse,City Of La Crosse Ward 3,"Lacrosse County Circuit Court, Branch 5",,90,,Scattering,0
-La Crosse,City Of La Crosse Ward 4,"Lacrosse County Circuit Court, Branch 5",,48,NP,Gloria L. Doyle,24
-La Crosse,City Of La Crosse Ward 4,"Lacrosse County Circuit Court, Branch 5",,48,NP,Candice C. M. Tlustosch,9
-La Crosse,City Of La Crosse Ward 4,"Lacrosse County Circuit Court, Branch 5",,48,NP,Brian K. Barton,15
-La Crosse,City Of La Crosse Ward 4,"Lacrosse County Circuit Court, Branch 5",,48,,Scattering,0
-La Crosse,City Of La Crosse Ward 5,"Lacrosse County Circuit Court, Branch 5",,66,NP,Gloria L. Doyle,31
-La Crosse,City Of La Crosse Ward 5,"Lacrosse County Circuit Court, Branch 5",,66,NP,Candice C. M. Tlustosch,14
-La Crosse,City Of La Crosse Ward 5,"Lacrosse County Circuit Court, Branch 5",,66,NP,Brian K. Barton,21
-La Crosse,City Of La Crosse Ward 5,"Lacrosse County Circuit Court, Branch 5",,66,,Scattering,0
-La Crosse,City Of La Crosse Ward 6,"Lacrosse County Circuit Court, Branch 5",,62,NP,Gloria L. Doyle,36
-La Crosse,City Of La Crosse Ward 6,"Lacrosse County Circuit Court, Branch 5",,62,NP,Candice C. M. Tlustosch,10
-La Crosse,City Of La Crosse Ward 6,"Lacrosse County Circuit Court, Branch 5",,62,NP,Brian K. Barton,16
-La Crosse,City Of La Crosse Ward 6,"Lacrosse County Circuit Court, Branch 5",,62,,Scattering,0
-La Crosse,City Of La Crosse Ward 7,"Lacrosse County Circuit Court, Branch 5",,101,NP,Gloria L. Doyle,62
-La Crosse,City Of La Crosse Ward 7,"Lacrosse County Circuit Court, Branch 5",,101,NP,Candice C. M. Tlustosch,21
-La Crosse,City Of La Crosse Ward 7,"Lacrosse County Circuit Court, Branch 5",,101,NP,Brian K. Barton,18
-La Crosse,City Of La Crosse Ward 7,"Lacrosse County Circuit Court, Branch 5",,101,,Scattering,0
-La Crosse,City Of La Crosse Ward 8,"Lacrosse County Circuit Court, Branch 5",,45,NP,Gloria L. Doyle,27
-La Crosse,City Of La Crosse Ward 8,"Lacrosse County Circuit Court, Branch 5",,45,NP,Candice C. M. Tlustosch,11
-La Crosse,City Of La Crosse Ward 8,"Lacrosse County Circuit Court, Branch 5",,45,NP,Brian K. Barton,7
-La Crosse,City Of La Crosse Ward 8,"Lacrosse County Circuit Court, Branch 5",,45,,Scattering,0
-La Crosse,City Of La Crosse Ward 9,"Lacrosse County Circuit Court, Branch 5",,363,NP,Gloria L. Doyle,283
-La Crosse,City Of La Crosse Ward 9,"Lacrosse County Circuit Court, Branch 5",,363,NP,Candice C. M. Tlustosch,47
-La Crosse,City Of La Crosse Ward 9,"Lacrosse County Circuit Court, Branch 5",,363,NP,Brian K. Barton,33
-La Crosse,City Of La Crosse Ward 9,"Lacrosse County Circuit Court, Branch 5",,363,,Scattering,0
-La Crosse,City Of La Crosse Ward 10,"Lacrosse County Circuit Court, Branch 5",,8,NP,Gloria L. Doyle,5
-La Crosse,City Of La Crosse Ward 10,"Lacrosse County Circuit Court, Branch 5",,8,NP,Candice C. M. Tlustosch,2
-La Crosse,City Of La Crosse Ward 10,"Lacrosse County Circuit Court, Branch 5",,8,NP,Brian K. Barton,1
-La Crosse,City Of La Crosse Ward 10,"Lacrosse County Circuit Court, Branch 5",,8,,Scattering,0
-La Crosse,City Of La Crosse Ward 11,"Lacrosse County Circuit Court, Branch 5",,5,NP,Gloria L. Doyle,4
-La Crosse,City Of La Crosse Ward 11,"Lacrosse County Circuit Court, Branch 5",,5,NP,Candice C. M. Tlustosch,1
-La Crosse,City Of La Crosse Ward 11,"Lacrosse County Circuit Court, Branch 5",,5,NP,Brian K. Barton,0
-La Crosse,City Of La Crosse Ward 11,"Lacrosse County Circuit Court, Branch 5",,5,,Scattering,0
-La Crosse,City Of La Crosse Ward 12,"Lacrosse County Circuit Court, Branch 5",,44,NP,Gloria L. Doyle,25
-La Crosse,City Of La Crosse Ward 12,"Lacrosse County Circuit Court, Branch 5",,44,NP,Candice C. M. Tlustosch,3
-La Crosse,City Of La Crosse Ward 12,"Lacrosse County Circuit Court, Branch 5",,44,NP,Brian K. Barton,16
-La Crosse,City Of La Crosse Ward 12,"Lacrosse County Circuit Court, Branch 5",,44,,Scattering,0
-La Crosse,City Of La Crosse Ward 13,"Lacrosse County Circuit Court, Branch 5",,41,NP,Gloria L. Doyle,32
-La Crosse,City Of La Crosse Ward 13,"Lacrosse County Circuit Court, Branch 5",,41,NP,Candice C. M. Tlustosch,3
-La Crosse,City Of La Crosse Ward 13,"Lacrosse County Circuit Court, Branch 5",,41,NP,Brian K. Barton,6
-La Crosse,City Of La Crosse Ward 13,"Lacrosse County Circuit Court, Branch 5",,41,,Scattering,0
-La Crosse,City Of La Crosse Ward 14,"Lacrosse County Circuit Court, Branch 5",,50,NP,Gloria L. Doyle,28
-La Crosse,City Of La Crosse Ward 14,"Lacrosse County Circuit Court, Branch 5",,50,NP,Candice C. M. Tlustosch,12
-La Crosse,City Of La Crosse Ward 14,"Lacrosse County Circuit Court, Branch 5",,50,NP,Brian K. Barton,10
-La Crosse,City Of La Crosse Ward 14,"Lacrosse County Circuit Court, Branch 5",,50,,Scattering,0
-La Crosse,City Of La Crosse Ward 15,"Lacrosse County Circuit Court, Branch 5",,61,NP,Gloria L. Doyle,42
-La Crosse,City Of La Crosse Ward 15,"Lacrosse County Circuit Court, Branch 5",,61,NP,Candice C. M. Tlustosch,14
-La Crosse,City Of La Crosse Ward 15,"Lacrosse County Circuit Court, Branch 5",,61,NP,Brian K. Barton,5
-La Crosse,City Of La Crosse Ward 15,"Lacrosse County Circuit Court, Branch 5",,61,,Scattering,0
-La Crosse,City Of La Crosse Ward 16,"Lacrosse County Circuit Court, Branch 5",,60,NP,Gloria L. Doyle,39
-La Crosse,City Of La Crosse Ward 16,"Lacrosse County Circuit Court, Branch 5",,60,NP,Candice C. M. Tlustosch,7
-La Crosse,City Of La Crosse Ward 16,"Lacrosse County Circuit Court, Branch 5",,60,NP,Brian K. Barton,14
-La Crosse,City Of La Crosse Ward 16,"Lacrosse County Circuit Court, Branch 5",,60,,Scattering,0
-La Crosse,City Of La Crosse Ward 17,"Lacrosse County Circuit Court, Branch 5",,38,NP,Gloria L. Doyle,20
-La Crosse,City Of La Crosse Ward 17,"Lacrosse County Circuit Court, Branch 5",,38,NP,Candice C. M. Tlustosch,12
-La Crosse,City Of La Crosse Ward 17,"Lacrosse County Circuit Court, Branch 5",,38,NP,Brian K. Barton,6
-La Crosse,City Of La Crosse Ward 17,"Lacrosse County Circuit Court, Branch 5",,38,,Scattering,0
-La Crosse,City Of La Crosse Ward 18,"Lacrosse County Circuit Court, Branch 5",,37,NP,Gloria L. Doyle,24
-La Crosse,City Of La Crosse Ward 18,"Lacrosse County Circuit Court, Branch 5",,37,NP,Candice C. M. Tlustosch,5
-La Crosse,City Of La Crosse Ward 18,"Lacrosse County Circuit Court, Branch 5",,37,NP,Brian K. Barton,8
-La Crosse,City Of La Crosse Ward 18,"Lacrosse County Circuit Court, Branch 5",,37,,Scattering,0
-La Crosse,City Of La Crosse Ward 19,"Lacrosse County Circuit Court, Branch 5",,26,NP,Gloria L. Doyle,16
-La Crosse,City Of La Crosse Ward 19,"Lacrosse County Circuit Court, Branch 5",,26,NP,Candice C. M. Tlustosch,3
-La Crosse,City Of La Crosse Ward 19,"Lacrosse County Circuit Court, Branch 5",,26,NP,Brian K. Barton,7
-La Crosse,City Of La Crosse Ward 19,"Lacrosse County Circuit Court, Branch 5",,26,,Scattering,0
-La Crosse,City Of La Crosse Ward 20,"Lacrosse County Circuit Court, Branch 5",,85,NP,Gloria L. Doyle,56
-La Crosse,City Of La Crosse Ward 20,"Lacrosse County Circuit Court, Branch 5",,85,NP,Candice C. M. Tlustosch,15
-La Crosse,City Of La Crosse Ward 20,"Lacrosse County Circuit Court, Branch 5",,85,NP,Brian K. Barton,14
-La Crosse,City Of La Crosse Ward 20,"Lacrosse County Circuit Court, Branch 5",,85,,Scattering,0
-La Crosse,City Of La Crosse Ward 21,"Lacrosse County Circuit Court, Branch 5",,304,NP,Gloria L. Doyle,201
-La Crosse,City Of La Crosse Ward 21,"Lacrosse County Circuit Court, Branch 5",,304,NP,Candice C. M. Tlustosch,54
-La Crosse,City Of La Crosse Ward 21,"Lacrosse County Circuit Court, Branch 5",,304,NP,Brian K. Barton,49
-La Crosse,City Of La Crosse Ward 21,"Lacrosse County Circuit Court, Branch 5",,304,,Scattering,0
-La Crosse,City Of La Crosse Ward 22,"Lacrosse County Circuit Court, Branch 5",,169,NP,Gloria L. Doyle,82
-La Crosse,City Of La Crosse Ward 22,"Lacrosse County Circuit Court, Branch 5",,169,NP,Candice C. M. Tlustosch,32
-La Crosse,City Of La Crosse Ward 22,"Lacrosse County Circuit Court, Branch 5",,169,NP,Brian K. Barton,55
-La Crosse,City Of La Crosse Ward 22,"Lacrosse County Circuit Court, Branch 5",,169,,Scattering,0
-La Crosse,City Of La Crosse Ward 23,"Lacrosse County Circuit Court, Branch 5",,56,NP,Gloria L. Doyle,36
-La Crosse,City Of La Crosse Ward 23,"Lacrosse County Circuit Court, Branch 5",,56,NP,Candice C. M. Tlustosch,8
-La Crosse,City Of La Crosse Ward 23,"Lacrosse County Circuit Court, Branch 5",,56,NP,Brian K. Barton,12
-La Crosse,City Of La Crosse Ward 23,"Lacrosse County Circuit Court, Branch 5",,56,,Scattering,0
-La Crosse,City Of La Crosse Ward 24,"Lacrosse County Circuit Court, Branch 5",,123,NP,Gloria L. Doyle,81
-La Crosse,City Of La Crosse Ward 24,"Lacrosse County Circuit Court, Branch 5",,123,NP,Candice C. M. Tlustosch,24
-La Crosse,City Of La Crosse Ward 24,"Lacrosse County Circuit Court, Branch 5",,123,NP,Brian K. Barton,18
-La Crosse,City Of La Crosse Ward 24,"Lacrosse County Circuit Court, Branch 5",,123,,Scattering,0
-La Crosse,City Of La Crosse Ward 25,"Lacrosse County Circuit Court, Branch 5",,146,NP,Gloria L. Doyle,84
-La Crosse,City Of La Crosse Ward 25,"Lacrosse County Circuit Court, Branch 5",,146,NP,Candice C. M. Tlustosch,29
-La Crosse,City Of La Crosse Ward 25,"Lacrosse County Circuit Court, Branch 5",,146,NP,Brian K. Barton,33
-La Crosse,City Of La Crosse Ward 25,"Lacrosse County Circuit Court, Branch 5",,146,,Scattering,0
-La Crosse,City Of La Crosse Ward 26,"Lacrosse County Circuit Court, Branch 5",,220,NP,Gloria L. Doyle,134
-La Crosse,City Of La Crosse Ward 26,"Lacrosse County Circuit Court, Branch 5",,220,NP,Candice C. M. Tlustosch,47
-La Crosse,City Of La Crosse Ward 26,"Lacrosse County Circuit Court, Branch 5",,220,NP,Brian K. Barton,39
-La Crosse,City Of La Crosse Ward 26,"Lacrosse County Circuit Court, Branch 5",,220,,Scattering,0
-La Crosse,City Of La Crosse Ward 27,"Lacrosse County Circuit Court, Branch 5",,101,NP,Gloria L. Doyle,53
-La Crosse,City Of La Crosse Ward 27,"Lacrosse County Circuit Court, Branch 5",,101,NP,Candice C. M. Tlustosch,32
-La Crosse,City Of La Crosse Ward 27,"Lacrosse County Circuit Court, Branch 5",,101,NP,Brian K. Barton,16
-La Crosse,City Of La Crosse Ward 27,"Lacrosse County Circuit Court, Branch 5",,101,,Scattering,0
-La Crosse,City Of La Crosse Ward 28,"Lacrosse County Circuit Court, Branch 5",,95,NP,Gloria L. Doyle,60
-La Crosse,City Of La Crosse Ward 28,"Lacrosse County Circuit Court, Branch 5",,95,NP,Candice C. M. Tlustosch,12
-La Crosse,City Of La Crosse Ward 28,"Lacrosse County Circuit Court, Branch 5",,95,NP,Brian K. Barton,23
-La Crosse,City Of La Crosse Ward 28,"Lacrosse County Circuit Court, Branch 5",,95,,Scattering,0
-La Crosse,City Of La Crosse Ward 29,"Lacrosse County Circuit Court, Branch 5",,223,NP,Gloria L. Doyle,140
-La Crosse,City Of La Crosse Ward 29,"Lacrosse County Circuit Court, Branch 5",,223,NP,Candice C. M. Tlustosch,37
-La Crosse,City Of La Crosse Ward 29,"Lacrosse County Circuit Court, Branch 5",,223,NP,Brian K. Barton,46
-La Crosse,City Of La Crosse Ward 29,"Lacrosse County Circuit Court, Branch 5",,223,,Scattering,0
-La Crosse,City Of La Crosse Ward 30,"Lacrosse County Circuit Court, Branch 5",,0,NP,Gloria L. Doyle,0
-La Crosse,City Of La Crosse Ward 30,"Lacrosse County Circuit Court, Branch 5",,0,NP,Candice C. M. Tlustosch,0
-La Crosse,City Of La Crosse Ward 30,"Lacrosse County Circuit Court, Branch 5",,0,NP,Brian K. Barton,0
-La Crosse,City Of La Crosse Ward 30,"Lacrosse County Circuit Court, Branch 5",,0,,Scattering,0
-La Crosse,City Of Onalaska Ward 1-4,"Lacrosse County Circuit Court, Branch 5",,358,NP,Gloria L. Doyle,229
-La Crosse,City Of Onalaska Ward 1-4,"Lacrosse County Circuit Court, Branch 5",,358,NP,Candice C. M. Tlustosch,55
-La Crosse,City Of Onalaska Ward 1-4,"Lacrosse County Circuit Court, Branch 5",,358,NP,Brian K. Barton,74
-La Crosse,City Of Onalaska Ward 1-4,"Lacrosse County Circuit Court, Branch 5",,358,,Scattering,0
-La Crosse,City Of Onalaska Ward 5-8,"Lacrosse County Circuit Court, Branch 5",,335,NP,Gloria L. Doyle,187
-La Crosse,City Of Onalaska Ward 5-8,"Lacrosse County Circuit Court, Branch 5",,335,NP,Candice C. M. Tlustosch,75
-La Crosse,City Of Onalaska Ward 5-8,"Lacrosse County Circuit Court, Branch 5",,335,NP,Brian K. Barton,73
-La Crosse,City Of Onalaska Ward 5-8,"Lacrosse County Circuit Court, Branch 5",,335,,Scattering,0
-La Crosse,City Of Onalaska Ward 9-12,"Lacrosse County Circuit Court, Branch 5",,316,NP,Gloria L. Doyle,170
-La Crosse,City Of Onalaska Ward 9-12,"Lacrosse County Circuit Court, Branch 5",,316,NP,Candice C. M. Tlustosch,67
-La Crosse,City Of Onalaska Ward 9-12,"Lacrosse County Circuit Court, Branch 5",,316,NP,Brian K. Barton,79
-La Crosse,City Of Onalaska Ward 9-12,"Lacrosse County Circuit Court, Branch 5",,316,,Scattering,0
+La Crosse,Town Of Bangor Ward 1,"La Crosse County Circuit Court, Branch 5",,39,NP,Gloria L. Doyle,12
+La Crosse,Town Of Bangor Ward 1,"La Crosse County Circuit Court, Branch 5",,39,NP,Candice C. M. Tlustosch,13
+La Crosse,Town Of Bangor Ward 1,"La Crosse County Circuit Court, Branch 5",,39,NP,Brian K. Barton,14
+La Crosse,Town Of Bangor Ward 1,"La Crosse County Circuit Court, Branch 5",,39,,Scattering,0
+La Crosse,Town Of Barre Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,67,NP,Gloria L. Doyle,28
+La Crosse,Town Of Barre Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,67,NP,Candice C. M. Tlustosch,27
+La Crosse,Town Of Barre Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,67,NP,Brian K. Barton,12
+La Crosse,Town Of Barre Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,67,,Scattering,0
+La Crosse,Town Of Burns Ward 1,"La Crosse County Circuit Court, Branch 5",,45,NP,Gloria L. Doyle,17
+La Crosse,Town Of Burns Ward 1,"La Crosse County Circuit Court, Branch 5",,45,NP,Candice C. M. Tlustosch,18
+La Crosse,Town Of Burns Ward 1,"La Crosse County Circuit Court, Branch 5",,45,NP,Brian K. Barton,10
+La Crosse,Town Of Burns Ward 1,"La Crosse County Circuit Court, Branch 5",,45,,Scattering,0
+La Crosse,Town Of Campbell Wards 1 - 6,"La Crosse County Circuit Court, Branch 5",,434,NP,Gloria L. Doyle,227
+La Crosse,Town Of Campbell Wards 1 - 6,"La Crosse County Circuit Court, Branch 5",,434,NP,Candice C. M. Tlustosch,88
+La Crosse,Town Of Campbell Wards 1 - 6,"La Crosse County Circuit Court, Branch 5",,434,NP,Brian K. Barton,119
+La Crosse,Town Of Campbell Wards 1 - 6,"La Crosse County Circuit Court, Branch 5",,434,,Scattering,0
+La Crosse,Town Of Farmington Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,117,NP,Gloria L. Doyle,51
+La Crosse,Town Of Farmington Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,117,NP,Candice C. M. Tlustosch,28
+La Crosse,Town Of Farmington Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,117,NP,Brian K. Barton,38
+La Crosse,Town Of Farmington Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,117,,Scattering,0
+La Crosse,Town Of Greenfield Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,119,NP,Gloria L. Doyle,56
+La Crosse,Town Of Greenfield Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,119,NP,Candice C. M. Tlustosch,36
+La Crosse,Town Of Greenfield Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,119,NP,Brian K. Barton,27
+La Crosse,Town Of Greenfield Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,119,,Scattering,0
+La Crosse,Town Of Hamilton Wards 1 - 5,"La Crosse County Circuit Court, Branch 5",,190,NP,Gloria L. Doyle,67
+La Crosse,Town Of Hamilton Wards 1 - 5,"La Crosse County Circuit Court, Branch 5",,190,NP,Candice C. M. Tlustosch,86
+La Crosse,Town Of Hamilton Wards 1 - 5,"La Crosse County Circuit Court, Branch 5",,190,NP,Brian K. Barton,37
+La Crosse,Town Of Hamilton Wards 1 - 5,"La Crosse County Circuit Court, Branch 5",,190,,Scattering,0
+La Crosse,Town Of Holland Wards 1-6,"La Crosse County Circuit Court, Branch 5",,204,NP,Gloria L. Doyle,116
+La Crosse,Town Of Holland Wards 1-6,"La Crosse County Circuit Court, Branch 5",,204,NP,Candice C. M. Tlustosch,49
+La Crosse,Town Of Holland Wards 1-6,"La Crosse County Circuit Court, Branch 5",,204,NP,Brian K. Barton,39
+La Crosse,Town Of Holland Wards 1-6,"La Crosse County Circuit Court, Branch 5",,204,,Scattering,0
+La Crosse,Town Of Medary Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,111,NP,Gloria L. Doyle,58
+La Crosse,Town Of Medary Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,111,NP,Candice C. M. Tlustosch,18
+La Crosse,Town Of Medary Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,111,NP,Brian K. Barton,35
+La Crosse,Town Of Medary Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,111,,Scattering,0
+La Crosse,Town Of Onalaska Wards 1-8,"La Crosse County Circuit Court, Branch 5",,316,NP,Gloria L. Doyle,154
+La Crosse,Town Of Onalaska Wards 1-8,"La Crosse County Circuit Court, Branch 5",,316,NP,Candice C. M. Tlustosch,70
+La Crosse,Town Of Onalaska Wards 1-8,"La Crosse County Circuit Court, Branch 5",,316,NP,Brian K. Barton,92
+La Crosse,Town Of Onalaska Wards 1-8,"La Crosse County Circuit Court, Branch 5",,316,,Scattering,0
+La Crosse,Town Of Shelby Wards 1-6,"La Crosse County Circuit Court, Branch 5",,383,NP,Gloria L. Doyle,204
+La Crosse,Town Of Shelby Wards 1-6,"La Crosse County Circuit Court, Branch 5",,383,NP,Candice C. M. Tlustosch,79
+La Crosse,Town Of Shelby Wards 1-6,"La Crosse County Circuit Court, Branch 5",,383,NP,Brian K. Barton,100
+La Crosse,Town Of Shelby Wards 1-6,"La Crosse County Circuit Court, Branch 5",,383,,Scattering,0
+La Crosse,Town Of Washington Ward 1,"La Crosse County Circuit Court, Branch 5",,34,NP,Gloria L. Doyle,15
+La Crosse,Town Of Washington Ward 1,"La Crosse County Circuit Court, Branch 5",,34,NP,Candice C. M. Tlustosch,9
+La Crosse,Town Of Washington Ward 1,"La Crosse County Circuit Court, Branch 5",,34,NP,Brian K. Barton,10
+La Crosse,Town Of Washington Ward 1,"La Crosse County Circuit Court, Branch 5",,34,,Scattering,0
+La Crosse,Village Of Bangor Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,64,NP,Gloria L. Doyle,28
+La Crosse,Village Of Bangor Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,64,NP,Candice C. M. Tlustosch,20
+La Crosse,Village Of Bangor Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,64,NP,Brian K. Barton,16
+La Crosse,Village Of Bangor Wards 1 & 2,"La Crosse County Circuit Court, Branch 5",,64,,Scattering,0
+La Crosse,Village Of Holmen Wards 1-11,"La Crosse County Circuit Court, Branch 5",,267,NP,Gloria L. Doyle,141
+La Crosse,Village Of Holmen Wards 1-11,"La Crosse County Circuit Court, Branch 5",,267,NP,Candice C. M. Tlustosch,50
+La Crosse,Village Of Holmen Wards 1-11,"La Crosse County Circuit Court, Branch 5",,267,NP,Brian K. Barton,76
+La Crosse,Village Of Holmen Wards 1-11,"La Crosse County Circuit Court, Branch 5",,267,,Scattering,0
+La Crosse,Village Of Rockland Ward 1,"La Crosse County Circuit Court, Branch 5",,29,NP,Gloria L. Doyle,10
+La Crosse,Village Of Rockland Ward 1,"La Crosse County Circuit Court, Branch 5",,29,NP,Candice C. M. Tlustosch,12
+La Crosse,Village Of Rockland Ward 1,"La Crosse County Circuit Court, Branch 5",,29,NP,Brian K. Barton,7
+La Crosse,Village Of Rockland Ward 1,"La Crosse County Circuit Court, Branch 5",,29,,Scattering,0
+La Crosse,Village Of West Salem Wards 1-6,"La Crosse County Circuit Court, Branch 5",,289,NP,Gloria L. Doyle,111
+La Crosse,Village Of West Salem Wards 1-6,"La Crosse County Circuit Court, Branch 5",,289,NP,Candice C. M. Tlustosch,139
+La Crosse,Village Of West Salem Wards 1-6,"La Crosse County Circuit Court, Branch 5",,289,NP,Brian K. Barton,39
+La Crosse,Village Of West Salem Wards 1-6,"La Crosse County Circuit Court, Branch 5",,289,,Scattering,0
+La Crosse,City Of La Crosse Ward 1,"La Crosse County Circuit Court, Branch 5",,138,NP,Gloria L. Doyle,69
+La Crosse,City Of La Crosse Ward 1,"La Crosse County Circuit Court, Branch 5",,138,NP,Candice C. M. Tlustosch,19
+La Crosse,City Of La Crosse Ward 1,"La Crosse County Circuit Court, Branch 5",,138,NP,Brian K. Barton,50
+La Crosse,City Of La Crosse Ward 1,"La Crosse County Circuit Court, Branch 5",,138,,Scattering,0
+La Crosse,City Of La Crosse Ward 2,"La Crosse County Circuit Court, Branch 5",,46,NP,Gloria L. Doyle,28
+La Crosse,City Of La Crosse Ward 2,"La Crosse County Circuit Court, Branch 5",,46,NP,Candice C. M. Tlustosch,8
+La Crosse,City Of La Crosse Ward 2,"La Crosse County Circuit Court, Branch 5",,46,NP,Brian K. Barton,10
+La Crosse,City Of La Crosse Ward 2,"La Crosse County Circuit Court, Branch 5",,46,,Scattering,0
+La Crosse,City Of La Crosse Ward 3,"La Crosse County Circuit Court, Branch 5",,90,NP,Gloria L. Doyle,54
+La Crosse,City Of La Crosse Ward 3,"La Crosse County Circuit Court, Branch 5",,90,NP,Candice C. M. Tlustosch,13
+La Crosse,City Of La Crosse Ward 3,"La Crosse County Circuit Court, Branch 5",,90,NP,Brian K. Barton,23
+La Crosse,City Of La Crosse Ward 3,"La Crosse County Circuit Court, Branch 5",,90,,Scattering,0
+La Crosse,City Of La Crosse Ward 4,"La Crosse County Circuit Court, Branch 5",,48,NP,Gloria L. Doyle,24
+La Crosse,City Of La Crosse Ward 4,"La Crosse County Circuit Court, Branch 5",,48,NP,Candice C. M. Tlustosch,9
+La Crosse,City Of La Crosse Ward 4,"La Crosse County Circuit Court, Branch 5",,48,NP,Brian K. Barton,15
+La Crosse,City Of La Crosse Ward 4,"La Crosse County Circuit Court, Branch 5",,48,,Scattering,0
+La Crosse,City Of La Crosse Ward 5,"La Crosse County Circuit Court, Branch 5",,66,NP,Gloria L. Doyle,31
+La Crosse,City Of La Crosse Ward 5,"La Crosse County Circuit Court, Branch 5",,66,NP,Candice C. M. Tlustosch,14
+La Crosse,City Of La Crosse Ward 5,"La Crosse County Circuit Court, Branch 5",,66,NP,Brian K. Barton,21
+La Crosse,City Of La Crosse Ward 5,"La Crosse County Circuit Court, Branch 5",,66,,Scattering,0
+La Crosse,City Of La Crosse Ward 6,"La Crosse County Circuit Court, Branch 5",,62,NP,Gloria L. Doyle,36
+La Crosse,City Of La Crosse Ward 6,"La Crosse County Circuit Court, Branch 5",,62,NP,Candice C. M. Tlustosch,10
+La Crosse,City Of La Crosse Ward 6,"La Crosse County Circuit Court, Branch 5",,62,NP,Brian K. Barton,16
+La Crosse,City Of La Crosse Ward 6,"La Crosse County Circuit Court, Branch 5",,62,,Scattering,0
+La Crosse,City Of La Crosse Ward 7,"La Crosse County Circuit Court, Branch 5",,101,NP,Gloria L. Doyle,62
+La Crosse,City Of La Crosse Ward 7,"La Crosse County Circuit Court, Branch 5",,101,NP,Candice C. M. Tlustosch,21
+La Crosse,City Of La Crosse Ward 7,"La Crosse County Circuit Court, Branch 5",,101,NP,Brian K. Barton,18
+La Crosse,City Of La Crosse Ward 7,"La Crosse County Circuit Court, Branch 5",,101,,Scattering,0
+La Crosse,City Of La Crosse Ward 8,"La Crosse County Circuit Court, Branch 5",,45,NP,Gloria L. Doyle,27
+La Crosse,City Of La Crosse Ward 8,"La Crosse County Circuit Court, Branch 5",,45,NP,Candice C. M. Tlustosch,11
+La Crosse,City Of La Crosse Ward 8,"La Crosse County Circuit Court, Branch 5",,45,NP,Brian K. Barton,7
+La Crosse,City Of La Crosse Ward 8,"La Crosse County Circuit Court, Branch 5",,45,,Scattering,0
+La Crosse,City Of La Crosse Ward 9,"La Crosse County Circuit Court, Branch 5",,363,NP,Gloria L. Doyle,283
+La Crosse,City Of La Crosse Ward 9,"La Crosse County Circuit Court, Branch 5",,363,NP,Candice C. M. Tlustosch,47
+La Crosse,City Of La Crosse Ward 9,"La Crosse County Circuit Court, Branch 5",,363,NP,Brian K. Barton,33
+La Crosse,City Of La Crosse Ward 9,"La Crosse County Circuit Court, Branch 5",,363,,Scattering,0
+La Crosse,City Of La Crosse Ward 10,"La Crosse County Circuit Court, Branch 5",,8,NP,Gloria L. Doyle,5
+La Crosse,City Of La Crosse Ward 10,"La Crosse County Circuit Court, Branch 5",,8,NP,Candice C. M. Tlustosch,2
+La Crosse,City Of La Crosse Ward 10,"La Crosse County Circuit Court, Branch 5",,8,NP,Brian K. Barton,1
+La Crosse,City Of La Crosse Ward 10,"La Crosse County Circuit Court, Branch 5",,8,,Scattering,0
+La Crosse,City Of La Crosse Ward 11,"La Crosse County Circuit Court, Branch 5",,5,NP,Gloria L. Doyle,4
+La Crosse,City Of La Crosse Ward 11,"La Crosse County Circuit Court, Branch 5",,5,NP,Candice C. M. Tlustosch,1
+La Crosse,City Of La Crosse Ward 11,"La Crosse County Circuit Court, Branch 5",,5,NP,Brian K. Barton,0
+La Crosse,City Of La Crosse Ward 11,"La Crosse County Circuit Court, Branch 5",,5,,Scattering,0
+La Crosse,City Of La Crosse Ward 12,"La Crosse County Circuit Court, Branch 5",,44,NP,Gloria L. Doyle,25
+La Crosse,City Of La Crosse Ward 12,"La Crosse County Circuit Court, Branch 5",,44,NP,Candice C. M. Tlustosch,3
+La Crosse,City Of La Crosse Ward 12,"La Crosse County Circuit Court, Branch 5",,44,NP,Brian K. Barton,16
+La Crosse,City Of La Crosse Ward 12,"La Crosse County Circuit Court, Branch 5",,44,,Scattering,0
+La Crosse,City Of La Crosse Ward 13,"La Crosse County Circuit Court, Branch 5",,41,NP,Gloria L. Doyle,32
+La Crosse,City Of La Crosse Ward 13,"La Crosse County Circuit Court, Branch 5",,41,NP,Candice C. M. Tlustosch,3
+La Crosse,City Of La Crosse Ward 13,"La Crosse County Circuit Court, Branch 5",,41,NP,Brian K. Barton,6
+La Crosse,City Of La Crosse Ward 13,"La Crosse County Circuit Court, Branch 5",,41,,Scattering,0
+La Crosse,City Of La Crosse Ward 14,"La Crosse County Circuit Court, Branch 5",,50,NP,Gloria L. Doyle,28
+La Crosse,City Of La Crosse Ward 14,"La Crosse County Circuit Court, Branch 5",,50,NP,Candice C. M. Tlustosch,12
+La Crosse,City Of La Crosse Ward 14,"La Crosse County Circuit Court, Branch 5",,50,NP,Brian K. Barton,10
+La Crosse,City Of La Crosse Ward 14,"La Crosse County Circuit Court, Branch 5",,50,,Scattering,0
+La Crosse,City Of La Crosse Ward 15,"La Crosse County Circuit Court, Branch 5",,61,NP,Gloria L. Doyle,42
+La Crosse,City Of La Crosse Ward 15,"La Crosse County Circuit Court, Branch 5",,61,NP,Candice C. M. Tlustosch,14
+La Crosse,City Of La Crosse Ward 15,"La Crosse County Circuit Court, Branch 5",,61,NP,Brian K. Barton,5
+La Crosse,City Of La Crosse Ward 15,"La Crosse County Circuit Court, Branch 5",,61,,Scattering,0
+La Crosse,City Of La Crosse Ward 16,"La Crosse County Circuit Court, Branch 5",,60,NP,Gloria L. Doyle,39
+La Crosse,City Of La Crosse Ward 16,"La Crosse County Circuit Court, Branch 5",,60,NP,Candice C. M. Tlustosch,7
+La Crosse,City Of La Crosse Ward 16,"La Crosse County Circuit Court, Branch 5",,60,NP,Brian K. Barton,14
+La Crosse,City Of La Crosse Ward 16,"La Crosse County Circuit Court, Branch 5",,60,,Scattering,0
+La Crosse,City Of La Crosse Ward 17,"La Crosse County Circuit Court, Branch 5",,38,NP,Gloria L. Doyle,20
+La Crosse,City Of La Crosse Ward 17,"La Crosse County Circuit Court, Branch 5",,38,NP,Candice C. M. Tlustosch,12
+La Crosse,City Of La Crosse Ward 17,"La Crosse County Circuit Court, Branch 5",,38,NP,Brian K. Barton,6
+La Crosse,City Of La Crosse Ward 17,"La Crosse County Circuit Court, Branch 5",,38,,Scattering,0
+La Crosse,City Of La Crosse Ward 18,"La Crosse County Circuit Court, Branch 5",,37,NP,Gloria L. Doyle,24
+La Crosse,City Of La Crosse Ward 18,"La Crosse County Circuit Court, Branch 5",,37,NP,Candice C. M. Tlustosch,5
+La Crosse,City Of La Crosse Ward 18,"La Crosse County Circuit Court, Branch 5",,37,NP,Brian K. Barton,8
+La Crosse,City Of La Crosse Ward 18,"La Crosse County Circuit Court, Branch 5",,37,,Scattering,0
+La Crosse,City Of La Crosse Ward 19,"La Crosse County Circuit Court, Branch 5",,26,NP,Gloria L. Doyle,16
+La Crosse,City Of La Crosse Ward 19,"La Crosse County Circuit Court, Branch 5",,26,NP,Candice C. M. Tlustosch,3
+La Crosse,City Of La Crosse Ward 19,"La Crosse County Circuit Court, Branch 5",,26,NP,Brian K. Barton,7
+La Crosse,City Of La Crosse Ward 19,"La Crosse County Circuit Court, Branch 5",,26,,Scattering,0
+La Crosse,City Of La Crosse Ward 20,"La Crosse County Circuit Court, Branch 5",,85,NP,Gloria L. Doyle,56
+La Crosse,City Of La Crosse Ward 20,"La Crosse County Circuit Court, Branch 5",,85,NP,Candice C. M. Tlustosch,15
+La Crosse,City Of La Crosse Ward 20,"La Crosse County Circuit Court, Branch 5",,85,NP,Brian K. Barton,14
+La Crosse,City Of La Crosse Ward 20,"La Crosse County Circuit Court, Branch 5",,85,,Scattering,0
+La Crosse,City Of La Crosse Ward 21,"La Crosse County Circuit Court, Branch 5",,304,NP,Gloria L. Doyle,201
+La Crosse,City Of La Crosse Ward 21,"La Crosse County Circuit Court, Branch 5",,304,NP,Candice C. M. Tlustosch,54
+La Crosse,City Of La Crosse Ward 21,"La Crosse County Circuit Court, Branch 5",,304,NP,Brian K. Barton,49
+La Crosse,City Of La Crosse Ward 21,"La Crosse County Circuit Court, Branch 5",,304,,Scattering,0
+La Crosse,City Of La Crosse Ward 22,"La Crosse County Circuit Court, Branch 5",,169,NP,Gloria L. Doyle,82
+La Crosse,City Of La Crosse Ward 22,"La Crosse County Circuit Court, Branch 5",,169,NP,Candice C. M. Tlustosch,32
+La Crosse,City Of La Crosse Ward 22,"La Crosse County Circuit Court, Branch 5",,169,NP,Brian K. Barton,55
+La Crosse,City Of La Crosse Ward 22,"La Crosse County Circuit Court, Branch 5",,169,,Scattering,0
+La Crosse,City Of La Crosse Ward 23,"La Crosse County Circuit Court, Branch 5",,56,NP,Gloria L. Doyle,36
+La Crosse,City Of La Crosse Ward 23,"La Crosse County Circuit Court, Branch 5",,56,NP,Candice C. M. Tlustosch,8
+La Crosse,City Of La Crosse Ward 23,"La Crosse County Circuit Court, Branch 5",,56,NP,Brian K. Barton,12
+La Crosse,City Of La Crosse Ward 23,"La Crosse County Circuit Court, Branch 5",,56,,Scattering,0
+La Crosse,City Of La Crosse Ward 24,"La Crosse County Circuit Court, Branch 5",,123,NP,Gloria L. Doyle,81
+La Crosse,City Of La Crosse Ward 24,"La Crosse County Circuit Court, Branch 5",,123,NP,Candice C. M. Tlustosch,24
+La Crosse,City Of La Crosse Ward 24,"La Crosse County Circuit Court, Branch 5",,123,NP,Brian K. Barton,18
+La Crosse,City Of La Crosse Ward 24,"La Crosse County Circuit Court, Branch 5",,123,,Scattering,0
+La Crosse,City Of La Crosse Ward 25,"La Crosse County Circuit Court, Branch 5",,146,NP,Gloria L. Doyle,84
+La Crosse,City Of La Crosse Ward 25,"La Crosse County Circuit Court, Branch 5",,146,NP,Candice C. M. Tlustosch,29
+La Crosse,City Of La Crosse Ward 25,"La Crosse County Circuit Court, Branch 5",,146,NP,Brian K. Barton,33
+La Crosse,City Of La Crosse Ward 25,"La Crosse County Circuit Court, Branch 5",,146,,Scattering,0
+La Crosse,City Of La Crosse Ward 26,"La Crosse County Circuit Court, Branch 5",,220,NP,Gloria L. Doyle,134
+La Crosse,City Of La Crosse Ward 26,"La Crosse County Circuit Court, Branch 5",,220,NP,Candice C. M. Tlustosch,47
+La Crosse,City Of La Crosse Ward 26,"La Crosse County Circuit Court, Branch 5",,220,NP,Brian K. Barton,39
+La Crosse,City Of La Crosse Ward 26,"La Crosse County Circuit Court, Branch 5",,220,,Scattering,0
+La Crosse,City Of La Crosse Ward 27,"La Crosse County Circuit Court, Branch 5",,101,NP,Gloria L. Doyle,53
+La Crosse,City Of La Crosse Ward 27,"La Crosse County Circuit Court, Branch 5",,101,NP,Candice C. M. Tlustosch,32
+La Crosse,City Of La Crosse Ward 27,"La Crosse County Circuit Court, Branch 5",,101,NP,Brian K. Barton,16
+La Crosse,City Of La Crosse Ward 27,"La Crosse County Circuit Court, Branch 5",,101,,Scattering,0
+La Crosse,City Of La Crosse Ward 28,"La Crosse County Circuit Court, Branch 5",,95,NP,Gloria L. Doyle,60
+La Crosse,City Of La Crosse Ward 28,"La Crosse County Circuit Court, Branch 5",,95,NP,Candice C. M. Tlustosch,12
+La Crosse,City Of La Crosse Ward 28,"La Crosse County Circuit Court, Branch 5",,95,NP,Brian K. Barton,23
+La Crosse,City Of La Crosse Ward 28,"La Crosse County Circuit Court, Branch 5",,95,,Scattering,0
+La Crosse,City Of La Crosse Ward 29,"La Crosse County Circuit Court, Branch 5",,223,NP,Gloria L. Doyle,140
+La Crosse,City Of La Crosse Ward 29,"La Crosse County Circuit Court, Branch 5",,223,NP,Candice C. M. Tlustosch,37
+La Crosse,City Of La Crosse Ward 29,"La Crosse County Circuit Court, Branch 5",,223,NP,Brian K. Barton,46
+La Crosse,City Of La Crosse Ward 29,"La Crosse County Circuit Court, Branch 5",,223,,Scattering,0
+La Crosse,City Of La Crosse Ward 30,"La Crosse County Circuit Court, Branch 5",,0,NP,Gloria L. Doyle,0
+La Crosse,City Of La Crosse Ward 30,"La Crosse County Circuit Court, Branch 5",,0,NP,Candice C. M. Tlustosch,0
+La Crosse,City Of La Crosse Ward 30,"La Crosse County Circuit Court, Branch 5",,0,NP,Brian K. Barton,0
+La Crosse,City Of La Crosse Ward 30,"La Crosse County Circuit Court, Branch 5",,0,,Scattering,0
+La Crosse,City Of Onalaska Ward 1-4,"La Crosse County Circuit Court, Branch 5",,358,NP,Gloria L. Doyle,229
+La Crosse,City Of Onalaska Ward 1-4,"La Crosse County Circuit Court, Branch 5",,358,NP,Candice C. M. Tlustosch,55
+La Crosse,City Of Onalaska Ward 1-4,"La Crosse County Circuit Court, Branch 5",,358,NP,Brian K. Barton,74
+La Crosse,City Of Onalaska Ward 1-4,"La Crosse County Circuit Court, Branch 5",,358,,Scattering,0
+La Crosse,City Of Onalaska Ward 5-8,"La Crosse County Circuit Court, Branch 5",,335,NP,Gloria L. Doyle,187
+La Crosse,City Of Onalaska Ward 5-8,"La Crosse County Circuit Court, Branch 5",,335,NP,Candice C. M. Tlustosch,75
+La Crosse,City Of Onalaska Ward 5-8,"La Crosse County Circuit Court, Branch 5",,335,NP,Brian K. Barton,73
+La Crosse,City Of Onalaska Ward 5-8,"La Crosse County Circuit Court, Branch 5",,335,,Scattering,0
+La Crosse,City Of Onalaska Ward 9-12,"La Crosse County Circuit Court, Branch 5",,316,NP,Gloria L. Doyle,170
+La Crosse,City Of Onalaska Ward 9-12,"La Crosse County Circuit Court, Branch 5",,316,NP,Candice C. M. Tlustosch,67
+La Crosse,City Of Onalaska Ward 9-12,"La Crosse County Circuit Court, Branch 5",,316,NP,Brian K. Barton,79
+La Crosse,City Of Onalaska Ward 9-12,"La Crosse County Circuit Court, Branch 5",,316,,Scattering,0
 Lafayette,Town Of Argyle Wards 1-3,Lafayette County Circuit Court,,59,NP,Gayle Jebbia,5
 Lafayette,Town Of Argyle Wards 1-3,Lafayette County Circuit Court,,59,NP,Duane M. Jorgenson,24
 Lafayette,Town Of Argyle Wards 1-3,Lafayette County Circuit Court,,59,NP,Guy M. Taylor,14

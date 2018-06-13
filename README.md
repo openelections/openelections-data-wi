@@ -3,6 +3,10 @@
 # openelections-data-wi
 Pre-processed election results for Wisconsin elections
 
+``parser.py`` processes files based on cached metadata in ``local_data_cache/elections_metadata.json``\
+To update this metadata from the OpenElections API, run ``python fetch.py wi -m``\
+(``fetch.py`` fetches data files based on the cached metadata)
+
 To re-parse data files:
 ```bash
 python parser.py
@@ -12,6 +16,7 @@ To parse data files for specific elections, append one or more election ids:
 ```bash
 python parser.py 426
 ```
+Elections will be processed in the order they appear in the metadata.
 
 A folder ``local_data_cache`` keeps a local copy of input data files. To update it:
 ```bash
@@ -32,7 +37,7 @@ npm install
 node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '2014/*' tests/csv-test-validators.yml
 ```
 
-2. Tests to validate a sampling of results. These use behave and follow the format:
+2. Tests to validate a sampling of results. These use ``behave`` and follow the format:
 ```yml
 Examples: 20150929__wi__general_ward.csv
   | candidate                   | office   | ward                           | votes  | total |
