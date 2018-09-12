@@ -117,6 +117,7 @@ def format_feature_tests(csv_filepath):
     reader.next()       # discard header
     done = False
     row = reader.next()
+    try:
     while not done:
         filename = row[0]
         feature_file.write(examples_prefix + filename + '\n')
@@ -129,12 +130,18 @@ def format_feature_tests(csv_filepath):
             done = True
         col_widths = fit_column_widths(rows)
         first_col = len(rows[0]) - len(col_widths)
-        header = fieldnames[first_col:]
-        feature_file.write(expand(header, col_widths))
+            data = fieldnames[first_col:]   # section heading
+            feature_file.write(expand(data, col_widths))
         for row_ in rows:
-            data = expand(row_[first_col:], col_widths)
-            feature_file.write(data.encode('utf8'))
+                data = row_[first_col:]
+                line = expand(data, col_widths)
+                feature_file.write(line.encode('utf8'))
         feature_file.write('\n')
+    except StandardError as exc:
+        print '*** Error formatting data: {}'.format(data)
+        print '    using widths: {}'.format(col_widths)
+        print '    in test for {}'.format(filename)
+        raise
 
 
 def fit_column_widths(rows):
