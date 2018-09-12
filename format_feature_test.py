@@ -22,7 +22,7 @@ Feature: WI Elections
 
 examples_prefix = '  Examples: '
 fieldnames = 'filename,party,candidate,county,office,ward,votes,total'.split(',')
-feature_file_delimiter = str('|')       # using unicode_literals
+feature_file_delimiter = '|'
 
 indent = 4 * ' ' + feature_file_delimiter
 
@@ -81,6 +81,7 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
     csvfile = open(csv_filepath, 'w')
     writer = csv.writer(csvfile)
     writer.writerow(fieldnames)
+    csv_delimiter = str(feature_file_delimiter)   # needs str, not unicode
     
     while True:
         for line in testfile:
@@ -97,7 +98,7 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
         for line in testfile:
             if not line.strip():
                 break   # blank line, end of tests for current filename
-            row = csv.reader([line], delimiter=feature_file_delimiter).next()
+            row = csv.reader([line], delimiter=csv_delimiter).next()
             row = map(unicode.strip, row)[1:-1]
             if len(row) < 7:    # party missing
                 row.insert(0, '')
