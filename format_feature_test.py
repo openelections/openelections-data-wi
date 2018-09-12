@@ -59,6 +59,7 @@ def csv2feature(csv_line, ww=False):
 
 
 def expand(data, col_widths):
+    """Format data list as string, adjusting col_widths as needed"""
     widths = col_widths[:]      # make a copy
     diffs = [len(data[i]) + 2 - width 
             for i, width in enumerate(widths)]
@@ -67,7 +68,7 @@ def expand(data, col_widths):
             shrinkage = max(diffs[i + 1], - diff)
             widths[i + 1] += shrinkage
             diffs[i + 1] -= shrinkage
-    field_format = ' {:{width}}' + feature_file_delimiter
+    field_format = ' {:<{width}}' + feature_file_delimiter
     parts = [field_format.format(field, width=widths[i] - 2)
                 for i, field in enumerate(data)]
     return indent + ''.join(parts) + '\n'
