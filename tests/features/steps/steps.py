@@ -20,12 +20,14 @@ def step_impl(context):
     else:
       raise AssertionError("%s not found" % path)
 
-@when('I search for {party} party candidate {candidate} running for {office} in the {ward} in {county}')
-def step_impl(context, party, candidate, office, ward, county):
+@when('I search for {party} party candidate {candidate} running for {office} in district {district} in the {ward} in {county}')
+def step_impl(context, party, candidate, office, district, ward, county):
     context.passes = False
-    field_names = ['party', 'candidate', 'office', 'ward', 'county']
+    field_names = ['party', 'candidate', 'office', 'district', 'ward', 'county']
     if party == '<party>':  # No party was specified in the test, don't check party
-      field_names.remove('party') 
+      field_names.remove('party')
+    if district == '<district>': # No district specified, don't check it
+      field_names.remove('district')
     expected_values = [locals()[field_name] for field_name in field_names]
     ## Title-case for consistency -- remove this and edit test data instead?
     expected_values = map(unicode.title, expected_values)
