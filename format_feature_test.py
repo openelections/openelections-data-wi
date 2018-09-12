@@ -31,6 +31,7 @@ indent = 4 * ' ' + feature_file_delimiter
 widths_normal =     [40, 12, 44, 12, 48, 8, 8]  # for fieldname[2] ...
 widths_party =   [8, 32, 12, 44, 12, 48, 8, 8]  # add party column
 widths_long_ward =  [36, 12, 18, 12, 78, 8, 8]  # for long ward names
+widths_med_ward =   [24, 12, 40, 12, 68, 8, 8]  # for medium-long ward
 
 
 def get_widths(line, sep=feature_file_delimiter):
@@ -151,13 +152,24 @@ def fit_column_widths(rows):
     if rows[0][1]:         # if party column used
         col_widths = widths_party
     else:
-        max_width = max([len(row[-3]) for row in rows])     # ward field
-        if max_width > widths_normal[-3]:
+        col_widths = widths_normal      # default
+        cand_col = fieldnames.index('candidate')
+        maxwidths = max_widths(rows)[cand_col:]
+        ward_col = fieldnames.index('ward') - cand_col
+        cand_col = 0
+        if maxwidths[ward_col] >= widths_normal[ward_col]:
             col_widths = widths_long_ward
-        else:
-            col_widths = widths_normal
+            if (maxwidths[ward_col] < widths_med_ward[ward_col]
+                and maxwidths[cand_col] < widths_med_ward[cand_col]):
+                col_widths = widths_med_ward    # better fit for long office
     return col_widths
 
+
+def max_widths(rows):
+    """Return maximum width for each column in a set of rows"""
+    num_cols = len(rows[0])
+    return [ max([len(row[col]) for row in rows])
+            for col in range(num_cols) ]
 
 
 feature_examples = [
