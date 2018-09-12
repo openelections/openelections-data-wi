@@ -15,21 +15,22 @@ Feature: WI Elections
 
   Scenario Outline: Tests
     When I visit the election file
-    And I search for <party> party candidate <candidate> running for <office> in the <ward> in <county>
+    And I search for <party> party candidate <candidate> running for <office> <district> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
 """.lstrip()
 
 examples_prefix = '  Examples: '
-fieldnames = 'filename,party,candidate,county,office,ward,votes,total'.split(',')
+fieldnames = ('filename,party,candidate,county,office,district,' +
+                'ward,votes,total').split(',')
 feature_file_delimiter = '|'
 
 indent = 4 * ' ' + feature_file_delimiter
 
 # Widths of columns for feature tests
-widths_normal =      [40, 12, 44, 48, 8, 8]      # (first column is indent)
-widths_party =    [8, 32, 12, 44, 48, 8, 8]      # add party column
-widths_long_ward =   [36, 12, 18, 78, 8, 8]      # for long ward names
+widths_normal =     [40, 12, 44, 12, 48, 8, 8]  # for fieldname[2] ...
+widths_party =   [8, 32, 12, 44, 12, 48, 8, 8]  # add party column
+widths_long_ward =  [36, 12, 18, 12, 78, 8, 8]  # for long ward names
 
 
 def get_widths(line, sep=feature_file_delimiter):
@@ -100,10 +101,10 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
             if not line.strip():
                 break   # blank line, end of tests for current filename
             row = csv.reader([line], delimiter=csv_delimiter).next()
-            row = map(unicode.strip, row)[1:-1]
-            if len(row) < 7:    # party missing
+            row = map(unicode.strip, row)[:-1]
+            if len(row) < len(fieldnames):    # party missing
                 row.insert(0, '')
-            writer.writerow([''] + row)     # filename field empty
+            writer.writerow(row)
         else:  # no break, end of file
             break
 
