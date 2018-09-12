@@ -131,7 +131,8 @@ def format_feature_tests(csv_filepath):
         header = fieldnames[first_col:]
         feature_file.write(expand(header, col_widths))
         for row_ in rows:
-            feature_file.write(expand(row_[first_col:], col_widths))
+            data = expand(row_[first_col:], col_widths)
+            feature_file.write(data.encode('utf8'))
         feature_file.write('\n')
 
 
