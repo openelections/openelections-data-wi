@@ -2,6 +2,7 @@
 # David "Davi" Post, 2018-05-23
 # for OpenElections project in WI
 
+from __future__ import unicode_literals
 
 import sys
 import StringIO
@@ -21,8 +22,9 @@ Feature: WI Elections
 
 examples_prefix = '  Examples: '
 fieldnames = 'filename,party,candidate,county,office,ward,votes,total'.split(',')
+feature_file_delimiter = str('|')       # using unicode_literals
 
-indent = 4 * ' ' + '|'
+indent = 4 * ' ' + feature_file_delimiter
 
 # Widths of columns for feature tests
 widths_normal =      [40, 12, 44, 48, 8, 8]      # (first column is indent)
@@ -30,7 +32,7 @@ widths_party =    [8, 32, 12, 44, 48, 8, 8]      # add party column
 widths_long_ward =   [36, 12, 18, 78, 8, 8]      # for long ward names
 
 
-def get_widths(line, sep='|'):
+def get_widths(line, sep=feature_file_delimiter):
     """Find widths of columns (separated by sep) in line"""
     cols = [i for i, char in enumerate(line) if char == sep]
     widths = [cols[i + 1] - cols[i] for i in range(len(cols) - 1)]
@@ -38,7 +40,7 @@ def get_widths(line, sep='|'):
     return widths
 
 
-def feature2csv(line, sep= '|'):
+def feature2csv(line, sep=feature_file_delimiter):
     parts = csv.reader([line], delimiter=sep).next()
     parts = map(unicode.strip, parts)[1:-1]
     csv_buffer = StringIO.StringIO()
@@ -65,7 +67,8 @@ def expand(data, col_widths):
             shrinkage = max(diffs[i + 1], - diff)
             widths[i + 1] += shrinkage
             diffs[i + 1] -= shrinkage
-    parts = [' {:{width}}|'.format(field, width=widths[i] - 2)
+    field_format = ' {:{width}}' + feature_file_delimiter
+    parts = [field_format.format(field, width=widths[i] - 2)
                 for i, field in enumerate(data)]
     return indent + ''.join(parts) + '\n'
 
@@ -94,7 +97,7 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
         for line in testfile:
             if not line.strip():
                 break   # blank line, end of tests for current filename
-            row = csv.reader([line], delimiter='|').next()
+            row = csv.reader([line], delimiter=feature_file_delimiter).next()
             row = map(unicode.strip, row)[1:-1]
             if len(row) < 7:    # party missing
                 row.insert(0, '')
@@ -104,6 +107,7 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
 
 
 def format_feature_tests(csv_filepath):
+    """Read csv data, write formatted feature tests"""
     csvfile = open(csv_filepath)
     reader = csv.reader(csvfile)
     feature_filepath = csv_filepath.replace('.csv', '')
