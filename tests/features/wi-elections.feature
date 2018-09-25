@@ -2,7 +2,7 @@ Feature: WI Elections
 
   Scenario Outline: Tests
     When I visit the election file
-    And I search for <party> party candidate <candidate> running for <office> <district> in the <ward> in <county>
+    And I search for <party> party candidate <candidate> running for <office> district <district> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
   Examples: 20001107__wi__general__ward.csv
@@ -489,4 +489,3 @@ Feature: WI Elections
     | Rebecca Dallet                        | Kewaunee  | Supreme Court                             |           | City of ALGOMA Ward 1-6                       | 279   | 432   |
     | Timothy G. Dugan                      | Milwaukee | Court of Appeals                          | 1         | Village of HALES CORNERS Wards 7-9            | 338   | 338   |
     | Sandra Cardo Gorsuch                  | Sauk      | Sauk County Circuit Court, Branch 3       |           | Town of FREEDOM Ward 2                        | 41    | 65    |
-

@@ -20,7 +20,7 @@ def step_impl(context):
     else:
       raise AssertionError("%s not found" % path)
 
-@when('I search for {party} party candidate {candidate} running for {office} in district {district} in the {ward} in {county}')
+@when('I search for {party} party candidate {candidate} running for {office} district {district} in the {ward} in {county}')
 def step_impl(context, party, candidate, office, district, ward, county):
     context.passes = False
     field_names = ['party', 'candidate', 'office', 'district', 'ward', 'county']
