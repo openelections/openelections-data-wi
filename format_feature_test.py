@@ -119,6 +119,8 @@ def format_feature_tests(csv_filepath):
     feature_file.write(feature_file_header)
     reader.next()       # discard header
     done = False
+    col_widths = []
+    data = []
     row = reader.next()
     try:
         while not done:
@@ -168,6 +170,10 @@ def fit_column_widths(rows):
 def max_widths(rows):
     """Return maximum width for each column in a set of rows"""
     num_cols = len(rows[0])
+    for row in rows[1:]:
+        if len(row) != num_cols:
+            raise ValueError(
+                'Inconsistent row length\n  row = {}'.format(row))
     return [ max([len(row[col]) for row in rows])
             for col in range(num_cols) ]
 
