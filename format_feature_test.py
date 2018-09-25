@@ -2,6 +2,7 @@
 # David "Davi" Post, 2018-05-23
 # for OpenElections project in WI
 
+from __future__ import unicode_literals
 
 import sys
 import StringIO
@@ -14,23 +15,26 @@ Feature: WI Elections
 
   Scenario Outline: Tests
     When I visit the election file
-    And I search for <party> party candidate <candidate> running for <office> in the <ward> in <county>
+    And I search for <party> party candidate <candidate> running for <office> <district> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
 """.lstrip()
 
 examples_prefix = '  Examples: '
-fieldnames = 'filename,party,candidate,county,office,ward,votes,total'.split(',')
+fieldnames = ('filename,party,candidate,county,office,district,' +
+                'ward,votes,total').split(',')
+feature_file_delimiter = '|'
 
-indent = 4 * ' ' + '|'
+indent = 4 * ' ' + feature_file_delimiter
 
 # Widths of columns for feature tests
-widths_normal =      [40, 12, 44, 48, 8, 8]      # (first column is indent)
-widths_party =    [8, 32, 12, 44, 48, 8, 8]      # add party column
-widths_long_ward =   [36, 12, 18, 78, 8, 8]      # for long ward names
+widths_normal =     [40, 12, 44, 12, 48, 8, 8]  # for fieldname[2] ...
+widths_party =   [8, 32, 12, 44, 12, 48, 8, 8]  # add party column
+widths_long_ward =  [36, 12, 18, 12, 78, 8, 8]  # for long ward names
+widths_med_ward =   [24, 12, 40, 12, 68, 8, 8]  # for medium-long ward
 
 
-def get_widths(line, sep='|'):
+def get_widths(line, sep=feature_file_delimiter):
     """Find widths of columns (separated by sep) in line"""
     cols = [i for i, char in enumerate(line) if char == sep]
     widths = [cols[i + 1] - cols[i] for i in range(len(cols) - 1)]
@@ -38,7 +42,7 @@ def get_widths(line, sep='|'):
     return widths
 
 
-def feature2csv(line, sep= '|'):
+def feature2csv(line, sep=feature_file_delimiter):
     parts = csv.reader([line], delimiter=sep).next()
     parts = map(unicode.strip, parts)[1:-1]
     csv_buffer = StringIO.StringIO()
@@ -57,6 +61,7 @@ def csv2feature(csv_line, ww=False):
 
 
 def expand(data, col_widths):
+    """Format data list as string, adjusting col_widths as needed"""
     widths = col_widths[:]      # make a copy
     diffs = [len(data[i]) + 2 - width 
             for i, width in enumerate(widths)]
@@ -65,7 +70,8 @@ def expand(data, col_widths):
             shrinkage = max(diffs[i + 1], - diff)
             widths[i + 1] += shrinkage
             diffs[i + 1] -= shrinkage
-    parts = [' {:{width}}|'.format(field, width=widths[i] - 2)
+    field_format = ' {:<{width}}' + feature_file_delimiter
+    parts = [field_format.format(field, width=widths[i] - 2)
                 for i, field in enumerate(data)]
     return indent + ''.join(parts) + '\n'
 
@@ -78,6 +84,7 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
     csvfile = open(csv_filepath, 'w')
     writer = csv.writer(csvfile)
     writer.writerow(fieldnames)
+    csv_delimiter = str(feature_file_delimiter)   # needs str, not unicode
     
     while True:
         for line in testfile:
@@ -94,16 +101,17 @@ def parse_feature_tests(feature_filepath, csv_filepath=None):
         for line in testfile:
             if not line.strip():
                 break   # blank line, end of tests for current filename
-            row = csv.reader([line], delimiter='|').next()
-            row = map(unicode.strip, row)[1:-1]
-            if len(row) < 7:    # party missing
+            row = csv.reader([line], delimiter=csv_delimiter).next()
+            row = map(unicode.strip, row)[:-1]
+            if len(row) < len(fieldnames):    # party missing
                 row.insert(0, '')
-            writer.writerow([''] + row)     # filename field empty
+            writer.writerow(row)
         else:  # no break, end of file
             break
 
 
 def format_feature_tests(csv_filepath):
+    """Read csv data, write formatted feature tests"""
     csvfile = open(csv_filepath)
     reader = csv.reader(csvfile)
     feature_filepath = csv_filepath.replace('.csv', '')
@@ -111,24 +119,34 @@ def format_feature_tests(csv_filepath):
     feature_file.write(feature_file_header)
     reader.next()       # discard header
     done = False
+    col_widths = []
+    data = []
     row = reader.next()
-    while not done:
-        filename = row[0]
-        feature_file.write(examples_prefix + filename + '\n')
-        rows = []
-        for row in reader:
-            if row[0]:      # next filename
-                break
-            rows.append(row)
-        else:   # no break, end of file
-            done = True
-        col_widths = fit_column_widths(rows)
-        first_col = len(rows[0]) - len(col_widths)
-        header = fieldnames[first_col:]
-        feature_file.write(expand(header, col_widths))
-        for row_ in rows:
-            feature_file.write(expand(row_[first_col:], col_widths))
-        feature_file.write('\n')
+    try:
+        while not done:
+            filename = row[0]
+            feature_file.write(examples_prefix + filename + '\n')
+            rows = []
+            for row in reader:
+                if row[0]:      # next filename
+                    break
+                rows.append(row)
+            else:   # no break, end of file
+                done = True
+            col_widths = fit_column_widths(rows)
+            first_col = len(rows[0]) - len(col_widths)
+            data = fieldnames[first_col:]   # section heading
+            feature_file.write(expand(data, col_widths))
+            for row_ in rows:
+                data = row_[first_col:]
+                line = expand(data, col_widths)
+                feature_file.write(line.encode('utf8'))
+            feature_file.write('\n')
+    except StandardError as exc:
+        print '*** Error formatting data: {}'.format(data)
+        print '    using widths: {}'.format(col_widths)
+        print '    in test for {}'.format(filename)
+        raise
 
 
 def fit_column_widths(rows):
@@ -136,13 +154,28 @@ def fit_column_widths(rows):
     if rows[0][1]:         # if party column used
         col_widths = widths_party
     else:
-        max_width = max([len(row[-3]) for row in rows])     # ward field
-        if max_width > widths_normal[-3]:
+        col_widths = widths_normal      # default
+        cand_col = fieldnames.index('candidate')
+        maxwidths = max_widths(rows)[cand_col:]
+        ward_col = fieldnames.index('ward') - cand_col
+        cand_col = 0
+        if maxwidths[ward_col] >= widths_normal[ward_col]:
             col_widths = widths_long_ward
-        else:
-            col_widths = widths_normal
+            if (maxwidths[ward_col] < widths_med_ward[ward_col]
+                and maxwidths[cand_col] < widths_med_ward[cand_col]):
+                col_widths = widths_med_ward    # better fit for long office
     return col_widths
 
+
+def max_widths(rows):
+    """Return maximum width for each column in a set of rows"""
+    num_cols = len(rows[0])
+    for row in rows[1:]:
+        if len(row) != num_cols:
+            raise ValueError(
+                'Inconsistent row length\n  row = {}'.format(row))
+    return [ max([len(row[col]) for row in rows])
+            for col in range(num_cols) ]
 
 
 feature_examples = [

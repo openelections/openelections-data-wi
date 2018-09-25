@@ -24,6 +24,6 @@ fields:
   candidate:
     - matches:
       # Letter, number ()&,".+ or spaace
-      - ^[áa-z0-9-()\&,"\.\+' ]+$
+      - ^[áéíóúa-z0-9-()\&,"\.\+' ]+$
       - i
   votes: isNumeric
