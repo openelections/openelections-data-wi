@@ -3328,7 +3328,8 @@
          "state_leg": false, 
          "state_leg_level": false, 
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_Results_WardbyWard.xls"
+            "http://www.gab.wi.gov/sites/default/files/2008_SpringElection_Results_WardbyWard.xls", 
+            "http://elections.wi.gov/sites/default/files/2008_SpringElection_PresidentialPreference_Results.xls"
          ], 
          "state_level": false, 
          "county_level": true, 

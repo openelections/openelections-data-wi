@@ -90,6 +90,10 @@ Feature: WI Elections
     | candidate                             | county    | office                                    | ward                                          | votes | total |
     | Ken Sortedahl                         | St. Croix | St Croix County Circuit Court, Branch 4   | VILLAGE OF DEER PARK                          | 3     | 50    |
 
+  Examples: 20080219__wi__primary__ward.csv
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | REP   | John McCain                   | Milwaukee | President                                 | CITY OF MILWAUKEE Ward 278                    | 54    | 90    |
+
   Examples: 20080401__wi__general__ward.csv
     | candidate                             | county    | office                                    | ward                                          | votes | total |
     | James D. Babbitt                      | Barron    | Barron County Circuit Court, Branch 3     | TOWN OF DALLAS Wards 1 & 2                    | 57    | 68    |
