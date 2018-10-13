@@ -100,8 +100,12 @@ def process_xls_2000_to_2010(sheet):
                 district = district.split()[-1]     # parse 'No. 1'
             offices_per_election.add(normalize_office(office))
         else:
-            # (use last office)
-            district = ''
+            # Office column is missing from data
+            #   This occurs for district 14 data in
+            #   Libertarian_2008_FallElection_StateSenator_WardbyWard.xls
+            #   (Not seen in any other file so far)
+            # Use previous office name
+            district = '14'     # kludge to handle this special case
         county = row[10 - col_offset]
         ward_info = [row[col - col_offset] for col in (11, 13, 16)]
         ward = '{} of {} {}'.format(*ward_info)
