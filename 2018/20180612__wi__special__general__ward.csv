@@ -1,0 +1,501 @@
+county,ward,office,district,total votes,party,candidate,votes
+Brown,Town Of Eaton Wards 1-2,State Senate,1,206,REP,André M. Jacque,99
+Brown,Town Of Eaton Wards 1-2,State Senate,1,206,DEM,Caleb Frostman,107
+Brown,Town Of Eaton Wards 1-2,State Senate,1,206,,Scattering,0
+Brown,Town Of Green Bay Wards 1-3,State Senate,1,360,REP,André M. Jacque,195
+Brown,Town Of Green Bay Wards 1-3,State Senate,1,360,DEM,Caleb Frostman,165
+Brown,Town Of Green Bay Wards 1-3,State Senate,1,360,,Scattering,0
+Brown,Town Of Holland Wards 1-2,State Senate,1,194,REP,André M. Jacque,109
+Brown,Town Of Holland Wards 1-2,State Senate,1,194,DEM,Caleb Frostman,85
+Brown,Town Of Holland Wards 1-2,State Senate,1,194,,Scattering,0
+Brown,Town Of Humboldt Wards 1-2,State Senate,1,193,REP,André M. Jacque,122
+Brown,Town Of Humboldt Wards 1-2,State Senate,1,193,DEM,Caleb Frostman,70
+Brown,Town Of Humboldt Wards 1-2,State Senate,1,193,,Scattering,1
+Brown,Town Of Lawrence Wards 1-6,State Senate,1,794,REP,André M. Jacque,486
+Brown,Town Of Lawrence Wards 1-6,State Senate,1,794,DEM,Caleb Frostman,308
+Brown,Town Of Lawrence Wards 1-6,State Senate,1,794,,Scattering,0
+Brown,Town Of Ledgeview Wards 4-7,State Senate,1,574,REP,André M. Jacque,296
+Brown,Town Of Ledgeview Wards 4-7,State Senate,1,574,DEM,Caleb Frostman,277
+Brown,Town Of Ledgeview Wards 4-7,State Senate,1,574,,Scattering,1
+Brown,Town Of Morrison Wards 1-2,State Senate,1,277,REP,André M. Jacque,204
+Brown,Town Of Morrison Wards 1-2,State Senate,1,277,DEM,Caleb Frostman,73
+Brown,Town Of Morrison Wards 1-2,State Senate,1,277,,Scattering,0
+Brown,Town Of New Denmark Wards 1-3,State Senate,1,280,REP,André M. Jacque,162
+Brown,Town Of New Denmark Wards 1-3,State Senate,1,280,DEM,Caleb Frostman,118
+Brown,Town Of New Denmark Wards 1-3,State Senate,1,280,,Scattering,0
+Brown,Town Of Rockland Wards 1-3,State Senate,1,351,REP,André M. Jacque,214
+Brown,Town Of Rockland Wards 1-3,State Senate,1,351,DEM,Caleb Frostman,136
+Brown,Town Of Rockland Wards 1-3,State Senate,1,351,,Scattering,1
+Brown,Town Of Scott Wards 1-4,State Senate,1,653,REP,André M. Jacque,276
+Brown,Town Of Scott Wards 1-4,State Senate,1,653,DEM,Caleb Frostman,375
+Brown,Town Of Scott Wards 1-4,State Senate,1,653,,Scattering,2
+Brown,Town Of Wrightstown Wards 1-3,State Senate,1,359,REP,André M. Jacque,242
+Brown,Town Of Wrightstown Wards 1-3,State Senate,1,359,DEM,Caleb Frostman,116
+Brown,Town Of Wrightstown Wards 1-3,State Senate,1,359,,Scattering,1
+Brown,Village Of Denmark Wards 1-4,State Senate,1,319,REP,André M. Jacque,196
+Brown,Village Of Denmark Wards 1-4,State Senate,1,319,DEM,Caleb Frostman,122
+Brown,Village Of Denmark Wards 1-4,State Senate,1,319,,Scattering,1
+Brown,Village Of Hobart Ward 9,State Senate,1,0,REP,André M. Jacque,0
+Brown,Village Of Hobart Ward 9,State Senate,1,0,DEM,Caleb Frostman,0
+Brown,Village Of Hobart Ward 9,State Senate,1,0,,Scattering,0
+Brown,Village Of Wrightstown Wards 1-3,State Senate,1,291,REP,André M. Jacque,179
+Brown,Village Of Wrightstown Wards 1-3,State Senate,1,291,DEM,Caleb Frostman,112
+Brown,Village Of Wrightstown Wards 1-3,State Senate,1,291,,Scattering,0
+Brown,City Of De Pere Ward 5,State Senate,1,73,REP,André M. Jacque,22
+Brown,City Of De Pere Ward 5,State Senate,1,73,DEM,Caleb Frostman,51
+Brown,City Of De Pere Ward 5,State Senate,1,73,,Scattering,0
+Brown,"City Of De Pere Wards 9,18",State Senate,1,167,REP,André M. Jacque,82
+Brown,"City Of De Pere Wards 9,18",State Senate,1,167,DEM,Caleb Frostman,85
+Brown,"City Of De Pere Wards 9,18",State Senate,1,167,,Scattering,0
+Brown,City Of De Pere Wards 10-12,State Senate,1,641,REP,André M. Jacque,303
+Brown,City Of De Pere Wards 10-12,State Senate,1,641,DEM,Caleb Frostman,337
+Brown,City Of De Pere Wards 10-12,State Senate,1,641,,Scattering,1
+Brown,City Of De Pere Wards 13-15,State Senate,1,910,REP,André M. Jacque,494
+Brown,City Of De Pere Wards 13-15,State Senate,1,910,DEM,Caleb Frostman,415
+Brown,City Of De Pere Wards 13-15,State Senate,1,910,,Scattering,1
+Brown,City Of Green Bay Ward 1,State Senate,1,6,REP,André M. Jacque,3
+Brown,City Of Green Bay Ward 1,State Senate,1,6,DEM,Caleb Frostman,3
+Brown,City Of Green Bay Ward 1,State Senate,1,6,,Scattering,0
+Calumet,Town Of Brillion Wards 1-2,State Senate,1,185,REP,André M. Jacque,118
+Calumet,Town Of Brillion Wards 1-2,State Senate,1,185,DEM,Caleb Frostman,66
+Calumet,Town Of Brillion Wards 1-2,State Senate,1,185,,Scattering,1
+Calumet,Town Of Stockbridge Wards 1-3,State Senate,1,223,REP,André M. Jacque,159
+Calumet,Town Of Stockbridge Wards 1-3,State Senate,1,223,DEM,Caleb Frostman,64
+Calumet,Town Of Stockbridge Wards 1-3,State Senate,1,223,,Scattering,0
+Calumet,Town Of Woodville Ward 1,State Senate,1,123,REP,André M. Jacque,87
+Calumet,Town Of Woodville Ward 1,State Senate,1,123,DEM,Caleb Frostman,35
+Calumet,Town Of Woodville Ward 1,State Senate,1,123,,Scattering,1
+Calumet,Village Of Harrison Wards 3-18,State Senate,1,1200,REP,André M. Jacque,641
+Calumet,Village Of Harrison Wards 3-18,State Senate,1,1200,DEM,Caleb Frostman,558
+Calumet,Village Of Harrison Wards 3-18,State Senate,1,1200,,Scattering,1
+Calumet,Village Of Hilbert Ward 3,State Senate,1,0,REP,André M. Jacque,0
+Calumet,Village Of Hilbert Ward 3,State Senate,1,0,DEM,Caleb Frostman,0
+Calumet,Village Of Hilbert Ward 3,State Senate,1,0,,Scattering,0
+Calumet,Village Of Sherwood Wards 1-5,State Senate,1,474,REP,André M. Jacque,264
+Calumet,Village Of Sherwood Wards 1-5,State Senate,1,474,DEM,Caleb Frostman,209
+Calumet,Village Of Sherwood Wards 1-5,State Senate,1,474,,Scattering,1
+Calumet,Village Of Stockbridge Ward 1,State Senate,1,82,REP,André M. Jacque,39
+Calumet,Village Of Stockbridge Ward 1,State Senate,1,82,DEM,Caleb Frostman,43
+Calumet,Village Of Stockbridge Ward 1,State Senate,1,82,,Scattering,0
+Calumet,City Of Appleton Ward 12,State Senate,1,69,REP,André M. Jacque,24
+Calumet,City Of Appleton Ward 12,State Senate,1,69,DEM,Caleb Frostman,45
+Calumet,City Of Appleton Ward 12,State Senate,1,69,,Scattering,0
+Calumet,City Of Appleton Ward 13,State Senate,1,215,REP,André M. Jacque,80
+Calumet,City Of Appleton Ward 13,State Senate,1,215,DEM,Caleb Frostman,135
+Calumet,City Of Appleton Ward 13,State Senate,1,215,,Scattering,0
+Calumet,City Of Appleton Ward 14,State Senate,1,167,REP,André M. Jacque,68
+Calumet,City Of Appleton Ward 14,State Senate,1,167,DEM,Caleb Frostman,99
+Calumet,City Of Appleton Ward 14,State Senate,1,167,,Scattering,0
+Calumet,City Of Appleton Ward 26,State Senate,1,238,REP,André M. Jacque,97
+Calumet,City Of Appleton Ward 26,State Senate,1,238,DEM,Caleb Frostman,140
+Calumet,City Of Appleton Ward 26,State Senate,1,238,,Scattering,1
+Calumet,City Of Appleton Ward 44,State Senate,1,184,REP,André M. Jacque,66
+Calumet,City Of Appleton Ward 44,State Senate,1,184,DEM,Caleb Frostman,118
+Calumet,City Of Appleton Ward 44,State Senate,1,184,,Scattering,0
+Calumet,City Of Appleton Ward 45,State Senate,1,352,REP,André M. Jacque,110
+Calumet,City Of Appleton Ward 45,State Senate,1,352,DEM,Caleb Frostman,242
+Calumet,City Of Appleton Ward 45,State Senate,1,352,,Scattering,0
+Calumet,City Of Appleton Ward 46,State Senate,1,28,REP,André M. Jacque,13
+Calumet,City Of Appleton Ward 46,State Senate,1,28,DEM,Caleb Frostman,15
+Calumet,City Of Appleton Ward 46,State Senate,1,28,,Scattering,0
+Calumet,City Of Appleton Ward 47,State Senate,1,0,REP,André M. Jacque,0
+Calumet,City Of Appleton Ward 47,State Senate,1,0,DEM,Caleb Frostman,0
+Calumet,City Of Appleton Ward 47,State Senate,1,0,,Scattering,0
+Calumet,City Of Brillion Wards 1-4,State Senate,1,347,REP,André M. Jacque,193
+Calumet,City Of Brillion Wards 1-4,State Senate,1,347,DEM,Caleb Frostman,154
+Calumet,City Of Brillion Wards 1-4,State Senate,1,347,,Scattering,0
+Calumet,City Of Kaukauna Ward 11,State Senate,1,0,REP,André M. Jacque,0
+Calumet,City Of Kaukauna Ward 11,State Senate,1,0,DEM,Caleb Frostman,0
+Calumet,City Of Kaukauna Ward 11,State Senate,1,0,,Scattering,0
+Calumet,City Of Menasha Wards 16-20,State Senate,1,392,REP,André M. Jacque,167
+Calumet,City Of Menasha Wards 16-20,State Senate,1,392,DEM,Caleb Frostman,225
+Calumet,City Of Menasha Wards 16-20,State Senate,1,392,,Scattering,0
+Door,Town Of Baileys Harbor Wards 1-2,State Senate,1,399,REP,André M. Jacque,121
+Door,Town Of Baileys Harbor Wards 1-2,State Senate,1,399,DEM,Caleb Frostman,277
+Door,Town Of Baileys Harbor Wards 1-2,State Senate,1,399,,Scattering,1
+Door,Town Of Brussels Wards 1-2,State Senate,1,181,REP,André M. Jacque,88
+Door,Town Of Brussels Wards 1-2,State Senate,1,181,DEM,Caleb Frostman,93
+Door,Town Of Brussels Wards 1-2,State Senate,1,181,,Scattering,0
+Door,Town Of Clay Banks Ward 1,State Senate,1,122,REP,André M. Jacque,50
+Door,Town Of Clay Banks Ward 1,State Senate,1,122,DEM,Caleb Frostman,72
+Door,Town Of Clay Banks Ward 1,State Senate,1,122,,Scattering,0
+Door,Town Of Egg Harbor Wards 1-3,State Senate,1,351,REP,André M. Jacque,123
+Door,Town Of Egg Harbor Wards 1-3,State Senate,1,351,DEM,Caleb Frostman,227
+Door,Town Of Egg Harbor Wards 1-3,State Senate,1,351,,Scattering,1
+Door,Town Of Forestville Wards 1-2,State Senate,1,182,REP,André M. Jacque,80
+Door,Town Of Forestville Wards 1-2,State Senate,1,182,DEM,Caleb Frostman,102
+Door,Town Of Forestville Wards 1-2,State Senate,1,182,,Scattering,0
+Door,Town Of Gardner Wards 1-2,State Senate,1,207,REP,André M. Jacque,105
+Door,Town Of Gardner Wards 1-2,State Senate,1,207,DEM,Caleb Frostman,102
+Door,Town Of Gardner Wards 1-2,State Senate,1,207,,Scattering,0
+Door,Town Of Gibraltar Wards 1-2,State Senate,1,407,REP,André M. Jacque,131
+Door,Town Of Gibraltar Wards 1-2,State Senate,1,407,DEM,Caleb Frostman,276
+Door,Town Of Gibraltar Wards 1-2,State Senate,1,407,,Scattering,0
+Door,Town Of Jacksonport Wards 1-2,State Senate,1,250,REP,André M. Jacque,99
+Door,Town Of Jacksonport Wards 1-2,State Senate,1,250,DEM,Caleb Frostman,151
+Door,Town Of Jacksonport Wards 1-2,State Senate,1,250,,Scattering,0
+Door,Town Of Liberty Grove Wards 1-3,State Senate,1,667,REP,André M. Jacque,213
+Door,Town Of Liberty Grove Wards 1-3,State Senate,1,667,DEM,Caleb Frostman,454
+Door,Town Of Liberty Grove Wards 1-3,State Senate,1,667,,Scattering,0
+Door,Town Of Nasewaupee Wards 1-3,State Senate,1,484,REP,André M. Jacque,225
+Door,Town Of Nasewaupee Wards 1-3,State Senate,1,484,DEM,Caleb Frostman,259
+Door,Town Of Nasewaupee Wards 1-3,State Senate,1,484,,Scattering,0
+Door,Town Of Sevastopol Wards 1-5,State Senate,1,844,REP,André M. Jacque,375
+Door,Town Of Sevastopol Wards 1-5,State Senate,1,844,DEM,Caleb Frostman,467
+Door,Town Of Sevastopol Wards 1-5,State Senate,1,844,,Scattering,2
+Door,Town Of Sturgeon Bay Wards 1-2,State Senate,1,211,REP,André M. Jacque,96
+Door,Town Of Sturgeon Bay Wards 1-2,State Senate,1,211,DEM,Caleb Frostman,115
+Door,Town Of Sturgeon Bay Wards 1-2,State Senate,1,211,,Scattering,0
+Door,Town Of Union Ward 1,State Senate,1,208,REP,André M. Jacque,100
+Door,Town Of Union Ward 1,State Senate,1,208,DEM,Caleb Frostman,108
+Door,Town Of Union Ward 1,State Senate,1,208,,Scattering,0
+Door,Town Of Washington Ward 1,State Senate,1,233,REP,André M. Jacque,102
+Door,Town Of Washington Ward 1,State Senate,1,233,DEM,Caleb Frostman,131
+Door,Town Of Washington Ward 1,State Senate,1,233,,Scattering,0
+Door,Village Of Egg Harbor Ward 1,State Senate,1,114,REP,André M. Jacque,30
+Door,Village Of Egg Harbor Ward 1,State Senate,1,114,DEM,Caleb Frostman,84
+Door,Village Of Egg Harbor Ward 1,State Senate,1,114,,Scattering,0
+Door,Village Of Ephraim Ward 1,State Senate,1,119,REP,André M. Jacque,46
+Door,Village Of Ephraim Ward 1,State Senate,1,119,DEM,Caleb Frostman,73
+Door,Village Of Ephraim Ward 1,State Senate,1,119,,Scattering,0
+Door,Village Of Forestville Ward 1,State Senate,1,84,REP,André M. Jacque,31
+Door,Village Of Forestville Ward 1,State Senate,1,84,DEM,Caleb Frostman,53
+Door,Village Of Forestville Ward 1,State Senate,1,84,,Scattering,0
+Door,Village Of Sister Bay Ward 1,State Senate,1,353,REP,André M. Jacque,122
+Door,Village Of Sister Bay Ward 1,State Senate,1,353,DEM,Caleb Frostman,231
+Door,Village Of Sister Bay Ward 1,State Senate,1,353,,Scattering,0
+Door,"City Of Sturgeon Bay Wards 1-6,22-24,29",State Senate,1,957,REP,André M. Jacque,308
+Door,"City Of Sturgeon Bay Wards 1-6,22-24,29",State Senate,1,957,DEM,Caleb Frostman,648
+Door,"City Of Sturgeon Bay Wards 1-6,22-24,29",State Senate,1,957,,Scattering,1
+Door,"City Of Sturgeon Bay Wards 7-10,18-21,25-27,30",State Senate,1,574,REP,André M. Jacque,175
+Door,"City Of Sturgeon Bay Wards 7-10,18-21,25-27,30",State Senate,1,574,DEM,Caleb Frostman,398
+Door,"City Of Sturgeon Bay Wards 7-10,18-21,25-27,30",State Senate,1,574,,Scattering,1
+Door,"City Of Sturgeon Bay Wards 11-17,28",State Senate,1,575,REP,André M. Jacque,184
+Door,"City Of Sturgeon Bay Wards 11-17,28",State Senate,1,575,DEM,Caleb Frostman,391
+Door,"City Of Sturgeon Bay Wards 11-17,28",State Senate,1,575,,Scattering,0
+Kewaunee,Town Of Ahnapee Ward 1,State Senate,1,178,REP,André M. Jacque,72
+Kewaunee,Town Of Ahnapee Ward 1,State Senate,1,178,DEM,Caleb Frostman,106
+Kewaunee,Town Of Ahnapee Ward 1,State Senate,1,178,,Scattering,0
+Kewaunee,Town Of Carlton Ward 1-2,State Senate,1,184,REP,André M. Jacque,122
+Kewaunee,Town Of Carlton Ward 1-2,State Senate,1,184,DEM,Caleb Frostman,62
+Kewaunee,Town Of Carlton Ward 1-2,State Senate,1,184,,Scattering,0
+Kewaunee,Town Of Casco Ward 1-3,State Senate,1,198,REP,André M. Jacque,124
+Kewaunee,Town Of Casco Ward 1-3,State Senate,1,198,DEM,Caleb Frostman,74
+Kewaunee,Town Of Casco Ward 1-3,State Senate,1,198,,Scattering,0
+Kewaunee,Town Of Franklin Ward 1,State Senate,1,184,REP,André M. Jacque,93
+Kewaunee,Town Of Franklin Ward 1,State Senate,1,184,DEM,Caleb Frostman,91
+Kewaunee,Town Of Franklin Ward 1,State Senate,1,184,,Scattering,0
+Kewaunee,Town Of Lincoln Ward 1,State Senate,1,132,REP,André M. Jacque,52
+Kewaunee,Town Of Lincoln Ward 1,State Senate,1,132,DEM,Caleb Frostman,80
+Kewaunee,Town Of Lincoln Ward 1,State Senate,1,132,,Scattering,0
+Kewaunee,Town Of Luxemburg Ward 1-3,State Senate,1,229,REP,André M. Jacque,148
+Kewaunee,Town Of Luxemburg Ward 1-3,State Senate,1,229,DEM,Caleb Frostman,81
+Kewaunee,Town Of Luxemburg Ward 1-3,State Senate,1,229,,Scattering,0
+Kewaunee,Town Of Montpelier Ward 1-3,State Senate,1,269,REP,André M. Jacque,175
+Kewaunee,Town Of Montpelier Ward 1-3,State Senate,1,269,DEM,Caleb Frostman,94
+Kewaunee,Town Of Montpelier Ward 1-3,State Senate,1,269,,Scattering,0
+Kewaunee,Town Of Pierce Ward 1-2,State Senate,1,187,REP,André M. Jacque,89
+Kewaunee,Town Of Pierce Ward 1-2,State Senate,1,187,DEM,Caleb Frostman,98
+Kewaunee,Town Of Pierce Ward 1-2,State Senate,1,187,,Scattering,0
+Kewaunee,Town Of Red River Ward 1-3,State Senate,1,213,REP,André M. Jacque,116
+Kewaunee,Town Of Red River Ward 1-3,State Senate,1,213,DEM,Caleb Frostman,97
+Kewaunee,Town Of Red River Ward 1-3,State Senate,1,213,,Scattering,0
+Kewaunee,Town Of West Kewaunee Ward 1-2,State Senate,1,222,REP,André M. Jacque,137
+Kewaunee,Town Of West Kewaunee Ward 1-2,State Senate,1,222,DEM,Caleb Frostman,85
+Kewaunee,Town Of West Kewaunee Ward 1-2,State Senate,1,222,,Scattering,0
+Kewaunee,Village Of Casco Ward 1,State Senate,1,84,REP,André M. Jacque,51
+Kewaunee,Village Of Casco Ward 1,State Senate,1,84,DEM,Caleb Frostman,33
+Kewaunee,Village Of Casco Ward 1,State Senate,1,84,,Scattering,0
+Kewaunee,Village Of Luxemburg Ward 1-5,State Senate,1,310,REP,André M. Jacque,171
+Kewaunee,Village Of Luxemburg Ward 1-5,State Senate,1,310,DEM,Caleb Frostman,139
+Kewaunee,Village Of Luxemburg Ward 1-5,State Senate,1,310,,Scattering,0
+Kewaunee,City Of Algoma Ward 1-6,State Senate,1,517,REP,André M. Jacque,180
+Kewaunee,City Of Algoma Ward 1-6,State Senate,1,517,DEM,Caleb Frostman,337
+Kewaunee,City Of Algoma Ward 1-6,State Senate,1,517,,Scattering,0
+Kewaunee,City Of Kewaunee Ward 1-5,State Senate,1,517,REP,André M. Jacque,230
+Kewaunee,City Of Kewaunee Ward 1-5,State Senate,1,517,DEM,Caleb Frostman,287
+Kewaunee,City Of Kewaunee Ward 1-5,State Senate,1,517,,Scattering,0
+Manitowoc,Town Of Cooperstown Ward 1-2,State Senate,1,239,REP,André M. Jacque,157
+Manitowoc,Town Of Cooperstown Ward 1-2,State Senate,1,239,DEM,Caleb Frostman,82
+Manitowoc,Town Of Cooperstown Ward 1-2,State Senate,1,239,,Scattering,0
+Manitowoc,Town Of Franklin Ward 1-3,State Senate,1,190,REP,André M. Jacque,122
+Manitowoc,Town Of Franklin Ward 1-3,State Senate,1,190,DEM,Caleb Frostman,68
+Manitowoc,Town Of Franklin Ward 1-3,State Senate,1,190,,Scattering,0
+Manitowoc,Town Of Gibson Ward 1-2,State Senate,1,264,REP,André M. Jacque,178
+Manitowoc,Town Of Gibson Ward 1-2,State Senate,1,264,DEM,Caleb Frostman,86
+Manitowoc,Town Of Gibson Ward 1-2,State Senate,1,264,,Scattering,0
+Manitowoc,Town Of Kossuth Ward 1-3,State Senate,1,367,REP,André M. Jacque,222
+Manitowoc,Town Of Kossuth Ward 1-3,State Senate,1,367,DEM,Caleb Frostman,145
+Manitowoc,Town Of Kossuth Ward 1-3,State Senate,1,367,,Scattering,0
+Manitowoc,Town Of Mishicot Ward 1-2,State Senate,1,215,REP,André M. Jacque,163
+Manitowoc,Town Of Mishicot Ward 1-2,State Senate,1,215,DEM,Caleb Frostman,52
+Manitowoc,Town Of Mishicot Ward 1-2,State Senate,1,215,,Scattering,0
+Manitowoc,Town Of Two Creeks Ward 1,State Senate,1,116,REP,André M. Jacque,80
+Manitowoc,Town Of Two Creeks Ward 1,State Senate,1,116,DEM,Caleb Frostman,36
+Manitowoc,Town Of Two Creeks Ward 1,State Senate,1,116,,Scattering,0
+Manitowoc,Town Of Two Rivers Ward 1-2,State Senate,1,350,REP,André M. Jacque,196
+Manitowoc,Town Of Two Rivers Ward 1-2,State Senate,1,350,DEM,Caleb Frostman,154
+Manitowoc,Town Of Two Rivers Ward 1-2,State Senate,1,350,,Scattering,0
+Manitowoc,Village Of Francis Creek Ward 1,State Senate,1,124,REP,André M. Jacque,80
+Manitowoc,Village Of Francis Creek Ward 1,State Senate,1,124,DEM,Caleb Frostman,44
+Manitowoc,Village Of Francis Creek Ward 1,State Senate,1,124,,Scattering,0
+Manitowoc,Village Of Kellnersville Ward 1,State Senate,1,52,REP,André M. Jacque,30
+Manitowoc,Village Of Kellnersville Ward 1,State Senate,1,52,DEM,Caleb Frostman,22
+Manitowoc,Village Of Kellnersville Ward 1,State Senate,1,52,,Scattering,0
+Manitowoc,Village Of Maribel Ward 1,State Senate,1,66,REP,André M. Jacque,50
+Manitowoc,Village Of Maribel Ward 1,State Senate,1,66,DEM,Caleb Frostman,16
+Manitowoc,Village Of Maribel Ward 1,State Senate,1,66,,Scattering,0
+Manitowoc,Village Of Mishicot Ward 1-4,State Senate,1,238,REP,André M. Jacque,152
+Manitowoc,Village Of Mishicot Ward 1-4,State Senate,1,238,DEM,Caleb Frostman,86
+Manitowoc,Village Of Mishicot Ward 1-4,State Senate,1,238,,Scattering,0
+Manitowoc,City Of Two Rivers Wards 1-8,State Senate,1,1718,REP,André M. Jacque,829
+Manitowoc,City Of Two Rivers Wards 1-8,State Senate,1,1718,DEM,Caleb Frostman,889
+Manitowoc,City Of Two Rivers Wards 1-8,State Senate,1,1718,,Scattering,0
+Outagamie,Town Of Buchanan Wards 1-10,State Senate,1,799,REP,André M. Jacque,382
+Outagamie,Town Of Buchanan Wards 1-10,State Senate,1,799,DEM,Caleb Frostman,417
+Outagamie,Town Of Buchanan Wards 1-10,State Senate,1,799,,Scattering,0
+Outagamie,Village Of Combined Locks Wards 1-6,State Senate,1,455,REP,André M. Jacque,216
+Outagamie,Village Of Combined Locks Wards 1-6,State Senate,1,455,DEM,Caleb Frostman,239
+Outagamie,Village Of Combined Locks Wards 1-6,State Senate,1,455,,Scattering,0
+Outagamie,Village Of Harrison Wards 1-2,State Senate,1,0,REP,André M. Jacque,0
+Outagamie,Village Of Harrison Wards 1-2,State Senate,1,0,DEM,Caleb Frostman,0
+Outagamie,Village Of Harrison Wards 1-2,State Senate,1,0,,Scattering,0
+Outagamie,Village Of Kimberly Wards 1-9,State Senate,1,819,REP,André M. Jacque,314
+Outagamie,Village Of Kimberly Wards 1-9,State Senate,1,819,DEM,Caleb Frostman,505
+Outagamie,Village Of Kimberly Wards 1-9,State Senate,1,819,,Scattering,0
+Outagamie,"Village Of Little Chute Wards 3,7,9-11",State Senate,1,521,REP,André M. Jacque,241
+Outagamie,"Village Of Little Chute Wards 3,7,9-11",State Senate,1,521,DEM,Caleb Frostman,280
+Outagamie,"Village Of Little Chute Wards 3,7,9-11",State Senate,1,521,,Scattering,0
+Outagamie,Village Of Wrightstown Ward 4,State Senate,1,21,REP,André M. Jacque,15
+Outagamie,Village Of Wrightstown Ward 4,State Senate,1,21,DEM,Caleb Frostman,6
+Outagamie,Village Of Wrightstown Ward 4,State Senate,1,21,,Scattering,0
+Outagamie,City Of Appleton Ward 59,State Senate,1,0,REP,André M. Jacque,0
+Outagamie,City Of Appleton Ward 59,State Senate,1,0,DEM,Caleb Frostman,0
+Outagamie,City Of Appleton Ward 59,State Senate,1,0,,Scattering,0
+Outagamie,City Of Kaukauna Wards 12-13,State Senate,1,0,REP,André M. Jacque,0
+Outagamie,City Of Kaukauna Wards 12-13,State Senate,1,0,DEM,Caleb Frostman,0
+Outagamie,City Of Kaukauna Wards 12-13,State Senate,1,0,,Scattering,0
+Columbia,Town Of Arlington Ward 1,State Assembly,42,206,REP,Jon Plumer,112
+Columbia,Town Of Arlington Ward 1,State Assembly,42,206,DEM,Ann Groves Lloyd,94
+Columbia,Town Of Arlington Ward 1,State Assembly,42,206,IND,Gene Rubinstein,0
+Columbia,Town Of Arlington Ward 1,State Assembly,42,206,,Scattering,0
+Columbia,Town Of Columbus Ward 1,State Assembly,42,134,REP,Jon Plumer,84
+Columbia,Town Of Columbus Ward 1,State Assembly,42,134,DEM,Ann Groves Lloyd,45
+Columbia,Town Of Columbus Ward 1,State Assembly,42,134,IND,Gene Rubinstein,4
+Columbia,Town Of Columbus Ward 1,State Assembly,42,134,,Scattering,1
+Columbia,Town Of Courtland Ward 1,State Assembly,42,93,REP,Jon Plumer,71
+Columbia,Town Of Courtland Ward 1,State Assembly,42,93,DEM,Ann Groves Lloyd,21
+Columbia,Town Of Courtland Ward 1,State Assembly,42,93,IND,Gene Rubinstein,1
+Columbia,Town Of Courtland Ward 1,State Assembly,42,93,,Scattering,0
+Columbia,Town Of Dekorra Wards 1-3,State Assembly,42,584,REP,Jon Plumer,272
+Columbia,Town Of Dekorra Wards 1-3,State Assembly,42,584,DEM,Ann Groves Lloyd,305
+Columbia,Town Of Dekorra Wards 1-3,State Assembly,42,584,IND,Gene Rubinstein,7
+Columbia,Town Of Dekorra Wards 1-3,State Assembly,42,584,,Scattering,0
+Columbia,Town Of Fort Winnebago Ward 1,State Assembly,42,159,REP,Jon Plumer,86
+Columbia,Town Of Fort Winnebago Ward 1,State Assembly,42,159,DEM,Ann Groves Lloyd,72
+Columbia,Town Of Fort Winnebago Ward 1,State Assembly,42,159,IND,Gene Rubinstein,1
+Columbia,Town Of Fort Winnebago Ward 1,State Assembly,42,159,,Scattering,0
+Columbia,Town Of Fountain Prairie Wards 1-2,State Assembly,42,141,REP,Jon Plumer,69
+Columbia,Town Of Fountain Prairie Wards 1-2,State Assembly,42,141,DEM,Ann Groves Lloyd,66
+Columbia,Town Of Fountain Prairie Wards 1-2,State Assembly,42,141,IND,Gene Rubinstein,5
+Columbia,Town Of Fountain Prairie Wards 1-2,State Assembly,42,141,,Scattering,1
+Columbia,Town Of Hampden Ward 1,State Assembly,42,138,REP,Jon Plumer,75
+Columbia,Town Of Hampden Ward 1,State Assembly,42,138,DEM,Ann Groves Lloyd,60
+Columbia,Town Of Hampden Ward 1,State Assembly,42,138,IND,Gene Rubinstein,2
+Columbia,Town Of Hampden Ward 1,State Assembly,42,138,,Scattering,1
+Columbia,Town Of Leeds Wards 1-2,State Assembly,42,208,REP,Jon Plumer,109
+Columbia,Town Of Leeds Wards 1-2,State Assembly,42,208,DEM,Ann Groves Lloyd,92
+Columbia,Town Of Leeds Wards 1-2,State Assembly,42,208,IND,Gene Rubinstein,7
+Columbia,Town Of Leeds Wards 1-2,State Assembly,42,208,,Scattering,0
+Columbia,Town Of Lodi Wards 1-5,State Assembly,42,1045,REP,Jon Plumer,549
+Columbia,Town Of Lodi Wards 1-5,State Assembly,42,1045,DEM,Ann Groves Lloyd,484
+Columbia,Town Of Lodi Wards 1-5,State Assembly,42,1045,IND,Gene Rubinstein,11
+Columbia,Town Of Lodi Wards 1-5,State Assembly,42,1045,,Scattering,1
+Columbia,Town Of Lowville Wards 1-2,State Assembly,42,260,REP,Jon Plumer,136
+Columbia,Town Of Lowville Wards 1-2,State Assembly,42,260,DEM,Ann Groves Lloyd,120
+Columbia,Town Of Lowville Wards 1-2,State Assembly,42,260,IND,Gene Rubinstein,4
+Columbia,Town Of Lowville Wards 1-2,State Assembly,42,260,,Scattering,0
+Columbia,Town Of Marcellon Wards 1-2,State Assembly,42,230,REP,Jon Plumer,132
+Columbia,Town Of Marcellon Wards 1-2,State Assembly,42,230,DEM,Ann Groves Lloyd,88
+Columbia,Town Of Marcellon Wards 1-2,State Assembly,42,230,IND,Gene Rubinstein,10
+Columbia,Town Of Marcellon Wards 1-2,State Assembly,42,230,,Scattering,0
+Columbia,Town Of Otsego Ward 1,State Assembly,42,127,REP,Jon Plumer,56
+Columbia,Town Of Otsego Ward 1,State Assembly,42,127,DEM,Ann Groves Lloyd,65
+Columbia,Town Of Otsego Ward 1,State Assembly,42,127,IND,Gene Rubinstein,6
+Columbia,Town Of Otsego Ward 1,State Assembly,42,127,,Scattering,0
+Columbia,Town Of Pacific Wards 1-4,State Assembly,42,634,REP,Jon Plumer,352
+Columbia,Town Of Pacific Wards 1-4,State Assembly,42,634,DEM,Ann Groves Lloyd,266
+Columbia,Town Of Pacific Wards 1-4,State Assembly,42,634,IND,Gene Rubinstein,16
+Columbia,Town Of Pacific Wards 1-4,State Assembly,42,634,,Scattering,0
+Columbia,Town Of Randolph Ward 1,State Assembly,42,166,REP,Jon Plumer,138
+Columbia,Town Of Randolph Ward 1,State Assembly,42,166,DEM,Ann Groves Lloyd,28
+Columbia,Town Of Randolph Ward 1,State Assembly,42,166,IND,Gene Rubinstein,0
+Columbia,Town Of Randolph Ward 1,State Assembly,42,166,,Scattering,0
+Columbia,Town Of Scott Ward 1,State Assembly,42,132,REP,Jon Plumer,84
+Columbia,Town Of Scott Ward 1,State Assembly,42,132,DEM,Ann Groves Lloyd,46
+Columbia,Town Of Scott Ward 1,State Assembly,42,132,IND,Gene Rubinstein,2
+Columbia,Town Of Scott Ward 1,State Assembly,42,132,,Scattering,0
+Columbia,Town Of Springvale Wards 1-2,State Assembly,42,116,REP,Jon Plumer,58
+Columbia,Town Of Springvale Wards 1-2,State Assembly,42,116,DEM,Ann Groves Lloyd,53
+Columbia,Town Of Springvale Wards 1-2,State Assembly,42,116,IND,Gene Rubinstein,5
+Columbia,Town Of Springvale Wards 1-2,State Assembly,42,116,,Scattering,0
+Columbia,Town Of Wyocena Wards 1-2,State Assembly,42,355,REP,Jon Plumer,169
+Columbia,Town Of Wyocena Wards 1-2,State Assembly,42,355,DEM,Ann Groves Lloyd,170
+Columbia,Town Of Wyocena Wards 1-2,State Assembly,42,355,IND,Gene Rubinstein,16
+Columbia,Town Of Wyocena Wards 1-2,State Assembly,42,355,,Scattering,0
+Columbia,Village Of Arlington Ward 1,State Assembly,42,182,REP,Jon Plumer,104
+Columbia,Village Of Arlington Ward 1,State Assembly,42,182,DEM,Ann Groves Lloyd,73
+Columbia,Village Of Arlington Ward 1,State Assembly,42,182,IND,Gene Rubinstein,5
+Columbia,Village Of Arlington Ward 1,State Assembly,42,182,,Scattering,0
+Columbia,Village Of Cambria Ward 1,State Assembly,42,116,REP,Jon Plumer,63
+Columbia,Village Of Cambria Ward 1,State Assembly,42,116,DEM,Ann Groves Lloyd,52
+Columbia,Village Of Cambria Ward 1,State Assembly,42,116,IND,Gene Rubinstein,1
+Columbia,Village Of Cambria Ward 1,State Assembly,42,116,,Scattering,0
+Columbia,Village Of Doylestown Ward 1,State Assembly,42,35,REP,Jon Plumer,17
+Columbia,Village Of Doylestown Ward 1,State Assembly,42,35,DEM,Ann Groves Lloyd,18
+Columbia,Village Of Doylestown Ward 1,State Assembly,42,35,IND,Gene Rubinstein,0
+Columbia,Village Of Doylestown Ward 1,State Assembly,42,35,,Scattering,0
+Columbia,Village Of Fall River Wards 1-2,State Assembly,42,213,REP,Jon Plumer,81
+Columbia,Village Of Fall River Wards 1-2,State Assembly,42,213,DEM,Ann Groves Lloyd,123
+Columbia,Village Of Fall River Wards 1-2,State Assembly,42,213,IND,Gene Rubinstein,9
+Columbia,Village Of Fall River Wards 1-2,State Assembly,42,213,,Scattering,0
+Columbia,Village Of Friesland Ward 1,State Assembly,42,80,REP,Jon Plumer,69
+Columbia,Village Of Friesland Ward 1,State Assembly,42,80,DEM,Ann Groves Lloyd,9
+Columbia,Village Of Friesland Ward 1,State Assembly,42,80,IND,Gene Rubinstein,2
+Columbia,Village Of Friesland Ward 1,State Assembly,42,80,,Scattering,0
+Columbia,Village Of Pardeeville Ward 1-3,State Assembly,42,290,REP,Jon Plumer,137
+Columbia,Village Of Pardeeville Ward 1-3,State Assembly,42,290,DEM,Ann Groves Lloyd,141
+Columbia,Village Of Pardeeville Ward 1-3,State Assembly,42,290,IND,Gene Rubinstein,12
+Columbia,Village Of Pardeeville Ward 1-3,State Assembly,42,290,,Scattering,0
+Columbia,Village Of Poynette Ward 1-4,State Assembly,42,455,REP,Jon Plumer,173
+Columbia,Village Of Poynette Ward 1-4,State Assembly,42,455,DEM,Ann Groves Lloyd,278
+Columbia,Village Of Poynette Ward 1-4,State Assembly,42,455,IND,Gene Rubinstein,4
+Columbia,Village Of Poynette Ward 1-4,State Assembly,42,455,,Scattering,0
+Columbia,Village Of Randolph Ward 3,State Assembly,42,85,REP,Jon Plumer,65
+Columbia,Village Of Randolph Ward 3,State Assembly,42,85,DEM,Ann Groves Lloyd,18
+Columbia,Village Of Randolph Ward 3,State Assembly,42,85,IND,Gene Rubinstein,2
+Columbia,Village Of Randolph Ward 3,State Assembly,42,85,,Scattering,0
+Columbia,Village Of Rio Ward 1-2,State Assembly,42,177,REP,Jon Plumer,57
+Columbia,Village Of Rio Ward 1-2,State Assembly,42,177,DEM,Ann Groves Lloyd,109
+Columbia,Village Of Rio Ward 1-2,State Assembly,42,177,IND,Gene Rubinstein,10
+Columbia,Village Of Rio Ward 1-2,State Assembly,42,177,,Scattering,1
+Columbia,Village Of Wyocena Ward 1,State Assembly,42,98,REP,Jon Plumer,44
+Columbia,Village Of Wyocena Ward 1,State Assembly,42,98,DEM,Ann Groves Lloyd,52
+Columbia,Village Of Wyocena Ward 1,State Assembly,42,98,IND,Gene Rubinstein,2
+Columbia,Village Of Wyocena Ward 1,State Assembly,42,98,,Scattering,0
+Columbia,City Of Columbus Ward 10,State Assembly,42,0,REP,Jon Plumer,0
+Columbia,City Of Columbus Ward 10,State Assembly,42,0,DEM,Ann Groves Lloyd,0
+Columbia,City Of Columbus Ward 10,State Assembly,42,0,IND,Gene Rubinstein,0
+Columbia,City Of Columbus Ward 10,State Assembly,42,0,,Scattering,0
+Columbia,City Of Lodi Wards 1-6,State Assembly,42,895,REP,Jon Plumer,295
+Columbia,City Of Lodi Wards 1-6,State Assembly,42,895,DEM,Ann Groves Lloyd,593
+Columbia,City Of Lodi Wards 1-6,State Assembly,42,895,IND,Gene Rubinstein,7
+Columbia,City Of Lodi Wards 1-6,State Assembly,42,895,,Scattering,0
+Columbia,City Of Portage Ward 11,State Assembly,42,0,REP,Jon Plumer,0
+Columbia,City Of Portage Ward 11,State Assembly,42,0,DEM,Ann Groves Lloyd,0
+Columbia,City Of Portage Ward 11,State Assembly,42,0,IND,Gene Rubinstein,0
+Columbia,City Of Portage Ward 11,State Assembly,42,0,,Scattering,0
+Dane,Town Of Dane Ward 1,State Assembly,42,243,REP,Jon Plumer,127
+Dane,Town Of Dane Ward 1,State Assembly,42,243,DEM,Ann Groves Lloyd,111
+Dane,Town Of Dane Ward 1,State Assembly,42,243,IND,Gene Rubinstein,5
+Dane,Town Of Dane Ward 1,State Assembly,42,243,,Scattering,0
+Dane,Village Of Dane Ward 1,State Assembly,42,199,REP,Jon Plumer,95
+Dane,Village Of Dane Ward 1,State Assembly,42,199,DEM,Ann Groves Lloyd,102
+Dane,Village Of Dane Ward 1,State Assembly,42,199,IND,Gene Rubinstein,2
+Dane,Village Of Dane Ward 1,State Assembly,42,199,,Scattering,0
+Dane,"Village Of Deforest Wards 2,21",State Assembly,42,98,REP,Jon Plumer,31
+Dane,"Village Of Deforest Wards 2,21",State Assembly,42,98,DEM,Ann Groves Lloyd,67
+Dane,"Village Of Deforest Wards 2,21",State Assembly,42,98,IND,Gene Rubinstein,0
+Dane,"Village Of Deforest Wards 2,21",State Assembly,42,98,,Scattering,0
+Dane,"Village Of Deforest Wards 11,20",State Assembly,42,155,REP,Jon Plumer,63
+Dane,"Village Of Deforest Wards 11,20",State Assembly,42,155,DEM,Ann Groves Lloyd,89
+Dane,"Village Of Deforest Wards 11,20",State Assembly,42,155,IND,Gene Rubinstein,3
+Dane,"Village Of Deforest Wards 11,20",State Assembly,42,155,,Scattering,0
+Dane,Village Of Windsor Wards 1-2,State Assembly,42,119,REP,Jon Plumer,49
+Dane,Village Of Windsor Wards 1-2,State Assembly,42,119,DEM,Ann Groves Lloyd,70
+Dane,Village Of Windsor Wards 1-2,State Assembly,42,119,IND,Gene Rubinstein,0
+Dane,Village Of Windsor Wards 1-2,State Assembly,42,119,,Scattering,0
+Dodge,Town Of Burnett Wards 1-2,State Assembly,42,140,REP,Jon Plumer,99
+Dodge,Town Of Burnett Wards 1-2,State Assembly,42,140,DEM,Ann Groves Lloyd,37
+Dodge,Town Of Burnett Wards 1-2,State Assembly,42,140,IND,Gene Rubinstein,4
+Dodge,Town Of Burnett Wards 1-2,State Assembly,42,140,,Scattering,0
+Dodge,Town Of Calamus Wards 1-2,State Assembly,42,174,REP,Jon Plumer,112
+Dodge,Town Of Calamus Wards 1-2,State Assembly,42,174,DEM,Ann Groves Lloyd,60
+Dodge,Town Of Calamus Wards 1-2,State Assembly,42,174,IND,Gene Rubinstein,2
+Dodge,Town Of Calamus Wards 1-2,State Assembly,42,174,,Scattering,0
+Dodge,Town Of Chester Wards 1-2,State Assembly,42,76,REP,Jon Plumer,48
+Dodge,Town Of Chester Wards 1-2,State Assembly,42,76,DEM,Ann Groves Lloyd,25
+Dodge,Town Of Chester Wards 1-2,State Assembly,42,76,IND,Gene Rubinstein,3
+Dodge,Town Of Chester Wards 1-2,State Assembly,42,76,,Scattering,0
+Dodge,Town Of Fox Lake Wards 1-4,State Assembly,42,221,REP,Jon Plumer,145
+Dodge,Town Of Fox Lake Wards 1-4,State Assembly,42,221,DEM,Ann Groves Lloyd,73
+Dodge,Town Of Fox Lake Wards 1-4,State Assembly,42,221,IND,Gene Rubinstein,3
+Dodge,Town Of Fox Lake Wards 1-4,State Assembly,42,221,,Scattering,0
+Dodge,Town Of Trenton Wards 1-2,State Assembly,42,201,REP,Jon Plumer,143
+Dodge,Town Of Trenton Wards 1-2,State Assembly,42,201,DEM,Ann Groves Lloyd,54
+Dodge,Town Of Trenton Wards 1-2,State Assembly,42,201,IND,Gene Rubinstein,4
+Dodge,Town Of Trenton Wards 1-2,State Assembly,42,201,,Scattering,0
+Dodge,Town Of Westford Wards 1-2,State Assembly,42,271,REP,Jon Plumer,149
+Dodge,Town Of Westford Wards 1-2,State Assembly,42,271,DEM,Ann Groves Lloyd,116
+Dodge,Town Of Westford Wards 1-2,State Assembly,42,271,IND,Gene Rubinstein,6
+Dodge,Town Of Westford Wards 1-2,State Assembly,42,271,,Scattering,0
+Dodge,Village Of Randolph Wards 1-2,State Assembly,42,190,REP,Jon Plumer,126
+Dodge,Village Of Randolph Wards 1-2,State Assembly,42,190,DEM,Ann Groves Lloyd,59
+Dodge,Village Of Randolph Wards 1-2,State Assembly,42,190,IND,Gene Rubinstein,5
+Dodge,Village Of Randolph Wards 1-2,State Assembly,42,190,,Scattering,0
+Dodge,City Of Fox Lake Wards 1-3,State Assembly,42,157,REP,Jon Plumer,73
+Dodge,City Of Fox Lake Wards 1-3,State Assembly,42,157,DEM,Ann Groves Lloyd,81
+Dodge,City Of Fox Lake Wards 1-3,State Assembly,42,157,IND,Gene Rubinstein,3
+Dodge,City Of Fox Lake Wards 1-3,State Assembly,42,157,,Scattering,0
+Dodge,City Of Waupun Wards 13-14,State Assembly,42,0,REP,Jon Plumer,0
+Dodge,City Of Waupun Wards 13-14,State Assembly,42,0,DEM,Ann Groves Lloyd,0
+Dodge,City Of Waupun Wards 13-14,State Assembly,42,0,IND,Gene Rubinstein,0
+Dodge,City Of Waupun Wards 13-14,State Assembly,42,0,,Scattering,0
+Fond Du Lac,Town Of Alto Wards 1-2,State Assembly,42,166,REP,Jon Plumer,145
+Fond Du Lac,Town Of Alto Wards 1-2,State Assembly,42,166,DEM,Ann Groves Lloyd,21
+Fond Du Lac,Town Of Alto Wards 1-2,State Assembly,42,166,IND,Gene Rubinstein,0
+Fond Du Lac,Town Of Alto Wards 1-2,State Assembly,42,166,,Scattering,0
+Fond Du Lac,Town Of Metomen Wards 1-2,State Assembly,42,103,REP,Jon Plumer,83
+Fond Du Lac,Town Of Metomen Wards 1-2,State Assembly,42,103,DEM,Ann Groves Lloyd,19
+Fond Du Lac,Town Of Metomen Wards 1-2,State Assembly,42,103,IND,Gene Rubinstein,1
+Fond Du Lac,Town Of Metomen Wards 1-2,State Assembly,42,103,,Scattering,0
+Fond Du Lac,Village Of Brandon Ward 1,State Assembly,42,103,REP,Jon Plumer,62
+Fond Du Lac,Village Of Brandon Ward 1,State Assembly,42,103,DEM,Ann Groves Lloyd,41
+Fond Du Lac,Village Of Brandon Ward 1,State Assembly,42,103,IND,Gene Rubinstein,0
+Fond Du Lac,Village Of Brandon Ward 1,State Assembly,42,103,,Scattering,0
+Fond Du Lac,Village Of Fairwater Ward 1,State Assembly,42,38,REP,Jon Plumer,28
+Fond Du Lac,Village Of Fairwater Ward 1,State Assembly,42,38,DEM,Ann Groves Lloyd,10
+Fond Du Lac,Village Of Fairwater Ward 1,State Assembly,42,38,IND,Gene Rubinstein,0
+Fond Du Lac,Village Of Fairwater Ward 1,State Assembly,42,38,,Scattering,0
+Fond Du Lac,City Of Waupun Ward 9B,State Assembly,42,0,REP,Jon Plumer,0
+Fond Du Lac,City Of Waupun Ward 9B,State Assembly,42,0,DEM,Ann Groves Lloyd,0
+Fond Du Lac,City Of Waupun Ward 9B,State Assembly,42,0,IND,Gene Rubinstein,0
+Fond Du Lac,City Of Waupun Ward 9B,State Assembly,42,0,,Scattering,0
+Green Lake,Town Of Kingston Wards 1-2,State Assembly,42,105,REP,Jon Plumer,82
+Green Lake,Town Of Kingston Wards 1-2,State Assembly,42,105,DEM,Ann Groves Lloyd,23
+Green Lake,Town Of Kingston Wards 1-2,State Assembly,42,105,IND,Gene Rubinstein,0
+Green Lake,Town Of Kingston Wards 1-2,State Assembly,42,105,,Scattering,0
+Green Lake,Town Of Manchester Ward 1,State Assembly,42,86,REP,Jon Plumer,67
+Green Lake,Town Of Manchester Ward 1,State Assembly,42,86,DEM,Ann Groves Lloyd,19
+Green Lake,Town Of Manchester Ward 1,State Assembly,42,86,IND,Gene Rubinstein,0
+Green Lake,Town Of Manchester Ward 1,State Assembly,42,86,,Scattering,0
+Green Lake,Village Of Kingston Ward 1,State Assembly,42,62,REP,Jon Plumer,44
+Green Lake,Village Of Kingston Ward 1,State Assembly,42,62,DEM,Ann Groves Lloyd,18
+Green Lake,Village Of Kingston Ward 1,State Assembly,42,62,IND,Gene Rubinstein,0
+Green Lake,Village Of Kingston Ward 1,State Assembly,42,62,,Scattering,0
+Marquette,Town Of Buffalo Wards 1-2,State Assembly,42,167,REP,Jon Plumer,77
+Marquette,Town Of Buffalo Wards 1-2,State Assembly,42,167,DEM,Ann Groves Lloyd,87
+Marquette,Town Of Buffalo Wards 1-2,State Assembly,42,167,IND,Gene Rubinstein,3
+Marquette,Town Of Buffalo Wards 1-2,State Assembly,42,167,,Scattering,0
+Marquette,Town Of Douglas Ward 1,State Assembly,42,173,REP,Jon Plumer,113
+Marquette,Town Of Douglas Ward 1,State Assembly,42,173,DEM,Ann Groves Lloyd,57
+Marquette,Town Of Douglas Ward 1,State Assembly,42,173,IND,Gene Rubinstein,2
+Marquette,Town Of Douglas Ward 1,State Assembly,42,173,,Scattering,1
+Marquette,Town Of Moundville Wards 1-2,State Assembly,42,94,REP,Jon Plumer,61
+Marquette,Town Of Moundville Wards 1-2,State Assembly,42,94,DEM,Ann Groves Lloyd,32
+Marquette,Town Of Moundville Wards 1-2,State Assembly,42,94,IND,Gene Rubinstein,1
+Marquette,Town Of Moundville Wards 1-2,State Assembly,42,94,,Scattering,0
+Marquette,Village Of Endeavor Ward 1,State Assembly,42,56,REP,Jon Plumer,33
+Marquette,Village Of Endeavor Ward 1,State Assembly,42,56,DEM,Ann Groves Lloyd,22
+Marquette,Village Of Endeavor Ward 1,State Assembly,42,56,IND,Gene Rubinstein,1
+Marquette,Village Of Endeavor Ward 1,State Assembly,42,56,,Scattering,0

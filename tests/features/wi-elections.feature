@@ -494,3 +494,13 @@ Feature: WI Elections
     | Timothy G. Dugan                      | Milwaukee | Court of Appeals                          | Village of HALES CORNERS Wards 7-9            | 338   | 338   |
     | Sandra Cardo Gorsuch                  | Sauk      | Sauk County Circuit Court, Branch 3       | Town of FREEDOM Ward 2                        | 41    | 65    |
 
+  Examples: 20180515__wi__special__primary__ward.csv
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | DEM   | Ann Groves Lloyd              | Dodge     | State Assembly                            | Town of WESTFORD Wards 1-2                    | 10    | 10    |
+    | REP   | Alex Renard                   | Outagamie | State Senate                              | Village of LITTLE CHUTE Wards 3,7,9-11        | 66    | 137   |
+
+  Examples: 20180612__wi__special__general__ward.csv
+    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
+    | REP   | André M. Jacque               | Calumet   | State Senate                              | Village of SHERWOOD Wards 1-5                 | 264   | 474   |
+    | IND   | Gene Rubinstein               | Columbia  | State Assembly                            | Town of WYOCENA Wards 1-2                     | 16    | 355   |
+
