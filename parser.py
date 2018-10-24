@@ -73,7 +73,10 @@ def process_xls_2000_to_2010(sheet):
         colA = str(row[0]).strip()
         if colA in first_header:
             # first row of block, collect candidate names
-            col_offset =  first_header[colA]
+            col_offset =  first_header[colA]    # number of missing columns
+            if col_offset > 0:
+                print "Note: section at row {} is missing {} columns".format(
+                    rowx + 1, col_offset)
             candidate_col = 17 - col_offset   # first column of candidate data
             candidates = collect_columns(row, candidate_col)
             if colA == 'ELECTION DATE':       # single header, extract parties
@@ -97,8 +100,12 @@ def process_xls_2000_to_2010(sheet):
                 district = district.split()[-1]     # parse 'No. 1'
             offices_per_election.add(normalize_office(office))
         else:
-            # (use last office)
-            district = ''
+            # Office column is missing from data
+            #   This occurs for district 14 data in
+            #   Libertarian_2008_FallElection_StateSenator_WardbyWard.xls
+            #   (Not seen in any other file so far)
+            # Use previous office name
+            district = '14'     # kludge to handle this special case
         county = row[10 - col_offset]
         ward_info = [row[col - col_offset] for col in (11, 13, 16)]
         ward = '{} of {} {}'.format(*ward_info)
