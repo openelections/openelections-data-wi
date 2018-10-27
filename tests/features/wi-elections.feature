@@ -89,10 +89,6 @@ Feature: WI Elections
     | candidate                             | county    | office                                    | district  | ward                                          | votes | total |
     | Ken Sortedahl                         | St. Croix | St Croix County Circuit Court, Branch 4   |           | VILLAGE OF DEER PARK                          | 3     | 50    |
 
-  Examples: 20080219__wi__primary__ward.csv
-    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
-    | REP   | John McCain                   | Milwaukee | President                                 | CITY OF MILWAUKEE Ward 278                    | 54    | 90    |
-
   Examples: 20080401__wi__general__ward.csv
     | candidate                             | county    | office                                    | district  | ward                                          | votes | total |
     | James D. Babbitt                      | Barron    | Barron County Circuit Court, Branch 3     |           | TOWN OF DALLAS Wards 1 & 2                    | 57    | 68    |
@@ -495,12 +491,12 @@ Feature: WI Elections
     | Sandra Cardo Gorsuch                  | Sauk      | Sauk County Circuit Court, Branch 3       |           | Town of FREEDOM Ward 2                        | 41    | 65    |
 
   Examples: 20180515__wi__special__primary__ward.csv
-    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
-    | DEM   | Ann Groves Lloyd              | Dodge     | State Assembly                            | Town of WESTFORD Wards 1-2                    | 10    | 10    |
-    | REP   | Alex Renard                   | Outagamie | State Senate                              | Village of LITTLE CHUTE Wards 3,7,9-11        | 66    | 137   |
+    | party | candidate                     | county    | office                                    | district  | ward                                          | votes | total |
+    | DEM   | Ann Groves Lloyd              | Dodge     | State Assembly                            | 42        | Town of WESTFORD Wards 1-2                    | 10    | 10    |
+    | REP   | Alex Renard                   | Outagamie | State Senate                              | 1         | Village of LITTLE CHUTE Wards 3,7,9-11        | 66    | 137   |
 
   Examples: 20180612__wi__special__general__ward.csv
-    | party | candidate                     | county    | office                                    | ward                                          | votes | total |
-    | REP   | André M. Jacque               | Calumet   | State Senate                              | Village of SHERWOOD Wards 1-5                 | 264   | 474   |
-    | IND   | Gene Rubinstein               | Columbia  | State Assembly                            | Town of WYOCENA Wards 1-2                     | 16    | 355   |
+    | party | candidate                     | county    | office                                    | district  | ward                                          | votes | total |
+    | REP   | André M. Jacque               | Calumet   | State Senate                              | 1         | Village of SHERWOOD Wards 1-5                 | 264   | 474   |
+    | IND   | Gene Rubinstein               | Columbia  | State Assembly                            | 42        | Town of WYOCENA Wards 1-2                     | 16    | 355   |
 
