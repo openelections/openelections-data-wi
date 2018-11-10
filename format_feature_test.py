@@ -15,7 +15,7 @@ Feature: WI Elections
 
   Scenario Outline: Tests
     When I visit the election file
-    And I search for <party> party candidate <candidate> running for <office> <district> in the <ward> in <county>
+    And I search for <party> party candidate <candidate> running for <office> dist. <district> in the <ward> in <county>
     Then I should see <votes> out of <total>
 
 """.lstrip()
