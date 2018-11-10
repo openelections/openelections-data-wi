@@ -86,6 +86,10 @@ Feature: WI Elections
     | Thomas G. Grover                      | Shawano   | Menominee-Shawano County Circuit Court, Branch 2|     | TOWN OF ANGELICA Wards 1 - 3                  | 297   | 297   |
 
   Examples: 20080219__wi__primary__ward.csv
+    | party | candidate                     | county    | office                                    | district  | ward                                          | votes | total |
+    | REP   | John McCain                   | Milwaukee | President                                 |           | CITY OF MILWAUKEE Ward 278                    | 54    | 90    |
+
+  Examples: 20080219__wi__primary__ward.csv
     | candidate                             | county    | office                                    | district  | ward                                          | votes | total |
     | Ken Sortedahl                         | St. Croix | St Croix County Circuit Court, Branch 4   |           | VILLAGE OF DEER PARK                          | 3     | 50    |
 
