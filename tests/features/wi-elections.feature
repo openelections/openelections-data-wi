@@ -28,6 +28,7 @@ Feature: WI Elections
     | Scattering                            | Green Lake| House                                     | 6         | CITY OF BERLIN Wards 1 - 6, 8 - 10            | 16    | 1161  |
     | Dale W. Schultz                       | Grant     | State Senate                              | 17        | TOWN OF LITTLE GRANT                          | 54    | 70    |
     | John H. Ainsworth                     | Oconto    | State Assembly                            | 6         | TOWN OF HOW Wards 1 - 3                       | 175   | 175   |
+    | Kathleen A. Pakes                     | Rusk      | Rusk County District Attorney             |           | TOWN OF THORNAPPLE Wards 1 & 2                | 217   | 219   |
 
   Examples: 20041102__wi__general__ward.csv
     | party | candidate                     | county    | office                                    | district  | ward                                          | votes | total |
