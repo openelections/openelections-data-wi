@@ -8,6 +8,8 @@ from hamcrest import assert_that, has_items, equal_to
 import unicodecsv
 
 
+offices_requiring_district = ['House', 'State Senate', 'State Assembly', 'Court Of Appeals']
+
 @when('I visit the election file')
 def step_impl(context):
     fileName = re.search('[\-a-z_0-9\.csv]+$',context.scenario.name).group(0)
@@ -33,8 +35,14 @@ def test(context, party, candidate, office, district, ward, county):
     field_names = ['party', 'candidate', 'office', 'district', 'ward', 'county']
     if party == '<party>' or party == '':  # No party was specified in the test, don't check party
       field_names.remove('party')
-    if district == '<district>' or district == '':  # No district specified, don't check it
-      field_names.remove('district')
+
+    office_requires_district = unicode.title(office) in offices_requiring_district
+    test_has_district = (district != '')
+    if office_requires_district != test_has_district:
+      raise AssertionError("District test value incorrect for office")
+    if not office_requires_district:
+      district = u''
+
     expected_values = [locals()[field_name] for field_name in field_names]
     ## Title-case for consistency -- remove this and edit test data instead?
     expected_values = map(unicode.title, expected_values)
