@@ -335,9 +335,9 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,,Rebecca Dallet,Kewaunee,Supreme Court,,City of ALGOMA Ward 1-6,279,432
 ,,Timothy G. Dugan,Milwaukee,Court of Appeals,1,Village of HALES CORNERS Wards 7-9,338,338
 ,,Sandra Cardo Gorsuch,Sauk,"Sauk County Circuit Court, Branch 3",,Town of FREEDOM Ward 2,41,65
-20180515__wi__special__primary__ward.csv,,,,,,,
+20180515__wi__special__primary__ward.csv,,,,,,,,
 ,DEM,Ann Groves Lloyd,Dodge,State Assembly,42,Town of WESTFORD Wards 1-2,10,10
 ,REP,Alex Renard,Outagamie,State Senate,1,"Village of LITTLE CHUTE Wards 3,7,9-11",66,137
-20180612__wi__special__general__ward.csv,,,,,,,
+20180612__wi__special__general__ward.csv,,,,,,,,
 ,REP,André M. Jacque,Calumet,State Senate,1,Village of SHERWOOD Wards 1-5,264,474
 ,IND,Gene Rubinstein,Columbia,State Assembly,42,Town of WYOCENA Wards 1-2,16,355
