@@ -384,6 +384,7 @@ def parse_office(office_string):
           EAU CLAIRE COUNTY CIRCUIT COURT JUDGE, BRANCH 1
           RECALL STATE SENATE-29
           RECALL STATE SENATE-21 - DEMOCRATIC
+          STATE SENATOR DISTRICT 1-Democratic
     """
     office = office_string.upper()
     office = office.replace(u'\u2015','-')   # change HORIZONTAL BAR to hyphen
@@ -393,6 +394,8 @@ def parse_office(office_string):
         head, sep, tail = office.partition(' DISTRICT ')
         office = head.strip(',- ')
         district, sep, party = tail.partition(' ')
+        district, _, pty = district.partition('-')  # handle "1-<party>"
+        party = pty + sep + party
         party = party.strip('- ')
     else:
         district = ''
