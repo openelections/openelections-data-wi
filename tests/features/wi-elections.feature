@@ -505,3 +505,11 @@ Feature: WI Elections
     | REP   | André M. Jacque               | Calumet   | State Senate                              | 1         | Village of SHERWOOD Wards 1-5                 | 264   | 474   |
     | IND   | Gene Rubinstein               | Columbia  | State Assembly                            | 42        | Town of WYOCENA Wards 1-2                     | 16    | 355   |
 
+  Examples: 20181106__wi__general__ward.csv
+    | candidate                             | county    | office                                    | district  | ward                                          | votes | total |
+    | Bob Kulp                              | Marathon  | State Assembly                            | 69        | Village of FENWOOD Ward 1                     | 57    | 64    |
+    | Jay Schroeder                         | Washburn  | Secretary Of State                        |           | Town of FROG CREEK Ward 1                     | 40    | 67    |
+    | F. James Sensenbrenner, Jr.           | Jefferson | House                                     | 5         | Town of WATERTOWN Wards 1-2                   | 721   | 1006  |
+    | Tammy Baldwin                         | Oneida    | Senate                                    |           | City of RHINELANDER Wards 8-9                 | 306   | 504   |
+    | Jerry Petrowski                       | Rusk      | State Senate                              | 29        | Village of GLEN FLORA Ward 1                  | 19    | 33    |
+
