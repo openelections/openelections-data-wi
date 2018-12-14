@@ -3,7 +3,7 @@
 
 
 party_recode = {
-    "Americans Elect": "AME",	
+    "Americans Elect": "AME",
     "Constitution": "CON",
     "Democratic": "DEM",
     "Independent": "IND",
@@ -43,20 +43,20 @@ office_recode = {
 office_names = [
     # federal
     'President', 'Senate', 'House',
-    
+
     # statewide
     'Governor', 'Lieutenant Governor', 'Attorney General',
     'Secretary of State', 'State Treasurer',
     'State Superintendent of Public Instruction',
-    
+
     # state representatives
     'State Senate', 'State Assembly',
-    
+
     # judicial, D.A.
-    'Supreme Court', 
+    'Supreme Court',
     'Court of Appeals',         # followed by ', District __'
     'Circuit Court',            # __ County Circuit Court[, Branch __]
-    'District Attorney',        # __ County District Attorney   
+    'District Attorney',        # __ County District Attorney
 ]
 
 
@@ -71,6 +71,7 @@ short_office_names = [
 
 def clean_county(item):
     item = clean_string(item)
+    item = item.replace(" County", '')
     item = item.replace("Lacrosse", "La Crosse")
     return item
 
@@ -137,4 +138,3 @@ def clean_particular(election,row):
     if id == 411:
         row[6] = row[6].replace("   "," ")              # candidate
     return row
-
