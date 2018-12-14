@@ -505,3 +505,17 @@ Feature: WI Elections
     | REP   | André M. Jacque               | Calumet   | State Senate                              | 1         | Village of SHERWOOD Wards 1-5                 | 264   | 474   |
     | IND   | Gene Rubinstein               | Columbia  | State Assembly                            | 42        | Town of WYOCENA Wards 1-2                     | 16    | 355   |
 
+  Examples: 20180814__wi__primary__ward.csv
+    | party | candidate                     | county    | office                                    | district  | ward                                          | votes | total |
+    | REP   | Kevin Adam Steen              | Racine    | House                                     | 1         | Village of Yorkville Wards 1-5                | 54    | 385   |
+    | DEM   | Dan Kohl                      | Milwaukee | House                                     | 6         | Village of BAYSIDE Wards 1S,3S                | 15    | 15    |
+    | LIB   | Scattering                    | Waukesha  | House                                     | 1         | Town of GENESEE Wards 6-8                     | 1     | 1     |
+    | REP   | Scattering                    | Winnebago | State Assembly                            | 53        | Town of NEKIMI Wards 1-2                      | 2     | 116   |
+    | DEM   | Desiree Gearing-Lancaster     | Trempealeau| State Assembly                           | 92        | Village of STRUM Wards 1-2                    | 34    | 126   |
+    | WGR   | Aaron Elaine Camacho          | Buffalo   | State Senate                              | 31        | Town of BUFFALO Ward 1                        | 2     | 2     |
+    | REP   | Charles Barman                | Milwaukee | Senate                                    |           | City of FRANKLIN Ward 15B                     | 2     | 60    |
+    | DEM   | Paul Boucher (Write-In)       | Brown     | Governor                                  |           | City of GREEN BAY Ward 24                     | 1     | 112   |
+    | WGR   | Tiffany Anderson              | Ozaukee   | Lieutenant Governor                       |           | Town of BELGIUM Wards 1-3                     | 1     | 1     |
+    | REP   | Brad Schimel                  | Bayfield  | Attorney General                          |           | City of WASHBURN Wards 1-4                    | 66    | 68    |
+    | DEM   | Arvina Martin                 | Shawano   | Secretary of State                        |           | Town of BARTELME Ward 1                       | 66    | 87    |
+    | DEM   | Dawn Marie Sass               | Monroe    | State Treasurer                           |           | Village of WILTON Ward 1                      | 17    | 35    |
