@@ -43,15 +43,15 @@ office_recode = {
 office_names = [
     # federal
     'President', 'Senate', 'House',
-
+    
     # statewide
     'Governor', 'Lieutenant Governor', 'Attorney General',
     'Secretary of State', 'State Treasurer',
     'State Superintendent of Public Instruction',
-
+    
     # state representatives
     'State Senate', 'State Assembly',
-
+    
     # judicial, D.A.
     'Supreme Court',
     'Court of Appeals',         # followed by ', District __'
