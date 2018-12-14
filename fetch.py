@@ -130,7 +130,7 @@ def update_metadata(state):
     metadata = fetch_metadata(state)
     if metadata:
         with open(metadata_filepath, 'w') as outfile:
-            json.dump(metadata, outfile, indent=3)
+            json.dump(metadata, outfile, indent=3, sort_keys=True)
         # save a dated copy
         fpath, ext = metadata_filepath.rsplit('.', 1)
         shutil.copy(metadata_filepath, '{}_{}.{}'.format(
