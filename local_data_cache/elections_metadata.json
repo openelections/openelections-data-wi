@@ -11,7 +11,7 @@
          "absentee_and_provisional": false, 
          "cong_dist_level": false, 
          "cong_dist_level_status": "", 
-         "county_level": true, 
+         "county_level": false, 
          "county_level_status": "", 
          "direct_link": "", 
          "direct_links": [
