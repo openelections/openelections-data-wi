@@ -10,18 +10,7 @@ import zipfile
 
 import cleaner
 import fetch
-
-
-office_table_filename = 'office_table.csv'
-office_table_file = open(office_table_filename, 'w')
-office_table_wr = csv.writer(office_table_file)
-office_table_headers = ['id', 'date', 'special', 'primary', 'recall', 'no_data']
-office_table_headers += cleaner.short_office_names
-office_table_wr.writerow(office_table_headers)
-office_table_wr.writerow(['term:'] + 5 * [''])
-office_table_wr.writerow(['phase:'] + 5 * [''])
-offices_per_election = set()
-offices_found = set()
+import officetable
 
 
 output_headers = ["county", "ward", "office", "district", "total votes",
@@ -98,7 +87,7 @@ def process_xls_2000_to_2010(sheet):
             if district:        # separator was found
                 office = head
                 district = district.split()[-1]     # parse 'No. 1'
-            offices_per_election.add(normalize_office(office))
+            office_table.add_office(office)
         else:
             # Office column is missing from data
             #   This occurs for district 14 data in
@@ -157,7 +146,7 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
         assert da_county.endswith(' County')
         office = da_county + ' ' + da       # ____ County District Attorney
         assert party in cleaner.party_recode.values()
-        offices_per_election.add(normalize_office(office))
+        office_table.add_office(office)
         
         district = ''
         race_place = county, ward, office, district, party
@@ -272,7 +261,7 @@ def get_election_result(election, no_output=False):
         outfile = open(filepath, 'w')
         wr = csv.writer(outfile)
         wr.writerow(output_headers)
-    offices_per_election.clear()
+    office_table.new_election()
     direct_links = election['direct_links']
     row = None
     for direct_link in direct_links:
@@ -289,19 +278,7 @@ def get_election_result(election, no_output=False):
         outfile.close()
         os.remove(filepath)
         print 'No data parsed, output file removed'
-    offices_found.update(offices_per_election)
-    tabulate_offices(election, offices_per_election)
-
-
-def tabulate_offices(election, offices_per_election):
-    info = [election['id'], election['end_date']]
-    info.append('S' if election['special'] else '')
-    info.append('P' if election['race_type'].startswith('primary') else '')
-    info.append('R' if election['race_type'].endswith('-recall') else '')
-    info.append('' if offices_per_election else 'nd')       # no data
-    for name in cleaner.office_names:
-        info.append('X' if name.title() in offices_per_election else '')
-    office_table_wr.writerow(info)
+    office_table.tabulate_offices(election)
 
 
 def process_file(cached_filename, election):
@@ -424,17 +401,8 @@ def parse_office(office_string):
     party = party.replace(' PARTY', '')
     party = party.strip('0123456789-')      # remove years appended to office
     
-    offices_per_election.add(normalize_office(office))
+    office_table.add_office(office)
     return office, district, party
-
-
-def normalize_office(office):
-    office = cleaner.clean_office(office)
-    _, sep, tail = office.rpartition(' County ')
-    office = tail       # remove county
-    head, sep, tail = office.partition(', Branch ')
-    office = head       # remove branch
-    return office.strip()
 
 
 def parse_sheet(sheet, office, sheet_index, election):
@@ -542,10 +510,8 @@ if __name__ == '__main__':
         print usage_msg
         print 'Args must be positive integers (election ids)'
     else:
+        office_table = officetable.OfficeTable()
         ids = map(int, args)
         get_all_results(ids, no_output=no_output)
-    
-    print '\n{} offices processed:'.format(len(offices_found))
-    print '\n'.join(sorted(offices_found))
-    print
+        office_table.print_summary()
 

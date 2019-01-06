@@ -73,6 +73,17 @@ offices_requiring_district = [
     'House', 'State Senate', 'State Assembly', 'Court Of Appeals']
 
 
+
+def normalize_office(office):
+    """Generalize office name (remove county, branch)"""
+    office = clean_office(office)
+    _, sep, tail = office.rpartition(' County ')
+    office = tail       # remove county
+    head, sep, tail = office.partition(', Branch ')
+    office = head       # remove branch
+    return office.strip()
+
+
 def clean_county(item):
     item = clean_string(item)
     item = item.replace(" County", '')
