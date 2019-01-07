@@ -496,12 +496,12 @@ xls files with offices in second column of title sheet:
 
 
 if __name__ == '__main__':
-    usage_msg = 'Usage: {} [-n] <list of ids>]\n'
-    usage_msg += '   Parse input files and process results for listed ids.\n'
-    usage_msg += '   Omit ids to process all ids for state.\n'
-    usage_msg += '   Use option -n for no results output.\n'
-    usage_msg += '   Uses elections metadata from file "{}".\n'
-    usage_msg = usage_msg.format(sys.argv[0], fetch.metadata_filepath)
+    usage_msg = """Usage: {} [-n] <list of ids>]
+       Parse input files and process results for listed ids.
+       Omit ids to process all ids for state.
+       Use option -n for no results output.
+       Uses elections metadata from file "{}".
+    """.format(sys.argv[0], fetch.metadata_filepath)
     args = sys.argv[1:]
     no_output = (args[:1] == ['-n'])
     if no_output:
