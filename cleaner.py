@@ -3,7 +3,7 @@
 
 
 party_recode = {
-    "Americans Elect": "AME",	
+    "Americans Elect": "AME",
     "Constitution": "CON",
     "Democratic": "DEM",
     "Independent": "IND",
@@ -53,10 +53,10 @@ office_names = [
     'State Senate', 'State Assembly',
     
     # judicial, D.A.
-    'Supreme Court', 
+    'Supreme Court',
     'Court of Appeals',         # followed by ', District __'
     'Circuit Court',            # __ County Circuit Court[, Branch __]
-    'District Attorney',        # __ County District Attorney   
+    'District Attorney',        # __ County District Attorney
 ]
 
 
@@ -69,8 +69,24 @@ short_office_names = [
 ]
 
 
+offices_requiring_district = [
+    'House', 'State Senate', 'State Assembly', 'Court Of Appeals']
+
+
+
+def normalize_office(office):
+    """Generalize office name (remove county, branch)"""
+    office = clean_office(office)
+    _, sep, tail = office.rpartition(' County ')
+    office = tail       # remove county
+    head, sep, tail = office.partition(', Branch ')
+    office = head       # remove branch
+    return office.strip()
+
+
 def clean_county(item):
     item = clean_string(item)
+    item = item.replace(" County", '')
     item = item.replace("Lacrosse", "La Crosse")
     return item
 
@@ -91,8 +107,8 @@ def clean_office(item):
     return office
 
 def clean_district(item):
-    item = item.strip().replace(',','')
-    return int(item) if item.isdigit() else None
+    item = item.strip()
+    return int(item) if item.isdigit() else ''
 
 def clean_total(item):
     return to_int(item)
@@ -109,12 +125,28 @@ def clean_candidate(item):
     item = item.replace("/"," &")
     return item
 
+
+def check_district_appropriate_for_office(row):
+    office, district = row[2:4]
+    msg = ''
+    if office in offices_requiring_district:
+        if district == '':
+            msg = 'District value missing when required by office'
+    else:
+        if district != '':
+            msg = 'District value present when not appropriate for office'
+    if msg:
+        raise ValueError(msg + ':\n' + str(row) + '\n')
+
+
 def clean_row(row):
     for i, clean_func in enumerate([
             clean_county, clean_ward, clean_office, clean_district,
             clean_total, clean_party, clean_candidate, clean_votes]):
         row[i] = clean_func(row[i])
+    check_district_appropriate_for_office(row)
     return row
+
 
 def to_int(item):
     if isinstance(item, basestring):
@@ -137,4 +169,3 @@ def clean_particular(election,row):
     if id == 411:
         row[6] = row[6].replace("   "," ")              # candidate
     return row
-
