@@ -5,10 +5,13 @@ David "Davi" Post, 2019-01
 for OpenElections project in WI
 """
 
+import io
 import sys
 import time
 
 import unicodecsv as csv
+
+import parser
 
 
 default_tests_filepath = 'tests/features/wi-elections.feature.csv'
@@ -27,33 +30,32 @@ Results files are typically ordered by:
     (party and candidate not usually ordered)
 """
 
-# Fields in testing order
-fields = ['office', 'district', 'county', 'ward', 'candidate', 'party',
-            'votes', 'total votes']
-fields = [unicode(field) for field in fields]
 
-
-def test_result_file(filename, tests):
+def test_result_file(filename, tests, party_indices):
     """Check that records in tests appear exactly once in named file.
-        tests is a list of tests,
-        each test is a dict containing test data as field:value.
+        tests is a list of tests, each a record formatted like result data.
+        party_indices gives start of missing party for each test, or -1
     """
     print 'Testing', filename
     year = filename[:4]
     assert year.isdigit()
     filepath = year + '/' + filename
     
-    with open(filepath) as results_file:
-        reader = csv.DictReader(results_file)
+    with io.open(filepath, encoding='utf-8') as results_file:
         test_counts = [0] * len(tests)   # number of times test data found
-        for record in reader:
+        results_file.next()     # skip header
+        for record in results_file:
             for i, test in enumerate(tests):
-                for field in fields:
-                    if record[field] != test[field]:
-                        if field == 'party' and test[field] == '':
-                            continue    # ignore blank party in test
-                        break
-                else:   # no break, test data found
+                record_ = record
+                pi = party_indices[i]
+                if pi >= 0:   # party missing from test
+                    if record[pi - 1:pi] == ',':
+                        ci = record.find(',', pi)
+                        datum = record[pi:ci]
+                        if datum.isalpha() and datum.isupper():
+                            # party in record, remove it (don't test)
+                            record_ = record[:pi] + record[ci:]
+                if record_ == test:
                     test_counts[i] += 1
     
     # Summarize errors
@@ -65,7 +67,7 @@ def test_result_file(filename, tests):
                 print '  Not found:',
             else:   # count > 1
                 print '  Found {} times:'.format(count),
-            print ', '.join([test[field] for field in fields])
+            print test
             num_errors += 1
     return num_errors
 
@@ -74,27 +76,37 @@ def run_tests(tests_filepath):
     """Read tests for each results file, check for specified records"""
     tests_file = open(tests_filepath)
     tests_reader = csv.DictReader(tests_file)
+    # Get results fields, renaming "total votes" to "total"
+    results_fields = [field.split()[0] for field in parser.output_headers]
     num_files = 0
     num_errors = 0
     num_tests = 0
+    missing_party_marker = u'*p*'
     done = False
     row = tests_reader.next()
     while not done:
         filename = row['filename']
-        tests = []
+        tests = []          # list of test strings, data in results order
+        party_indices = []  # index of missing party in test, or -1
         for row in tests_reader:
             if row['filename']:     # next file to test
                 break
-            row['total votes'] = row['total']
-            del row['total']
             for field in ('office', 'county', 'ward', 'candidate'):
                 row[field] = row[field].title()
-            tests.append(row)
+                if ',' in row[field]:
+                    row[field] = '"' + row[field] + '"'
+            if row['party'] == '':
+                row['party'] = missing_party_marker
+            # format test data as string, in results order
+            test_data = ','.join([row[field] for field in results_fields])
+            party_indices.append(test_data.find(missing_party_marker))
+            test_data = test_data.replace(missing_party_marker, '')
+            tests.append(test_data + '\n')
             
         else:   # no break, end of file
             done = True
         
-        num_errors += test_result_file(filename, tests)
+        num_errors += test_result_file(filename, tests, party_indices)
         num_files += 1
         num_tests += len(tests)
     print
