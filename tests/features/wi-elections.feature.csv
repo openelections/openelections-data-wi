@@ -120,8 +120,8 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,JOEL WINNIG,Door,Supreme Court,,TOWN OF GIBRALTAR Wards 1 & 2,6,102
 ,NP,DANIEL P. STEFFEN,Polk,"POLK COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF WEST SWEDEN Wards 1 & 2,13,25
 20110405__wi__general__ward.csv,,,,,,,,
-,NP,"David T. Prosser, Jr.",Manitowoc,Supreme Court,,"CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36",306,555
-,NP,Joanne F. Kloppenburg,Racine,Supreme Court,,TOWN OF WATERFORD Wards 1 - 10,573,2183
+,,"David T. Prosser, Jr.",Manitowoc,Supreme Court,,"CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36",306,555
+,,Joanne F. Kloppenburg,Racine,Supreme Court,,TOWN OF WATERFORD Wards 1 - 10,573,2183
 ,NP,SANDRA J. MARCUS,Marathon,"MARATHON COUNTY CIRCUIT COURT, BRANCH 5",,VILLAGE OF BIRNAMWOOD Ward 2,5,5
 ,NP,GUY DUTCHER,Waushara,WAUSHARA COUNTY CIRCUIT COURT,,TOWN OF POY SIPPI Ward 1,170,170
 ,NP,PAUL B. HIGGINBOTHAM,Jackson,Court of Appeals,4,VILLAGE OF HIXTON Ward 1,93,93
@@ -146,7 +146,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 20110809__wi__general-recall__ward.csv,,,,,,,,
 ,REP,ROBERT L. COWLES,Brown,State Senate,2,CITY OF DE PERE District 1 Ward 1-3,1057,2016
 ,DEM,NANCY J. NUSBAUM,Outagamie,State Senate,2,VILLAGE OF SHIOCTON Village of Shiocton,86,180
-,REP,SANDRA K. PASCH,Washington,State Senate,8,CITY OF MILWAUKEE Ward 262,0,0
+,DEM,SANDRA K. PASCH,Washington,State Senate,8,CITY OF MILWAUKEE Ward 262,0,0
 ,REP,SHEILA E. HARSDORF,Burnett,State Senate,10,TOWN OF LINCOLN Lincoln Town,60,108
 ,,Scattering,Shawano,State Senate,14,CITY OF MARION Wards 4 - 6,0,5
 ,DEM,JESSICA KING,Winnebago,State Senate,18,CITY OF OMRO Wards 1 - 7,598,1104
@@ -205,20 +205,20 @@ filename,party,candidate,county,office,district,ward,votes,total
 20121204__wi__special__general__ward.csv,,,,,,,,
 ,REP,Paul Farrow,Waukesha,State Senate,33,City of Pewaukee Wards 8-10,274,281
 20130219__wi__primary__ward.csv,,,,,,,,
-,NP,Vince Megna,Grant,Supreme Court,,"TOWN OF SOUTH LANCASTER WARDS 1, 2 & 3",3,19
-,NP,Janet Claire Protasiewicz,Milwaukee,"Milwaukee County Circuit Court, Branch 45",,CITY OF MILWAUKEE WARD 001,32,140
+,IND,Vince Megna,Grant,Supreme Court,,"TOWN OF SOUTH LANCASTER WARDS 1, 2 & 3",3,19
+,IND,Janet Claire Protasiewicz,Milwaukee,"Milwaukee County Circuit Court, Branch 45",,CITY OF MILWAUKEE WARD 001,32,140
 20130219__wi__special__primary__ward.csv,,,,,,,,
 ,REP,Matt Morzy,Waukesha,State Assembly,98,City of Waukesha Ward 4,6,70
 ,REP,Adam Neylon,Waukesha,State Assembly,98,City of Pewaukee Wards 5-7,219,559
 ,REP,Jeanne Tarantino,Waukesha,State Assembly,98,TOWN OF LISBON WARD 3,11,132
 20130402__wi__general__ward.csv,,,,,,,,
-,NP,Tony Evers,Adams,State Superintendent Of Public Instruction,,Town Of Monroe Ward 1,53,94
-,NP,Tony Evers,Columbia,State Superintendent Of Public Instruction,,City Of Wisconsin Dells Ward 1,54,74
-,NP,Don Pridemore,Dane,State Superintendent Of Public Instruction,,City Of Madison Ward 49,12,82
-,NP,Don Pridemore,Wood,State Superintendent Of Public Instruction,,Town Of Seneca Wards 1 -3,55,136
-,NP,Daniel T. Dillon,Rock,"Rock County Circuit Court, Branch 4",,CITY OF BRODHEAD WARDS 7-8,6,6
-,NP,Lisa K. Stark,Ashland,Court of Appeals,3,TOWN OF SHANAGOLDEN Wards 1,22,22
-,NP,Ed Fallone,Langlade,Supreme Court,,TOWN OF AINSWORTH WARD 1,30,100
+,IND,Tony Evers,Adams,State Superintendent Of Public Instruction,,Town Of Monroe Ward 1,53,94
+,IND,Tony Evers,Columbia,State Superintendent Of Public Instruction,,City Of Wisconsin Dells Ward 1,54,74
+,IND,Don Pridemore,Dane,State Superintendent Of Public Instruction,,City Of Madison Ward 49,12,82
+,IND,Don Pridemore,Wood,State Superintendent Of Public Instruction,,Town Of Seneca Wards 1 -3,55,136
+,IND,Daniel T. Dillon,Rock,"Rock County Circuit Court, Branch 4",,CITY OF BRODHEAD WARDS 7-8,6,6
+,IND,Lisa K. Stark,Ashland,Court of Appeals,3,TOWN OF SHANAGOLDEN Wards 1,22,22
+,IND,Ed Fallone,Langlade,Supreme Court,,TOWN OF AINSWORTH WARD 1,30,100
 20130402__wi__special__general__ward.csv,,,,,,,,
 ,REP,Adam Neylon,Waukesha,State Assembly,98,CITY OF WAUKESHA Ward 36,314,315
 ,REP,Adam Neylon,Waukesha,State Assembly,98,"VILLAGE OF SUSSEX Wards 5,6,7",417,419
@@ -233,7 +233,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 20131217__wi__special__general__ward.csv,,,,,,,,
 ,DEM,John R. Hermes,Milwaukee,State Assembly,82,City of Greenfield Ward 20,86,223
 20140218__wi__primary__ward.csv,,,,,,,,
-,NP,Roger M. Hillestad,Dunn,"Dunn County Circuit Court, Branch 1",,TOWN OF RED CEDAR WARD 1-3,11,71
+,IND,Roger M. Hillestad,Dunn,"Dunn County Circuit Court, Branch 1",,TOWN OF RED CEDAR WARD 1-3,11,71
 20140401__wi__general__ward.csv,,,,,,,,
 ,NP,Gary E. Sherman,Waupaca,Court of Appeals,4,TOWN OF HELVETIA Wards 1 & 2,44,44
 ,NP,"Robert A. Kennedy, Jr.",Florence,Florence-Forest County Circuit Court,,TOWN OF FENCE WARD 1,24,46
@@ -312,7 +312,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Lowell E. Holtz,Rock,State Superintendent Of Public Instruction,,CITY OF BRODHEAD Wards 7-8,0,5
 20170404__wi__general__ward.csv,,,,,,,,
 ,NP,Rick Melcher (write-in),Shawano,State Superintendent of Public Instruction,,CITY OF SHAWANO Wards 7-8,1,165
-,NP,Scattering,Dane,Supreme Court,,CITY OF MADISON Ward 40,184,723
+,,Scattering,Dane,Supreme Court,,CITY OF MADISON Ward 40,184,723
 ,NP,Brian K. Hagedorn,Ozaukee,Court of Appeals,2,TOWN OF BELGIUM Ward 1-3,113,113
 ,NP,Guy Dutcher,Waushara,Waushara County Circuit Court,,CITY OF WAUTOMA Wards 1-3,117,117
 20171219__wi__special__primary__ward.csv,,,,,,,,
