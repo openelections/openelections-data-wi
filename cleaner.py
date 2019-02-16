@@ -132,6 +132,8 @@ def clean_candidate(item):
         head = head.title() if head.isupper() else head
         item = head + sep + tail.title()
     item = item.replace("  "," ")
+    item = item.replace("Iii","III")
+    item = item.replace("Ii","II")
     return item
 
 def titlecase_parts(text, separator):
