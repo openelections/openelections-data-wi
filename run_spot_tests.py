@@ -91,8 +91,9 @@ def run_tests(tests_filepath):
         for row in tests_reader:
             if row['filename']:     # next file to test
                 break
-            for field in ('office', 'county', 'ward', 'candidate'):
+            for field in ('office', 'county', 'ward'):
                 row[field] = row[field].title()
+            for field in ('office', 'county', 'ward', 'candidate'):
                 if ',' in row[field]:
                     row[field] = '"' + row[field] + '"'
             if row['party'] == '':
