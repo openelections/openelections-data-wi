@@ -3,3 +3,4 @@ node_modules
 .
 *.pyc
 elections_metadata_20*.json
+office_table.csv
