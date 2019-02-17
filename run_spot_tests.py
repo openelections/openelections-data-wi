@@ -31,10 +31,9 @@ Results files are typically ordered by:
 """
 
 
-def test_result_file(filename, tests, party_indices):
+def test_result_file(filename, tests):
     """Check that records in tests appear exactly once in named file.
         tests is a list of tests, each a record formatted like result data.
-        party_indices gives start of missing party for each test, or -1
     """
     print 'Testing', filename
     year = filename[:4]
@@ -46,16 +45,7 @@ def test_result_file(filename, tests, party_indices):
         results_file.next()     # skip header
         for record in results_file:
             for i, test in enumerate(tests):
-                record_ = record
-                pi = party_indices[i]
-                if pi >= 0:   # party missing from test
-                    if record[pi - 1:pi] == ',':
-                        ci = record.find(',', pi)
-                        datum = record[pi:ci]
-                        if datum.isalpha() and datum.isupper():
-                            # party in record, remove it (don't test)
-                            record_ = record[:pi] + record[ci:]
-                if record_ == test:
+                if record == test:
                     test_counts[i] += 1
     
     # Summarize errors
@@ -81,13 +71,11 @@ def run_tests(tests_filepath):
     num_files = 0
     num_errors = 0
     num_tests = 0
-    missing_party_marker = u'*p*'
     done = False
     row = tests_reader.next()
     while not done:
         filename = row['filename']
         tests = []          # list of test strings, data in results order
-        party_indices = []  # index of missing party in test, or -1
         for row in tests_reader:
             if row['filename']:     # next file to test
                 break
@@ -96,18 +84,13 @@ def run_tests(tests_filepath):
             for field in ('office', 'county', 'ward', 'candidate'):
                 if ',' in row[field]:
                     row[field] = '"' + row[field] + '"'
-            if row['party'] == '':
-                row['party'] = missing_party_marker
             # format test data as string, in results order
             test_data = ','.join([row[field] for field in results_fields])
-            party_indices.append(test_data.find(missing_party_marker))
-            test_data = test_data.replace(missing_party_marker, '')
             tests.append(test_data + '\n')
-            
         else:   # no break, end of file
             done = True
         
-        num_errors += test_result_file(filename, tests, party_indices)
+        num_errors += test_result_file(filename, tests)
         num_files += 1
         num_tests += len(tests)
     print
