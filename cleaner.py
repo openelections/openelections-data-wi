@@ -88,6 +88,7 @@ def clean_county(item):
     item = clean_string(item)
     item = item.replace(" County", '')
     item = item.replace("Lacrosse", "La Crosse")
+    item = item.replace(" Du ", " du ")     # Fond du Lac
     return item
 
 def clean_ward(item):

@@ -112,7 +112,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Rich Zipperer,Washington,State Senate,33,"CITY OF HARTFORD Wards 12 - 15, 17, 19 - 22, 26 - 28, 30, 33 - 35, 40 & 41, 49",1251,1255
 ,DEM,Ted Zigmunt,Brown,State Assembly,2,CITY OF DE PERE Wards 15 - 17,53,143
 ,REP,Gary Tauchen,Waupaca,State Assembly,6,VILLAGE OF EMBARRASS Ward 1,102,102
-,REP,Richard J. Spanbauer,Fond Du Lac,State Assembly,53,CITY OF FOND DU LAC Ward 39,0,0
+,REP,Richard J. Spanbauer,Fond du Lac,State Assembly,53,CITY OF FOND DU LAC Ward 39,0,0
 ,REP,Samantha Kerkman,Kenosha,State Assembly,66,CITY OF KENOSHA Ward 58,1,2
 ,REP,Scott Suder,Taylor,State Assembly,69,TOWN OF TAFT Ward 1,46,47
 ,REP,Don Pridemore,Dodge,State Assembly,99,CITY OF HARTFORD Ward 16,0,0
@@ -126,14 +126,14 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Guy Dutcher,Waushara,WAUSHARA COUNTY CIRCUIT COURT,,TOWN OF POY SIPPI Ward 1,170,170
 ,NP,Paul B. Higginbotham,Jackson,Court of Appeals,4,VILLAGE OF HIXTON Ward 1,93,93
 20110503__wi__special__general__ward.csv,,,,,,,,
-,DEM,Rick Aaron,OZAUKEE,State Assembly,60,"TOWN OF GRAFTON WARDS 1 2, & 6",69,422
-,REP,Duey Stroebel,WASHINGTON,State Assembly,60,TOWN OF TRENTON WDS-1.2.5.6.7,316,375
-,DEM,Andrew Allen Berg (Write In),RACINE,State Assembly,83,VILLAGE OF WATERFORD Wards 1 - 7,9,900
+,DEM,Rick Aaron,Ozaukee,State Assembly,60,"TOWN OF GRAFTON WARDS 1 2, & 6",69,422
+,REP,Duey Stroebel,Washington,State Assembly,60,TOWN OF TRENTON WDS-1.2.5.6.7,316,375
+,DEM,Andrew Allen Berg (Write In),Racine,State Assembly,83,VILLAGE OF WATERFORD Wards 1 - 7,9,900
 20110712__wi__primary-recall__ward.csv,,,,,,,,
 ,DEM,Otto C. Junkermann,Waupaca,State Senate,2,VILLAGE OF EMBARRASS Ward 1,24,42
 ,DEM,Scattering,Washington,State Senate,8,"VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17",19,1019
 ,DEM,Isaac Weix,Dunn,State Senate,10,CITY OF MENOMONIE MENOMONIE CITY WARD 6,70,279
-,DEM,Rol Church,Fond Du Lac,State Senate,14,TOWN OF RIPON Wards 1 & 2,117,235
+,DEM,Rol Church,Fond du Lac,State Senate,14,TOWN OF RIPON Wards 1 & 2,117,235
 ,DEM,John D. Buckstaff,Dodge,State Senate,18,CITY OF WAUPUN Wards 1 - 8,167,738
 ,DEM,Jennifer Shilling,La Crosse,State Senate,32,CITY OF LA CROSSE Ward WD20,1,1
 20110712__wi__special__primary__ward.csv,,,,,,,,
@@ -168,16 +168,16 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,"Christopher R. Lipscomb, Sr.",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,CITY OF ST. FRANCIS Wards 9 - 12,140,395
 ,NP,John F. O'Melia,Oneida,"ONEIDA COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF PINE LAKE Wards 1 and 4,98,272
 20120403__wi__primary__ward.csv,,,,,,,,
-,REP,Michele Bachmann,ADAMS,President,,TOWN OF QUINCY Ward 1,4,151
-,DEM,Uninstructed Delegation,WASHBURN,President,,Town of Gull Lake Ward 1,6,20
+,REP,Michele Bachmann,Adams,President,,TOWN OF QUINCY Ward 1,4,151
+,DEM,Uninstructed Delegation,Washburn,President,,Town of Gull Lake Ward 1,6,20
 20120403__wi__primary__ward.csv,,,,,,,,
-,NP,John C. Albert,DANE,"DANE COUNTY CIRCUIT COURT, BRANCH 3",,TOWN OF OREGON WARDS 1-4,583,584
-,NP,Thomas J. Gritton,WINNEBAGO,"WINNEBAGO COUNTY CIRCUIT COURT, BRANCH 1",,CITY OF OSHKOSH D8 W15,359,361
-,,Scattering,WINNEBAGO,COURT OF APPEALS,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
-,NP,Robert E. Eaton,ASHLAND,ASHLAND COUNTY CIRCUIT COURT,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
-,NP,James Judge Duvall,PEPIN,BUFFALO-PEPIN COUNTY CIRCUIT COURT,,CITY OF DURAND Wards 1 - 3,434,434
-,NP,"Nelson Wesley Phillips, III",MILWAUKEE,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
-,NP,"Nicholas J. Brazeau, Jr.",WOOD,"WOOD COUNTY CIRCUIT COURT, BRANCH 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
+,NP,John C. Albert,Dane,"DANE COUNTY CIRCUIT COURT, BRANCH 3",,TOWN OF OREGON WARDS 1-4,583,584
+,NP,Thomas J. Gritton,Winnebago,"WINNEBAGO COUNTY CIRCUIT COURT, BRANCH 1",,CITY OF OSHKOSH D8 W15,359,361
+,,Scattering,Winnebago,COURT OF APPEALS,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
+,NP,Robert E. Eaton,Ashland,ASHLAND COUNTY CIRCUIT COURT,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
+,NP,James Judge Duvall,Pepin,BUFFALO-PEPIN COUNTY CIRCUIT COURT,,CITY OF DURAND Wards 1 - 3,434,434
+,NP,"Nelson Wesley Phillips, III",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
+,NP,"Nicholas J. Brazeau, Jr.",Wood,"WOOD COUNTY CIRCUIT COURT, BRANCH 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
 20120508__wi__primary-recall__ward.csv,,,,,,,,
 ,REP,Patrick J. O'Brien (Write-In),Monroe,Governor,,"TOWN OF LA GRANGE WARDS 1A, 1B, 2A, 2B, 3A, 3B",0,233
 ,DEM,Tamra Varebrook,Racine,State Senate,21,"VILLAGE OF MOUNT PLEASANT WARDS 10,11,12,15",390,1256
@@ -247,7 +247,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Dane Deutsch,Douglas,State Senate,25,CITY OF SUPERIOR Wards 23 - 26 and 27 - 29,81,81
 ,CON,Scattering,Sauk,State Senate,27,"TOWN OF PRAIRIE DU SAC WARDS 1-2, COMBINED",0,0
 ,DEM,Daniel Riemer,Milwaukee,State Assembly,7,"VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5",94,94
-,DEM,Scattering,Fond Du Lac,State Assembly,59,VILLAGE OF KEWASKUM WD 6,0,0
+,DEM,Scattering,Fond du Lac,State Assembly,59,VILLAGE OF KEWASKUM WD 6,0,0
 ,REP,Adam Jarchow,Polk,State Assembly,28,VILLAGE OF BALSAM LAKE Wards 1-2,37,37
 20141104__wi__general__ward.csv,,,,,,,,
 ,DEM,Mary Burke & John Lehman,Adams,Governor,,Town of Adams Wards 1-3,233,500
