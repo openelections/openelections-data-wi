@@ -1,5 +1,2 @@
-requests
 unicodecsv
 xlrd
-behave
-pyhamcrest
