@@ -2,7 +2,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 20001107__wi__general__ward.csv,,,,,,,,
 ,REP,Kitty Rhoades,Pierce,State Assembly,30,City of Prescott Wards 1 - 4,1036,1759
 ,LIB,Tim Peterson,Racine,Senate,,Town of Mount Pleasant Wards 7 & 8,8,1851
-,IND,Scattering,Lincoln,President,,Town of Bradley Wards 1 - 6,4,1457
+,,Scattering,Lincoln,President,,Town of Bradley Wards 1 - 6,4,1457
 20020910__wi__primary__ward.csv,,,,,,,,
 ,DEM,Dale Moore,Racine,House,1,CITY OF RACINE Ward 30,38,151
 ,REP,Peggy A. Rosenzweig,Milwaukee,State Senate,5,CITY OF MILWAUKEE Ward 286,19,58
@@ -62,8 +62,8 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,LIB,Scattering,Ozaukee,State Senate,8,"CITY OF MEQUON Wards 16, 17 & 19",1,1
 ,LIB,Scattering,Marquette,State Senate,14,TOWN OF BUFFALO Wards 1 & 2,1,1
 ,WGR,Scattering,Dane,State Senate,16,CITY OF MADISON Ward 7,2,2
-,WIG,Scattering,Winnebago,House,6,CITY OF OSHKOSH Ward 33,6,6
-,DEM,Tara Johnson,La crosse,State Senate,32,"TOWN OF SHELBY Wards 1, 4 - 6",38,38
+,WGR,Scattering,Winnebago,House,6,CITY OF OSHKOSH Ward 33,6,6
+,DEM,Tara Johnson,La Crosse,State Senate,32,"TOWN OF SHELBY Wards 1, 4 - 6",38,38
 ,IND,Clyde Winter,Ozaukee,State Senate,20,CITY OF MEQUON Ward 2,1,1
 ,DEM,Mark Wollum,Dodge,House,6,CITY OF WAUPUN Wards 1 - 3 & 8,9,28
 ,LIB,Joseph Kexel,Kenosha,House,1,"TOWN OF SALEM Wards 1, 7, 11 - 15",8,8
@@ -92,7 +92,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Randy R. Koschnick,Adams,Supreme Court,,CITY OF WISCONSIN DELLS Ward 5,1,1
 ,NP,Gene D. Linehan,Bayfield,Bayfield County Circuit Court,,TOWN OF OULU,23,80
 ,NP,David A. Hansher,Milwaukee,"Milwaukee County Circuit Court, Branch 42",,CITY OF MILWAUKEE Ward 208,7,7
-,NP,Scattering,Taylor,Taylor County Circuit Court,,CITY OF MEDFORD Wards 1 & 2,1,321
+,,Scattering,Taylor,Taylor County Circuit Court,,CITY OF MEDFORD Wards 1 & 2,1,321
 20100216__wi__primary__ward.csv,,,,,,,,
 ,NP,John M. O'Boyle,Pierce,Pierce County Circuit Court,,VILLAGE OF PLUM CITY,6,75
 20100406__wi__general__ward.csv,,,,,,,,
@@ -131,7 +131,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,DEM,Andrew Allen Berg (Write In),Racine,State Assembly,83,VILLAGE OF WATERFORD Wards 1 - 7,9,900
 20110712__wi__primary-recall__ward.csv,,,,,,,,
 ,DEM,Otto C. Junkermann,Waupaca,State Senate,2,VILLAGE OF EMBARRASS Ward 1,24,42
-,,Scattering,Washington,State Senate,8,"VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17",19,1019
+,DEM,Scattering,Washington,State Senate,8,"VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17",19,1019
 ,DEM,Isaac Weix,Dunn,State Senate,10,CITY OF MENOMONIE MENOMONIE CITY WARD 6,70,279
 ,DEM,Rol Church,Fond du Lac,State Senate,14,TOWN OF RIPON Wards 1 & 2,117,235
 ,DEM,John D. Buckstaff,Dodge,State Senate,18,CITY OF WAUPUN Wards 1 - 8,167,738
@@ -279,7 +279,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Spencer Zimmerman,Waukesha,State Assembly,99,"Town of Genesee Wards 1-5, 9 10",9,278
 20150929__wi__special__general__ward.csv,,,,,,,,
 ,REP,Cindi Duchow,Waukesha,State Assembly,99,Village of Hartland Wards 1-13,117,140
-,DEM,Thomas D. Hibbard (Write-in),Waukesha,State Assembly,99,Village of Wales Wards 1-4,10,106
+,DEM,Thomas D. Hibbard (Write-In),Waukesha,State Assembly,99,Village of Wales Wards 1-4,10,106
 ,,Scattering,Waukesha,State Assembly,99,City of Delafield Wards 1 - 14,18,217
 20160216__wi__primary__ward.csv,,,,,,,,
 ,NP,JoAnne F. Kloppenburg,Vilas,Supreme Court,,TOWN OF LAND O-LAKES Ward 1,81,196
@@ -312,7 +312,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Lowell E. Holtz,Rock,State Superintendent Of Public Instruction,,CITY OF BRODHEAD Wards 7-8,0,5
 20170404__wi__general__ward.csv,,,,,,,,
 ,NP,Rick Melcher (Write-In),Shawano,State Superintendent of Public Instruction,,CITY OF SHAWANO Wards 7-8,1,165
-,NP,Scattering,Dane,Supreme Court,,CITY OF MADISON Ward 40,184,723
+,,Scattering,Dane,Supreme Court,,CITY OF MADISON Ward 40,184,723
 ,NP,Brian K. Hagedorn,Ozaukee,Court of Appeals,2,TOWN OF BELGIUM Ward 1-3,113,113
 ,NP,Guy Dutcher,Waushara,Waushara County Circuit Court,,CITY OF WAUTOMA Wards 1-3,117,117
 20171219__wi__special__primary__ward.csv,,,,,,,,
@@ -343,7 +343,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Kevin Adam Steen,Racine,House,1,Village of Yorkville Wards 1-5,54,385
 ,DEM,Dan Kohl,Milwaukee,House,6,"Village of BAYSIDE Wards 1S,3S",15,15
 ,LIB,Scattering,Waukesha,House,1,Town of GENESEE Wards 6-8,1,1
-,,Scattering,Winnebago,State Assembly,53,Town of NEKIMI Wards 1-2,2,116
+,REP,Scattering,Winnebago,State Assembly,53,Town of NEKIMI Wards 1-2,2,116
 ,DEM,Desiree Gearing-Lancaster,Trempealeau,State Assembly,92,Village of STRUM Wards 1-2,34,126
 ,WGR,Aaron Elaine Camacho,Buffalo,State Senate,31,Town of BUFFALO Ward 1,2,2
 ,REP,Charles Barman,Milwaukee,Senate,,City of FRANKLIN Ward 15B,2,60
