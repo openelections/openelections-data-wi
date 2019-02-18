@@ -96,6 +96,7 @@ def run_tests(tests_filepath):
     print
     print '{} files tested, {} tests, {} failed'.format(
             num_files, num_tests, num_errors)
+    return num_errors
 
 
 if __name__ == '__main__':
@@ -106,6 +107,8 @@ if __name__ == '__main__':
         tests_filepath = default_tests_filepath
         if len(sys.argv) == 2:
             tests_filepath = sys.argv[1]
-        run_tests(tests_filepath)
+        num_errors = run_tests(tests_filepath)
         print 'Elapsed time: {:.1f} seconds\n'.format(time.time() - start)
+        exit_code = -1 if num_errors else 0
+        exit(exit_code)     # non-zero exit code fails build
 
