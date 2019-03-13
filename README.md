@@ -44,3 +44,17 @@ npm install
 node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '2014/*' tests/csv-test-validators.yml
 ```
 
+
+### Process for adding new election data
+- Update metadata at openelections.net, note new id #
+- ``python fetch.py wi -m`` to update local metadata file
+- ``python fetch.py wi <id>`` to download input data for new election
+- Pick random records from downloaded data files, add them to tests 
+    (at least one record per file)
+- ``python parser.py <id>`` to parse input data, write results file
+- Add line(s) from ``office_table.csv`` to ``office_table.xlsx``
+- ``python run_spot_tests.py``
+- Fix any problems found
+- Push to repo
+- Make PR to update main repo
+
