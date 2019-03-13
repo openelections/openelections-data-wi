@@ -20,7 +20,6 @@ Elections will be processed in the order they appear in the metadata.
 
 A folder ``local_data_cache`` keeps a local copy of input data files. To update it:
 ```bash
-cd local_data_cache
 python fetch.py wi
 ```
 
