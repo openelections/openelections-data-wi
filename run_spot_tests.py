@@ -14,7 +14,7 @@ import unicodecsv as csv
 import parser
 
 
-default_tests_filepath = 'tests/features/wi-elections.feature.csv'
+default_tests_filepath = 'tests/wi-elections.tests.csv'
 
 
 """
