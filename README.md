@@ -7,7 +7,7 @@ Pre-processed election results for Wisconsin elections
 To update this metadata from the OpenElections API, run ``python fetch.py wi -m``\
 (``fetch.py`` fetches data files based on the cached metadata)
 
-To re-parse data files:
+To re-parse all data files:
 ```bash
 python parser.py
 ```
@@ -31,7 +31,7 @@ python fetch.py wi 1577 404
 
 
 Spot tests to check a few records from each results file are in
-``wi-elections.feature.csv`` (currently in ``tests/features/`` directory).
+``tests/wi-elections.tests.csv``.
 To run, use:
 ```bash
 python run_spot_tests.py [<tests_filepath>]
@@ -43,3 +43,4 @@ Tests to validate the CSV output using <a href="https://github.com/dhcole/csv-te
 npm install
 node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '2014/*' tests/csv-test-validators.yml
 ```
+
