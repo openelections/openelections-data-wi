@@ -5,10 +5,11 @@ git:
 
 install:
   - pip install -r requirements.txt
-  - npm install
+#  - npm install
 
 script:
   - python parser.py
-  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
-  - cd tests
-  - behave -T -q --format pretty
+  - python run_spot_tests.py
+#  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
+#  - cd tests
+#  - behave -T -q --format pretty

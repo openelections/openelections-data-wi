@@ -88,6 +88,7 @@ def clean_county(item):
     item = clean_string(item)
     item = item.replace(" County", '')
     item = item.replace("Lacrosse", "La Crosse")
+    item = item.replace(" Du ", " du ")     # Fond du Lac
     return item
 
 def clean_ward(item):
@@ -120,10 +121,27 @@ def clean_votes(item):
     return to_int(item)
 
 def clean_candidate(item):
+    item = item.strip()
+    # handle candidate pairs
     item = item.replace("\n"," & ")
-    item = clean_string(item)
     item = item.replace("/"," &")
+    item = titlecase_parts(item, ' & ')
+    item = titlecase_parts(item, ' Jr.')
+    item = titlecase_parts(item, ' Mc')
+    head, sep, tail = item.partition(' (')
+    if sep:     # probably "(write-in)"
+        head = head.title() if head.isupper() else head
+        item = head + sep + tail.title()
+    item = item.replace("  "," ")
+    item = item.replace("Iii","III")
+    item = item.replace("Ii","II")
     return item
+
+def titlecase_parts(text, separator):
+    """Split text by separator, titlecase any uppercase parts, rejoin"""
+    parts = text.split(separator)
+    parts = [part.title() if part.isupper() else part for part in parts]
+    return separator.join(parts)
 
 
 def check_district_appropriate_for_office(row):
@@ -168,4 +186,6 @@ def clean_particular(election,row):
         row[1] = row[1].replace("!","1")                # ward
     if id == 411:
         row[6] = row[6].replace("   "," ")              # candidate
+    if id == 425:
+        row[6] = row[6].replace("RICk","RICK")  # candidate, titlecased later
     return row
