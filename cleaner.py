@@ -140,7 +140,8 @@ def clean_candidate(item):
 def titlecase_parts(text, separator):
     """Split text by separator, titlecase any uppercase parts, rejoin"""
     parts = text.split(separator)
-    parts = [part.title() if part.isupper() else part for part in parts]
+    parts = [part.title() if part.isupper() else part
+                for part in parts]
     return separator.join(parts)
 
 
@@ -180,7 +181,8 @@ def clean_string(item):
 
 
 def clean_particular(election,row):
-    """Corrections for specific elections"""
+    """Corrections for specific elections,
+        done before clean_row()"""
     id = election['id']
     if id in (411, 413, 1662, 1830):
         row[1] = row[1].replace("!","1")                # ward
