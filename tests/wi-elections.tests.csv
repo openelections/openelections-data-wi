@@ -118,12 +118,12 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Don Pridemore,Dodge,State Assembly,99,CITY OF HARTFORD Ward 16,0,0
 20110215__wi__primary__ward.csv,,,,,,,,
 ,NP,Joel Winnig,Door,Supreme Court,,TOWN OF GIBRALTAR Wards 1 & 2,6,102
-,NP,Daniel P. Steffen,Polk,"POLK COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF WEST SWEDEN Wards 1 & 2,13,25
+,NP,Daniel P. Steffen,Polk,"Polk County Circuit Court, Branch 2",,TOWN OF WEST SWEDEN Wards 1 & 2,13,25
 20110405__wi__general__ward.csv,,,,,,,,
 ,,"David T. Prosser, Jr.",Manitowoc,Supreme Court,,"CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36",306,555
 ,,Joanne F. Kloppenburg,Racine,Supreme Court,,TOWN OF WATERFORD Wards 1 - 10,573,2183
-,NP,Sandra J. Marcus,Marathon,"MARATHON COUNTY CIRCUIT COURT, BRANCH 5",,VILLAGE OF BIRNAMWOOD Ward 2,5,5
-,NP,Guy Dutcher,Waushara,WAUSHARA COUNTY CIRCUIT COURT,,TOWN OF POY SIPPI Ward 1,170,170
+,NP,Sandra J. Marcus,Marathon,"Marathon County Circuit Court, Branch 5",,VILLAGE OF BIRNAMWOOD Ward 2,5,5
+,NP,Guy Dutcher,Waushara,Waushara County Circuit Court,,TOWN OF POY SIPPI Ward 1,170,170
 ,NP,Paul B. Higginbotham,Jackson,Court of Appeals,4,VILLAGE OF HIXTON Ward 1,93,93
 20110503__wi__special__general__ward.csv,,,,,,,,
 ,DEM,Rick Aaron,Ozaukee,State Assembly,60,"TOWN OF GRAFTON WARDS 1 2, & 6",69,422
@@ -162,22 +162,22 @@ filename,party,candidate,county,office,district,ward,votes,total
 20111108__wi__special__general__ward.csv,,,,,,,,
 ,REP,David A. Drewes,La Crosse,State Assembly,95,CITY OF LA CROSSE Ward 15,161,573
 20120221__wi__primary__ward.csv,,,,,,,,
-,NP,Francis X. Sullivan,Dane,"DANE COUNTY CIRCUIT COURT, BRANCH 11",,TOWN OF YORK Ward 1,6,31
-,NP,Edward Richard Antaramian,Kenosha,"KENOSHA COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF SOMERS Wards 10-11-13,62,274
-,NP,"Nelson Wesley Phillips, III",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,"VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5",26,96
-,NP,"Christopher R. Lipscomb, Sr.",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,CITY OF ST. FRANCIS Wards 9 - 12,140,395
-,NP,John F. O'Melia,Oneida,"ONEIDA COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF PINE LAKE Wards 1 and 4,98,272
+,NP,Francis X. Sullivan,Dane,"Dane County Circuit Court, Branch 11",,TOWN OF YORK Ward 1,6,31
+,NP,Edward Richard Antaramian,Kenosha,"Kenosha County Circuit Court, Branch 2",,TOWN OF SOMERS Wards 10-11-13,62,274
+,NP,"Nelson Wesley Phillips, III",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,"VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5",26,96
+,NP,"Christopher R. Lipscomb, Sr.",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,CITY OF ST. FRANCIS Wards 9 - 12,140,395
+,NP,John F. O'Melia,Oneida,"Oneida County Circuit Court, Branch 2",,TOWN OF PINE LAKE Wards 1 and 4,98,272
 20120403__wi__primary__ward.csv,,,,,,,,
 ,REP,Michele Bachmann,Adams,President,,TOWN OF QUINCY Ward 1,4,151
 ,DEM,Uninstructed Delegation,Washburn,President,,Town of Gull Lake Ward 1,6,20
 20120403__wi__primary__ward.csv,,,,,,,,
-,NP,John C. Albert,Dane,"DANE COUNTY CIRCUIT COURT, BRANCH 3",,TOWN OF OREGON WARDS 1-4,583,584
-,NP,Thomas J. Gritton,Winnebago,"WINNEBAGO COUNTY CIRCUIT COURT, BRANCH 1",,CITY OF OSHKOSH D8 W15,359,361
-,,Scattering,Winnebago,COURT OF APPEALS,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
-,NP,Robert E. Eaton,Ashland,ASHLAND COUNTY CIRCUIT COURT,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
-,NP,James Judge Duvall,Pepin,BUFFALO-PEPIN COUNTY CIRCUIT COURT,,CITY OF DURAND Wards 1 - 3,434,434
-,NP,"Nelson Wesley Phillips, III",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
-,NP,"Nicholas J. Brazeau, Jr.",Wood,"WOOD COUNTY CIRCUIT COURT, BRANCH 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
+,NP,John C. Albert,Dane,"Dane County Circuit Court, Branch 3",,TOWN OF OREGON WARDS 1-4,583,584
+,NP,Thomas J. Gritton,Winnebago,"Winnebago County Circuit Court, Branch 1",,CITY OF OSHKOSH D8 W15,359,361
+,,Scattering,Winnebago,Court of Appeals,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
+,NP,Robert E. Eaton,Ashland,Ashland County Circuit Court,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
+,NP,James Judge Duvall,Pepin,Buffalo-Pepin County Circuit Court,,CITY OF DURAND Wards 1 - 3,434,434
+,NP,"Nelson Wesley Phillips, III",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
+,NP,"Nicholas J. Brazeau, Jr.",Wood,"Wood County Circuit Court, Branch 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
 20120508__wi__primary-recall__ward.csv,,,,,,,,
 ,REP,Patrick J. O'Brien (Write-In),Monroe,Governor,,"TOWN OF LA GRANGE WARDS 1A, 1B, 2A, 2B, 3A, 3B",0,233
 ,DEM,Tamra Varebrook,Racine,State Senate,21,"VILLAGE OF MOUNT PLEASANT WARDS 10,11,12,15",390,1256
