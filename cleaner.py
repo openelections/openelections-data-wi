@@ -70,7 +70,7 @@ short_office_names = [
 
 
 offices_requiring_district = [
-    'House', 'State Senate', 'State Assembly', 'Court Of Appeals']
+    'House', 'State Senate', 'State Assembly', 'Court of Appeals']
 
 
 
@@ -104,8 +104,9 @@ def clean_office(item):
     item = item.replace(' And ', '-', 1)
     item = item.replace(' Counties ', ' County ', 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
-    office = office_recode.get(item, item)
-    return office
+    item = office_recode.get(item, item)
+    item = item.replace(" Of ", " of ")
+    return item
 
 def clean_district(item):
     item = item.strip()
