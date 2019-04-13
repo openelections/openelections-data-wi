@@ -135,6 +135,7 @@ def clean_candidate(item):
     item = item.replace("  "," ")
     item = item.replace("Iii","III")
     item = item.replace("Ii","II")
+    item = item.replace("(Write In)", "(Write-In)")
     return item
 
 def titlecase_parts(text, separator):
