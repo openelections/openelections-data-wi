@@ -76,7 +76,6 @@ offices_requiring_district = [
 
 def normalize_office(office):
     """Generalize office name (remove county, branch)"""
-    office = clean_office(office)
     _, sep, tail = office.rpartition(' County ')
     office = tail       # remove county
     head, sep, tail = office.partition(', Branch ')
