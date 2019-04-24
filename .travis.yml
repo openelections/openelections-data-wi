@@ -10,9 +10,9 @@ install:
 #  - npm install
 
 script:
-  - python parser.py
+  - python parser.py 437
   - python run_spot_tests.py
-  - git diff --exit-code --name-only    # check that results are not changed
+  - git diff --exit-code --numstat      # check that results are not changed
 #  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
 #  - cd tests
 #  - behave -T -q --format pretty
