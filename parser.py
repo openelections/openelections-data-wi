@@ -296,7 +296,8 @@ def process_file(cached_filename, election):
         archive.extractall('tmp/')
         archive.close()
         results = []
-        for filename in os.listdir('tmp/'):
+        # sort os.listdir() output because order differs on Linux vs MacOS
+        for filename in sorted(os.listdir('tmp/')):
             local_file = 'tmp/' + filename
             results = results + process_file(local_file, election)
             os.remove(local_file)
