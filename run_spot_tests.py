@@ -14,7 +14,7 @@ import unicodecsv as csv
 import parser
 
 
-default_tests_filepath = 'tests/features/wi-elections.feature.csv'
+default_tests_filepath = 'tests/wi-elections.tests.csv'
 
 
 """
@@ -79,8 +79,7 @@ def run_tests(tests_filepath):
         for row in tests_reader:
             if row['filename']:     # next file to test
                 break
-            for field in ('office', 'ward'):
-                row[field] = row[field].title()
+            row['ward'] = row['ward'].title()
             for field in ('office', 'county', 'ward', 'candidate'):
                 if ',' in row[field]:
                     row[field] = '"' + row[field] + '"'

@@ -118,6 +118,8 @@ def update_cache(state, ids=None):
                 r = request_data(download_url, 
                                  error_text='Error fetching data file:')
                 if r:
+                    if os.path.exists(filepath):
+                        print '  Warning -- file exists, overwriting it:'
                     with open(filepath, 'wb') as f:
                         f.write(r.content)
                     print '   ', filename

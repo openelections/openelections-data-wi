@@ -7,7 +7,7 @@ Pre-processed election results for Wisconsin elections
 To update this metadata from the OpenElections API, run ``python fetch.py wi -m``\
 (``fetch.py`` fetches data files based on the cached metadata)
 
-To re-parse data files:
+To re-parse all data files:
 ```bash
 python parser.py
 ```
@@ -20,7 +20,6 @@ Elections will be processed in the order they appear in the metadata.
 
 A folder ``local_data_cache`` keeps a local copy of input data files. To update it:
 ```bash
-cd local_data_cache
 python fetch.py wi
 ```
 
@@ -31,7 +30,7 @@ python fetch.py wi 1577 404
 
 
 Spot tests to check a few records from each results file are in
-``wi-elections.feature.csv`` (currently in ``tests/features/`` directory).
+``tests/wi-elections.tests.csv``.
 To run, use:
 ```bash
 python run_spot_tests.py [<tests_filepath>]
@@ -43,3 +42,18 @@ Tests to validate the CSV output using <a href="https://github.com/dhcole/csv-te
 npm install
 node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '2014/*' tests/csv-test-validators.yml
 ```
+
+
+### Process for adding new election data
+- Update metadata at openelections.net, note new id #
+- ``python fetch.py wi -m`` to update local metadata file
+- ``python fetch.py wi <id>`` to download input data for new election
+- Pick random records from downloaded data files, add them to tests 
+    (at least one record per file)
+- ``python parser.py <id>`` to parse input data, write results file
+- Add line(s) from ``office_table.csv`` to ``office_table.xlsx``
+- ``python run_spot_tests.py``
+- Fix any problems found
+- Push to repo
+- Make PR to update main repo
+

@@ -70,13 +70,12 @@ short_office_names = [
 
 
 offices_requiring_district = [
-    'House', 'State Senate', 'State Assembly', 'Court Of Appeals']
+    'House', 'State Senate', 'State Assembly', 'Court of Appeals']
 
 
 
 def normalize_office(office):
     """Generalize office name (remove county, branch)"""
-    office = clean_office(office)
     _, sep, tail = office.rpartition(' County ')
     office = tail       # remove county
     head, sep, tail = office.partition(', Branch ')
@@ -104,8 +103,9 @@ def clean_office(item):
     item = item.replace(' And ', '-', 1)
     item = item.replace(' Counties ', ' County ', 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
-    office = office_recode.get(item, item)
-    return office
+    item = office_recode.get(item, item)
+    item = item.replace(" Of ", " of ")
+    return item
 
 def clean_district(item):
     item = item.strip()
@@ -135,12 +135,14 @@ def clean_candidate(item):
     item = item.replace("  "," ")
     item = item.replace("Iii","III")
     item = item.replace("Ii","II")
+    item = item.replace("(Write In)", "(Write-In)")
     return item
 
 def titlecase_parts(text, separator):
     """Split text by separator, titlecase any uppercase parts, rejoin"""
     parts = text.split(separator)
-    parts = [part.title() if part.isupper() else part for part in parts]
+    parts = [part.title() if part.isupper() else part
+                for part in parts]
     return separator.join(parts)
 
 
@@ -180,7 +182,8 @@ def clean_string(item):
 
 
 def clean_particular(election,row):
-    """Corrections for specific elections"""
+    """Corrections for specific elections,
+        done before clean_row()"""
     id = election['id']
     if id in (411, 413, 1662, 1830):
         row[1] = row[1].replace("!","1")                # ward
