@@ -1,0 +1,428 @@
+county,ward,office,district,total votes,party,candidate,votes
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,59,DEM,Tip McGuire,40
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,59,DEM,Gina Walkington,13
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,59,DEM,Spencer Zimmerman,6
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,59,DEM,Scattering,0
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,268,DEM,Tip McGuire,147
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,268,DEM,Gina Walkington,110
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,268,DEM,Spencer Zimmerman,10
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,268,DEM,Scattering,1
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,102,DEM,Tip McGuire,51
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,102,DEM,Gina Walkington,40
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,102,DEM,Spencer Zimmerman,11
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,102,DEM,Scattering,0
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,62,DEM,Tip McGuire,43
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,62,DEM,Gina Walkington,13
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,62,DEM,Spencer Zimmerman,6
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,62,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,67,DEM,Tip McGuire,38
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,67,DEM,Gina Walkington,25
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,67,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,67,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,84,DEM,Tip McGuire,51
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,84,DEM,Gina Walkington,30
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,84,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,84,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,11,DEM,Tip McGuire,3
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,11,DEM,Gina Walkington,8
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,11,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,11,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,218,DEM,Tip McGuire,113
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,218,DEM,Gina Walkington,94
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,218,DEM,Spencer Zimmerman,11
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,218,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,179,DEM,Tip McGuire,130
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,179,DEM,Gina Walkington,45
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,179,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,179,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,99,DEM,Tip McGuire,56
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,99,DEM,Gina Walkington,39
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,99,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,99,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,185,DEM,Tip McGuire,99
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,185,DEM,Gina Walkington,79
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,185,DEM,Spencer Zimmerman,7
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,185,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,56,DEM,Tip McGuire,39
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,56,DEM,Gina Walkington,14
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,56,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,56,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,33,DEM,Tip McGuire,25
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,33,DEM,Gina Walkington,7
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,33,DEM,Spencer Zimmerman,1
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,33,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,121,DEM,Tip McGuire,77
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,121,DEM,Gina Walkington,40
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,121,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,121,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,53,DEM,Tip McGuire,23
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,53,DEM,Gina Walkington,23
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,53,DEM,Spencer Zimmerman,7
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,53,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,130,DEM,Tip McGuire,88
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,130,DEM,Gina Walkington,39
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,130,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,130,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,54,DEM,Tip McGuire,30
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,54,DEM,Gina Walkington,16
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,54,DEM,Spencer Zimmerman,8
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,54,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,219,DEM,Tip McGuire,127
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,219,DEM,Gina Walkington,86
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,219,DEM,Spencer Zimmerman,6
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,219,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,85,DEM,Tip McGuire,52
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,85,DEM,Gina Walkington,24
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,85,DEM,Spencer Zimmerman,9
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,85,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,131,DEM,Tip McGuire,86
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,131,DEM,Gina Walkington,43
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,131,DEM,Spencer Zimmerman,2
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,131,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,143,DEM,Tip McGuire,93
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,143,DEM,Gina Walkington,44
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,143,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,143,DEM,Scattering,1
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,57,DEM,Tip McGuire,33
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,57,DEM,Gina Walkington,19
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,57,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,57,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,27,DEM,Tip McGuire,15
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,27,DEM,Gina Walkington,11
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,27,DEM,Spencer Zimmerman,1
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,27,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,64,DEM,Tip McGuire,40
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,64,DEM,Gina Walkington,21
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,64,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,64,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,128,DEM,Tip McGuire,56
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,128,DEM,Gina Walkington,67
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,128,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,128,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,76,DEM,Tip McGuire,35
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,76,DEM,Gina Walkington,37
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,76,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,76,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,106,DEM,Tip McGuire,62
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,106,DEM,Gina Walkington,39
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,106,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,106,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,3,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,3,DEM,Gina Walkington,3
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,3,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,3,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,47,DEM,Tip McGuire,27
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,47,DEM,Gina Walkington,14
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,47,DEM,Spencer Zimmerman,6
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,47,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,12,DEM,Tip McGuire,11
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,12,DEM,Gina Walkington,1
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,12,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,12,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,2,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,2,DEM,Gina Walkington,2
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,2,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,2,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,54,DEM,Tip McGuire,32
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,54,DEM,Gina Walkington,19
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,54,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,54,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,87,DEM,Tip McGuire,36
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,87,DEM,Gina Walkington,45
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,87,DEM,Spencer Zimmerman,6
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,87,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,64,DEM,Tip McGuire,24
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,64,DEM,Gina Walkington,35
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,64,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,64,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,68,DEM,Tip McGuire,30
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,68,DEM,Gina Walkington,34
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,68,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,68,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,46,DEM,Tip McGuire,28
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,46,DEM,Gina Walkington,16
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,46,DEM,Spencer Zimmerman,2
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,46,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,108,DEM,Tip McGuire,40
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,108,DEM,Gina Walkington,59
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,108,DEM,Spencer Zimmerman,9
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,108,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,91,DEM,Tip McGuire,47
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,91,DEM,Gina Walkington,39
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,91,DEM,Spencer Zimmerman,5
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,91,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,76,DEM,Tip McGuire,41
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,76,DEM,Gina Walkington,34
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,76,DEM,Spencer Zimmerman,1
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,76,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,39,DEM,Tip McGuire,29
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,39,DEM,Gina Walkington,6
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,39,DEM,Spencer Zimmerman,4
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,39,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,39,DEM,Tip McGuire,19
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,39,DEM,Gina Walkington,17
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,39,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,39,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,12,DEM,Tip McGuire,10
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,12,DEM,Gina Walkington,2
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,12,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,12,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,38,DEM,Tip McGuire,18
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,38,DEM,Gina Walkington,20
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,38,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,38,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,75,DEM,Tip McGuire,38
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,75,DEM,Gina Walkington,34
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,75,DEM,Spencer Zimmerman,3
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,75,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,DEM,Scattering,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,DEM,Tip McGuire,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,DEM,Gina Walkington,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,DEM,Spencer Zimmerman,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,DEM,Scattering,0
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,72,DEM,Tip McGuire,32
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,72,DEM,Gina Walkington,34
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,72,DEM,Spencer Zimmerman,6
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,72,DEM,Scattering,0
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,109,DEM,Tip McGuire,35
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,109,DEM,Gina Walkington,64
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,109,DEM,Spencer Zimmerman,8
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,109,DEM,Scattering,2
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,413,DEM,Tip McGuire,190
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,413,DEM,Gina Walkington,190
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,413,DEM,Spencer Zimmerman,31
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,413,DEM,Scattering,2
+Racine,City Of Racine Ward 25,State Assembly,64,119,DEM,Tip McGuire,74
+Racine,City Of Racine Ward 25,State Assembly,64,119,DEM,Gina Walkington,36
+Racine,City Of Racine Ward 25,State Assembly,64,119,DEM,Spencer Zimmerman,9
+Racine,City Of Racine Ward 25,State Assembly,64,119,DEM,Scattering,0
+Racine,City Of Racine Ward 26,State Assembly,64,31,DEM,Tip McGuire,20
+Racine,City Of Racine Ward 26,State Assembly,64,31,DEM,Gina Walkington,10
+Racine,City Of Racine Ward 26,State Assembly,64,31,DEM,Spencer Zimmerman,1
+Racine,City Of Racine Ward 26,State Assembly,64,31,DEM,Scattering,0
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,61,REP,Mark Stalker,61
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,61,REP,Scattering,0
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,178,REP,Mark Stalker,178
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,178,REP,Scattering,0
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,78,REP,Mark Stalker,78
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,78,REP,Scattering,0
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,94,REP,Mark Stalker,94
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,94,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,43,REP,Mark Stalker,43
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,43,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,49,REP,Mark Stalker,49
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,49,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,6,REP,Mark Stalker,6
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,6,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,74,REP,Mark Stalker,74
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,74,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,89,REP,Mark Stalker,89
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,89,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,64,REP,Mark Stalker,64
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,64,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,91,REP,Mark Stalker,91
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,91,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,35,REP,Mark Stalker,35
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,35,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,11,REP,Mark Stalker,11
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,11,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,48,REP,Mark Stalker,48
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,48,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,15,REP,Mark Stalker,15
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,15,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,69,REP,Mark Stalker,68
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,69,REP,Scattering,1
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,42,REP,Mark Stalker,42
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,42,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,117,REP,Mark Stalker,117
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,117,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,33,REP,Mark Stalker,33
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,33,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,73,REP,Mark Stalker,73
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,73,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,60,REP,Mark Stalker,60
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,60,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,19,REP,Mark Stalker,19
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,19,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,18,REP,Mark Stalker,17
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,18,REP,Scattering,1
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,27,REP,Mark Stalker,27
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,27,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,76,REP,Mark Stalker,76
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,76,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,41,REP,Mark Stalker,41
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,41,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,81,REP,Mark Stalker,81
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,81,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,2,REP,Mark Stalker,2
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,2,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,36,REP,Mark Stalker,36
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,36,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,7,REP,Mark Stalker,7
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,7,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,18,REP,Mark Stalker,18
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,18,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,51,REP,Mark Stalker,51
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,51,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,57,REP,Mark Stalker,57
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,57,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,80,REP,Mark Stalker,80
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,80,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,55,REP,Mark Stalker,54
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,55,REP,Scattering,1
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,87,REP,Mark Stalker,87
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,87,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,67,REP,Mark Stalker,67
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,67,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,87,REP,Mark Stalker,86
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,87,REP,Scattering,1
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,12,REP,Mark Stalker,12
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,12,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,21,REP,Mark Stalker,21
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,21,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,3,REP,Mark Stalker,3
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,3,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,16,REP,Mark Stalker,16
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,16,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,60,REP,Mark Stalker,60
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,60,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,REP,Scattering,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,REP,Mark Stalker,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,REP,Scattering,0
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,62,REP,Mark Stalker,62
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,62,REP,Scattering,0
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,67,REP,Mark Stalker,67
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,67,REP,Scattering,0
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,379,REP,Mark Stalker,379
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,379,REP,Scattering,0
+Racine,City Of Racine Ward 25,State Assembly,64,48,REP,Mark Stalker,48
+Racine,City Of Racine Ward 25,State Assembly,64,48,REP,Scattering,0
+Racine,City Of Racine Ward 26,State Assembly,64,20,REP,Mark Stalker,19
+Racine,City Of Racine Ward 26,State Assembly,64,20,REP,Scattering,1
+Kenosha,Town Of Somers Wards 1-2,State Assembly,64,1,CON,Scattering,1
+Kenosha,"Village Of Somers Wards 5-6,9-10",State Assembly,64,0,CON,Scattering,0
+Kenosha,Village Of Somers Wards 7-8,State Assembly,64,0,CON,Scattering,0
+Kenosha,Village Of Somers Wards 11-12,State Assembly,64,2,CON,Scattering,2
+Kenosha,City Of Kenosha Ward 1,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 2,State Assembly,64,1,CON,Scattering,1
+Kenosha,City Of Kenosha Ward 3,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 4,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 13,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 14,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 15,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 16,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 17,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 18,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 19,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 20,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 21,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 22,State Assembly,64,1,CON,Scattering,1
+Kenosha,City Of Kenosha Ward 23,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 24,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 25,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 45,State Assembly,64,3,CON,Scattering,3
+Kenosha,City Of Kenosha Ward 47,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 50,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 54,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 63,State Assembly,64,2,CON,Scattering,2
+Kenosha,City Of Kenosha Ward 64,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 65,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 68,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 69,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 70,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 71,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 72,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 73,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 74,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 75,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 76,State Assembly,64,1,CON,Scattering,1
+Kenosha,City Of Kenosha Ward 77,State Assembly,64,1,CON,Scattering,1
+Kenosha,City Of Kenosha Ward 78,State Assembly,64,1,CON,Scattering,1
+Kenosha,City Of Kenosha Ward 79,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 82,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 83,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 84,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 85,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 86,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 87,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 92,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 93,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 94,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 96,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 98,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 99,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 100,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 101,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 102,State Assembly,64,0,CON,Scattering,0
+Kenosha,City Of Kenosha Ward 103,State Assembly,64,0,CON,Scattering,0
+Racine,Village Of Elmwood Park Ward 1,State Assembly,64,0,CON,Scattering,0
+Racine,"Village Of Mount Pleasant Wards 1,17-18,20,23",State Assembly,64,0,CON,Scattering,0
+Racine,"Village Of Mount Pleasant Wards 19,21-22",State Assembly,64,2,CON,Scattering,2
+Racine,City Of Racine Ward 25,State Assembly,64,0,CON,Scattering,0
+Racine,City Of Racine Ward 26,State Assembly,64,0,CON,Scattering,0
