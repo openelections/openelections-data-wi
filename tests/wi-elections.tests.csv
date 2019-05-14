@@ -49,14 +49,14 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Kara M. Burgos,La Crosse,"La Crosse County Circuit Court, Branch 4",,VILLAGE OF WEST SALEM Wards 1 - 6,78,400
 20070403__wi__general__ward.csv,,,,,,,,
 ,NP,Linda M. Clifford,Walworth,Supreme Court,,CITY OF WHITEWATER Wards 7 & 8,27,46
-,,Scattering,Barron,Court Of Appeals,3,TOWN OF STANFOLD,2,138
+,,Scattering,Barron,Court of Appeals,3,TOWN OF STANFOLD,2,138
 ,NP,Thomas G. Grover,Shawano,"Menominee-Shawano County Circuit Court, Branch 2",,TOWN OF ANGELICA Wards 1 - 3,297,297
 20080219__wi__primary__ward.csv,,,,,,,,
 ,REP,John McCain,Milwaukee,President,,CITY OF MILWAUKEE Ward 278,54,90
 ,NP,Ken Sortedahl,St. Croix,"St Croix County Circuit Court, Branch 4",,VILLAGE OF DEER PARK,3,50
 20080401__wi__general__ward.csv,,,,,,,,
 ,NP,James D. Babbitt,Barron,"Barron County Circuit Court, Branch 3",,TOWN OF DALLAS Wards 1 & 2,57,68
-,NP,Burneatta L. Bridge,Grant,Court Of Appeals,4,TOWN OF CASTLE ROCK,48,48
+,NP,Burneatta L. Bridge,Grant,Court of Appeals,4,TOWN OF CASTLE ROCK,48,48
 ,NP,Louis Butler,Forest,Supreme Court,,TOWN OF POPPLE RIVER,3,18
 20080909__wi__primary__ward.csv,,,,,,,,
 ,LIB,Scattering,Ozaukee,State Senate,8,"CITY OF MEQUON Wards 16, 17 & 19",1,1
@@ -84,11 +84,11 @@ filename,party,candidate,county,office,district,ward,votes,total
 20090217__wi__primary__ward.csv,,,,,,,,
 ,NP,Julie Genovese,Dane,"Dane County Circuit Court, Branch 13",,VILLAGE OF ROCKDALE,4,14
 ,NP,Peter C. Rotter,Marathon,"Marathon County Circuit Court, Branch 1",,VILLAGE OF BROKAW,1,18
-,NP,Lowell E. Holtz,Adams,State Superintendent Of Public Instruction,,TOWN OF STRONGS PRAIRIE Wards 1 & 2,3,35
+,NP,Lowell E. Holtz,Adams,State Superintendent of Public Instruction,,TOWN OF STRONGS PRAIRIE Wards 1 & 2,3,35
 20090407__wi__general__ward.csv,,,,,,,,
 ,NP,Kitty K. Brennan,Milwaukee,Court of Appeals,1,VILLAGE OF HALES CORNERS Wards 7 - 9,235,236
 ,NP,Michael W. Hoover,St. Croix,Court of Appeals,3,VILLAGE OF SPRING VALLEY Ward 3,1,1
-,NP,Tony Evers,Kenosha,State Superintendent Of Public Instruction,,VILLAGE OF PADDOCK LAKE Wards 1 - 5,239,419
+,NP,Tony Evers,Kenosha,State Superintendent of Public Instruction,,VILLAGE OF PADDOCK LAKE Wards 1 - 5,239,419
 ,NP,Randy R. Koschnick,Adams,Supreme Court,,CITY OF WISCONSIN DELLS Ward 5,1,1
 ,NP,Gene D. Linehan,Bayfield,Bayfield County Circuit Court,,TOWN OF OULU,23,80
 ,NP,David A. Hansher,Milwaukee,"Milwaukee County Circuit Court, Branch 42",,CITY OF MILWAUKEE Ward 208,7,7
@@ -118,17 +118,17 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Don Pridemore,Dodge,State Assembly,99,CITY OF HARTFORD Ward 16,0,0
 20110215__wi__primary__ward.csv,,,,,,,,
 ,NP,Joel Winnig,Door,Supreme Court,,TOWN OF GIBRALTAR Wards 1 & 2,6,102
-,NP,Daniel P. Steffen,Polk,"POLK COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF WEST SWEDEN Wards 1 & 2,13,25
+,NP,Daniel P. Steffen,Polk,"Polk County Circuit Court, Branch 2",,TOWN OF WEST SWEDEN Wards 1 & 2,13,25
 20110405__wi__general__ward.csv,,,,,,,,
 ,,"David T. Prosser, Jr.",Manitowoc,Supreme Court,,"CITY OF MANITOWOC Wards 17, 18, 22, 24 - 26, 28 - 30, 32, 34 & 36",306,555
 ,,Joanne F. Kloppenburg,Racine,Supreme Court,,TOWN OF WATERFORD Wards 1 - 10,573,2183
-,NP,Sandra J. Marcus,Marathon,"MARATHON COUNTY CIRCUIT COURT, BRANCH 5",,VILLAGE OF BIRNAMWOOD Ward 2,5,5
-,NP,Guy Dutcher,Waushara,WAUSHARA COUNTY CIRCUIT COURT,,TOWN OF POY SIPPI Ward 1,170,170
+,NP,Sandra J. Marcus,Marathon,"Marathon County Circuit Court, Branch 5",,VILLAGE OF BIRNAMWOOD Ward 2,5,5
+,NP,Guy Dutcher,Waushara,Waushara County Circuit Court,,TOWN OF POY SIPPI Ward 1,170,170
 ,NP,Paul B. Higginbotham,Jackson,Court of Appeals,4,VILLAGE OF HIXTON Ward 1,93,93
 20110503__wi__special__general__ward.csv,,,,,,,,
 ,DEM,Rick Aaron,Ozaukee,State Assembly,60,"TOWN OF GRAFTON WARDS 1 2, & 6",69,422
 ,REP,Duey Stroebel,Washington,State Assembly,60,TOWN OF TRENTON WDS-1.2.5.6.7,316,375
-,DEM,Andrew Allen Berg (Write In),Racine,State Assembly,83,VILLAGE OF WATERFORD Wards 1 - 7,9,900
+,DEM,Andrew Allen Berg (Write-In),Racine,State Assembly,83,VILLAGE OF WATERFORD Wards 1 - 7,9,900
 20110712__wi__primary-recall__ward.csv,,,,,,,,
 ,DEM,Otto C. Junkermann,Waupaca,State Senate,2,VILLAGE OF EMBARRASS Ward 1,24,42
 ,DEM,Scattering,Washington,State Senate,8,"VILLAGE OF GERMANTOWN Wards 1, 7, 15 - 17",19,1019
@@ -162,22 +162,22 @@ filename,party,candidate,county,office,district,ward,votes,total
 20111108__wi__special__general__ward.csv,,,,,,,,
 ,REP,David A. Drewes,La Crosse,State Assembly,95,CITY OF LA CROSSE Ward 15,161,573
 20120221__wi__primary__ward.csv,,,,,,,,
-,NP,Francis X. Sullivan,Dane,"DANE COUNTY CIRCUIT COURT, BRANCH 11",,TOWN OF YORK Ward 1,6,31
-,NP,Edward Richard Antaramian,Kenosha,"KENOSHA COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF SOMERS Wards 10-11-13,62,274
-,NP,"Nelson Wesley Phillips, III",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,"VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5",26,96
-,NP,"Christopher R. Lipscomb, Sr.",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,CITY OF ST. FRANCIS Wards 9 - 12,140,395
-,NP,John F. O'Melia,Oneida,"ONEIDA COUNTY CIRCUIT COURT, BRANCH 2",,TOWN OF PINE LAKE Wards 1 and 4,98,272
+,NP,Francis X. Sullivan,Dane,"Dane County Circuit Court, Branch 11",,TOWN OF YORK Ward 1,6,31
+,NP,Edward Richard Antaramian,Kenosha,"Kenosha County Circuit Court, Branch 2",,TOWN OF SOMERS Wards 10-11-13,62,274
+,NP,"Nelson Wesley Phillips, III",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,"VILLAGE OF WEST MILWAUKEE WARDS - 1, 2 & 5",26,96
+,NP,"Christopher R. Lipscomb, Sr.",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,CITY OF ST. FRANCIS Wards 9 - 12,140,395
+,NP,John F. O'Melia,Oneida,"Oneida County Circuit Court, Branch 2",,TOWN OF PINE LAKE Wards 1 and 4,98,272
 20120403__wi__primary__ward.csv,,,,,,,,
 ,REP,Michele Bachmann,Adams,President,,TOWN OF QUINCY Ward 1,4,151
 ,DEM,Uninstructed Delegation,Washburn,President,,Town of Gull Lake Ward 1,6,20
 20120403__wi__primary__ward.csv,,,,,,,,
-,NP,John C. Albert,Dane,"DANE COUNTY CIRCUIT COURT, BRANCH 3",,TOWN OF OREGON WARDS 1-4,583,584
-,NP,Thomas J. Gritton,Winnebago,"WINNEBAGO COUNTY CIRCUIT COURT, BRANCH 1",,CITY OF OSHKOSH D8 W15,359,361
-,,Scattering,Winnebago,COURT OF APPEALS,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
-,NP,Robert E. Eaton,Ashland,ASHLAND COUNTY CIRCUIT COURT,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
-,NP,James Judge Duvall,Pepin,BUFFALO-PEPIN COUNTY CIRCUIT COURT,,CITY OF DURAND Wards 1 - 3,434,434
-,NP,"Nelson Wesley Phillips, III",Milwaukee,"MILWAUKEE COUNTY CIRCUIT COURT, BRANCH 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
-,NP,"Nicholas J. Brazeau, Jr.",Wood,"WOOD COUNTY CIRCUIT COURT, BRANCH 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
+,NP,John C. Albert,Dane,"Dane County Circuit Court, Branch 3",,TOWN OF OREGON WARDS 1-4,583,584
+,NP,Thomas J. Gritton,Winnebago,"Winnebago County Circuit Court, Branch 1",,CITY OF OSHKOSH D8 W15,359,361
+,,Scattering,Winnebago,Court of Appeals,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
+,NP,Robert E. Eaton,Ashland,Ashland County Circuit Court,,VILLAGE OF BUTTERNUT Wards 1 & 2,69,69
+,NP,James Judge Duvall,Pepin,Buffalo-Pepin County Circuit Court,,CITY OF DURAND Wards 1 - 3,434,434
+,NP,"Nelson Wesley Phillips, III",Milwaukee,"Milwaukee County Circuit Court, Branch 17",,VILLAGE OF BAYSIDE Ward 1s & 3s Congress 6,6,16
+,NP,"Nicholas J. Brazeau, Jr.",Wood,"Wood County Circuit Court, Branch 2",,CITY OF WISCONSIN RAPIDS Ward 23,67,69
 20120508__wi__primary-recall__ward.csv,,,,,,,,
 ,REP,Patrick J. O'Brien (Write-In),Monroe,Governor,,"TOWN OF LA GRANGE WARDS 1A, 1B, 2A, 2B, 3A, 3B",0,233
 ,DEM,Tamra Varebrook,Racine,State Senate,21,"VILLAGE OF MOUNT PLEASANT WARDS 10,11,12,15",390,1256
@@ -212,10 +212,10 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Adam Neylon,Waukesha,State Assembly,98,City of Pewaukee Wards 5-7,219,559
 ,REP,Jeanne Tarantino,Waukesha,State Assembly,98,TOWN OF LISBON WARD 3,11,132
 20130402__wi__general__ward.csv,,,,,,,,
-,IND,Tony Evers,Adams,State Superintendent Of Public Instruction,,Town Of Monroe Ward 1,53,94
-,IND,Tony Evers,Columbia,State Superintendent Of Public Instruction,,City Of Wisconsin Dells Ward 1,54,74
-,IND,Don Pridemore,Dane,State Superintendent Of Public Instruction,,City Of Madison Ward 49,12,82
-,IND,Don Pridemore,Wood,State Superintendent Of Public Instruction,,Town Of Seneca Wards 1 -3,55,136
+,IND,Tony Evers,Adams,State Superintendent of Public Instruction,,Town Of Monroe Ward 1,53,94
+,IND,Tony Evers,Columbia,State Superintendent of Public Instruction,,City Of Wisconsin Dells Ward 1,54,74
+,IND,Don Pridemore,Dane,State Superintendent of Public Instruction,,City Of Madison Ward 49,12,82
+,IND,Don Pridemore,Wood,State Superintendent of Public Instruction,,Town Of Seneca Wards 1 -3,55,136
 ,IND,Daniel T. Dillon,Rock,"Rock County Circuit Court, Branch 4",,CITY OF BRODHEAD WARDS 7-8,6,6
 ,IND,Lisa K. Stark,Ashland,Court of Appeals,3,TOWN OF SHANAGOLDEN Wards 1,22,22
 ,IND,Ed Fallone,Langlade,Supreme Court,,TOWN OF AINSWORTH WARD 1,30,100
@@ -239,7 +239,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,"Robert A. Kennedy, Jr.",Florence,Florence-Forest County Circuit Court,,TOWN OF FENCE WARD 1,24,46
 20140812__wi__primary__ward.csv,,,,,,,,
 ,DEM,Mary Burke,Brown,Governor,,Town of Holland Wards 1 - 2,41,49
-,CON,Jerry Broitzman,Dane,Secretary Of State,,City of Madison Ward 38,3,3
+,CON,Jerry Broitzman,Dane,Secretary of State,,City of Madison Ward 38,3,3
 ,REP,Rebecca Kleefisch,Douglas,Lieutenant Governor,,Town of Brule Wards 1 & 2,9,9
 ,REP,Paul Ryan,Kenosha,House,1,CITY OF KENOSHA WARD87,66,77
 ,REP,Reid J. Ribble,Winnebago,House,8,TOWN OF WOLF RIVER Wards 2B and 2C,22,22
@@ -267,7 +267,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Guy M. Taylor,Lafayette,Lafayette County Circuit Court,,CITY OF CUBA CITY Ward 5,1,7
 ,NP,Catherine Q. Delahunt,Sheboygan,"Sheboygan County Circuit Court, Branch 4",,VILLAGE OF RANDOM LAKE Wards 1 - 2,93,245
 20150407__wi__general__ward.csv,,,,,,,,
-,NP,Kristina M. Bourget,Marathon,Court Of Appeals,3,VILLAGE OF KRONENWETTER Wards 6-10,92,364
+,NP,Kristina M. Bourget,Marathon,Court of Appeals,3,VILLAGE OF KRONENWETTER Wards 6-10,92,364
 20150407__wi__special__general__ward.csv,,,,,,,,
 ,DEM,Nicholas J. Stamates (Write-In),Ozaukee,State Senate,20,VILLAGE OF SAUKVILLE Wards 1; 6-7,0,319
 20150623__wi__special__primary__ward.csv,,,,,,,,
@@ -309,7 +309,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Malia Malone,Polk,"Polk County Circuit Court, Branch 1",,"VILLAGE OF TURTLE LAKE Wards 2A,2B",7,8
 ,NP,Charles V. Feltes,Trempealeau,Trempealeau County Circuit Court,,VILLAGE OF ELEVA Ward 1,8,52
 ,NP,Patricia Koppa,Manitowoc,"Manitowoc County Circuit Court, Branch 3",,CITY OF TWO RIVERS Wards 3-4,75,205
-,NP,Lowell E. Holtz,Rock,State Superintendent Of Public Instruction,,CITY OF BRODHEAD Wards 7-8,0,5
+,NP,Lowell E. Holtz,Rock,State Superintendent of Public Instruction,,CITY OF BRODHEAD Wards 7-8,0,5
 20170404__wi__general__ward.csv,,,,,,,,
 ,NP,Rick Melcher (Write-In),Shawano,State Superintendent of Public Instruction,,CITY OF SHAWANO Wards 7-8,1,165
 ,,Scattering,Dane,Supreme Court,,CITY OF MADISON Ward 40,184,723
@@ -354,9 +354,11 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,DEM,Dawn Marie Sass,Monroe,State Treasurer,,Village of WILTON Ward 1,17,35
 20181106__wi__general__ward.csv,,,,,,,,
 ,REP,Bob Kulp,Marathon,State Assembly,69,Village of FENWOOD Ward 1,57,64
-,REP,Jay Schroeder,Washburn,Secretary Of State,,Town of FROG CREEK Ward 1,40,67
+,REP,Jay Schroeder,Washburn,Secretary of State,,Town of FROG CREEK Ward 1,40,67
 ,REP,"F. James Sensenbrenner, Jr.",Jefferson,House,5,Town of WATERTOWN Wards 1-2,721,1006
 ,DEM,Tammy Baldwin,Oneida,Senate,,City of RHINELANDER Wards 8-9,306,504
 ,REP,Jerry Petrowski,Rusk,State Senate,29,Village of GLEN FLORA Ward 1,19,33
 20190219__wi__primary__ward.csv,,,,,,,,
 ,NP,Steve Cain,Ozaukee,"Ozaukee County Circuit Court, Branch 2",,Village of THIENSVILLE Wards 3-4,37,103
+20190402__wi__special__primary__ward.csv,,,,,,,,
+,DEM,Gina Walkington,Kenosha,State Assembly,64,City of Kenosha Ward 87,34,75

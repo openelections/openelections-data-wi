@@ -1,5 +1,7 @@
 language: python
 
+python: 2.7
+
 git:
   depth: 3
 
@@ -10,6 +12,5 @@ install:
 script:
   - python parser.py
   - python run_spot_tests.py
+  - git diff --exit-code --numstat      # check that results are not changed
 #  - node_modules/csv-test/bin/csv-test tests/csv-test-config.yml '20**/*' tests/csv-test-validators.yml
-#  - cd tests
-#  - behave -T -q --format pretty

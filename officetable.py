@@ -23,7 +23,10 @@ class OfficeTable(object):
     
     
     def add_office(self, office):
-        norm_office = cleaner.normalize_office(office)
+        cleaned_office = cleaner.clean_office(office)
+        norm_office = cleaner.normalize_office(cleaned_office)
+        if norm_office not in cleaner.office_names:
+            raise Exception('Unrecognized office name: ' + cleaned_office)
         self.offices_per_election.add(norm_office)
     
     

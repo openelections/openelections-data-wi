@@ -25,6 +25,11 @@ first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10,
 """
 
 
+warnings = {
+    'pdf_skipped': False,     # print warning when skipping a PDF input file
+}
+
+
 def collect_columns(row, start_col):
     """Collect data from row starting at start_col, until empty or bad cell"""
     data = []
@@ -283,14 +288,16 @@ def get_election_result(election, no_output=False):
 
 def process_file(cached_filename, election):
     if cached_filename.lower().endswith('.pdf'):
-        print '**** Skipping PDF file: ' + cached_filename
+        if warnings['pdf_skipped']:
+            print '**** Skipping PDF file: ' + cached_filename
         return []
     elif cached_filename.lower().endswith('.zip'):
         archive = zipfile.ZipFile(cached_filename, 'r')
         archive.extractall('tmp/')
         archive.close()
         results = []
-        for filename in os.listdir('tmp/'):
+        # sort os.listdir() output because order differs on Linux vs MacOS
+        for filename in sorted(os.listdir('tmp/')):
             local_file = 'tmp/' + filename
             results = results + process_file(local_file, election)
             os.remove(local_file)
