@@ -53,7 +53,7 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Thomas G. Grover,Shawano,"Menominee-Shawano County Circuit Court, Branch 2",,TOWN OF ANGELICA Wards 1 - 3,297,297
 20080219__wi__primary__ward.csv,,,,,,,,
 ,REP,John McCain,Milwaukee,President,,CITY OF MILWAUKEE Ward 278,54,90
-,NP,Ken Sortedahl,St. Croix,"St Croix County Circuit Court, Branch 4",,VILLAGE OF DEER PARK,3,50
+,NP,Ken Sortedahl,St. Croix,"St. Croix County Circuit Court, Branch 4",,VILLAGE OF DEER PARK,3,50
 20080401__wi__general__ward.csv,,,,,,,,
 ,NP,James D. Babbitt,Barron,"Barron County Circuit Court, Branch 3",,TOWN OF DALLAS Wards 1 & 2,57,68
 ,NP,Burneatta L. Bridge,Grant,Court of Appeals,4,TOWN OF CASTLE ROCK,48,48
@@ -365,6 +365,6 @@ filename,party,candidate,county,office,district,ward,votes,total
 20190402__wi__general__ward.csv,,,,,,,,
 ,NP,Brian Hagedorn,Chippewa,Supreme Court,,Town of Anson Wards 1-4,259,444
 ,NP,Lisa K. Stark,Eau Claire,Court of Appeals,3,Town of Washington Wards 1-13,1203,1216
-,,Scattering,St. Croix,"Saint Croix County Circuit Court, Branch 2",,Town of St. Joseph Wards 1-6,4,536
+,,Scattering,St. Croix,"St. Croix County Circuit Court, Branch 2",,Town of St. Joseph Wards 1-6,4,536
 20190430__wi__special__general__ward.csv,,,,,,,,
 ,REP,Mark Stalker,Racine,State Assembly,64,"Village of Mount Pleasant Wards 19,21-22",359,672
