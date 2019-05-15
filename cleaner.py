@@ -104,6 +104,8 @@ def clean_office(item):
     item = item.replace(' Counties ', ' County ', 1)
     item = item.replace("Lacrosse", "La Crosse", 1)
     item = item.replace("Special Primary ", "", 1)
+    item = item.replace("St ", "St. ", 1)
+    item = item.replace("Saint ", "St. ", 1)
     item = office_recode.get(item, item)
     item = item.replace(" Of ", " of ")
     return item
