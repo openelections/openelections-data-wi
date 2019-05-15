@@ -362,3 +362,9 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,NP,Steve Cain,Ozaukee,"Ozaukee County Circuit Court, Branch 2",,Village of THIENSVILLE Wards 3-4,37,103
 20190402__wi__special__primary__ward.csv,,,,,,,,
 ,DEM,Gina Walkington,Kenosha,State Assembly,64,City of Kenosha Ward 87,34,75
+20190402__wi__general__ward.csv,,,,,,,,
+,NP,Brian Hagedorn,Chippewa,Supreme Court,,Town of Anson Wards 1-4,259,444
+,NP,Lisa K. Stark,Eau Claire,Court of Appeals,3,Town of Washington Wards 1-13,1203,1216
+,,Scattering,St. Croix,"Saint Croix County Circuit Court, Branch 2",,Town of St. Joseph Wards 1-6,4,536
+20190430__wi__special__general__ward.csv,,,,,,,,
+,REP,Mark Stalker,Racine,State Assembly,64,"Village of Mount Pleasant Wards 19,21-22",359,672
