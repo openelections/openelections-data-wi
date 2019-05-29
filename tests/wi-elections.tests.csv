@@ -170,7 +170,6 @@ filename,party,candidate,county,office,district,ward,votes,total
 20120403__wi__primary__ward.csv,,,,,,,,
 ,REP,Michele Bachmann,Adams,President,,TOWN OF QUINCY Ward 1,4,151
 ,DEM,Uninstructed Delegation,Washburn,President,,Town of Gull Lake Ward 1,6,20
-20120403__wi__primary__ward.csv,,,,,,,,
 ,NP,John C. Albert,Dane,"Dane County Circuit Court, Branch 3",,TOWN OF OREGON WARDS 1-4,583,584
 ,NP,Thomas J. Gritton,Winnebago,"Winnebago County Circuit Court, Branch 1",,CITY OF OSHKOSH D8 W15,359,361
 ,,Scattering,Winnebago,Court of Appeals,2,"TOWN OF ALGOMA Wards 1-2, 7-10",4,791
@@ -261,7 +260,6 @@ filename,party,candidate,county,office,district,ward,votes,total
 ,REP,Lee E. Schlenvogt,Calumet,State Senate,20,TOWN OF BROTHERTOWN Ward 1-2,12,50
 ,DEM,Nicholas J. Stamates (Write-In),Sheboygan,State Senate,20,VILLAGE OF WALDO Ward 1,0,0
 ,CON,Scattering,Fond du Lac,State Senate,20,VILLAGE OF KEWASKUM WD 6,0,0
-20150217__wi__special__primary__ward.csv,,,,,,,,
 ,NP,Michelle Greendeer (Write-In),Jackson,Jackson County Circuit Court,,TOWN OF KOMENSKY Ward 1,45,64
 ,NP,Candice C. M. Tlustosch,La Crosse,"La Crosse County Circuit Court, Branch 5",,VILLAGE OF WEST SALEM Wards 1-6,139,289
 ,NP,Guy M. Taylor,Lafayette,Lafayette County Circuit Court,,CITY OF CUBA CITY Ward 5,1,7
