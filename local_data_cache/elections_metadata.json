@@ -13,8 +13,11 @@
            "cong_dist_level_status": "",
            "county_level": false,
            "county_level_status": "",
-           "direct_links": [
+           "direct_links_before_splitting": [
                "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20.xlsx"
+           ],
+           "direct_links": [
+               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20_special.xlsx"
            ],
            "end_date": "2020-02-18",
            "gov": false,
@@ -63,8 +66,11 @@
            "cong_dist_level_status": "",
            "county_level": false,
            "county_level_status": "",
-           "direct_links": [
+           "direct_links_before_splitting": [
                "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20.xlsx"
+           ],
+           "direct_links": [
+               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20_nonpartisan.xlsx"
            ],
            "end_date": "2020-02-18",
            "gov": false,
