@@ -174,6 +174,8 @@ def clean_row(row):
 def to_int(item):
     if isinstance(item, basestring):
         item = '0' + item.replace(',','').strip()
+    else:
+        item = '0'
     return int(item)
 
 def clean_string(item):
