@@ -43,15 +43,15 @@ office_recode = {
 office_names = [
     # federal
     'President', 'Senate', 'House',
-    
+
     # statewide
     'Governor', 'Lieutenant Governor', 'Attorney General',
     'Secretary of State', 'State Treasurer',
     'State Superintendent of Public Instruction',
-    
+
     # state representatives
     'State Senate', 'State Assembly',
-    
+
     # judicial, D.A.
     'Supreme Court',
     'Court of Appeals',         # followed by ', District __'
@@ -172,7 +172,7 @@ def clean_row(row):
 
 
 def to_int(item):
-    if isinstance(item, basestring):
+    if isinstance(item, str):
         item = '0' + item.replace(',','').strip()
     elif item is None:
         item = '0'

@@ -4,7 +4,7 @@ import json
 import os
 import sys
 
-import unicodecsv as csv
+import csv
 import xlrd
 import zipfile
 
@@ -26,7 +26,7 @@ first_header = {'ELECTION': 0, 'OFFICE TYPE': 3, 'COUNTY': 10,
 
 
 warnings = {
-    'pdf_skipped': False,     # print warning when skipping a PDF input file
+    'pdf_skipped': False,     # print(warning when skipping a PDF input file
 }
 
 
@@ -69,8 +69,8 @@ def process_xls_2000_to_2010(sheet):
             # first row of block, collect candidate names
             col_offset =  first_header[colA]    # number of missing columns
             if col_offset > 0:
-                print "Note: section at row {} is missing {} columns".format(
-                    rowx + 1, col_offset)
+                print("Note: section at row {} is missing {} columns".format(
+                    rowx + 1, col_offset))
             candidate_col = 17 - col_offset   # first column of candidate data
             candidates = collect_columns(row, candidate_col)
             if colA == 'ELECTION DATE':       # single header, extract parties
@@ -83,7 +83,7 @@ def process_xls_2000_to_2010(sheet):
             continue
         elif colA in ('', 'SQL>') or colA.endswith('rows selected.'):
             continue    # not a data row
-        
+
         # not header nor blank: assume this is a data row
         office_col = 4 - col_offset
         if office_col >= 0:
@@ -103,16 +103,16 @@ def process_xls_2000_to_2010(sheet):
         county = row[10 - col_offset]
         ward_info = [row[col - col_offset] for col in (11, 13, 16)]
         ward = '{} of {} {}'.format(*ward_info)
-        
+
         votes = collect_columns(row, candidate_col)
         if isinstance(votes[0], basestring) and not votes[0].isdigit():
-            print '   row {}, col {}, data:"{}"'.format(
-                rowx, candidate_col, votes[0])
+            print('   row {}, col {}, data:"{}"'.format(
+                rowx, candidate_col, votes[0]))
             raise ValueError('Non-digit chars in votes field')
         # assume votes are strings of digits, or ints or floats
         votes = map(int, votes)
         total_votes = sum(votes)
-        
+
         for i, candidate in enumerate(candidates):
             results.append([county, ward, office, district, total_votes,
                 parties[i], candidate, votes[i]])
@@ -121,19 +121,19 @@ def process_xls_2000_to_2010(sheet):
 
 def process_xls_2012_DA_primary(sheet):     # election id 411
     """Return list of records from 2012-08-14 District Attorney spreadsheet"""
-    
+
     fieldnames = ['ContestName', 'CountyName', 'CandidateName',
                     'ReportingUnitText', 'VoteCount']
     col_headers = sheet.row_values(rowx=0)  # first row
     try:
         # Find indexes of desired fields in spreadsheet
-        fieldindexes = [col_headers.index(fieldname) 
+        fieldindexes = [col_headers.index(fieldname)
                             for fieldname in fieldnames]
     except ValueError:
-        print fieldname, 'not found in spreadsheet column headers:'
-        print col_headers
+        print(fieldname, 'not found in spreadsheet column headers:')
+        print(col_headers)
         raise
-    
+
     results = []
     candidate_votes = []
     previous_race_place = ()
@@ -152,7 +152,7 @@ def process_xls_2012_DA_primary(sheet):     # election id 411
         office = da_county + ' ' + da       # ____ County District Attorney
         assert party in cleaner.party_recode.values()
         office_table.add_office(office)
-        
+
         district = ''
         race_place = county, ward, office, district, party
         if previous_race_place and (race_place != previous_race_place):
@@ -184,7 +184,7 @@ def get_offices(sheet):
     # (0-origin row and col numbers)
     row1_AB = sheet.row_values(rowx=1, start_colx=0, end_colx=2)
     value_2A = sheet.cell_value(rowx=2, colx=0) if sheet.nrows > 2 else ''
-    
+
     if ''.join(row1_AB) == '':
         # First two cols in row 1 are blank,
         #   is this 2011-04-05 Supreme Court election (id 421)?
@@ -203,7 +203,7 @@ def get_offices(sheet):
             column = 1 if sheet.cell_value(rowx=1, colx=0) == '' else 0
         offices = sheet.col_values(colx=column, start_rowx=row)
         sheet_index = 1     # data starts on sheet 1
-        
+
     return offices, sheet_index
 
 
@@ -211,27 +211,26 @@ def process(filename, election):
     try:
         xlsfile = xlrd.open_workbook(filename)
     except IOError as exc:
-        print 'Failed to open input file {}'.format(filename)
-        print exc
-        print
+        print('Failed to open input file {}'.format(filename))
+        print(exc)
         return []
     sheet0 = xlsfile.sheet_by_index(0)
     sheet0_cell0A = sheet0.cell_value(rowx=0, colx=0)   # 1st row, 1st column
-    
+
     sheet1_cell0A = None
     if xlsfile.nsheets > 1:
         sheet1 = xlsfile.sheet_by_index(1)
         if sheet1.nrows > 0:
-            sheet1_cell0A = sheet1.cell_value(rowx=0, colx=0)        
+            sheet1_cell0A = sheet1.cell_value(rowx=0, colx=0)
     results = []
-    
+
     # Check for unusual file formats
     if sheet1_cell0A == 'ElectionName':
     	results.append(process_xls_2012_DA_primary(sheet1))
     # for an older-style header, process single sheet file
     elif sheet0_cell0A in first_header:
         results.append(process_xls_2000_to_2010(sheet0))
-    
+
     else:
         offices, sheet_index = get_offices(sheet0)
         for office in offices:
@@ -252,7 +251,7 @@ def make_filepath(election):
     names = [start_date, state, party, special, race_type, reporting_level]
     names = filter(bool, names)     # remove empty names
     filename = '__'.join(names) + '.csv'
-    print 'Processing ' + filename
+    print('Processing ' + filename)
     year = start_date[:4]
     if not os.path.isdir(year):
         os.mkdir(year)
@@ -263,7 +262,7 @@ def make_filepath(election):
 def get_election_result(election, no_output=False):
     filepath = make_filepath(election)
     if not no_output:
-        outfile = open(filepath, 'w')
+        outfile = open(filepath, 'wt')
         wr = csv.writer(outfile)
         wr.writerow(output_headers)
     office_table.new_election()
@@ -282,14 +281,14 @@ def get_election_result(election, no_output=False):
     if row is None and not no_output:   # no rows written, delete file
         outfile.close()
         os.remove(filepath)
-        print 'No data parsed, output file removed'
+        print('No data parsed, output file removed')
     office_table.tabulate_offices(election)
 
 
 def process_file(cached_filename, election):
     if cached_filename.lower().endswith('.pdf'):
         if warnings['pdf_skipped']:
-            print '**** Skipping PDF file: ' + cached_filename
+            print('**** Skipping PDF file: ' + cached_filename)
         return []
     elif cached_filename.lower().endswith('.zip'):
         archive = zipfile.ZipFile(cached_filename, 'r')
@@ -303,7 +302,7 @@ def process_file(cached_filename, election):
             os.remove(local_file)
         return results
     else: # Excel file
-        print 'Opening ' + cached_filename
+        print('Opening ' + cached_filename)
         return process(cached_filename, election)
 
 
@@ -312,7 +311,7 @@ TOTAL_VOTES_HEADER = 'Total Votes Cast'
 
 def extract_candidates(sheet, sheet_index):
     """ Extract candidate names and parties from sheet.
-    
+
         Returns: candidates, parties, start_row
     """
     # Search rows for Total Votes header, in column before candidates
@@ -322,7 +321,7 @@ def extract_candidates(sheet, sheet_index):
             break
     else:   # loop not exited with break
         raise Exception('"{}" header not found'.format(TOTAL_VOTES_HEADER))
-    
+
     # Total Votes header in rowx, candidates in this row or next
     # Candidate row will have "SCATTERING" in it
     row = sheet.row_values(rowx, start_colx=CAND_COL)
@@ -345,16 +344,16 @@ def extract_candidates(sheet, sheet_index):
                 if party:
                     parties[scattering_index] = party
         else:
-            print '##### Warning: SCATTERING missing in sheet {} "{}"'.format(
-                    sheet_index, sheet.name)
-    
+            print('##### Warning: SCATTERING missing in sheet {} "{}"'.format(
+                    sheet_index, sheet.name))
+
     start_row = rowx + 1        # first data row
     return candidates, parties, start_row
 
 
 def parse_office(office_string):
     """ Parse office string, returning (office, district, party)
-        
+
         Office string comes in many formats:
           LIEUTENANT GOVERNOR
           US SENATOR - AMERICANS ELECT
@@ -373,7 +372,7 @@ def parse_office(office_string):
     office = office_string.upper()
     office = office.replace(u'\u2015','-')   # change HORIZONTAL BAR to hyphen
     office = office.replace(u'\u2013', '-')  # change EN DASH to hyphen
-    
+
     if ' DISTRICT ' in office and ' DISTRICT ATTORNEY' not in office:
         head, sep, tail = office.partition(' DISTRICT ')
         office = head.strip(',- ')
@@ -384,7 +383,7 @@ def parse_office(office_string):
     else:
         district = ''
         party = ''
-    
+
     # Handle D.A. followed by county, or remove party
     head, sep, tail = office.partition(' -')
     tail = tail.strip()
@@ -403,11 +402,11 @@ def parse_office(office_string):
     if tail.isdigit():
         office = head
         district = tail
-    
+
     office = office.strip()
     party = party.replace(' PARTY', '')
     party = party.strip('0123456789-')      # remove years appended to office
-    
+
     office_table.add_office(office)
     return office, district, party
 
@@ -419,9 +418,9 @@ def parse_sheet(sheet, office, sheet_index, election):
     office_was = office
     office, district, party = parse_office(office)
     if party and election['race_type'] == 'general':
-        print '##### Warning: skipping sheet "{}"'.format(sheet.name),
-        print 'in general election'
-        print  '    Party in office name indicates primary:', office_was
+        print('##### Warning: skipping sheet "{}"'.format(sheet.name)),
+        print('in general election')
+        print( '    Party in office name indicates primary:', office_was)
         return []
     candidates, parties, start_row = extract_candidates(sheet, sheet_index)
     offset = 0
@@ -449,7 +448,7 @@ def parse_sheet(sheet, office, sheet_index, election):
         for index, candidate in enumerate(candidates):
             if candidate:   # column not empty
                 party = parties[index]
-                output.append([county, ward, office, district, total_votes, 
+                output.append([county, ward, office, district, total_votes,
                                 party, candidate, candidate_votes[index]])
     return output
 
@@ -457,12 +456,12 @@ def parse_sheet(sheet, office, sheet_index, election):
 def get_all_results(ids, no_output=False):
     """Process results for election ids given;
         if none given, process all ids in metadata.
-    """    
+    """
     metadata = fetch.read_cached_metadata()
     for election in metadata['objects']:
         if ids and election.get('id') not in ids:
             continue    # filter by ids list if not empty
-        print 'id {id}'.format(**election)
+        print('id {id}'.format(**election))
         get_election_result(election, no_output)
 
 
@@ -484,7 +483,7 @@ Election results available only in PDF files:
     437 (2006-09-12) PDF and excel in zip files, some offices only PDF
     444 (2004-11-02) has xls files for President and Senate,
         only PDFs for House, State Senate, State Assembly, District Attorney
-    443, 445, 446, 447, 
+    443, 445, 446, 447,
     685, 1756
 
 Single sheet spreadsheets, 2002-2010 format, two-line repeated headings:
@@ -514,11 +513,10 @@ if __name__ == '__main__':
     if no_output:
         args = args[1:]
     if not all(map(str.isdigit, args)):
-        print usage_msg
-        print 'Args must be positive integers (election ids)'
+        print(usage_msg)
+        print('Args must be positive integers (election ids)')
     else:
         office_table = officetable.OfficeTable()
         ids = map(int, args)
         get_all_results(ids, no_output=no_output)
         office_table.print_summary()
-
