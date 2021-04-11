@@ -4,227 +4,70 @@
       "next": null,
       "offset": 0,
       "previous": null,
-      "total_count": 102
+      "total_count": 103
    },
    "objects": [
       {
-          "absentee_and_provisional": false,
-          "cong_dist_level": false,
-          "cong_dist_level_status": "",
-          "county_level": false,
-          "county_level_status": "",
-          "direct_link": "",
-          "direct_links": [
-              "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_circuit%20court.xlsx",
-              "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_Court%20of%20Appeals.xlsx",
-              "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_Supreme%20Court.xlsx"
-          ],
-          "end_date": "2020-04-07",
-          "gov": false,
-          "house": false,
-          "id": 1895,
-          "organization": {
-              "city": "",
-              "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm7",
-              "gov_agency": true,
-              "gov_level": "state",
-              "id": 17,
-              "name": "Wisconsin Elections Commission",
-              "resource_uri": "/api/v1/organization/17/",
-              "slug": "wi-gab",
-              "state": "WI",
-              "street": "",
-              "url": "http://elections.wi.gov/"
-          },
-          "portal_link": "https://elections.wi.gov/node/6855",
-          "precinct_level": true,
-          "precinct_level_status": "yes",
-          "prez": false,
-          "primary_note": "",
-          "primary_type": "",
-          "race_type": "general",
-          "resource_uri": "/api/v1/election/1895/",
-          "result_type": "certified",
-          "senate": false,
-          "special": false,
-          "start_date": "2020-04-07",
-          "state": {
-              "name": "Wisconsin",
-              "postal": "WI",
-              "resource_uri": "/api/v1/state/WI/"
-          },
-          "state_leg": false,
-          "state_leg_level": false,
-          "state_leg_level_status": "",
-          "state_level": false,
-          "state_level_status": "",
-          "state_officers": false,
-          "user_fullname": "Davies, Nick"
+         "absentee_and_provisional": true,
+         "cong_dist_level": true,
+         "cong_dist_level_status": "no",
+         "county_level": true,
+         "county_level_status": "yes",
+         "direct_link": "",
+         "direct_links": [
+            "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report%20-%20President%20of%20the%20United%20States%20%28under%20recount%29.xlsx",
+            "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report%20-%20Representative%20in%20Congress.xlsx",
+            "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report%20-%20State%20Senate.xlsx",
+            "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report%20-%20Representative%20to%20the%20Assembly.xlsx"
+         ],
+         "end_date": "2020-11-03",
+         "gov": false,
+         "house": true,
+         "id": 1898,
+         "organization": {
+            "city": "",
+            "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm",
+            "gov_agency": true,
+            "gov_level": "state",
+            "id": 17,
+            "name": "Wisconsin Elections Commission",
+            "resource_uri": "/api/v1/organization/17/",
+            "slug": "wi-gab",
+            "state": "WI",
+            "street": "",
+            "url": "http://elections.wi.gov/"
+         },
+         "portal_link": "https://elections.wi.gov/elections-voting/results/2020/fall-general",
+         "precinct_level": true,
+         "precinct_level_status": "yes",
+         "prez": true,
+         "primary_note": "",
+         "primary_type": "",
+         "race_type": "general",
+         "resource_uri": "/api/v1/election/1898/",
+         "result_type": "certified",
+         "senate": false,
+         "special": false,
+         "start_date": "2020-11-03",
+         "state": {
+            "name": "Wisconsin",
+            "postal": "WI",
+            "resource_uri": "/api/v1/state/WI/"
+         },
+         "state_leg": true,
+         "state_leg_level": true,
+         "state_leg_level_status": "no",
+         "state_level": true,
+         "state_level_status": "yes",
+         "state_officers": false,
+         "user_fullname": "Willis, Derek"
       },
-      {
-          "absentee_and_provisional": false,
-          "cong_dist_level": false,
-          "cong_dist_level_status": "",
-          "county_level": false,
-          "county_level_status": "",
-          "direct_link": "",
-          "direct_links": [
-              "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_President.xlsx"
-          ],
-          "end_date": "2020-04-07",
-          "gov": false,
-          "house": false,
-          "id": 1896,
-          "organization": {
-              "city": "",
-              "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm7",
-              "gov_agency": true,
-              "gov_level": "state",
-              "id": 17,
-              "name": "Wisconsin Elections Commission",
-              "resource_uri": "/api/v1/organization/17/",
-              "slug": "wi-gab",
-              "state": "WI",
-              "street": "",
-              "url": "http://elections.wi.gov/"
-          },
-          "portal_link": "https://elections.wi.gov/node/6855",
-          "precinct_level": true,
-          "precinct_level_status": "yes",
-          "prez": true,
-          "primary_note": "",
-          "primary_type": "",
-          "race_type": "primary",
-          "resource_uri": "/api/v1/election/1896/",
-          "result_type": "certified",
-          "senate": false,
-          "special": false,
-          "start_date": "2020-04-07",
-          "state": {
-              "name": "Wisconsin",
-              "postal": "WI",
-              "resource_uri": "/api/v1/state/WI/"
-          },
-          "state_leg": false,
-          "state_leg_level": false,
-          "state_leg_level_status": "",
-          "state_level": false,
-          "state_level_status": "",
-          "state_officers": false,
-          "user_fullname": "Davies, Nick"
-      },
-      {
-           "absentee_and_provisional": false,
-           "cong_dist_level": false,
-           "cong_dist_level_status": "",
-           "county_level": false,
-           "county_level_status": "",
-           "direct_links_before_splitting": [
-               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20.xlsx"
-           ],
-           "direct_links": [
-               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20_special.xlsx"
-           ],
-           "end_date": "2020-02-18",
-           "gov": false,
-           "house": true,
-           "id": 1894,
-           "organization": {
-              "city": "",
-              "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm",
-              "gov_agency": true,
-              "gov_level": "state",
-              "id": 17,
-              "name": "Wisconsin Elections Commission",
-              "resource_uri": "/api/v1/organization/17/",
-              "slug": "wi-gab",
-              "state": "WI",
-              "street": "",
-              "url": "http://elections.wi.gov/"
-           },
-           "portal_link": "https://elections.wi.gov/node/6697",
-           "precinct_level": true,
-           "precinct_level_status": "yes",
-           "prez": false,
-           "primary_note": "",
-           "primary_type": "",
-           "race_type": "primary",
-           "result_type": "certified",
-           "senate": false,
-           "special": true,
-           "start_date": "2020-02-18",
-           "state": {
-              "name": "Wisconsin",
-              "postal": "WI",
-              "resource_uri": "/api/v1/state/WI/"
-           },
-           "state_leg": false,
-           "state_leg_level": false,
-           "state_leg_level_status": "",
-           "state_level": false,
-           "state_level_status": "",
-           "state_officers": false,
-           "user_fullname": "Davies, Nick"
-       },
-       {
-           "absentee_and_provisional": false,
-           "cong_dist_level": false,
-           "cong_dist_level_status": "",
-           "county_level": false,
-           "county_level_status": "",
-           "direct_links_before_splitting": [
-               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20.xlsx"
-           ],
-           "direct_links": [
-               "https://elections.wi.gov/sites/elections.wi.gov/files/Ward%20by%20Ward%20Report_All%20Offices_Spring%20Primary_2_18_20_nonpartisan.xlsx"
-           ],
-           "end_date": "2020-02-18",
-           "gov": false,
-           "house": false,
-           "id": 1893,
-           "organization": {
-              "city": "",
-              "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm",
-              "gov_agency": true,
-              "gov_level": "state",
-              "id": 17,
-              "name": "Wisconsin Elections Commission",
-              "resource_uri": "/api/v1/organization/17/",
-              "slug": "wi-gab",
-              "state": "WI",
-              "street": "",
-              "url": "http://elections.wi.gov/"
-           },
-           "portal_link": "https://elections.wi.gov/node/6697",
-           "precinct_level": true,
-           "precinct_level_status": "yes",
-           "prez": false,
-           "primary_note": "",
-           "primary_type": "",
-           "race_type": "primary",
-           "result_type": "certified",
-           "senate": false,
-           "special": false,
-           "start_date": "2020-02-18",
-           "state": {
-              "name": "Wisconsin",
-              "postal": "WI",
-              "resource_uri": "/api/v1/state/WI/"
-           },
-           "state_leg": false,
-           "state_leg_level": false,
-           "state_leg_level_status": "",
-           "state_level": false,
-           "state_level_status": "",
-           "state_officers": true,
-           "user_fullname": "Davies, Nick"
-       },
       {
          "absentee_and_provisional": false,
          "cong_dist_level": false,
          "cong_dist_level_status": "",
          "county_level": false,
-         "county_level_status": "", 
+         "county_level_status": "",
          "direct_link": "",
          "direct_links": [
             "https://elections.wi.gov/sites/electionsuat.wi.gov/files/Assembly%2064%20Special%20Election-Ward%20by%20Ward%20Report.xlsx"
@@ -981,7 +824,7 @@
          "county_level_status": "yes",
          "direct_link": "",
          "direct_links": [
-            "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Original%20Canvass%20Results-%20President%20%28Under%20Recount%29.xlsx",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/Ward%20by%20Ward%20Recount%20%20Canvass%20Results-%20President.xlsx",
             "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Report%20-US%20Senator.xlsx",
             "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Report%20-Congress.xlsx",
             "http://elections.wi.gov/sites/default/files/Ward%20by%20Ward%20Report-State%20Senate.xlsx",
@@ -1294,7 +1137,7 @@
          "state_level": true,
          "state_level_status": "yes",
          "state_officers": false,
-         "user_fullname": "Davies, Nick"
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": false,
@@ -1323,7 +1166,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://www.gab.wi.gov/elections-voting/results/2015/assembly-district-99-special-primary",
+         "portal_link": "http://www.elections.wi.gov/elections-voting/results/2015/assembly-district-99-special-primary",
          "precinct_level": true,
          "precinct_level_status": "yes",
          "prez": false,
@@ -1346,7 +1189,7 @@
          "state_level": true,
          "state_level_status": "yes",
          "state_officers": false,
-         "user_fullname": ""
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": false,
@@ -2031,58 +1874,6 @@
          "user_fullname": "Davies, Nick"
       },
       {
-         "absentee_and_provisional": true,
-         "cong_dist_level": false,
-         "cong_dist_level_status": "",
-         "county_level": true,
-         "county_level_status": "",
-         "direct_link": "http://gab.wi.gov/sites/default/files/result/ward_by_ward_report_4_2_2013_assembly_98_xls_51899.xls",
-         "direct_links": [
-            "http://gab.wi.gov/sites/default/files/result/ward_by_ward_report_4_2_2013_assembly_98_xls_51899.xls"
-         ],
-         "end_date": "2013-04-02",
-         "gov": false,
-         "house": false,
-         "id": 405,
-         "organization": {
-            "city": "",
-            "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm",
-            "gov_agency": true,
-            "gov_level": "state",
-            "id": 17,
-            "name": "Wisconsin Elections Commission",
-            "resource_uri": "/api/v1/organization/17/",
-            "slug": "wi-gab",
-            "state": "WI",
-            "street": "",
-            "url": "http://elections.wi.gov/"
-         },
-         "portal_link": "http://gab.wi.gov/elections-voting/results/2013/special/assembly-98-election",
-         "precinct_level": true,
-         "precinct_level_status": "",
-         "prez": false,
-         "primary_note": "",
-         "primary_type": "",
-         "race_type": "general",
-         "resource_uri": "/api/v1/election/405/",
-         "result_type": "certified",
-         "senate": false,
-         "special": true,
-         "start_date": "2013-04-02",
-         "state": {
-            "name": "Wisconsin",
-            "postal": "WI",
-            "resource_uri": "/api/v1/state/WI/"
-         },
-         "state_leg": true,
-         "state_leg_level": false,
-         "state_leg_level_status": "",
-         "state_level": false,
-         "state_level_status": "",
-         "state_officers": false,
-         "user_fullname": "Vestal, Alan James"
-      },
-      {
          "absentee_and_provisional": false,
          "cong_dist_level": false,
          "cong_dist_level_status": "",
@@ -2136,6 +1927,58 @@
          "state_level_status": "",
          "state_officers": true,
          "user_fullname": "Post, Davi"
+      },
+      {
+         "absentee_and_provisional": true,
+         "cong_dist_level": false,
+         "cong_dist_level_status": "",
+         "county_level": true,
+         "county_level_status": "",
+         "direct_link": "http://gab.wi.gov/sites/default/files/result/ward_by_ward_report_4_2_2013_assembly_98_xls_51899.xls",
+         "direct_links": [
+            "http://gab.wi.gov/sites/default/files/result/ward_by_ward_report_4_2_2013_assembly_98_xls_51899.xls"
+         ],
+         "end_date": "2013-04-02",
+         "gov": false,
+         "house": false,
+         "id": 405,
+         "organization": {
+            "city": "",
+            "fec_page": "http://www.fec.gov/pubrec/cfsdd/widir.htm",
+            "gov_agency": true,
+            "gov_level": "state",
+            "id": 17,
+            "name": "Wisconsin Elections Commission",
+            "resource_uri": "/api/v1/organization/17/",
+            "slug": "wi-gab",
+            "state": "WI",
+            "street": "",
+            "url": "http://elections.wi.gov/"
+         },
+         "portal_link": "http://gab.wi.gov/elections-voting/results/2013/special/assembly-98-election",
+         "precinct_level": true,
+         "precinct_level_status": "",
+         "prez": false,
+         "primary_note": "",
+         "primary_type": "",
+         "race_type": "general",
+         "resource_uri": "/api/v1/election/405/",
+         "result_type": "certified",
+         "senate": false,
+         "special": true,
+         "start_date": "2013-04-02",
+         "state": {
+            "name": "Wisconsin",
+            "postal": "WI",
+            "resource_uri": "/api/v1/state/WI/"
+         },
+         "state_leg": true,
+         "state_leg_level": false,
+         "state_leg_level_status": "",
+         "state_level": false,
+         "state_level_status": "",
+         "state_officers": false,
+         "user_fullname": "Vestal, Alan James"
       },
       {
          "absentee_and_provisional": true,
@@ -2399,18 +2242,18 @@
          "user_fullname": "Davies, Nick"
       },
       {
-         "absentee_and_provisional": true,
+         "absentee_and_provisional": false,
          "cong_dist_level": false,
          "cong_dist_level_status": "",
          "county_level": false,
          "county_level_status": "",
          "direct_link": "",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_Assembly.xls",
+            "http://elections.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_Assembly.xls",
             "http://elections.wi.gov/sites/default/files/2012%20Partisan%20Primary%20District%20Attorney.xlsx",
-            "http://www.gab.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_State%20Senate.xls",
-            "http://www.gab.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_U.S.%20Congress.xls",
-            "http://www.gab.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_U.S.%20Senate.xls"
+            "http://elections.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_State%20Senate.xls",
+            "http://elections.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_U.S.%20Congress.xls",
+            "http://elections.wi.gov/sites/default/files/Ward%20x%20Ward%20Results_8.14.12%20primary_U.S.%20Senate.xls"
          ],
          "end_date": "2012-08-14",
          "gov": false,
@@ -2429,7 +2272,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://gab.wi.gov/elections-voting/results/2012/partisan-primary",
+         "portal_link": "http://elections.wi.gov/elections-voting/results/2012/partisan-primary",
          "precinct_level": true,
          "precinct_level_status": "",
          "prez": false,
@@ -2452,7 +2295,7 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": false,
-         "user_fullname": "Davies, Nick"
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": false,
@@ -2462,7 +2305,7 @@
          "county_level_status": "yes",
          "direct_link": "",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/Ward%20Results_6.5.12%20Recall%20Election_all%20offices_post%20sen%2021%20recount.xls"
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/Ward%20Results_6.5.12%20Recall%20Election_all%20offices_post%20sen%2021%20recount.xls"
          ],
          "end_date": "2012-06-05",
          "gov": true,
@@ -2481,7 +2324,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://www.gab.wi.gov/elections-voting/results/2012/recall-election",
+         "portal_link": "https://elections.wi.gov/elections-voting/results/2012/recall-election",
          "precinct_level": true,
          "precinct_level_status": "yes",
          "prez": false,
@@ -2504,7 +2347,7 @@
          "state_level": true,
          "state_level_status": "yes",
          "state_officers": true,
-         "user_fullname": ""
+         "user_fullname": "Davies, Nick"
       },
       {
          "absentee_and_provisional": false,
@@ -3360,7 +3203,7 @@
          "county_level_status": "",
          "direct_link": "http://gab.wi.gov/sites/default/files/2010%20Fall%20General%20-%20All%20Races%20-%20Ward-by-Ward.xls",
          "direct_links": [
-            "http://gab.wi.gov/sites/default/files/2010%20Fall%20General%20-%20All%20Races%20-%20Ward-by-Ward.xls"
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2010%20Fall%20General%20-%20All%20Races%20-%20Ward-by-Ward.xls"
          ],
          "end_date": "2010-11-02",
          "gov": true,
@@ -3379,7 +3222,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://gab.wi.gov/elections-voting/results/2010/fall-general",
+         "portal_link": "https://elections.wi.gov/elections-voting/results/2010/fall-general",
          "precinct_level": true,
          "precinct_level_status": "",
          "prez": false,
@@ -3402,7 +3245,7 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": true,
-         "user_fullname": "Vestal, Alan James"
+         "user_fullname": "Davies, Nick"
       },
       {
          "absentee_and_provisional": true,
@@ -3464,8 +3307,8 @@
          "county_level_status": "",
          "direct_link": "http://elections.state.wi.us/docview.asp?docid=19554&locid=47",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/04_06_10%20APPEALS_T.xls",
-            "http://www.gab.wi.gov/sites/default/files/04_06_10%20CIRCUIT_T.xls"
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/04_06_10%20APPEALS_T.xls",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/04_06_10%20CIRCUIT_T.xls"
          ],
          "end_date": "2010-04-06",
          "gov": false,
@@ -3678,11 +3521,11 @@
          "county_level_status": "",
          "direct_link": "",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/2008_FallElection_DistrictAttorney_WardbyWard_0.xls",
-            "http://www.gab.wi.gov/sites/default/files/2008_FallElection_President_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/2008_FallElection_StateAssembly_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/2008_FallElection_USCongress_WardbyWard.xls"
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2008_FallElection_DistrictAttorney_WardbyWard_0.xls",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2008_FallElection_President_WardbyWard.xls",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2008_FallElection_StateAssembly_WardbyWard.xls",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2008_FallElection_StateSenator_WardbyWard.xls",
+            "https://elections.wi.gov/sites/electionsuat.wi.gov/files/2008_FallElection_USCongress_WardbyWard.xls"
          ],
          "end_date": "2008-11-04",
          "gov": false,
@@ -3701,7 +3544,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://www.gab.wi.gov/elections-voting/results/2008/fall-general",
+         "portal_link": "https://elections.wi.gov/elections-voting/results/2008/fall-general",
          "precinct_level": true,
          "precinct_level_status": "",
          "prez": true,
@@ -3724,26 +3567,26 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": false,
-         "user_fullname": "Vestal, Alan James"
+         "user_fullname": "Davies, Nick"
       },
       {
-         "absentee_and_provisional": true,
+         "absentee_and_provisional": false,
          "cong_dist_level": false,
          "cong_dist_level_status": "",
-         "county_level": true,
+         "county_level": false,
          "county_level_status": "",
          "direct_link": "",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/Democratic_2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Democratic_2008_FallElection_USCongress_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Independent_2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Libertarian_2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Libertarian_2008_FallElection_USCongress_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Republican_2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/Republican_2008_FallElection_USCongress_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_StateSenator_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_USCongress_WardbyWard.xls",
-            "http://www.gab.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_StateAssembly_WardbyWard.xls"
+            "http://elections.wi.gov/sites/default/files/Democratic_2008_FallElection_StateSenator_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Democratic_2008_FallElection_USCongress_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Independent_2008_FallElection_StateSenator_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Libertarian_2008_FallElection_StateSenator_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Libertarian_2008_FallElection_USCongress_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Republican_2008_FallElection_StateSenator_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/Republican_2008_FallElection_USCongress_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_StateSenator_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_USCongress_WardbyWard.xls",
+            "http://elections.wi.gov/sites/default/files/WisconsinGreen_2008_FallElection_StateAssembly_WardbyWard.xls"
          ],
          "end_date": "2008-09-09",
          "gov": false,
@@ -3762,7 +3605,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://www.gab.wi.gov/elections-voting/results/2008/partisan-primary",
+         "portal_link": "http://elections.wi.gov/elections-voting/results/2008/partisan-primary",
          "precinct_level": true,
          "precinct_level_status": "",
          "prez": false,
@@ -3785,7 +3628,7 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": false,
-         "user_fullname": "Davies, Nick"
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": true,
@@ -4434,7 +4277,7 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": true,
-         "user_fullname": "Davies, Nick"
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": true,
@@ -4653,7 +4496,7 @@
          "state_level": false,
          "state_level_status": "",
          "state_officers": false,
-         "user_fullname": "Vestal, Alan James"
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": true,
@@ -5133,8 +4976,8 @@
          "county_level_status": "yes",
          "direct_link": "",
          "direct_links": [
-            "http://www.gab.wi.gov/sites/default/files/020910_GOV.xls",
-            "http://www.gab.wi.gov/sites/default/files/020910_LTGOV.xls",
+            "http://elections.wi.gov/sites/default/files/020910_GOV.xls",
+            "http://elections.wi.gov/sites/default/files/020910_LTGOV.xls",
             "http://www.gab.wi.gov/sites/default/files/020910_AG.xls",
             "http://www.gab.wi.gov/sites/default/files/020910_SEC.xls",
             "http://www.gab.wi.gov/sites/default/files/020910_TREAS.xls",
@@ -5159,7 +5002,7 @@
             "street": "",
             "url": "http://elections.wi.gov/"
          },
-         "portal_link": "http://www.gab.wi.gov/elections-voting/results/2002/fall-partisan-primary",
+         "portal_link": "http://elections.wi.gov/elections-voting/results/2002/fall-partisan-primary",
          "precinct_level": true,
          "precinct_level_status": "yes",
          "prez": false,
@@ -5182,7 +5025,7 @@
          "state_level": true,
          "state_level_status": "yes",
          "state_officers": true,
-         "user_fullname": ""
+         "user_fullname": "Post, Davi"
       },
       {
          "absentee_and_provisional": false,
