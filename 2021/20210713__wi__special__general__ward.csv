@@ -1,0 +1,117 @@
+county,ward,office,district,total.votes,party,candidate,votes
+Columbia,City Of Columbus Wards 1-8,State Assembly,37,724,DEM,Pete Adams,433
+Dane,Town Of Bristol Wards 1-4,State Assembly,37,492,DEM,Pete Adams,247
+Dane,Town Of York Ward 1,State Assembly,37,88,DEM,Pete Adams,45
+Dane,"Village Of Deforest Wards 1,3-6,15",State Assembly,37,580,DEM,Pete Adams,397
+Dane,"Village Of Deforest Wards 7-10,12",State Assembly,37,403,DEM,Pete Adams,269
+Dane,Village Of Windsor Wards 3-5,State Assembly,37,397,DEM,Pete Adams,203
+Dane,City Of Sun Prairie Ward 23,State Assembly,37,0,DEM,Pete Adams,0
+Dane,City Of Sun Prairie Ward 27,State Assembly,37,0,DEM,Pete Adams,0
+Dodge,Town Of Elba Ward 1,State Assembly,37,164,DEM,Pete Adams,59
+Dodge,Town Of Emmet Wards 1-2,State Assembly,37,182,DEM,Pete Adams,38
+Dodge,Town Of Lebanon Wards 1-2,State Assembly,37,203,DEM,Pete Adams,40
+Dodge,Town Of Lowell Wards 3-4,State Assembly,37,56,DEM,Pete Adams,13
+Dodge,Town Of Portland Wards 1-2,State Assembly,37,112,DEM,Pete Adams,48
+Dodge,Town Of Shields Ward 1,State Assembly,37,97,DEM,Pete Adams,29
+Dodge,Village Of Lowell Ward 1,State Assembly,37,33,DEM,Pete Adams,7
+Dodge,Village Of Reeseville Ward 1,State Assembly,37,56,DEM,Pete Adams,30
+Dodge,City Of Columbus Ward 9,State Assembly,37,0,DEM,Pete Adams,0
+Dodge,City Of Watertown Wards 1-2,State Assembly,37,434,DEM,Pete Adams,173
+Dodge,City Of Watertown Wards 3-4,State Assembly,37,313,DEM,Pete Adams,99
+Dodge,City Of Watertown Wards 5-6,State Assembly,37,305,DEM,Pete Adams,115
+Dodge,City Of Watertown Ward 7,State Assembly,37,110,DEM,Pete Adams,32
+Jefferson,Town Of Ixonia Wards 1-6,State Assembly,37,506,DEM,Pete Adams,119
+Jefferson,City Of Waterloo Wards 1-5,State Assembly,37,270,DEM,Pete Adams,149
+Jefferson,City Of Watertown Ward 8,State Assembly,37,73,DEM,Pete Adams,31
+Jefferson,City Of Watertown Wards 9-10,State Assembly,37,163,DEM,Pete Adams,59
+Jefferson,City Of Watertown Wards 11-12,State Assembly,37,220,DEM,Pete Adams,89
+Jefferson,City Of Watertown Wards 13-14,State Assembly,37,286,DEM,Pete Adams,106
+Jefferson,City Of Watertown Wards 15-16,State Assembly,37,273,DEM,Pete Adams,122
+Jefferson,City Of Watertown Wards 17-18,State Assembly,37,377,DEM,Pete Adams,111
+Columbia,City Of Columbus Wards 1-8,State Assembly,37,724,REP,William Penterman,275
+Dane,Town Of Bristol Wards 1-4,State Assembly,37,492,REP,William Penterman,235
+Dane,Town Of York Ward 1,State Assembly,37,88,REP,William Penterman,37
+Dane,"Village Of Deforest Wards 1,3-6,15",State Assembly,37,580,REP,William Penterman,174
+Dane,"Village Of Deforest Wards 7-10,12",State Assembly,37,403,REP,William Penterman,123
+Dane,Village Of Windsor Wards 3-5,State Assembly,37,397,REP,William Penterman,189
+Dane,City Of Sun Prairie Ward 23,State Assembly,37,0,REP,William Penterman,0
+Dane,City Of Sun Prairie Ward 27,State Assembly,37,0,REP,William Penterman,0
+Dodge,Town Of Elba Ward 1,State Assembly,37,164,REP,William Penterman,102
+Dodge,Town Of Emmet Wards 1-2,State Assembly,37,182,REP,William Penterman,142
+Dodge,Town Of Lebanon Wards 1-2,State Assembly,37,203,REP,William Penterman,163
+Dodge,Town Of Lowell Wards 3-4,State Assembly,37,56,REP,William Penterman,42
+Dodge,Town Of Portland Wards 1-2,State Assembly,37,112,REP,William Penterman,64
+Dodge,Town Of Shields Ward 1,State Assembly,37,97,REP,William Penterman,68
+Dodge,Village Of Lowell Ward 1,State Assembly,37,33,REP,William Penterman,24
+Dodge,Village Of Reeseville Ward 1,State Assembly,37,56,REP,William Penterman,25
+Dodge,City Of Columbus Ward 9,State Assembly,37,0,REP,William Penterman,0
+Dodge,City Of Watertown Wards 1-2,State Assembly,37,434,REP,William Penterman,251
+Dodge,City Of Watertown Wards 3-4,State Assembly,37,313,REP,William Penterman,209
+Dodge,City Of Watertown Wards 5-6,State Assembly,37,305,REP,William Penterman,188
+Dodge,City Of Watertown Ward 7,State Assembly,37,110,REP,William Penterman,78
+Jefferson,Town Of Ixonia Wards 1-6,State Assembly,37,506,REP,William Penterman,381
+Jefferson,City Of Waterloo Wards 1-5,State Assembly,37,270,REP,William Penterman,113
+Jefferson,City Of Watertown Ward 8,State Assembly,37,73,REP,William Penterman,42
+Jefferson,City Of Watertown Wards 9-10,State Assembly,37,163,REP,William Penterman,97
+Jefferson,City Of Watertown Wards 11-12,State Assembly,37,220,REP,William Penterman,126
+Jefferson,City Of Watertown Wards 13-14,State Assembly,37,286,REP,William Penterman,179
+Jefferson,City Of Watertown Wards 15-16,State Assembly,37,273,REP,William Penterman,151
+Jefferson,City Of Watertown Wards 17-18,State Assembly,37,377,REP,William Penterman,264
+Columbia,City Of Columbus Wards 1-8,State Assembly,37,724,IND,"Stephen W. Ratzlaff, Jr.",16
+Dane,Town Of Bristol Wards 1-4,State Assembly,37,492,IND,"Stephen W. Ratzlaff, Jr.",10
+Dane,Town Of York Ward 1,State Assembly,37,88,IND,"Stephen W. Ratzlaff, Jr.",6
+Dane,"Village Of Deforest Wards 1,3-6,15",State Assembly,37,580,IND,"Stephen W. Ratzlaff, Jr.",9
+Dane,"Village Of Deforest Wards 7-10,12",State Assembly,37,403,IND,"Stephen W. Ratzlaff, Jr.",11
+Dane,Village Of Windsor Wards 3-5,State Assembly,37,397,IND,"Stephen W. Ratzlaff, Jr.",5
+Dane,City Of Sun Prairie Ward 23,State Assembly,37,0,IND,"Stephen W. Ratzlaff, Jr.",0
+Dane,City Of Sun Prairie Ward 27,State Assembly,37,0,IND,"Stephen W. Ratzlaff, Jr.",0
+Dodge,Town Of Elba Ward 1,State Assembly,37,164,IND,"Stephen W. Ratzlaff, Jr.",3
+Dodge,Town Of Emmet Wards 1-2,State Assembly,37,182,IND,"Stephen W. Ratzlaff, Jr.",2
+Dodge,Town Of Lebanon Wards 1-2,State Assembly,37,203,IND,"Stephen W. Ratzlaff, Jr.",0
+Dodge,Town Of Lowell Wards 3-4,State Assembly,37,56,IND,"Stephen W. Ratzlaff, Jr.",1
+Dodge,Town Of Portland Wards 1-2,State Assembly,37,112,IND,"Stephen W. Ratzlaff, Jr.",0
+Dodge,Town Of Shields Ward 1,State Assembly,37,97,IND,"Stephen W. Ratzlaff, Jr.",0
+Dodge,Village Of Lowell Ward 1,State Assembly,37,33,IND,"Stephen W. Ratzlaff, Jr.",2
+Dodge,Village Of Reeseville Ward 1,State Assembly,37,56,IND,"Stephen W. Ratzlaff, Jr.",1
+Dodge,City Of Columbus Ward 9,State Assembly,37,0,IND,"Stephen W. Ratzlaff, Jr.",0
+Dodge,City Of Watertown Wards 1-2,State Assembly,37,434,IND,"Stephen W. Ratzlaff, Jr.",10
+Dodge,City Of Watertown Wards 3-4,State Assembly,37,313,IND,"Stephen W. Ratzlaff, Jr.",5
+Dodge,City Of Watertown Wards 5-6,State Assembly,37,305,IND,"Stephen W. Ratzlaff, Jr.",2
+Dodge,City Of Watertown Ward 7,State Assembly,37,110,IND,"Stephen W. Ratzlaff, Jr.",0
+Jefferson,Town Of Ixonia Wards 1-6,State Assembly,37,506,IND,"Stephen W. Ratzlaff, Jr.",6
+Jefferson,City Of Waterloo Wards 1-5,State Assembly,37,270,IND,"Stephen W. Ratzlaff, Jr.",8
+Jefferson,City Of Watertown Ward 8,State Assembly,37,73,IND,"Stephen W. Ratzlaff, Jr.",0
+Jefferson,City Of Watertown Wards 9-10,State Assembly,37,163,IND,"Stephen W. Ratzlaff, Jr.",7
+Jefferson,City Of Watertown Wards 11-12,State Assembly,37,220,IND,"Stephen W. Ratzlaff, Jr.",5
+Jefferson,City Of Watertown Wards 13-14,State Assembly,37,286,IND,"Stephen W. Ratzlaff, Jr.",1
+Jefferson,City Of Watertown Wards 15-16,State Assembly,37,273,IND,"Stephen W. Ratzlaff, Jr.",0
+Jefferson,City Of Watertown Wards 17-18,State Assembly,37,377,IND,"Stephen W. Ratzlaff, Jr.",2
+Columbia,City Of Columbus Wards 1-8,State Assembly,37,724,,Scattering,0
+Dane,Town Of Bristol Wards 1-4,State Assembly,37,492,,Scattering,0
+Dane,Town Of York Ward 1,State Assembly,37,88,,Scattering,0
+Dane,"Village Of Deforest Wards 1,3-6,15",State Assembly,37,580,,Scattering,0
+Dane,"Village Of Deforest Wards 7-10,12",State Assembly,37,403,,Scattering,0
+Dane,Village Of Windsor Wards 3-5,State Assembly,37,397,,Scattering,0
+Dane,City Of Sun Prairie Ward 23,State Assembly,37,0,,Scattering,0
+Dane,City Of Sun Prairie Ward 27,State Assembly,37,0,,Scattering,0
+Dodge,Town Of Elba Ward 1,State Assembly,37,164,,Scattering,0
+Dodge,Town Of Emmet Wards 1-2,State Assembly,37,182,,Scattering,0
+Dodge,Town Of Lebanon Wards 1-2,State Assembly,37,203,,Scattering,0
+Dodge,Town Of Lowell Wards 3-4,State Assembly,37,56,,Scattering,0
+Dodge,Town Of Portland Wards 1-2,State Assembly,37,112,,Scattering,0
+Dodge,Town Of Shields Ward 1,State Assembly,37,97,,Scattering,0
+Dodge,Village Of Lowell Ward 1,State Assembly,37,33,,Scattering,0
+Dodge,Village Of Reeseville Ward 1,State Assembly,37,56,,Scattering,0
+Dodge,City Of Columbus Ward 9,State Assembly,37,0,,Scattering,0
+Dodge,City Of Watertown Wards 1-2,State Assembly,37,434,,Scattering,0
+Dodge,City Of Watertown Wards 3-4,State Assembly,37,313,,Scattering,0
+Dodge,City Of Watertown Wards 5-6,State Assembly,37,305,,Scattering,0
+Dodge,City Of Watertown Ward 7,State Assembly,37,110,,Scattering,0
+Jefferson,Town Of Ixonia Wards 1-6,State Assembly,37,506,,Scattering,0
+Jefferson,City Of Waterloo Wards 1-5,State Assembly,37,270,,Scattering,0
+Jefferson,City Of Watertown Ward 8,State Assembly,37,73,,Scattering,0
+Jefferson,City Of Watertown Wards 9-10,State Assembly,37,163,,Scattering,0
+Jefferson,City Of Watertown Wards 11-12,State Assembly,37,220,,Scattering,0
+Jefferson,City Of Watertown Wards 13-14,State Assembly,37,286,,Scattering,0
+Jefferson,City Of Watertown Wards 15-16,State Assembly,37,273,,Scattering,0
+Jefferson,City Of Watertown Wards 17-18,State Assembly,37,377,,Scattering,0
