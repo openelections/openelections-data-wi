@@ -1,0 +1,607 @@
+county,ward,office,district,total.votes,party,candidate,votes
+Brown,Village Of Howard Ward 1,State Assembly,89,145,DEM,Karl Jaeger,55
+Brown,Village Of Howard Wards 3-4,State Assembly,89,168,DEM,Karl Jaeger,88
+Brown,Village Of Howard Ward 6,State Assembly,89,170,DEM,Karl Jaeger,75
+Brown,Village Of Howard Ward 12,State Assembly,89,156,DEM,Karl Jaeger,59
+Brown,Village Of Howard Wards 13-14,State Assembly,89,390,DEM,Karl Jaeger,171
+Brown,Village Of Suamico Wards 1-4,State Assembly,89,1402,DEM,Karl Jaeger,522
+Brown,Village Of Suamico Wards 5-8,State Assembly,89,1796,DEM,Karl Jaeger,619
+Marinette,Town Of Grover Wards 1-3,State Assembly,89,496,DEM,Karl Jaeger,106
+Marinette,Town Of Peshtigo Wards 1-6,State Assembly,89,1268,DEM,Karl Jaeger,543
+Marinette,Town Of Pound Wards 1-3,State Assembly,89,301,DEM,Karl Jaeger,74
+Marinette,Village Of Coleman Ward 1,State Assembly,89,160,DEM,Karl Jaeger,49
+Marinette,Village Of Pound Ward 1,State Assembly,89,57,DEM,Karl Jaeger,11
+Marinette,City Of Marinette Wards 1-8,State Assembly,89,1696,DEM,Karl Jaeger,864
+Marinette,City Of Peshtigo Wards 1-2,State Assembly,89,212,DEM,Karl Jaeger,83
+Marinette,City Of Peshtigo Wards 3-5,State Assembly,89,284,DEM,Karl Jaeger,94
+Marinette,City Of Peshtigo Wards 6-7,State Assembly,89,271,DEM,Karl Jaeger,106
+Oconto,Town Of Abrams Wards 1-3,State Assembly,89,472,DEM,Karl Jaeger,155
+Oconto,Town Of Little River Wards 1-2,State Assembly,89,277,DEM,Karl Jaeger,72
+Oconto,Town Of Little Suamico Wards 1-8,State Assembly,89,1114,DEM,Karl Jaeger,343
+Oconto,Town Of Oconto Wards 1-3,State Assembly,89,355,DEM,Karl Jaeger,97
+Oconto,Town Of Pensaukee Wards 1-2,State Assembly,89,356,DEM,Karl Jaeger,110
+Oconto,Town Of Stiles Wards 1-2,State Assembly,89,478,DEM,Karl Jaeger,128
+Oconto,City Of Oconto Wards 1-7,State Assembly,89,844,DEM,Karl Jaeger,308
+Oconto,City Of Oconto Falls Ward 6,State Assembly,89,0,DEM,Karl Jaeger,0
+Brown,Village Of Howard Ward 1,State Assembly,89,145,REP,Elijah Behnke,89
+Brown,Village Of Howard Wards 3-4,State Assembly,89,168,REP,Elijah Behnke,80
+Brown,Village Of Howard Ward 6,State Assembly,89,170,REP,Elijah Behnke,95
+Brown,Village Of Howard Ward 12,State Assembly,89,156,REP,Elijah Behnke,95
+Brown,Village Of Howard Wards 13-14,State Assembly,89,390,REP,Elijah Behnke,218
+Brown,Village Of Suamico Wards 1-4,State Assembly,89,1402,REP,Elijah Behnke,880
+Brown,Village Of Suamico Wards 5-8,State Assembly,89,1796,REP,Elijah Behnke,1174
+Marinette,Town Of Grover Wards 1-3,State Assembly,89,496,REP,Elijah Behnke,390
+Marinette,Town Of Peshtigo Wards 1-6,State Assembly,89,1268,REP,Elijah Behnke,725
+Marinette,Town Of Pound Wards 1-3,State Assembly,89,301,REP,Elijah Behnke,227
+Marinette,Village Of Coleman Ward 1,State Assembly,89,160,REP,Elijah Behnke,111
+Marinette,Village Of Pound Ward 1,State Assembly,89,57,REP,Elijah Behnke,46
+Marinette,City Of Marinette Wards 1-8,State Assembly,89,1696,REP,Elijah Behnke,832
+Marinette,City Of Peshtigo Wards 1-2,State Assembly,89,212,REP,Elijah Behnke,129
+Marinette,City Of Peshtigo Wards 3-5,State Assembly,89,284,REP,Elijah Behnke,190
+Marinette,City Of Peshtigo Wards 6-7,State Assembly,89,271,REP,Elijah Behnke,165
+Oconto,Town Of Abrams Wards 1-3,State Assembly,89,472,REP,Elijah Behnke,317
+Oconto,Town Of Little River Wards 1-2,State Assembly,89,277,REP,Elijah Behnke,205
+Oconto,Town Of Little Suamico Wards 1-8,State Assembly,89,1114,REP,Elijah Behnke,771
+Oconto,Town Of Oconto Wards 1-3,State Assembly,89,355,REP,Elijah Behnke,258
+Oconto,Town Of Pensaukee Wards 1-2,State Assembly,89,356,REP,Elijah Behnke,246
+Oconto,Town Of Stiles Wards 1-2,State Assembly,89,478,REP,Elijah Behnke,350
+Oconto,City Of Oconto Wards 1-7,State Assembly,89,844,REP,Elijah Behnke,536
+Oconto,City Of Oconto Falls Ward 6,State Assembly,89,0,REP,Elijah Behnke,0
+Brown,Village Of Howard Ward 1,State Assembly,89,145,,Scattering,1
+Brown,Village Of Howard Wards 3-4,State Assembly,89,168,,Scattering,0
+Brown,Village Of Howard Ward 6,State Assembly,89,170,,Scattering,0
+Brown,Village Of Howard Ward 12,State Assembly,89,156,,Scattering,2
+Brown,Village Of Howard Wards 13-14,State Assembly,89,390,,Scattering,1
+Brown,Village Of Suamico Wards 1-4,State Assembly,89,1402,,Scattering,0
+Brown,Village Of Suamico Wards 5-8,State Assembly,89,1796,,Scattering,3
+Marinette,Town Of Grover Wards 1-3,State Assembly,89,496,,Scattering,0
+Marinette,Town Of Peshtigo Wards 1-6,State Assembly,89,1268,,Scattering,0
+Marinette,Town Of Pound Wards 1-3,State Assembly,89,301,,Scattering,0
+Marinette,Village Of Coleman Ward 1,State Assembly,89,160,,Scattering,0
+Marinette,Village Of Pound Ward 1,State Assembly,89,57,,Scattering,0
+Marinette,City Of Marinette Wards 1-8,State Assembly,89,1696,,Scattering,0
+Marinette,City Of Peshtigo Wards 1-2,State Assembly,89,212,,Scattering,0
+Marinette,City Of Peshtigo Wards 3-5,State Assembly,89,284,,Scattering,0
+Marinette,City Of Peshtigo Wards 6-7,State Assembly,89,271,,Scattering,0
+Oconto,Town Of Abrams Wards 1-3,State Assembly,89,472,,Scattering,0
+Oconto,Town Of Little River Wards 1-2,State Assembly,89,277,,Scattering,0
+Oconto,Town Of Little Suamico Wards 1-8,State Assembly,89,1114,,Scattering,0
+Oconto,Town Of Oconto Wards 1-3,State Assembly,89,355,,Scattering,0
+Oconto,Town Of Pensaukee Wards 1-2,State Assembly,89,356,,Scattering,0
+Oconto,Town Of Stiles Wards 1-2,State Assembly,89,478,,Scattering,0
+Oconto,City Of Oconto Wards 1-7,State Assembly,89,844,,Scattering,0
+Oconto,City Of Oconto Falls Ward 6,State Assembly,89,0,,Scattering,0
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,DEM,Melissa Winker,703
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,DEM,Melissa Winker,552
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,DEM,Melissa Winker,217
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,DEM,Melissa Winker,260
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,DEM,Melissa Winker,183
+Dane,Town Of York Ward 1,State Senate,13,172,DEM,Melissa Winker,95
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,DEM,Melissa Winker,364
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,DEM,Melissa Winker,339
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,DEM,Melissa Winker,717
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,DEM,Melissa Winker,490
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,DEM,Melissa Winker,375
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,DEM,Melissa Winker,39
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,DEM,Melissa Winker,364
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,DEM,Melissa Winker,0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,DEM,Melissa Winker,0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,DEM,Melissa Winker,150
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,DEM,Melissa Winker,400
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,DEM,Melissa Winker,45
+Dodge,Town Of Elba Ward 1,State Senate,13,292,DEM,Melissa Winker,108
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,DEM,Melissa Winker,74
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,DEM,Melissa Winker,36
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,DEM,Melissa Winker,147
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,DEM,Melissa Winker,86
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,DEM,Melissa Winker,90
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,DEM,Melissa Winker,45
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,DEM,Melissa Winker,39
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,DEM,Melissa Winker,63
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,DEM,Melissa Winker,93
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,DEM,Melissa Winker,71
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,DEM,Melissa Winker,92
+Dodge,Town Of Shields Ward 1,State Senate,13,163,DEM,Melissa Winker,55
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,DEM,Melissa Winker,43
+Dodge,Town Of Westford Ward 3,State Senate,13,2,DEM,Melissa Winker,0
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,DEM,Melissa Winker,41
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,DEM,Melissa Winker,18
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,DEM,Melissa Winker,80
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,DEM,Melissa Winker,31
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,DEM,Melissa Winker,42
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,DEM,Melissa Winker,78
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,DEM,Melissa Winker,11
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,DEM,Melissa Winker,37
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,DEM,Melissa Winker,51
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,DEM,Melissa Winker,85
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,DEM,Melissa Winker,280
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,DEM,Melissa Winker,155
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,DEM,Melissa Winker,340
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,DEM,Melissa Winker,254
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,DEM,Melissa Winker,298
+Dodge,City Of Columbus Ward 9,State Senate,13,0,DEM,Melissa Winker,0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,DEM,Melissa Winker,1
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,DEM,Melissa Winker,271
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,DEM,Melissa Winker,161
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,DEM,Melissa Winker,353
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,DEM,Melissa Winker,249
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,DEM,Melissa Winker,184
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,DEM,Melissa Winker,175
+Dodge,City Of Watertown Ward 7,State Senate,13,172,DEM,Melissa Winker,63
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,DEM,Melissa Winker,180
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,DEM,Melissa Winker,163
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,DEM,Melissa Winker,104
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,DEM,Melissa Winker,341
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,DEM,Melissa Winker,390
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,DEM,Melissa Winker,118
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,DEM,Melissa Winker,92
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,DEM,Melissa Winker,162
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,DEM,Melissa Winker,20
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,DEM,Melissa Winker,197
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,DEM,Melissa Winker,0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,DEM,Melissa Winker,0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,DEM,Melissa Winker,892
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,DEM,Melissa Winker,297
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,DEM,Melissa Winker,56
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,DEM,Melissa Winker,117
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,DEM,Melissa Winker,158
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,DEM,Melissa Winker,157
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,DEM,Melissa Winker,192
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,DEM,Melissa Winker,236
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,DEM,Melissa Winker,88
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,DEM,Melissa Winker,37
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,DEM,Melissa Winker,270
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,DEM,Melissa Winker,225
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,DEM,Melissa Winker,237
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,DEM,Melissa Winker,0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,DEM,Melissa Winker,42
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,DEM,Melissa Winker,123
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,DEM,Melissa Winker,680
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,DEM,Melissa Winker,433
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,DEM,Melissa Winker,388
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,DEM,Melissa Winker,376
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,REP,John Jagler,459
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,REP,John Jagler,424
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,REP,John Jagler,173
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,REP,John Jagler,121
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,REP,John Jagler,115
+Dane,Town Of York Ward 1,State Senate,13,172,REP,John Jagler,74
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,REP,John Jagler,147
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,REP,John Jagler,138
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,REP,John Jagler,335
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,REP,John Jagler,209
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,REP,John Jagler,195
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,REP,John Jagler,23
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,REP,John Jagler,274
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,REP,John Jagler,0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,REP,John Jagler,0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,REP,John Jagler,458
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,REP,John Jagler,354
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,REP,John Jagler,128
+Dodge,Town Of Elba Ward 1,State Senate,13,292,REP,John Jagler,160
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,REP,John Jagler,221
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,REP,John Jagler,202
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,REP,John Jagler,238
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,REP,John Jagler,279
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,REP,John Jagler,306
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,REP,John Jagler,116
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,REP,John Jagler,160
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,REP,John Jagler,121
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,REP,John Jagler,100
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,REP,John Jagler,113
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,REP,John Jagler,424
+Dodge,Town Of Shields Ward 1,State Senate,13,163,REP,John Jagler,100
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,REP,John Jagler,162
+Dodge,Town Of Westford Ward 3,State Senate,13,2,REP,John Jagler,2
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,REP,John Jagler,87
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,REP,John Jagler,33
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,REP,John Jagler,193
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,REP,John Jagler,79
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,REP,John Jagler,102
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,REP,John Jagler,178
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,REP,John Jagler,30
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,REP,John Jagler,69
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,REP,John Jagler,57
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,REP,John Jagler,144
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,REP,John Jagler,183
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,REP,John Jagler,133
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,REP,John Jagler,187
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,REP,John Jagler,171
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,REP,John Jagler,184
+Dodge,City Of Columbus Ward 9,State Senate,13,0,REP,John Jagler,0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,REP,John Jagler,2
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,REP,John Jagler,276
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,REP,John Jagler,142
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,REP,John Jagler,434
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,REP,John Jagler,348
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,REP,John Jagler,297
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,REP,John Jagler,286
+Dodge,City Of Watertown Ward 7,State Senate,13,172,REP,John Jagler,102
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,REP,John Jagler,230
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,REP,John Jagler,302
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,REP,John Jagler,187
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,REP,John Jagler,925
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,REP,John Jagler,242
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,REP,John Jagler,159
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,REP,John Jagler,102
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,REP,John Jagler,318
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,REP,John Jagler,6
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,REP,John Jagler,249
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,REP,John Jagler,0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,REP,John Jagler,0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,REP,John Jagler,502
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,REP,John Jagler,230
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,REP,John Jagler,64
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,REP,John Jagler,150
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,REP,John Jagler,190
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,REP,John Jagler,243
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,REP,John Jagler,230
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,REP,John Jagler,428
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,REP,John Jagler,151
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,REP,John Jagler,45
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,REP,John Jagler,551
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,REP,John Jagler,441
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,REP,John Jagler,455
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,REP,John Jagler,0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,REP,John Jagler,86
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,REP,John Jagler,257
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,REP,John Jagler,733
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,REP,John Jagler,576
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,REP,John Jagler,499
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,REP,John Jagler,526
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,IND,Spencer Zimmerman,40
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,IND,Spencer Zimmerman,44
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,IND,Spencer Zimmerman,30
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,IND,Spencer Zimmerman,15
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,IND,Spencer Zimmerman,12
+Dane,Town Of York Ward 1,State Senate,13,172,IND,Spencer Zimmerman,3
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,IND,Spencer Zimmerman,28
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,IND,Spencer Zimmerman,17
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,IND,Spencer Zimmerman,44
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,IND,Spencer Zimmerman,24
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,IND,Spencer Zimmerman,30
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,IND,Spencer Zimmerman,5
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,IND,Spencer Zimmerman,27
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,IND,Spencer Zimmerman,0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,IND,Spencer Zimmerman,0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,IND,Spencer Zimmerman,44
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,IND,Spencer Zimmerman,36
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,IND,Spencer Zimmerman,13
+Dodge,Town Of Elba Ward 1,State Senate,13,292,IND,Spencer Zimmerman,16
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,IND,Spencer Zimmerman,15
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,IND,Spencer Zimmerman,22
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,IND,Spencer Zimmerman,22
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,IND,Spencer Zimmerman,26
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,IND,Spencer Zimmerman,17
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,IND,Spencer Zimmerman,12
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,IND,Spencer Zimmerman,13
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,IND,Spencer Zimmerman,5
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,IND,Spencer Zimmerman,11
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,IND,Spencer Zimmerman,7
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,IND,Spencer Zimmerman,38
+Dodge,Town Of Shields Ward 1,State Senate,13,163,IND,Spencer Zimmerman,6
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,IND,Spencer Zimmerman,9
+Dodge,Town Of Westford Ward 3,State Senate,13,2,IND,Spencer Zimmerman,0
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,IND,Spencer Zimmerman,14
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,IND,Spencer Zimmerman,4
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,IND,Spencer Zimmerman,27
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,IND,Spencer Zimmerman,11
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,IND,Spencer Zimmerman,16
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,IND,Spencer Zimmerman,27
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,IND,Spencer Zimmerman,2
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,IND,Spencer Zimmerman,16
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,IND,Spencer Zimmerman,6
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,IND,Spencer Zimmerman,9
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,IND,Spencer Zimmerman,15
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,IND,Spencer Zimmerman,9
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,IND,Spencer Zimmerman,22
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,IND,Spencer Zimmerman,13
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,IND,Spencer Zimmerman,6
+Dodge,City Of Columbus Ward 9,State Senate,13,0,IND,Spencer Zimmerman,0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,IND,Spencer Zimmerman,0
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,IND,Spencer Zimmerman,23
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,IND,Spencer Zimmerman,12
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,IND,Spencer Zimmerman,43
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,IND,Spencer Zimmerman,28
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,IND,Spencer Zimmerman,14
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,IND,Spencer Zimmerman,9
+Dodge,City Of Watertown Ward 7,State Senate,13,172,IND,Spencer Zimmerman,7
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,IND,Spencer Zimmerman,16
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,IND,Spencer Zimmerman,36
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,IND,Spencer Zimmerman,17
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,IND,Spencer Zimmerman,74
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,IND,Spencer Zimmerman,23
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,IND,Spencer Zimmerman,13
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,IND,Spencer Zimmerman,7
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,IND,Spencer Zimmerman,21
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,IND,Spencer Zimmerman,2
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,IND,Spencer Zimmerman,26
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,IND,Spencer Zimmerman,0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,IND,Spencer Zimmerman,0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,IND,Spencer Zimmerman,39
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,IND,Spencer Zimmerman,17
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,IND,Spencer Zimmerman,5
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,IND,Spencer Zimmerman,7
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,IND,Spencer Zimmerman,8
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,IND,Spencer Zimmerman,13
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,IND,Spencer Zimmerman,10
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,IND,Spencer Zimmerman,19
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,IND,Spencer Zimmerman,23
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,IND,Spencer Zimmerman,14
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,IND,Spencer Zimmerman,53
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,IND,Spencer Zimmerman,35
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,IND,Spencer Zimmerman,35
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,IND,Spencer Zimmerman,0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,IND,Spencer Zimmerman,2
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,IND,Spencer Zimmerman,28
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,IND,Spencer Zimmerman,58
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,IND,Spencer Zimmerman,51
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,IND,Spencer Zimmerman,46
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,IND,Spencer Zimmerman,40
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,IND,Ben Schmitz,7
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,IND,Ben Schmitz,17
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,IND,Ben Schmitz,0
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,IND,Ben Schmitz,2
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,IND,Ben Schmitz,1
+Dane,Town Of York Ward 1,State Senate,13,172,IND,Ben Schmitz,0
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,IND,Ben Schmitz,3
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,IND,Ben Schmitz,4
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,IND,Ben Schmitz,5
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,IND,Ben Schmitz,2
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,IND,Ben Schmitz,1
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,IND,Ben Schmitz,0
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,IND,Ben Schmitz,1
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,IND,Ben Schmitz,0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,IND,Ben Schmitz,0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,IND,Ben Schmitz,2
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,IND,Ben Schmitz,6
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,IND,Ben Schmitz,1
+Dodge,Town Of Elba Ward 1,State Senate,13,292,IND,Ben Schmitz,5
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,IND,Ben Schmitz,0
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,IND,Ben Schmitz,3
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,IND,Ben Schmitz,1
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,IND,Ben Schmitz,0
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,IND,Ben Schmitz,5
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,IND,Ben Schmitz,0
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,IND,Ben Schmitz,2
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,IND,Ben Schmitz,3
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,IND,Ben Schmitz,2
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,IND,Ben Schmitz,2
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,IND,Ben Schmitz,1
+Dodge,Town Of Shields Ward 1,State Senate,13,163,IND,Ben Schmitz,1
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,IND,Ben Schmitz,0
+Dodge,Town Of Westford Ward 3,State Senate,13,2,IND,Ben Schmitz,0
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,IND,Ben Schmitz,0
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,IND,Ben Schmitz,0
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,IND,Ben Schmitz,1
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,IND,Ben Schmitz,1
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,IND,Ben Schmitz,3
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,IND,Ben Schmitz,1
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,IND,Ben Schmitz,0
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,IND,Ben Schmitz,1
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,IND,Ben Schmitz,0
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,IND,Ben Schmitz,0
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,IND,Ben Schmitz,1
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,IND,Ben Schmitz,0
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,IND,Ben Schmitz,2
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,IND,Ben Schmitz,2
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,IND,Ben Schmitz,5
+Dodge,City Of Columbus Ward 9,State Senate,13,0,IND,Ben Schmitz,0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,IND,Ben Schmitz,0
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,IND,Ben Schmitz,3
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,IND,Ben Schmitz,7
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,IND,Ben Schmitz,4
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,IND,Ben Schmitz,6
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,IND,Ben Schmitz,4
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,IND,Ben Schmitz,1
+Dodge,City Of Watertown Ward 7,State Senate,13,172,IND,Ben Schmitz,0
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,IND,Ben Schmitz,2
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,IND,Ben Schmitz,2
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,IND,Ben Schmitz,1
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,IND,Ben Schmitz,7
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,IND,Ben Schmitz,4
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,IND,Ben Schmitz,1
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,IND,Ben Schmitz,0
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,IND,Ben Schmitz,2
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,IND,Ben Schmitz,0
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,IND,Ben Schmitz,1
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,IND,Ben Schmitz,0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,IND,Ben Schmitz,0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,IND,Ben Schmitz,11
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,IND,Ben Schmitz,1
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,IND,Ben Schmitz,2
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,IND,Ben Schmitz,7
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,IND,Ben Schmitz,4
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,IND,Ben Schmitz,0
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,IND,Ben Schmitz,5
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,IND,Ben Schmitz,0
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,IND,Ben Schmitz,1
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,IND,Ben Schmitz,0
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,IND,Ben Schmitz,1
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,IND,Ben Schmitz,2
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,IND,Ben Schmitz,1
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,IND,Ben Schmitz,0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,IND,Ben Schmitz,0
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,IND,Ben Schmitz,1
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,IND,Ben Schmitz,5
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,IND,Ben Schmitz,4
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,IND,Ben Schmitz,5
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,IND,Ben Schmitz,5
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,REP,Don Pridemore (write-in),1
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,REP,Don Pridemore (write-in),0
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,REP,Don Pridemore (write-in),0
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,REP,Don Pridemore (write-in),0
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,REP,Don Pridemore (write-in),1
+Dane,Town Of York Ward 1,State Senate,13,172,REP,Don Pridemore (write-in),0
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,REP,Don Pridemore (write-in),0
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,REP,Don Pridemore (write-in),0
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,REP,Don Pridemore (write-in),0
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,REP,Don Pridemore (write-in),0
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,REP,Don Pridemore (write-in),0
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,REP,Don Pridemore (write-in),0
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,REP,Don Pridemore (write-in),0
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,REP,Don Pridemore (write-in),0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,REP,Don Pridemore (write-in),0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,REP,Don Pridemore (write-in),3
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,REP,Don Pridemore (write-in),0
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,REP,Don Pridemore (write-in),0
+Dodge,Town Of Elba Ward 1,State Senate,13,292,REP,Don Pridemore (write-in),3
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,REP,Don Pridemore (write-in),5
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,REP,Don Pridemore (write-in),0
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,REP,Don Pridemore (write-in),1
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,REP,Don Pridemore (write-in),2
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,REP,Don Pridemore (write-in),0
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,REP,Don Pridemore (write-in),0
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,REP,Don Pridemore (write-in),0
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,REP,Don Pridemore (write-in),0
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,REP,Don Pridemore (write-in),1
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,REP,Don Pridemore (write-in),0
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,REP,Don Pridemore (write-in),4
+Dodge,Town Of Shields Ward 1,State Senate,13,163,REP,Don Pridemore (write-in),1
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,REP,Don Pridemore (write-in),0
+Dodge,Town Of Westford Ward 3,State Senate,13,2,REP,Don Pridemore (write-in),0
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,REP,Don Pridemore (write-in),0
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,REP,Don Pridemore (write-in),0
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,REP,Don Pridemore (write-in),3
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,REP,Don Pridemore (write-in),0
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,REP,Don Pridemore (write-in),0
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,REP,Don Pridemore (write-in),0
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,REP,Don Pridemore (write-in),0
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,REP,Don Pridemore (write-in),1
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,REP,Don Pridemore (write-in),1
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,REP,Don Pridemore (write-in),0
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,REP,Don Pridemore (write-in),1
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,REP,Don Pridemore (write-in),0
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,REP,Don Pridemore (write-in),0
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,REP,Don Pridemore (write-in),0
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,REP,Don Pridemore (write-in),0
+Dodge,City Of Columbus Ward 9,State Senate,13,0,REP,Don Pridemore (write-in),0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,REP,Don Pridemore (write-in),0
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,REP,Don Pridemore (write-in),0
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,REP,Don Pridemore (write-in),0
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,REP,Don Pridemore (write-in),1
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,REP,Don Pridemore (write-in),2
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,REP,Don Pridemore (write-in),2
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,REP,Don Pridemore (write-in),0
+Dodge,City Of Watertown Ward 7,State Senate,13,172,REP,Don Pridemore (write-in),0
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,REP,Don Pridemore (write-in),2
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,REP,Don Pridemore (write-in),0
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,REP,Don Pridemore (write-in),0
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,REP,Don Pridemore (write-in),3
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,REP,Don Pridemore (write-in),2
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,REP,Don Pridemore (write-in),2
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,REP,Don Pridemore (write-in),0
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,REP,Don Pridemore (write-in),5
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,REP,Don Pridemore (write-in),0
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,REP,Don Pridemore (write-in),0
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,REP,Don Pridemore (write-in),0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,REP,Don Pridemore (write-in),0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,REP,Don Pridemore (write-in),0
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,REP,Don Pridemore (write-in),0
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,REP,Don Pridemore (write-in),0
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,REP,Don Pridemore (write-in),6
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,REP,Don Pridemore (write-in),5
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,REP,Don Pridemore (write-in),2
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,REP,Don Pridemore (write-in),4
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,REP,Don Pridemore (write-in),3
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,REP,Don Pridemore (write-in),5
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,REP,Don Pridemore (write-in),1
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,REP,Don Pridemore (write-in),2
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,REP,Don Pridemore (write-in),0
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,REP,Don Pridemore (write-in),1
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,REP,Don Pridemore (write-in),0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,REP,Don Pridemore (write-in),0
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,REP,Don Pridemore (write-in),0
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,REP,Don Pridemore (write-in),1
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,REP,Don Pridemore (write-in),5
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,REP,Don Pridemore (write-in),1
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,REP,Don Pridemore (write-in),2
+Columbia,City Of Columbus Wards 1-8,State Senate,13,1210,,Scattering,0
+Dane,Town Of Bristol Wards 1-4,State Senate,13,1037,,Scattering,0
+Dane,Town Of Christiana Wards 1-2,State Senate,13,420,,Scattering,0
+Dane,Town Of Deerfield Wards 1-2,State Senate,13,398,,Scattering,0
+Dane,Town Of Medina Wards 1-2,State Senate,13,312,,Scattering,0
+Dane,Town Of York Ward 1,State Senate,13,172,,Scattering,0
+Dane,Village Of Cambridge Wards 2-3,State Senate,13,544,,Scattering,2
+Dane,Village Of Deerfield Wards 1-3,State Senate,13,498,,Scattering,0
+Dane,"Village Of Deforest Wards 1,3-6,15",State Senate,13,1101,,Scattering,0
+Dane,"Village Of Deforest Wards 7-10,12",State Senate,13,725,,Scattering,0
+Dane,Village Of Marshall Wards 1-5,State Senate,13,601,,Scattering,0
+Dane,Village Of Rockdale Ward 1,State Senate,13,67,,Scattering,0
+Dane,Village Of Windsor Wards 3-5,State Senate,13,666,,Scattering,0
+Dane,City Of Sun Prairie Ward 23,State Senate,13,0,,Scattering,0
+Dane,City Of Sun Prairie Ward 27,State Senate,13,0,,Scattering,0
+Dodge,Town Of Ashippun Wards 1-4,State Senate,13,657,,Scattering,0
+Dodge,Town Of Beaver Dam Wards 1-11,State Senate,13,796,,Scattering,0
+Dodge,Town Of Clyman Ward 1,State Senate,13,187,,Scattering,0
+Dodge,Town Of Elba Ward 1,State Senate,13,292,,Scattering,0
+Dodge,Town Of Emmet Wards 1-2,State Senate,13,315,,Scattering,0
+Dodge,Town Of Herman Wards 1-2,State Senate,13,263,,Scattering,0
+Dodge,Town Of Hubbard Wards 1-6,State Senate,13,409,,Scattering,0
+Dodge,Town Of Hustisford Wards 1-2,State Senate,13,393,,Scattering,0
+Dodge,Town Of Lebanon Wards 1-2,State Senate,13,418,,Scattering,0
+Dodge,Town Of Leroy Wards 1-2,State Senate,13,173,,Scattering,0
+Dodge,Town Of Lomira Wards 1-3,State Senate,13,214,,Scattering,0
+Dodge,Town Of Lowell Wards 1-4,State Senate,13,192,,Scattering,0
+Dodge,Town Of Oak Grove Wards 1-5,State Senate,13,207,,Scattering,0
+Dodge,Town Of Portland Wards 1-2,State Senate,13,193,,Scattering,0
+Dodge,Town Of Rubicon Wards 1-3,State Senate,13,559,,Scattering,0
+Dodge,Town Of Shields Ward 1,State Senate,13,163,,Scattering,0
+Dodge,Town Of Theresa Wards 1-7,State Senate,13,214,,Scattering,0
+Dodge,Town Of Westford Ward 3,State Senate,13,2,,Scattering,0
+Dodge,Village Of Brownsville Ward 1,State Senate,13,142,,Scattering,0
+Dodge,Village Of Clyman Ward 1,State Senate,13,55,,Scattering,0
+Dodge,Village Of Hustisford Wards 1-2,State Senate,13,304,,Scattering,0
+Dodge,Village Of Iron Ridge Ward 1,State Senate,13,122,,Scattering,0
+Dodge,Village Of Kekoskee Wards 1-3,State Senate,13,163,,Scattering,0
+Dodge,Village Of Lomira Wards 1-3,State Senate,13,284,,Scattering,0
+Dodge,Village Of Lowell Ward 1,State Senate,13,43,,Scattering,0
+Dodge,Village Of Neosho Ward 1,State Senate,13,124,,Scattering,0
+Dodge,Village Of Reeseville Ward 1,State Senate,13,115,,Scattering,0
+Dodge,Village Of Theresa Wards 1-3,State Senate,13,238,,Scattering,0
+Dodge,"City Of Beaver Dam Wards 1,3,5,16",State Senate,13,480,,Scattering,0
+Dodge,"City Of Beaver Dam Wards 2,6",State Senate,13,297,,Scattering,0
+Dodge,"City Of Beaver Dam Wards 4,8,10,14-15",State Senate,13,551,,Scattering,0
+Dodge,"City Of Beaver Dam Wards 7,12-13",State Senate,13,440,,Scattering,0
+Dodge,"City Of Beaver Dam Wards 9,11",State Senate,13,493,,Scattering,0
+Dodge,City Of Columbus Ward 9,State Senate,13,0,,Scattering,0
+Dodge,City Of Hartford Wards 18-19,State Senate,13,3,,Scattering,0
+Dodge,City Of Horicon Wards 1-8,State Senate,13,573,,Scattering,0
+Dodge,City Of Juneau Wards 1-3,State Senate,13,322,,Scattering,0
+Dodge,City Of Mayville Wards 1-8,State Senate,13,835,,Scattering,0
+Dodge,City Of Watertown Wards 1-2,State Senate,13,633,,Scattering,0
+Dodge,City Of Watertown Wards 3-4,State Senate,13,501,,Scattering,0
+Dodge,City Of Watertown Wards 5-6,State Senate,13,471,,Scattering,0
+Dodge,City Of Watertown Ward 7,State Senate,13,172,,Scattering,0
+Jefferson,Town Of Aztalan Wards 1-2,State Senate,13,432,,Scattering,2
+Jefferson,Town Of Concord Wards 1-3,State Senate,13,503,,Scattering,0
+Jefferson,Town Of Farmington Wards 1-2,State Senate,13,309,,Scattering,0
+Jefferson,Town Of Ixonia Wards 1-6,State Senate,13,1356,,Scattering,6
+Jefferson,Town Of Lake Mills Wards 1-3,State Senate,13,663,,Scattering,2
+Jefferson,Town Of Milford Wards 1-2,State Senate,13,295,,Scattering,2
+Jefferson,Town Of Waterloo Ward 1,State Senate,13,201,,Scattering,0
+Jefferson,Town Of Watertown Wards 1-2,State Senate,13,512,,Scattering,4
+Jefferson,Village Of Cambridge Ward 1,State Senate,13,28,,Scattering,0
+Jefferson,Village Of Johnson Creek Wards 1-3,State Senate,13,474,,Scattering,1
+Jefferson,Village Of Lac La Belle Ward 2,State Senate,13,0,,Scattering,0
+Jefferson,City Of Jefferson Ward 11,State Senate,13,0,,Scattering,0
+Jefferson,City Of Lake Mills Wards 1-8,State Senate,13,1446,,Scattering,2
+Jefferson,City Of Waterloo Wards 1-5,State Senate,13,545,,Scattering,0
+Jefferson,"City Of Watertown Wards 8,19",State Senate,13,127,,Scattering,0
+Jefferson,City Of Watertown Wards 9-10,State Senate,13,293,,Scattering,6
+Jefferson,City Of Watertown Wards 11-12,State Senate,13,370,,Scattering,5
+Jefferson,City Of Watertown Wards 13-14,State Senate,13,417,,Scattering,2
+Jefferson,City Of Watertown Wards 15-16,State Senate,13,445,,Scattering,4
+Jefferson,City Of Watertown Wards 17-18,State Senate,13,689,,Scattering,3
+Washington,City Of Hartford Wards 1-2,State Senate,13,268,,Scattering,0
+Washington,City Of Hartford Wards 7-8,State Senate,13,97,,Scattering,0
+Waukesha,"Town Of Oconomowoc Wards 1-2,4",State Senate,13,877,,Scattering,0
+Waukesha,"Town Of Oconomowoc Wards 3,6-7",State Senate,13,703,,Scattering,0
+Waukesha,"Town Of Oconomowoc Wards 5,8-9",State Senate,13,729,,Scattering,0
+Waukesha,Village Of Dousman Ward 5,State Senate,13,0,,Scattering,0
+Waukesha,Village Of Lac La Belle Ward 1,State Senate,13,130,,Scattering,0
+Waukesha,"Village Of Summit Wards 1,6",State Senate,13,409,,Scattering,0
+Waukesha,"City Of Oconomowoc Wards 1-3,13-15",State Senate,13,1477,,Scattering,0
+Waukesha,City Of Oconomowoc Wards 4-6,State Senate,13,1069,,Scattering,0
+Waukesha,"City Of Oconomowoc Wards 7-9,16",State Senate,13,939,,Scattering,0
+Waukesha,City Of Oconomowoc Wards 10-12,State Senate,13,949,,Scattering,0
