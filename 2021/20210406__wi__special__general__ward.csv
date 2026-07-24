@@ -1,4 +1,4 @@
-county,ward,office,district,total.votes,party,candidate,votes
+county,ward,office,district,totalvotes,party,candidate,votes
 Brown,Village Of Howard Ward 1,State Assembly,89,145,DEM,Karl Jaeger,55
 Brown,Village Of Howard Wards 3-4,State Assembly,89,168,DEM,Karl Jaeger,88
 Brown,Village Of Howard Ward 6,State Assembly,89,170,DEM,Karl Jaeger,75

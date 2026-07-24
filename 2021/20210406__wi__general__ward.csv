@@ -1,4 +1,4 @@
-county,ward,office,district,total.votes,party,candidate,votes
+county,ward,office,district,totalvotes,party,candidate,votes
 Adams,Town Of Adams Wards 1-3,State Superintendent of Public Instruction,,152,NP,Jill Underly,91
 Adams,Town Of Big Flats Wards 1-2,State Superintendent of Public Instruction,,171,NP,Jill Underly,95
 Adams,Town Of Colburn Ward 1,State Superintendent of Public Instruction,,36,NP,Jill Underly,16

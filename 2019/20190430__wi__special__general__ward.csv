@@ -1,4 +1,4 @@
-county,ward,office,district,total votes,party,candidate,votes
+county,ward,office,district,totalvotes,party,candidate,votes
 Kenosha,Town Of Somers Ward 2,State Assembly,64,145,DEM,Tip McGuire,64
 Kenosha,Town Of Somers Ward 2,State Assembly,64,145,REP,Mark Stalker,81
 Kenosha,Town Of Somers Ward 2,State Assembly,64,145,,Scattering,0
