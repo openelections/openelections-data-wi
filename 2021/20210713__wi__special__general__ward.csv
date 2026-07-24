@@ -1,4 +1,4 @@
-county,ward,office,district,total.votes,party,candidate,votes
+county,ward,office,district,totalvotes,party,candidate,votes
 Columbia,City Of Columbus Wards 1-8,State Assembly,37,724,DEM,Pete Adams,433
 Dane,Town Of Bristol Wards 1-4,State Assembly,37,492,DEM,Pete Adams,247
 Dane,Town Of York Ward 1,State Assembly,37,88,DEM,Pete Adams,45
